@@ -13,7 +13,7 @@ annotation PBIDesktopVersion = 2.143.1204.0 (25.05)+23c84aace645781dd62b8a26eb04
 
 annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers"]
 
-annotation PBI_ProTooling = ["CalcGroup","DevMode","TMDLView_Desktop"]
+annotation PBI_ProTooling = ["CalcGroup","DevMode"]
 
 ref table 'gold v_bc_posted_sales_invoices'
 ref table 'gold v_bc_salesperson'

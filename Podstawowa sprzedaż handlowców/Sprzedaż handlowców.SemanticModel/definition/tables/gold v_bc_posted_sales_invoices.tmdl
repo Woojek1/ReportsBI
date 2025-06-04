@@ -343,6 +343,26 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column UnitPrice
+		dataType: double
+		lineageTag: f1223e0a-64d2-4b2d-8910-1016dcf42619
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LinePriceLCY
+		dataType: double
+		lineageTag: 66167f38-6a81-46f6-8403-4755cd4e2cdb
+		summarizeBy: sum
+		sourceColumn: LinePriceLCY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =

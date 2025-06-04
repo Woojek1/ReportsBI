@@ -389,6 +389,19 @@ table _Measures
 		displayFolder: Sales
 		lineageTag: e5f9901d-13fd-4bb4-b506-05058343a4ac
 
+	measure AverageDiscount =
+			
+			DIVIDE(
+			    SUM('gold v_bc_posted_sales_invoices'[LineDiscountAmount]),
+			    sum('gold v_bc_posted_sales_invoices'[LinePriceLCY])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 141d42d5-af76-47fc-98e3-ff415f40e750
+
+	measure testowa = "miara dla testu"
+		lineageTag: 86ca77ae-db5e-4de5-8b69-fd045034f11e
+
 	column Value
 		isHidden
 		formatString: 0

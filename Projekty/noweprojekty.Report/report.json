@@ -88,7 +88,7 @@
       "filters": "[]",
       "height": 240.00,
       "name": "1531ca35389b10e8c87a",
-      "ordinal": 6,
+      "ordinal": 5,
       "visualContainers": [
         {
           "config": "{\"name\":\"47a747946e47c6ba134a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":320,\"height\":240,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"gold v_projekty.Status\",\"active\":true}],\"Y\":[{\"queryRef\":\"gold v_projekty.Ilosc projektow\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"gold v_projekty\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Status\"},\"Name\":\"gold v_projekty.Status\",\"NativeReferenceName\":\"Status\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Ilosc projektow\"},\"Name\":\"gold v_projekty.Ilosc projektow\",\"NativeReferenceName\":\"Ilosc projektow\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Ilosc projektow\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
@@ -130,7 +130,7 @@
       "filters": "[]",
       "height": 720.00,
       "name": "1da0170f8db481670020",
-      "ordinal": 8,
+      "ordinal": 7,
       "visualContainers": [
         {
           "config": "{\"name\":\"19b5430bb34fddc39772\",\"layouts\":[{\"id\":0,\"position\":{\"x\":657.7777777777778,\"y\":16,\"z\":4000,\"width\":304,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Miary.InvoicesCurrentQuarter\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Miary\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"InvoicesAmountCurrentQuarter\"},\"Name\":\"_Miary.InvoicesCurrentQuarter\",\"NativeReferenceName\":\"InvoicesAmountCurrentQuarter\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"InvoicesAmountCurrentQuarter\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'InvoicesCurrentQuarter'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
@@ -323,23 +323,12 @@
     },
     {
       "config": "{\"visibility\":1}",
-      "displayName": "Analiza projektantów",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "4d9bf5a0e78080735dea",
-      "ordinal": 5,
-      "visualContainers": [],
-      "width": 1280.00
-    },
-    {
-      "config": "{\"visibility\":1}",
       "displayName": "Strona 1zamowienia",
       "displayOption": 1,
       "filters": "[{\"name\":\"c74307d591aad0d3bbd0\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"gold v_zamówienia\"}},\"Property\":\"Klucz oferty\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
       "height": 720.00,
       "name": "89c9bb6b81003944be3d",
-      "ordinal": 7,
+      "ordinal": 6,
       "visualContainers": [
         {
           "config": "{\"name\":\"93178eec4dbce0e1e870\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",

@@ -4,7 +4,6 @@ relationship b61403a9-844e-a204-da10-d11a2c749d3a
 	toColumn: 'gold v_bc_salesperson'.Code
 
 relationship d16433cb-bf60-53b9-e531-a887a7e1fb34
-	crossFilteringBehavior: bothDirections
 	fromColumn: 'gold v_bc_posted_sales_invoices'.KeyNoItem
 	toColumn: 'gold v_bc_items'.KeyNoItem
 
