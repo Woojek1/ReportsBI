@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 311,
+            "y": 66
+          },
+          "nodeIndex": "gold v_bc_posted_sales_invoices",
+          "nodeLineageTag": "5ba58d96-43f3-4d58-abfa-dc96a3312ecd",
+          "size": {
+            "height": 656,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 873.14712787440112,
+            "y": 16.341269660136749
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "nodeLineageTag": "4e2b4a97-6d28-48ae-a088-2fe3e4b95196",
+          "size": {
+            "height": 503,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1179.3003647119683,
+            "y": 0
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "72ecb6f6-f0b0-4971-a814-2eecd5a998d6",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1204.9548210598923,
+            "y": 229.42979256912557
+          },
+          "nodeIndex": "Grupa obliczania",
+          "nodeLineageTag": "5ef29f12-7f98-4392-92b2-0dedbcf1a7e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 85
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "acf5db43-bde3-4841-afd2-b879fe7482c5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 554.53357647464566
+          },
+          "nodeIndex": "gold v_bc_items",
+          "nodeLineageTag": "1d70ad16-52d1-4b70-8c0c-22fd8590c2a0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 590.9279690092834,
+            "y": 626.71855481563182
+          },
+          "nodeIndex": "gold v_bc_customers",
+          "nodeLineageTag": "42ac4518-5dd2-4ee6-a060-dc62dff4fc75",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 79.553182037699813,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

@@ -1,0 +1,193 @@
+table _Miary
+	lineageTag: c49ee401-cdbf-49cf-bc09-57a6e854d891
+
+	measure USERPRINCIPALNAME = ```
+			
+			    USERPRINCIPALNAME()
+			```
+		displayFolder: Users
+		lineageTag: 4ed6859e-af59-495d-8d88-9a9d4a9729d8
+
+	measure USERNAME = ```
+			
+			    USERNAME() 
+			```
+		displayFolder: Users
+		lineageTag: de0df334-ec09-401a-8e42-5cf072a1aefc
+
+	measure LineCosts =
+			
+			SUM(
+			    'gold v_quotes'[LineCostsPLN]
+			)
+		displayFolder: Oferty
+		lineageTag: 3c39fe94-f242-452a-a729-6102d880bbea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure QuoteMargin =
+			
+			DIVIDE(
+			    [QuoteProfit],
+			    [QuoteAmountPLN]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Oferty
+		lineageTag: 2adf21c0-9ecd-4c55-980b-3e8b42d46a98
+
+	measure QuoteAmountPLN = ```
+			
+			    SUM('gold v_quotes'[LineAmountPLN])
+			```
+		displayFolder: Oferty
+		lineageTag: 5baf1672-3651-4116-9c70-5bfd8e2aadb5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CoolingCapacity = ```
+			
+			VAR Suma = SUMX('gold v_quotes',
+			                'gold v_quotes'[Quantity] * 'gold v_quotes'[CoolingCapacity]
+			            )
+			RETURN
+			    IF(
+			        ISBLANK(Suma),
+			        0,
+			        Suma
+			    )
+			
+			```
+		displayFolder: Oferty
+		lineageTag: 0024f90d-f6bf-45ac-9018-a57cfb64d4c2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure QuoteProfit =
+			
+			SUMX(
+			    'gold v_quotes',
+			    IF(
+			        ISBLANK('gold v_quotes'[LineCostsPLN]) || 'gold v_quotes'[LineCostsPLN] = 0,
+			        0,
+			        'gold v_quotes'[ProfitPLN]
+			    )
+			)
+		displayFolder: Oferty
+		lineageTag: 7235a2be-4c0a-47c5-81d6-4a1e43655a40
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure OrderAmountPLN =
+			
+			SUM(
+			    'gold v_quotes'[LineAmountPLN]
+			)
+		displayFolder: Zamowienia
+		lineageTag: dd1e36a0-4bf5-45b9-8eb0-7494a6421e0e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure ItemsAmount = ```
+			
+			    SUM('gold v_quotes'[Quantity])
+			```
+		formatString: 0
+		displayFolder: Oferty
+		lineageTag: c411de2d-e667-4c58-b524-a46c50bb9d37
+
+	measure InvoicesAmount = ```
+			
+			    SUM('gold v_invoices'[Amount])
+			```
+		displayFolder: Faktury
+		lineageTag: f6b3060b-8a46-4a66-bc5c-4ef2101e6f0e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure InvoiceItemsAmount = ```
+			
+			    SUM('gold v_invoices'[Quantity])
+			```
+		formatString: 0
+		displayFolder: Faktury
+		lineageTag: 3d33d614-7094-409b-8f9b-763bb0b2ae67
+
+	measure InvoiceLineCost = ```
+			
+			    SUM('gold v_invoices'[LineCostsPLN])
+			```
+		displayFolder: Faktury
+		lineageTag: 045fd61d-c4a6-487c-bb2b-33130b7b3439
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure InvoiceProfitPLN =
+			
+			SUMX(
+			    'gold v_invoices',
+			    IF(
+			        ISBLANK('gold v_invoices'[LineCostsPLN]) || 'gold v_invoices'[LineCostsPLN] = 0,
+			        0,
+			        'gold v_invoices'[ProfitPLN]
+			    )
+			)
+		displayFolder: Faktury
+		lineageTag: 07f836e1-8c15-4026-af31-ddccbe8ba4c5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure InvoiceMargin =
+			
+			DIVIDE(
+			    [InvoiceProfitPLN],
+			    [InvoicesAmount]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Faktury
+		lineageTag: 8a1c9c45-d616-4b68-8c55-e5ab7c88c31d
+
+	measure ProjectsCount =
+			
+			COUNT('gold v_projects'[NoProject])
+		formatString: 0
+		lineageTag: 0247dce4-e81f-423e-ae32-21c286abbaa1
+
+	measure InvoicesAmountCurrentQuarter =
+			
+			CALCULATE(
+			    SUM('gold v_invoices'[Amount]),
+			    DATESQTD('gold v_invoices'[InvoiceDate])
+			)
+		displayFolder: Faktury
+		lineageTag: 079e0e41-8eec-4e53-b7d9-6aaa42a911ff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure InvoicesAmountPreviousQuarter =
+			
+			CALCULATE(
+			    SUM('gold v_invoices'[Amount]),
+			    PREVIOUSQUARTER('gold v_invoices'[InvoiceDate]),
+			    USERELATIONSHIP('Calendar'[Date], 'gold v_invoices'[InvoiceDate])
+			)
+		displayFolder: Faktury
+		lineageTag: 487258e1-d8b3-4928-abc2-6558f6176ad5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		isHidden
+		formatString: 0
+		lineageTag: 5db5b317-5733-4e4a-b567-95136b94db54
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Miary = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 4e24a2a646524ccfb4931a65de7db9dd
+

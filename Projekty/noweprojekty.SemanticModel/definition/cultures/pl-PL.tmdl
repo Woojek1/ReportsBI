@@ -1,0 +1,257 @@
+cultureInfo pl-PL
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "table_miary.koszt_wiersza_oferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "LineCosts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CostPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.ofertywartosc_oferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "QuoteAmountPLN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AmountPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.zysk_wiersza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "QuoteProfit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ProfitPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.ilosc_urzadzen__faktura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "InvoiceItemsAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ItemsQuantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.wartosc_faktury": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "InvoicesAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Amount PLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "InvoicesAmount": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.koszt_wiersza_faktury": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "InvoiceLineCost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CostPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.zysk_wiersza_faktury": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "InvoiceProfitPLN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ProfitPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.quotemargin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "QuoteMargin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Margin": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_invoices.salesperson": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_invoices",
+			          "ConceptualProperty": "Salesperson"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalespersonCode": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.itemsamount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "ItemsAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ItemsQuantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.invoicemargin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "InvoiceMargin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "InvoiceMarginPreviousQuarter": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.0.0"
+			    }
+			  }
+			}
+		contentType: json
+

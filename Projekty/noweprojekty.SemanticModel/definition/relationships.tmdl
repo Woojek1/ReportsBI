@@ -1,0 +1,33 @@
+relationship 3542b1ff-ce70-7d8d-9179-aa5c8649e9ab
+	fromColumn: 'gold v_projects'.CreationDate
+	toColumn: Calendar.Date
+
+relationship cb9977d9-1352-2193-b5d0-ba37ad73b3ab
+	fromColumn: 'gold v_quotes'.KeyNoProject
+	toColumn: 'gold v_projects'.KeyNoProject
+
+relationship 5febd121-f35c-3e3b-8902-5643e2ed7f8e
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'gold v_orders'.KeyNoQuote
+	toColumn: 'gold v_quotes'.KeyNoQuote
+
+relationship 0d921e9b-78d5-a710-725c-7dab866d99d6
+	fromColumn: 'gold v_orders'.KeyNoProject
+	toColumn: 'gold v_projects'.KeyNoProject
+
+relationship 73ac4518-88e8-28cf-3804-992306f0cfc8
+	fromColumn: 'gold v_invoices'.KeyNoProject
+	toColumn: 'gold v_projects'.KeyNoProject
+
+relationship 6ac064d5-5f6c-e942-2ad7-e4246d66b741
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'gold v_orders'.KeyNoOrder
+	toColumn: 'gold v_invoices'.KeyNoOrder
+
+relationship fb0311c6-9057-8078-a024-9a4297a7d33e
+	isActive: false
+	fromColumn: 'gold v_invoices'.InvoiceDate
+	toColumn: Calendar.Date
+

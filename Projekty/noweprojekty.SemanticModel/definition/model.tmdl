@@ -1,0 +1,31 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.143.878.0 (25.05)+b20aa3b866ec1b70879135a4e60e4b1301c75b21
+
+annotation PBI_QueryOrder = ["gold v_orders","gold v_invoices","gold v_quotes","gold v_projects"]
+
+annotation PBI_ProTooling = ["TMDLView_Desktop","CalcGroup","DevMode"]
+
+ref table 'Grupa obliczania'
+ref table Calendar
+ref table _Miary
+ref table 'gold v_invoices'
+ref table 'gold v_quotes'
+ref table 'gold v_projects'
+ref table 'gold v_orders'
+
+ref role Zymetric
+ref role Aircon
+ref role Technab
+
+ref cultureInfo pl-PL
+

@@ -1,0 +1,235 @@
+table 'gold v_orders'
+	lineageTag: 3871e6c2-bbb8-42a3-9f80-4e03aceb30c1
+
+	column NoOrder
+		dataType: string
+		lineageTag: bfef5196-e5cb-4ab2-8e43-cc45dfd0c8f0
+		summarizeBy: none
+		sourceColumn: NoOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoOrder
+		dataType: string
+		lineageTag: e134e46e-f8e4-4ddd-aeb6-65dc934b3532
+		summarizeBy: none
+		sourceColumn: KeyNoOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column DocumentType
+		dataType: string
+		lineageTag: 58d318c8-b1b6-40a8-a919-79fdd36c0051
+		summarizeBy: none
+		sourceColumn: DocumentType
+
+		annotation SummarizationSetBy = Automatic
+
+	column NoProject
+		dataType: string
+		lineageTag: 1936786d-992f-4141-afda-d6173aeba886
+		summarizeBy: none
+		sourceColumn: NoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoProject
+		dataType: string
+		lineageTag: 95dcf1b8-7106-4b3a-b63e-d28591097b07
+		summarizeBy: none
+		sourceColumn: KeyNoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column NoQuote
+		dataType: string
+		lineageTag: 0d40f637-3ac6-460c-bc9d-9082a9ba5840
+		summarizeBy: none
+		sourceColumn: NoQuote
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoQuote
+		dataType: string
+		lineageTag: 32b0610a-9de8-4df5-9dfe-69fd65ab128a
+		summarizeBy: none
+		sourceColumn: KeyNoQuote
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5dfdcd6a-3c88-4b2b-bd44-b7d22d72f0a6
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column OrderLine
+		dataType: int64
+		formatString: 0
+		lineageTag: cb4e5e4e-5393-4a27-b6d9-c18860c6c29b
+		summarizeBy: sum
+		sourceColumn: OrderLine
+
+		annotation SummarizationSetBy = Automatic
+
+	column NoItem
+		dataType: string
+		lineageTag: a30b17a2-9d26-4cec-93ff-ba861bea8e38
+		summarizeBy: none
+		sourceColumn: NoItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: double
+		lineageTag: c096bf09-5fdb-4efe-8590-6828a574df3a
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineAmount
+		dataType: double
+		lineageTag: aabcdd3c-5d3d-4ab7-8ba9-a88b22f83544
+		summarizeBy: sum
+		sourceColumn: LineAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CurrencyCode
+		dataType: string
+		lineageTag: 609b854c-1d87-47f1-b4cb-964fe6be4c5a
+		summarizeBy: none
+		sourceColumn: CurrencyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyExchangeRate
+		dataType: double
+		lineageTag: 317e958c-e897-4d4b-a413-153591b8311e
+		summarizeBy: sum
+		sourceColumn: CurrencyExchangeRate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineAmountPLN
+		dataType: double
+		lineageTag: 36aeefb2-cfce-42ff-8f71-6281e2ecb3c2
+		summarizeBy: sum
+		sourceColumn: LineAmountPLN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineCostsPLN
+		dataType: double
+		lineageTag: 074ba689-55b1-43e4-9a31-327891a5a184
+		summarizeBy: sum
+		sourceColumn: LineCostsPLN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ProfitPLN
+		dataType: double
+		lineageTag: 0392a6d3-6769-4736-a040-d3e55f08ebe7
+		summarizeBy: sum
+		sourceColumn: ProfitPLN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CoolingCapacity
+		dataType: double
+		lineageTag: b86ed7db-6388-433f-afdf-644d8b079eef
+		summarizeBy: sum
+		sourceColumn: CoolingCapacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KeyNoCustomer
+		dataType: string
+		lineageTag: 01b75bf8-d72f-4718-ab52-efb920e3f526
+		summarizeBy: none
+		sourceColumn: KeyNoCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerName
+		dataType: string
+		lineageTag: ef1ca772-ac2e-4632-9d32-9e89a7ede804
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonCode
+		dataType: string
+		lineageTag: fd6092af-522c-4a44-9dab-62e01efc5b52
+		summarizeBy: none
+		sourceColumn: SalespersonCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 73a53746-e745-4498-ab30-6d078507082b
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderStatus
+		dataType: string
+		lineageTag: eb5e995f-0e9a-4a79-a2b5-092354de670b
+		summarizeBy: none
+		sourceColumn: OrderStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: beba23af-fd67-491a-89c3-818d812a4b65
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		lineageTag: 33007d3e-792a-4088-b2ca-8de568c02e75
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_orders' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_orders = Źródło{[Schema="gold",Item="v_orders"]}[Data]
+				in
+				    gold_v_orders
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

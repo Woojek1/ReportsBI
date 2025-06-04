@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 863.66826694009137,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1335.9256461246409,
+            "y": 23.275097831049671
+          },
+          "nodeIndex": "Grupa obliczania",
+          "nodeLineageTag": "14e423af-6c35-40c0-b1c0-cf603ba95254",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1728.4800310352193,
+            "y": 26.335991975720209
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "e42543fd-91d4-43e7-975a-7308d3ca5b2b",
+          "size": {
+            "height": 400.67284586611748,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1362.4295021398098,
+            "y": 329.41170382826164
+          },
+          "nodeIndex": "_Miary",
+          "nodeLineageTag": "c49ee401-cdbf-49cf-bc09-57a6e854d891",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1731.4269810707392,
+            "y": 831.1266082190474
+          },
+          "nodeIndex": "gold v_projects",
+          "nodeLineageTag": "e0159209-563a-44a5-bb65-85d7ebe14b9f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2451.2368521873636,
+            "y": 1032.9590356542756
+          },
+          "nodeIndex": "gold v_quotes",
+          "nodeLineageTag": "7adb6d6b-3e35-405d-84b2-9023850e56ea",
+          "size": {
+            "height": 375.84485513050106,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 2452.9083160751388,
+            "y": 631.49981403240861
+          },
+          "nodeIndex": "gold v_orders",
+          "nodeLineageTag": "3871e6c2-bbb8-42a3-9f80-4e03aceb30c1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 2184.1677768269024,
+            "y": 0
+          },
+          "nodeIndex": "gold v_invoices",
+          "nodeLineageTag": "b898146e-3cc5-4cf9-b5ff-561a3a299ed1",
+          "size": {
+            "height": 625.50083660173391,
+            "width": 234
+          },
+          "zIndex": 7
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 65.997562006007826,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}
