@@ -393,11 +393,28 @@ table _Measures
 			
 			DIVIDE(
 			    SUM('gold v_bc_posted_sales_invoices'[LineDiscountAmount]),
-			    sum('gold v_bc_posted_sales_invoices'[LinePriceLCY])
+			    sum('gold v_bc_posted_sales_invoices'[LinePriceLCY]),
+			    0
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Sales
 		lineageTag: 141d42d5-af76-47fc-98e3-ff415f40e750
+
+	measure AverageInvoiceAmount = ```
+			
+			var DistinctInvoiceCount = 
+			    DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice])
+			RETURN
+			
+			DIVIDE(
+			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			    DistinctInvoiceCount
+			    )
+			```
+		displayFolder: Sales
+		lineageTag: e6064983-f904-4dfc-833e-3441b2fa1dd5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden
