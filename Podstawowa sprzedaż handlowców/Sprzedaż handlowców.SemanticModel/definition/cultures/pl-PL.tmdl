@@ -3515,7 +3515,8 @@ cultureInfo pl-PL
 			            "Weight": 0.714
 			          }
 			        }
-			      ]
+			      ],
+			      "NameType": "Name"
 			    },
 			    "gold_v_bc_salesperson.email": {
 			      "Definition": {
@@ -4226,6 +4227,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Wartość faktury netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Całkowita sprzedaż dla klienta": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -8836,6 +8847,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Miesiące z zakupem ostatnie 12 mc": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -9860,6 +9881,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.486
+			          }
+			        },
+			        {
+			          "Profil klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11196,6 +11227,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.589
 			          }
+			        },
+			        {
+			          "Spółka": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -11352,59 +11393,59 @@ cultureInfo pl-PL
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "entity__measure.sales_amount_last_12_months_LCY": {
+			    "entity__measure.sales_amount_last_12_months_LCY_today": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "SalesAmountLast12MonthsLCY"
+			          "ConceptualProperty": "SalesAmountLast12MonthsLCYToday"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "sales amount last 12 months LCY": {
+			          "sales amount last 12 months LCY today": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "SalesAmountLast12MonthsLCY": {
+			          "SalesAmountLast12MonthsLCYToday": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "LCY": {
+			          "LCY today": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "months LCY": {
+			          "months LCY today": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "12 months LCY": {
+			          "12 months LCY today": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "last 12 months LCY": {
+			          "last 12 months LCY today": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "amount last 12 months LCY": {
+			          "amount last 12 months LCY today": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "amount end 12 month lcy": {
+			          "end 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11414,7 +11455,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount final 12 month lcy": {
+			          "final 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11424,7 +11465,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount closing 12 month lcy": {
+			          "closing 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11434,7 +11475,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount concluding 12 month lcy": {
+			          "concluding 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11444,7 +11485,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount finishing 12 month lcy": {
+			          "finishing 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11454,7 +11495,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount former 12 month lcy": {
+			          "former 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11464,7 +11505,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount latest 12 month lcy": {
+			          "latest 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11474,7 +11515,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount latter 12 month lcy": {
+			          "latter 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11484,7 +11525,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount past 12 month lcy": {
+			          "past 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11494,7 +11535,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "amount remaining 12 month lcy": {
+			          "remaining 12 month lcy today": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11915,7 +11956,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "OverdueInvoices": {
+			          "Przeterminowane": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11964,7 +12005,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "PaidInvoices": {
+			          "Zapłacone": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12559,6 +12600,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Niezapłcone": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -13198,6 +13249,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Średni rabat": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13452,9 +13513,362 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.category_sales_amount_LCY_last_12_months_today": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CategorySalesAmountLCYLast12MonthsToday"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "category sales amount LCY last 12 months today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CategorySalesAmountLCYLast12MonthsToday": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "12 months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "last 12 months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "LCY last 12 months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount LCY last 12 months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales amount LCY last 12 months today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "lcy end 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy final 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy closing 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy concluding 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy finishing 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy former 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy latest 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy latter 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy past 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lcy remaining 12 month today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Kategoria wielkości zakupu ostatnie 12 mc": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.sales_amount_last_12_months": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "SalesAmountLast12Months"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales amount last 12 months": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SalesAmountLast12Months": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "12 months": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "last 12 months": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount last 12 months": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sale amount last 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount end 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount final 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount closing 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount concluding 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount finishing 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount former 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount latest 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount latter 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "sale amount past 12 month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Sprzedaż PLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_item_has_MKGL_stock_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.MKGL_stock_quantity": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.MKGL_stock_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.MKGL_stock_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_MKGL_stock_quantities"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -14142,7 +14556,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_last_12_months_LCY": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_last_12_months_LCY_today": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
@@ -14153,9 +14567,9 @@ cultureInfo pl-PL
 			            "Entity": "gold_v_bc_posted_sales_invoice"
 			          }
 			        },
-			        "entity__measure.sales_amount_last_12_months_LCY": {
+			        "entity__measure.sales_amount_last_12_months_LCY_today": {
 			          "Target": {
-			            "Entity": "entity__measure.sales_amount_last_12_months_LCY"
+			            "Entity": "entity__measure.sales_amount_last_12_months_LCY_today"
 			          }
 			        }
 			      },
@@ -14166,12 +14580,12 @@ cultureInfo pl-PL
 			              "Role": "gold_v_bc_posted_sales_invoice"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.sales_amount_last_12_months_LCY"
+			              "Role": "entity__measure.sales_amount_last_12_months_LCY_today"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_amount_last_12_months_LCY"
+			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_amount_last_12_months_LCY_today"
 			        }
 			      ]
 			    },
@@ -17409,6 +17823,19 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_salespersons_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "gold_v_bc_salesperson"
+			            },
+			            "Name": {
+			              "Role": "gold_v_bc_salesperson.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_gold_v_bc_salespersons"
 			        }
 			      ]
 			    },
@@ -19073,39 +19500,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_item_has_MKGL_stock_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.MKGL_stock_quantity": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.MKGL_stock_quantity"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.MKGL_stock_quantity"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_MKGL_stock_quantities"
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -19136,6 +19530,72 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_category_sales_amount_LCY_last_12_months_today": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.category_sales_amount_LCY_last_12_months_today": {
+			          "Target": {
+			            "Entity": "entity__measure.category_sales_amount_LCY_last_12_months_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.category_sales_amount_LCY_last_12_months_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_category_sales_amount_LCY_last_12_months_today"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_last_12_months": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_last_12_months": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_last_12_months"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_last_12_months"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_amount_last_12_months"
 			        }
 			      ]
 			    },

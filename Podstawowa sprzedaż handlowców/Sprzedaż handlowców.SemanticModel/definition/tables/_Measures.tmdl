@@ -233,7 +233,7 @@ table _Measures
 		displayFolder: Customers
 		lineageTag: e9735530-1ea9-4312-a18a-e9a9c3dac418
 
-	measure SalesAmountLast12MonthsLCY =
+	measure SalesAmountLast12MonthsLCYToday =
 			
 			CALCULATE(
 			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
@@ -413,6 +413,76 @@ table _Measures
 			```
 		displayFolder: Sales
 		lineageTag: e6064983-f904-4dfc-833e-3441b2fa1dd5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CategorySalesAmountLCYLast12MonthsToday =
+			
+			// VAR SalesAmounthLast12mounths =
+			//     CALCULATE(
+			//         SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			//         DATESINPERIOD(
+			//             'Calendar'[Date],
+			//             TODAY(),         -- punkt końcowy (dzisiejsza data)
+			//             -12,             -- przesunięcie o 12 miesięcy wstecz
+			//             MONTH            -- jednostka czasu: miesiąc
+			//         )
+			//     )
+			
+			// RETURN
+			
+			// SWITCH(
+			//     TRUE(),
+			//     SalesAmounthLast12mounths <= 10000, "0–10k PLN",
+			//     SalesAmounthLast12mounths <= 100000, "10–100k PLN",
+			//     SalesAmounthLast12mounths <= 500000, "100–500k PLN",
+			//     SalesAmounthLast12mounths > 500000, ">500k PLN",
+			//     "Brak sprzedaży"
+			// )
+			
+			VAR SelectedDate =
+			    IF(
+			        HASONEVALUE('Calendar'[Date]),
+			        MAX('Calendar'[Date]),
+			        TODAY()
+			    )
+			
+			VAR SalesAmountLast12Months =
+			    CALCULATE(
+			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        DATESINPERIOD(
+			            'Calendar'[Date],
+			            SelectedDate,
+			            -12,
+			            MONTH
+			        )
+			    )
+			
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(SalesAmountLast12Months), "Brak sprzedaży",
+			    SalesAmountLast12Months <= 10000, "0–10k PLN",
+			    SalesAmountLast12Months <= 100000, "10–100k PLN",
+			    SalesAmountLast12Months <= 500000, "100–500k PLN",
+			    SalesAmountLast12Months > 500000, ">500k PLN"
+			)
+		displayFolder: Customers
+		lineageTag: bb1a8f7e-9aa4-457c-b557-9f9aba326bd3
+
+	measure SalesAmountLast12Months =
+			
+			CALCULATE(
+			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			    DATESINPERIOD(
+			        'Calendar'[Date],
+			        MAX('Calendar'[Date]),  -- używa daty z kontekstu, np. z wykresu
+			        -12,
+			        MONTH
+			    )
+			)
+		displayFolder: Sales
+		lineageTag: d33e8022-0444-47af-8340-805b0863740c
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

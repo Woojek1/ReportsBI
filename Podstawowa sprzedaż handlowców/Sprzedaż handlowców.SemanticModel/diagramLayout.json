@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 100
+        "y": 34.70347795676787
       },
       "nodes": [
         {
           "location": {
-            "x": 869.84047944330507,
-            "y": 290.70347795676787
+            "x": 1026.840479443305,
+            "y": 34.70347795676787
           },
           "nodeIndex": "_Measures",
           "nodeLineageTag": "72ecb6f6-f0b0-4971-a814-2eecd5a998d6",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 50,
-            "y": 112.51578224239893
+            "x": 67,
+            "y": 0
           },
           "nodeIndex": "gold v_bc_customers",
           "nodeLineageTag": "42ac4518-5dd2-4ee6-a060-dc62dff4fc75",
@@ -75,8 +75,8 @@
         },
         {
           "location": {
-            "x": 62.123273421928161,
-            "y": 466.16408243711317
+            "x": 65.123273421928161,
+            "y": 635.16408243711317
           },
           "nodeIndex": "gold v_bc_salesperson",
           "nodeLineageTag": "4e2b4a97-6d28-48ae-a088-2fe3e4b95196",
