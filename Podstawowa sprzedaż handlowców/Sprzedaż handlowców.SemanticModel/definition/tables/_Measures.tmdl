@@ -481,10 +481,9 @@ table _Measures
 			        MONTH
 			    )
 			)
+		formatString: #,0.00
 		displayFolder: Sales
 		lineageTag: d33e8022-0444-47af-8340-805b0863740c
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden
