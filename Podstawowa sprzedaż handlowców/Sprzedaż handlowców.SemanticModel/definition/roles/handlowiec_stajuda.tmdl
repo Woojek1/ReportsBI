@@ -1,0 +1,7 @@
+role handlowiec_stajuda
+	modelPermission: read
+
+	tablePermission 'gold v_bc_salesperson' = [SalespersonName] == "m.stajuda"
+
+	annotation PBI_Id = 67a9e60b360c489cade1e5bccf725afc
+

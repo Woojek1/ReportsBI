@@ -1,7 +1,0 @@
-role Handlowiec
-	modelPermission: read
-
-	tablePermission 'gold v_bc_salesperson' = [Email] == [LoggedSalesperson]
-
-	annotation PBI_Id = 287e32b2754246119def609ae74f2e61
-

@@ -3515,8 +3515,7 @@ cultureInfo pl-PL
 			            "Weight": 0.714
 			          }
 			        }
-			      ],
-			      "NameType": "Name"
+			      ]
 			    },
 			    "gold_v_bc_salesperson.email": {
 			      "Definition": {
@@ -4216,6 +4215,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Sprzedaż": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Całkowita sprzedaż": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4863,6 +4872,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "Rok": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -4889,6 +4908,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "Kwartał": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5064,6 +5093,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Miesiąc": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11553,6 +11592,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Sprzedaz PLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13067,6 +13116,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.599
 			          }
+			        },
+			        {
+			          "Ilość faktur bieżący rok": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13109,6 +13168,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Ilość faktur poprzedni rok": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -13836,6 +13905,39 @@ cultureInfo pl-PL
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.average_invoice_amount": {
+			          "Target": {
+			            "Entity": "entity__measure.average_invoice_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_invoice_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_item_has_MKGL_stock_quantity": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_items"
@@ -17823,19 +17925,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_salespersons_have_names"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "gold_v_bc_salesperson"
-			            },
-			            "Name": {
-			              "Role": "gold_v_bc_salesperson.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_gold_v_bc_salespersons"
 			        }
 			      ]
 			    },
@@ -19497,39 +19586,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_gold_v_bc_items_are_blocked_gold_v_bc_items"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
-			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
-			          }
-			        },
-			        "entity__measure.average_invoice_amount": {
-			          "Target": {
-			            "Entity": "entity__measure.average_invoice_amount"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_posted_sales_invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.average_invoice_amount"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount"
 			        }
 			      ]
 			    },

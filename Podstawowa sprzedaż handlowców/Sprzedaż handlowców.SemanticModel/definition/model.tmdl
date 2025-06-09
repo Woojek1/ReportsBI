@@ -24,8 +24,11 @@ ref table 'gold v_bc_items'
 ref table 'gold v_bc_customers'
 
 ref role lachmanski
-ref role Handlowiec
 ref role HndlowiecWszystkieSpolki
+ref role radziwillowicz
+ref role mstajuda
+ref role handlowiec_stajuda
+ref role handlowiec_radziwillowicz
 
 ref cultureInfo pl-PL
 
