@@ -1,0 +1,23 @@
+relationship b61403a9-844e-a204-da10-d11a2c749d3a
+	toCardinality: many
+	fromColumn: 'gold v_bc_posted_sales_invoices'.Salesperson
+	toColumn: 'gold v_bc_salesperson'.Code
+
+relationship d16433cb-bf60-53b9-e531-a887a7e1fb34
+	fromColumn: 'gold v_bc_posted_sales_invoices'.KeyNoItem
+	toColumn: 'gold v_bc_items'.KeyNoItem
+
+relationship 0a4adecf-7b3f-8995-7092-9dd45143a623
+	fromColumn: 'gold v_bc_posted_sales_invoices'.PostingDate
+	toColumn: Calendar.Date
+
+relationship AutoDetected_ac4747e6-3472-47a7-8e91-c301f8a388dc
+	fromColumn: 'gold v_bc_posted_sales_invoices'.KeyNoCustomer
+	toColumn: 'gold v_bc_customers'.KeyNoCustomer
+
+relationship 155eebc6-b522-294a-b938-a1001bb6da2a
+	isActive: false
+	toCardinality: many
+	fromColumn: 'gold v_bc_customers'.Salesperson_Code
+	toColumn: 'gold v_bc_salesperson'.Code
+

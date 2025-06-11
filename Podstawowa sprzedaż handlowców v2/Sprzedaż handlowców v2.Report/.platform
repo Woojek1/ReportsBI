@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Sprzedaż handlowców v2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "66ce7322-43e2-4e38-833f-64aa962e6db7"
+  }
+}

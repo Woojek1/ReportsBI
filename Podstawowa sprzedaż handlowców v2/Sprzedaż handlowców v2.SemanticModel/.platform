@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sprzedaż handlowców v2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0dc2bfa5-e027-4628-882a-8c593abf5ae5"
+  }
+}
