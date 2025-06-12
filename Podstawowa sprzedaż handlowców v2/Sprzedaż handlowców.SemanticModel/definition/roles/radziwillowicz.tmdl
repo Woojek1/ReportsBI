@@ -1,7 +1,0 @@
-role radziwillowicz
-	modelPermission: read
-
-	tablePermission 'gold v_bc_posted_sales_invoices' = [Salesperson] == "pradziwill"
-
-	annotation PBI_Id = 97ea5af6c92a420c96a0431f7f2c2330
-
