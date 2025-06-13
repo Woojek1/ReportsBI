@@ -1,0 +1,11 @@
+role Kierownik
+	modelPermission: read
+
+	tablePermission RLS =
+			RLS[user_1] = [Username] ||
+			RLS[user_2] = [Username] ||
+			RLS[user_3] = [Username] ||
+			RLS[user_4] = [Username]
+
+	annotation PBI_Id = 39a6e1e06f5c4585a6de92b08df7cd48
+

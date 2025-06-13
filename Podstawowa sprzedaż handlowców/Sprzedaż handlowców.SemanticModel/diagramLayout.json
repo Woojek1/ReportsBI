@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 34.70347795676787
+        "y": 43.995726008060473
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -71,12 +71,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
-            "x": 65.123273421928161,
-            "y": 635.16408243711317
+            "x": 70.691996164567144,
+            "y": 637.5506778982442
           },
           "nodeIndex": "gold v_bc_salesperson",
           "nodeLineageTag": "4e2b4a97-6d28-48ae-a088-2fe3e4b95196",
@@ -84,7 +84,7 @@
             "height": 296,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
@@ -97,11 +97,24 @@
             "height": 128,
             "width": 234
           },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 400.42046577979949,
+            "y": 723.51220924286838
+          },
+          "nodeIndex": "RLS",
+          "nodeLineageTag": "075cbda4-68ff-4ef0-a8b8-aa6ecac16d0a",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
           "zIndex": 0
         }
       ],
       "name": "Wszystkie tabele",
-      "zoomValue": 100,
+      "zoomValue": 79.553182037699827,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

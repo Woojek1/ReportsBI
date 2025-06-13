@@ -13310,7 +13310,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Rabat": {
+			          "Średni rabat": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13320,7 +13320,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Średni rabat": {
+			          "Rabat": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

@@ -1,7 +1,0 @@
-role handlowiec_radziwillowicz
-	modelPermission: read
-
-	tablePermission 'gold v_bc_salesperson' = [SalespersonName] == "p.radziwillowicz"
-
-	annotation PBI_Id = 2bb59c94887044f596b44fbde4d3f7ff
-

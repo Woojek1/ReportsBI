@@ -7,10 +7,11 @@ table _Measures
 			
 			
 			```
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 599da7a2-3b00-44c0-8a80-ce5207150251
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmount_MTD = ```
 			
@@ -166,10 +167,11 @@ table _Measures
 			    ),
 			    'Calendar'[Date] = TODAY()
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 4647d231-6143-4b08-97c1-6d48b3d24372
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmount_QTD_Today =
 			
@@ -183,10 +185,11 @@ table _Measures
 			    ),
 			    'Calendar'[Date] = TODAY()
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 7fba4dac-2eec-4b53-8274-028e33791ee8
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmountYTDTodayLCY =
 			
@@ -200,10 +203,11 @@ table _Measures
 			    ),
 			    'Calendar'[Date] = TODAY()
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: ae3d4b1c-fa27-4d49-9b25-3ca16a0fc50d
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure DistinctInvoiceCount =
 			
@@ -244,10 +248,11 @@ table _Measures
 			        MONTH            -- jednostka czasu: miesiąc
 			    )
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 3a9627e9-d7eb-4d9a-a863-5feb388918f3
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure RemainingAmount =
 			
@@ -255,10 +260,11 @@ table _Measures
 			    VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
 			    CALCULATE(max('gold v_bc_posted_sales_invoices'[RemainingAmount]))
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 93bdba25-a1dd-46c2-8833-c5be93e32365
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmountTotal = ```
 			
@@ -291,9 +297,11 @@ table _Measures
 			    ),
 			    CALCULATE(MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]))
 			)
-		formatString: #,0.00
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 897ab103-5690-48ce-9654-2966d8f0d32f
+
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure OverdueInvoicesCount =
 			
@@ -333,10 +341,11 @@ table _Measures
 			    VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
 			    CALCULATE(max('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]))
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: ead1fca9-52c9-453b-a551-88f000597f00
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmountTotalVATLCY = ```
 			
@@ -344,10 +353,11 @@ table _Measures
 			
 			
 			```
+		formatString: 0
 		displayFolder: Sales
 		lineageTag: 6e353139-2aec-4ea0-a266-91c8a4ed02cf
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure LoggedSalesperson =
 			
@@ -411,10 +421,11 @@ table _Measures
 			    DistinctInvoiceCount
 			    )
 			```
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: e6064983-f904-4dfc-833e-3441b2fa1dd5
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure CategorySalesAmountLCYLast12MonthsToday =
 			
