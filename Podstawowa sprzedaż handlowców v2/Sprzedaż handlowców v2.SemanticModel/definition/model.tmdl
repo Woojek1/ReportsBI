@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.144.679.0 (25.06)+ef40146207b86a826d1c72a7727a743ee37450e9
 
-annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers"]
+annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers","RLS"]
 
 annotation PBI_ProTooling = ["CalcGroup","DevMode"]
 
@@ -22,13 +22,13 @@ ref table 'Grupa obliczania'
 ref table Calendar
 ref table 'gold v_bc_items'
 ref table 'gold v_bc_customers'
+ref table RLS
 
 ref role lachmanski
 ref role HndlowiecWszystkieSpolki
 ref role radziwillowicz
 ref role mstajuda
-ref role handlowiec_stajuda
-ref role handlowiec_radziwillowicz
+ref role Kierownik
 
 ref cultureInfo pl-PL
 

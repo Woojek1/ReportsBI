@@ -256,7 +256,7 @@ table _Measures
 			SUMX(
 			    VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
 			    CALCULATE(
-			            MAX('gold v_bc_posted_sales_invoices'[RemainingAmount]),
+			            MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]),
 			            ALL('Calendar')
 			    )
 			)
@@ -288,17 +288,22 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure OverdueAmountLCY =
+	measure OverdueAmountLCYTotal =
 			
-			SUMX(
-			    FILTER(
-			        VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
-			        CALCULATE(MIN('gold v_bc_posted_sales_invoices'[DueDate])) < TODAY()
+			CALCULATE(
+			    SUMX(
+			        FILTER(
+			            SUMMARIZE(
+			                ALL('gold v_bc_posted_sales_invoices'),
+			                'gold v_bc_posted_sales_invoices'[KeyNoInvoice],
+			                "DueDate",   MAX('gold v_bc_posted_sales_invoices'[DueDate]),
+			                "RemAmount", MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY])
+			            ),
+			            [DueDate] < TODAY()
+			        ),
+			        [RemAmount]
 			    ),
-			    CALCULATE(
-			        MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]),
-			        REMOVEFILTERS('Calendar')
-			    )
+			    all()
 			)
 		formatString: #,0
 		displayFolder: Sales
@@ -338,7 +343,7 @@ table _Measures
 		displayFolder: Sales
 		lineageTag: 692d79f1-93aa-4e66-a77b-bd383b3e1893
 
-	measure RemainingAmountLCY = ```
+	measure RemainingAmountLCYTotal = ```
 			
 			CALCULATE(
 			    SUMX(
@@ -346,14 +351,14 @@ table _Measures
 			        CALCULATE(MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY])                
 			        )
 			    ),
-			    REMOVEFILTERS('Calendar')
+			    ALL()
+			    
 			)
 			```
-		formatString: #,0
 		displayFolder: Sales
 		lineageTag: ead1fca9-52c9-453b-a551-88f000597f00
 
-		annotation PBI_FormatHint = {"isDecimal":true}
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure SalesAmountTotalVATLCY = ```
 			
@@ -599,6 +604,20 @@ table _Measures
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Sales
 		lineageTag: d1ef47b1-962e-4c34-86b5-3a6cf5f5f986
+
+	measure OverdueAmountLCY =
+			
+			SUMX(
+			    FILTER(
+			        VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
+			        CALCULATE(MIN('gold v_bc_posted_sales_invoices'[DueDate])) < TODAY()
+			    ),
+			    CALCULATE(MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]))
+			)
+		displayFolder: Sales
+		lineageTag: 9f01c4f8-93ce-4619-96d4-22ba1056a427
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden

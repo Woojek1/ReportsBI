@@ -3515,7 +3515,8 @@ cultureInfo pl-PL
 			            "Weight": 0.714
 			          }
 			        }
-			      ]
+			      ],
+			      "NameType": "Name"
 			    },
 			    "gold_v_bc_salesperson.email": {
 			      "Definition": {
@@ -11667,6 +11668,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Pozostało do zapłaty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Zaległe płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -11898,25 +11909,43 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure.overdue_amount_LCY": {
+			    "entity__measure.overdue_amount_LCY_v_4": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "OverdueAmountLCY"
+			          "ConceptualProperty": "OverdueAmountLCYTotal"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "overdue amount LCY": {
+			          "overdue amount LCY v 4": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "OverdueAmountLCY": {
+			          "OverdueAmountLCY_v4": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "v 4": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "LCY v 4": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount LCY v 4": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -12633,31 +12662,97 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure.remaining_amount_LCY": {
+			    "entity__measure.remaining_amount_LCY_total": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "RemainingAmountLCY"
+			          "ConceptualProperty": "RemainingAmountLCYTotal"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "remaining amount LCY": {
+			          "remaining amount LCY total": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "RemainingAmountLCY": {
+			          "RemainingAmountLCYTotal": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "LCY": {
+			          "LCY total": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount LCY total": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "remaining amount lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "remaining amount lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "amount lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "amount lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        },
 			        {
@@ -14438,9 +14533,184 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "gold_v_bc_customer.E_mail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_customers",
+			          "ConceptualProperty": "E_Mail"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "E mail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "E_Mail": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mailing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "posting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post-office": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "delivery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "e correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "e post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer.phone_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_customers",
+			          "ConceptualProperty": "Phone_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "phone no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Phone_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "phone number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount_current_month": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.average_invoice_amount_current_month": {
+			          "Target": {
+			            "Entity": "entity__measure.average_invoice_amount_current_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_invoice_amount_current_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount_current_month"
+			        }
+			      ]
+			    },
 			    "calendar_has_entity__measure_current_year_month_from_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"
@@ -14837,7 +15107,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_remaining_amount_LCY": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_remaining_amount_LCY_total": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
@@ -14848,9 +15118,9 @@ cultureInfo pl-PL
 			            "Entity": "gold_v_bc_posted_sales_invoice"
 			          }
 			        },
-			        "entity__measure.remaining_amount_LCY": {
+			        "entity__measure.remaining_amount_LCY_total": {
 			          "Target": {
-			            "Entity": "entity__measure.remaining_amount_LCY"
+			            "Entity": "entity__measure.remaining_amount_LCY_total"
 			          }
 			        }
 			      },
@@ -14861,12 +15131,12 @@ cultureInfo pl-PL
 			              "Role": "gold_v_bc_posted_sales_invoice"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.remaining_amount_LCY"
+			              "Role": "entity__measure.remaining_amount_LCY_total"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_remaining_amount_LCY"
+			          "ID": "gold_v_bc_posted_sales_invoices_have_remaining_amount_LCY_total"
 			        }
 			      ]
 			    },
@@ -15194,7 +15464,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_overdue_amount_LCY": {
+			    "entity__measure_has_overdue_amount_LCY_v_4": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measures"
 			      },
@@ -15205,9 +15475,9 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure"
 			          }
 			        },
-			        "entity__measure.overdue_amount_LCY": {
+			        "entity__measure.overdue_amount_LCY_v_4": {
 			          "Target": {
-			            "Entity": "entity__measure.overdue_amount_LCY"
+			            "Entity": "entity__measure.overdue_amount_LCY_v_4"
 			          }
 			        }
 			      },
@@ -15218,12 +15488,12 @@ cultureInfo pl-PL
 			              "Role": "entity__measure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.overdue_amount_LCY"
+			              "Role": "entity__measure.overdue_amount_LCY_v_4"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_overdue_amount_LCY"
+			          "ID": "Phrasing_measures_have_overdue_amount_LCY_v_4"
 			        }
 			      ]
 			    },
@@ -18593,6 +18863,19 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_salespersons_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "gold_v_bc_salesperson"
+			            },
+			            "Name": {
+			              "Role": "gold_v_bc_salesperson.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_gold_v_bc_salespersons"
 			        }
 			      ]
 			    },
@@ -20257,39 +20540,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount_current_month": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
-			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
-			          }
-			        },
-			        "entity__measure.average_invoice_amount_current_month": {
-			          "Target": {
-			            "Entity": "entity__measure.average_invoice_amount_current_month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_posted_sales_invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.average_invoice_amount_current_month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount_current_month"
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount_current_month": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -20320,6 +20570,72 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_posted_sales_invoices_have_average_discount_current_month"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer_has_E_mail": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "gold_v_bc_customer.E_mail": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer.E_mail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_customer.E_mail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_E_mails"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer_has_phone_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "gold_v_bc_customer.phone_no": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer.phone_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_customer.phone_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_phone_noes"
 			        }
 			      ]
 			    },

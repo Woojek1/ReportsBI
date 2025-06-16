@@ -268,6 +268,22 @@ table 'gold v_bc_customers'
 
 		annotation SummarizationSetBy = Automatic
 
+	column E_Mail
+		dataType: string
+		lineageTag: b390aade-7924-47d4-927f-f4b9da6ff328
+		summarizeBy: none
+		sourceColumn: E_Mail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone_No
+		dataType: string
+		lineageTag: e5434660-5ad7-4fe2-81d7-33014cba01f1
+		summarizeBy: none
+		sourceColumn: Phone_No
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_customers' = m
 		mode: import
 		source =

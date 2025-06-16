@@ -21,3 +21,7 @@ relationship 155eebc6-b522-294a-b938-a1001bb6da2a
 	fromColumn: 'gold v_bc_customers'.Salesperson_Code
 	toColumn: 'gold v_bc_salesperson'.Code
 
+relationship 7f00608c-f605-2e3d-33de-3c39065c3ae6
+	fromColumn: 'gold v_bc_salesperson'.Code
+	toColumn: RLS.User_code
+

@@ -353,7 +353,7 @@ table _Measures
 			
 			
 			```
-		formatString: 0
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 6e353139-2aec-4ea0-a266-91c8a4ed02cf
 
