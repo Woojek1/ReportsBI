@@ -1,7 +1,0 @@
-role mstajuda
-	modelPermission: read
-
-	tablePermission 'gold v_bc_posted_sales_invoices' = [Salesperson] == "mstajuda"
-
-	annotation PBI_Id = 231892f3f0a84efc849e98a52123e54c
-

@@ -251,7 +251,7 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure RemainingAmount =
+	measure RemainingAmountLCY =
 			
 			SUMX(
 			    VALUES('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
@@ -303,7 +303,8 @@ table _Measures
 			        ),
 			        [RemAmount]
 			    ),
-			    all()
+			    all(),
+			    KEEPFILTERS(VALUES('gold v_bc_salesperson'[Code]))
 			)
 		formatString: #,0
 		displayFolder: Sales
@@ -351,14 +352,16 @@ table _Measures
 			        CALCULATE(MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY])                
 			        )
 			    ),
-			    ALL()
+			    ALL(),
+			    KEEPFILTERS(VALUES('gold v_bc_salesperson'[Code]))
 			    
 			)
 			```
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: ead1fca9-52c9-453b-a551-88f000597f00
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure SalesAmountTotalVATLCY = ```
 			
@@ -366,10 +369,11 @@ table _Measures
 			
 			
 			```
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 6e353139-2aec-4ea0-a266-91c8a4ed02cf
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure LoggedSalesperson =
 			
@@ -614,10 +618,59 @@ table _Measures
 			    ),
 			    CALCULATE(MAX('gold v_bc_posted_sales_invoices'[RemainingAmountLCY]))
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 9f01c4f8-93ce-4619-96d4-22ba1056a427
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure DniPoTerminie =
+			
+			Max(
+			    'gold v_bc_posted_sales_invoices'[DaysAfterDueDate]
+			)
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: a0f3ca58-a221-49a8-a04a-3c617077633a
+
+	measure KolorPoTerminowości = ```
+			
+			VAR DniPoTerminie = MAX('gold v_bc_posted_sales_invoices'[DaysAfterDueDate])  -- Zamień na nazwę swojej miary lub kolumny
+			RETURN 
+			    SWITCH(
+			        TRUE(),
+			        DniPoTerminie > 30, "#E53131",          -- czerwony
+			        DniPoTerminie > 14, "#F8BC76",          -- pomarańczowy
+			        DniPoTerminie >= 7, "#FFF4AD",          -- żółty
+			        BLANK()                                 -- brak koloru
+			    )
+			```
+		displayFolder: Sales
+		lineageTag: 2eb404f3-8092-4738-8459-9f80fe8e052d
+
+	measure ItemQuantityCurrentMonth =
+			
+			CALCULATE(
+			    TOTALMTD(
+			        SUM('gold v_bc_posted_sales_invoices'[Quantity]),
+			        'Calendar'[Date]
+			    ),
+			    'Calendar'[Date] = TODAY()
+			)
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: eaa53807-2939-4c5c-93bb-19c60829ab36
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure ItemQuantity =
+			
+			SUM('gold v_bc_posted_sales_invoices'[Quantity])
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: facf03c2-754e-4a98-afd6-b47e60b90175
+
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column Value
 		isHidden

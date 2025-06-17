@@ -25,12 +25,8 @@ ref table 'gold v_bc_customers'
 ref table RLS
 ref table 'gold v_hr_enova_rls'
 
-ref role lachmanski
-ref role HndlowiecWszystkieSpolki
-ref role radziwillowicz
-ref role mstajuda
-ref role Kierownik
 ref role 'RLS ENOVA'
+ref role Zarząd
 
 ref cultureInfo pl-PL
 

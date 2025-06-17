@@ -388,6 +388,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.461
 			          }
+			        },
+			        {
+			          "Wiersz faktury": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -516,6 +526,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Numer oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -775,6 +795,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Numer projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1032,6 +1062,26 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Nr zamówienia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Numer zamówienia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1671,16 +1721,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Waluta": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -2055,6 +2095,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Symbol urządzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2376,6 +2426,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.476
 			          }
+			        },
+			        {
+			          "Ilość": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2461,6 +2521,16 @@ cultureInfo pl-PL
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Wartość netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2538,6 +2608,16 @@ cultureInfo pl-PL
 			          "LCY": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Zysk": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3080,16 +3160,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.466
 			          }
-			        },
-			        {
-			          "Handlowiec": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -3374,6 +3444,9 @@ cultureInfo pl-PL
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "code": {
@@ -3489,6 +3562,9 @@ cultureInfo pl-PL
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "name": {
@@ -3514,9 +3590,18 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Handlowiec": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
-			      ],
-			      "NameType": "Name"
+			      ]
 			    },
 			    "gold_v_bc_salesperson.email": {
 			      "Definition": {
@@ -4247,6 +4332,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Całkowita sprzedaż dla klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Wartość netto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -6129,6 +6224,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.6
 			          }
+			        },
+			        {
+			          "Typ B": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -7167,6 +7272,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Marka": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Producent": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11563,108 +11678,34 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.605
 			          }
-			        },
-			        {
-			          "Sprzedaz PLN": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
-			    "entity__measure.remaining_amount": {
+			    "entity__measure.remaining_amount_LCY": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "RemainingAmount"
+			          "ConceptualProperty": "RemainingAmountLCY"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "remaining amount": {
+			          "remaining amount LCY": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "RemainingAmount": {
+			          "RemainingAmountLCY": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "remaining quantity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "remaining volume": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "remaining expanse": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "remaining extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "remaining sum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "remaining total": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "remaining aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
+			          "LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -11679,6 +11720,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Zaległe płatności brutto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Pozostało do zapłaty brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11909,7 +11960,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure.overdue_amount_LCY_v_4": {
+			    "entity__measure.overdue_amount_LCY_total": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
@@ -11919,39 +11970,87 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "overdue amount LCY v 4": {
+			          "overdue amount LCY total": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "OverdueAmountLCY_v4": {
+			          "OverdueAmountLCYTotal": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "v 4": {
+			          "LCY total": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "LCY v 4": {
+			          "amount LCY total": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "amount LCY v 4": {
-			            "State": "Generated",
-			            "Weight": 0.97
+			          "overdue amount lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
 			          }
 			        },
 			        {
-			          "LCY": {
-			            "State": "Generated",
-			            "Weight": 0.97
+			          "overdue amount lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "amount lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "amount lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "lcy aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "lcy overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        },
 			        {
@@ -12764,16 +12863,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Pozostało do zapłaty brutto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -13356,16 +13445,6 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Średni rabat": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Średni rabar": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -14675,9 +14754,2098 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.day_after_due_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "DaysAfterDueDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day after due date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DaysAfterDueDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "after due date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "day after": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "after due moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "after due period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "day after due moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "day after due period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.profitability": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "Profitability"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profitability": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "effectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "productivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "viability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lucrativeness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cost-effectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "fruitfulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "Rentowność": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.overdue_amount_LCY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "OverdueAmountLCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue amount LCY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OverdueAmountLCY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Przeterminowane płatności brutto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.dni_po_terminie": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "DniPoTerminie"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dni po terminie": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DniPoTerminie": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rl": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "User_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "User_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "user id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "user key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "user_1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "user_2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "user_3"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user 3": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_3": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_4": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "user_4"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user 4": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_4": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl.user_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "user_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "rl.column_7": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RLS",
+			          "ConceptualProperty": "Column7"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 7": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column7": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold v_hr_enova_rl": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.pracownik_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "PracownikID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pracownik ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PracownikID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pracownik identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pracownik identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pracownik identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pracownik credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.pracownik": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "Pracownik"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pracownik": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.email_pracownika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "EmailPracownika"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email pracownika": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailPracownika": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.przelozony_N3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "Przelozony (N-3)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "przelozony (N-3)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "przelozony": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.EmailPrzelozonego_N3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "EmailPrzelozonego (N-3)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmailPrzelozonego (N-3)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailPrzelozonego": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.przelozony_N2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "Przelozony (N-2)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "przelozony (N-2)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "przelozony": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.EmailPrzelozonego_N2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "EmailPrzelozonego (N-2)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmailPrzelozonego (N-2)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailPrzelozonego": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.przelozony_N1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "Przelozony (N-1)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "przelozony (N-1)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "przelozony": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.EmailPrzelozonego_N1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "EmailPrzelozonego (N-1)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmailPrzelozonego (N-1)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailPrzelozonego": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.przelozony_n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "Przelozony (N)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "przelozony (n)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "przelozony": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.EmailPrzelozonego_n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "EmailPrzelozonego (N)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmailPrzelozonego (n)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailPrzelozonego": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.kolor_po_terminowości": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "KolorPoTerminowości"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kolor po terminowości": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KolorPoTerminowości": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.payment_method_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "PaymentMethodCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "payment method code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PaymentMethodCode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "method code": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "payment method id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "method id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "payment method key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "method key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Metoda płatności": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.item_quantity_current_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "ItemQuantityCurrentMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "item quantity current month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ItemQuantityCurrentMonth": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "current month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "quantity current month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item quantity current mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "quantity current mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "current mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "product quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "element quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "entry quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "article quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "object quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "piece quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "token quantity current month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Ilość": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.item_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "ItemQuantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "item quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ItemQuantity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "product quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "element quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "entry quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "article quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "object quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "piece quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "token quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "item extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Ilość": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_item_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.item_quantity": {
+			          "Target": {
+			            "Entity": "entity__measure.item_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.item_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_item_quantity"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_item_quantity_current_month": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.item_quantity_current_month": {
+			          "Target": {
+			            "Entity": "entity__measure.item_quantity_current_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.item_quantity_current_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_item_quantity_current_month"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_payment_method_code": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "gold_v_bc_posted_sales_invoice.payment_method_code": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice.payment_method_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_posted_sales_invoice.payment_method_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_payment_method_codes"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_kolor_po_terminowości": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.kolor_po_terminowości": {
+			          "Target": {
+			            "Entity": "entity__measure.kolor_po_terminowości"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.kolor_po_terminowości"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_kolor_po_terminowości"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_EmailPrzelozonego_n": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.EmailPrzelozonego_n": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.EmailPrzelozonego_n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.EmailPrzelozonego_n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_EmailPrzelozonego_n"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_przelozony_n": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.przelozony_n": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.przelozony_n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.przelozony_n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_przelozony_n"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_EmailPrzelozonego_N1": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.EmailPrzelozonego_N1": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.EmailPrzelozonego_N1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.EmailPrzelozonego_N1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_EmailPrzelozonego_N1"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_przelozony_N1": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.przelozony_N1": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.przelozony_N1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.przelozony_N1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_przelozony_N1"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_EmailPrzelozonego_N2": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.EmailPrzelozonego_N2": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.EmailPrzelozonego_N2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.EmailPrzelozonego_N2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_EmailPrzelozonego_N2"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_przelozony_N2": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.przelozony_N2": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.przelozony_N2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.przelozony_N2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_przelozony_N2"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_EmailPrzelozonego_N3": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.EmailPrzelozonego_N3": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.EmailPrzelozonego_N3"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.EmailPrzelozonego_N3"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_EmailPrzelozonego_N3"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_przelozony_N3": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.przelozony_N3": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.przelozony_N3"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.przelozony_N3"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_przelozony_N3"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_email_pracownika": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.email_pracownika": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.email_pracownika"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.email_pracownika"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_email_pracownikas"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_pracownik": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.pracownik": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.pracownik"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.pracownik"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_pracowniks"
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl_has_pracownik_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.pracownik_ID": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.pracownik_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.pracownik_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_pracownik_ID"
+			        }
+			      ]
+			    },
+			    "rl_has_column_7": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.column_7": {
+			          "Target": {
+			            "Entity": "rl.column_7"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.column_7"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_column_7"
+			        }
+			      ]
+			    },
+			    "rl_has_user_5": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_5": {
+			          "Target": {
+			            "Entity": "rl.user_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_5"
+			        }
+			      ]
+			    },
+			    "rl_has_user_4": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_4": {
+			          "Target": {
+			            "Entity": "rl.user_4"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_4"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_4"
+			        }
+			      ]
+			    },
+			    "rl_has_user_3": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_3": {
+			          "Target": {
+			            "Entity": "rl.user_3"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_3"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_3"
+			        }
+			      ]
+			    },
+			    "rl_has_user_2": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_2": {
+			          "Target": {
+			            "Entity": "rl.user_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_2"
+			        }
+			      ]
+			    },
+			    "rl_has_user_1": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_1": {
+			          "Target": {
+			            "Entity": "rl.user_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_1"
+			        }
+			      ]
+			    },
+			    "rl_has_user_code": {
+			      "Binding": {
+			        "ConceptualEntity": "RLS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        },
+			        "rl.user_code": {
+			          "Target": {
+			            "Entity": "rl.user_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "rl.user_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_user_codes"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_dni_po_terminie": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.dni_po_terminie": {
+			          "Target": {
+			            "Entity": "entity__measure.dni_po_terminie"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.dni_po_terminie"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_dni_po_terminie"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_overdue_amount_LCY": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.overdue_amount_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_amount_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_amount_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_overdue_amount_LCY"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_profitability": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "gold_v_bc_posted_sales_invoice.profitability": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice.profitability"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_posted_sales_invoice.profitability"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_profitability"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_day_after_due_date": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "gold_v_bc_posted_sales_invoice.day_after_due_date": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice.day_after_due_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_posted_sales_invoice.day_after_due_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_day_after_due_date"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer_has_phone_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "gold_v_bc_customer.phone_no": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer.phone_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_customer.phone_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_phone_noes"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer_has_E_mail": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "gold_v_bc_customer.E_mail": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer.E_mail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_customer.E_mail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_E_mails"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount_current_month": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.average_discount_current_month": {
+			          "Target": {
+			            "Entity": "entity__measure.average_discount_current_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_discount_current_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_average_discount_current_month"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount_current_month": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -15464,7 +17632,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_overdue_amount_LCY_v_4": {
+			    "entity__measure_has_overdue_amount_LCY_total": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measures"
 			      },
@@ -15475,9 +17643,9 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure"
 			          }
 			        },
-			        "entity__measure.overdue_amount_LCY_v_4": {
+			        "entity__measure.overdue_amount_LCY_total": {
 			          "Target": {
-			            "Entity": "entity__measure.overdue_amount_LCY_v_4"
+			            "Entity": "entity__measure.overdue_amount_LCY_total"
 			          }
 			        }
 			      },
@@ -15488,12 +17656,12 @@ cultureInfo pl-PL
 			              "Role": "entity__measure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.overdue_amount_LCY_v_4"
+			              "Role": "entity__measure.overdue_amount_LCY_total"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_overdue_amount_LCY_v_4"
+			          "ID": "Phrasing_measures_have_overdue_amount_LCY_total"
 			        }
 			      ]
 			    },
@@ -15563,7 +17731,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_remaining_amount": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_remaining_amount_LCY": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
@@ -15574,9 +17742,9 @@ cultureInfo pl-PL
 			            "Entity": "gold_v_bc_posted_sales_invoice"
 			          }
 			        },
-			        "entity__measure.remaining_amount": {
+			        "entity__measure.remaining_amount_LCY": {
 			          "Target": {
-			            "Entity": "entity__measure.remaining_amount"
+			            "Entity": "entity__measure.remaining_amount_LCY"
 			          }
 			        }
 			      },
@@ -15587,12 +17755,12 @@ cultureInfo pl-PL
 			              "Role": "gold_v_bc_posted_sales_invoice"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.remaining_amount"
+			              "Role": "entity__measure.remaining_amount_LCY"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_remaining_amount"
+			          "ID": "gold_v_bc_posted_sales_invoices_have_remaining_amount_LCY"
 			        }
 			      ]
 			    },
@@ -18833,52 +21001,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_salesperson_has_name": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_salesperson"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_salesperson": {
-			          "Target": {
-			            "Entity": "gold_v_bc_salesperson"
-			          }
-			        },
-			        "gold_v_bc_salesperson.name": {
-			          "Target": {
-			            "Entity": "gold_v_bc_salesperson.name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_salesperson"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_salesperson.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_salespersons_have_names"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "gold_v_bc_salesperson"
-			            },
-			            "Name": {
-			              "Role": "gold_v_bc_salesperson.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_gold_v_bc_salespersons"
-			        }
-			      ]
-			    },
 			    "gold_v_bc_salesperson_has_key_no_code": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_salesperson"
@@ -18909,39 +21031,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_salespersons_have_key_no_codes"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_salesperson_has_code": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_salesperson"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_salesperson": {
-			          "Target": {
-			            "Entity": "gold_v_bc_salesperson"
-			          }
-			        },
-			        "gold_v_bc_salesperson.code": {
-			          "Target": {
-			            "Entity": "gold_v_bc_salesperson.code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_salesperson"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_salesperson.code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_salespersons_have_codes"
 			        }
 			      ]
 			    },
@@ -20540,105 +22629,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount_current_month": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
-			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
-			          }
-			        },
-			        "entity__measure.average_discount_current_month": {
-			          "Target": {
-			            "Entity": "entity__measure.average_discount_current_month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_posted_sales_invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.average_discount_current_month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_posted_sales_invoices_have_average_discount_current_month"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_customer_has_E_mail": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_customers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_customer": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer"
-			          }
-			        },
-			        "gold_v_bc_customer.E_mail": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer.E_mail"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_customer"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_customer.E_mail"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_customers_have_E_mails"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_customer_has_phone_no": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_customers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_customer": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer"
-			          }
-			        },
-			        "gold_v_bc_customer.phone_no": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer.phone_no"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_customer"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_customer.phone_no"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_customers_have_phone_noes"
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_invoice_has_gold_v_bc_salesperson": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -20826,6 +22816,85 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_customers_have_gold_v_bc_posted_sales_invoices"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_salesperson_has_rl": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_salesperson"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_salesperson": {
+			          "Target": {
+			            "Entity": "gold_v_bc_salesperson"
+			          }
+			        },
+			        "rl": {
+			          "Target": {
+			            "Entity": "rl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_salesperson"
+			            },
+			            "Object": {
+			              "Role": "rl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_salespersons_have_rls"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_salesperson"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rls_have_gold_v_bc_salespersons"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_salesperson_has_gold_v_hr_enova_rl": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_salesperson"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_salesperson": {
+			          "Target": {
+			            "Entity": "gold_v_bc_salesperson"
+			          }
+			        },
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_salesperson"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_salespersons_have_gold_v_hr_enova_rls"
 			        }
 			      ]
 			    }

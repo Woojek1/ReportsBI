@@ -80,9 +80,10 @@ table 'gold v_bc_salesperson'
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
 				    gold_v_bc_salesperson = Źródło{[Schema="gold",Item="v_bc_salesperson"]}[Data],
-				    #"Wstawiony tekst przed ogranicznikiem" = Table.AddColumn(gold_v_bc_salesperson, "SalespersonName", each Text.BeforeDelimiter([Email], "@"), type text)
+				    #"Wstawiony tekst przed ogranicznikiem" = Table.AddColumn(gold_v_bc_salesperson, "SalespersonName", each Text.BeforeDelimiter([Email], "@"), type text),
+				    #"Zamieniono wartość" = Table.ReplaceValue(#"Wstawiony tekst przed ogranicznikiem","Michał Frąckowiak","Frąckowiak Michał",Replacer.ReplaceText,{"Name"})
 				in
-				    #"Wstawiony tekst przed ogranicznikiem"
+				    #"Zamieniono wartość"
 
 	annotation PBI_NavigationStepName = Nawigacja
 

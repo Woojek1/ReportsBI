@@ -1,7 +1,0 @@
-role HndlowiecWszystkieSpolki
-	modelPermission: read
-
-	tablePermission 'gold v_bc_salesperson' = 'gold v_bc_salesperson'[SalespersonName] = [Username]
-
-	annotation PBI_Id = cd37a4255dc0495485d6ddf85c0eb085
-

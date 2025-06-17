@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 34.70347795676787
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -71,7 +71,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 296,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
@@ -97,12 +97,12 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
-            "x": 419.91621344445684,
-            "y": 821.651172001563
+            "x": 222.40356987544357,
+            "y": 1155.0525143460575
           },
           "nodeIndex": "RLS",
           "nodeLineageTag": "bc4e4d92-81c2-45eb-aeda-c8d5df7f1b0c",
@@ -110,12 +110,12 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 8
         },
         {
           "location": {
-            "x": 1372.7172060213768,
-            "y": 409.82558600078153
+            "x": 467.31924790102011,
+            "y": 1111.3904959579168
           },
           "nodeIndex": "gold v_hr_enova_rls",
           "nodeLineageTag": "e737bac3-c2ca-4a97-bdcc-73eedebbfb7c",
@@ -123,7 +123,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 9
         }
       ],
       "name": "Wszystkie tabele",

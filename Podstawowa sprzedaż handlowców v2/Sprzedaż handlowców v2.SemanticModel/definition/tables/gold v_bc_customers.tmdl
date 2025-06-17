@@ -289,9 +289,10 @@ table 'gold v_bc_customers'
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_bc_customers = Źródło{[Schema="gold",Item="v_bc_customers"]}[Data]
+				    gold_v_bc_customers = Źródło{[Schema="gold",Item="v_bc_customers"]}[Data],
+				    #"Zamieniono wartość" = Table.ReplaceValue(gold_v_bc_customers,"HURTOWNIA_WLASNA","HURTOWNIA WŁASNA",Replacer.ReplaceText,{"CompanyProfile"})
 				in
-				    gold_v_bc_customers
+				    #"Zamieniono wartość"
 
 	annotation PBI_NavigationStepName = Nawigacja
 

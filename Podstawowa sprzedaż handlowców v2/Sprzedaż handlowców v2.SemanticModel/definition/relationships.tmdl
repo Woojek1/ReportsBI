@@ -25,3 +25,8 @@ relationship 7f00608c-f605-2e3d-33de-3c39065c3ae6
 	fromColumn: 'gold v_bc_salesperson'.Code
 	toColumn: RLS.User_code
 
+relationship 0dcbf005-cebb-b920-28ea-a1827794dad5
+	toCardinality: many
+	fromColumn: 'gold v_bc_salesperson'.Name
+	toColumn: 'gold v_hr_enova_rls'.Pracownik
+
