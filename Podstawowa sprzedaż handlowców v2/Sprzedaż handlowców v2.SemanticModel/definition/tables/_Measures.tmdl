@@ -202,10 +202,11 @@ table _Measures
 			    ),
 			    'Calendar'[Date] = TODAY()
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: ae3d4b1c-fa27-4d49-9b25-3ca16a0fc50d
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure DistinctInvoiceCount =
 			
@@ -333,14 +334,16 @@ table _Measures
 		displayFolder: Sales
 		lineageTag: acd343fe-4fd1-423a-afb8-7f017609c7b8
 
-	measure RemainingInvoicesCount =
+	measure RemainingInvoicesCount = ```
 			
 			CALCULATE(
 			    DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
-			    'gold v_bc_posted_sales_invoices'[DueDate] > TODAY(),
-			    'gold v_bc_posted_sales_invoices'[RemainingAmount] > 0
+			    // 'gold v_bc_posted_sales_invoices'[DueDate] >= TODAY(),
+			    'gold v_bc_posted_sales_invoices'[RemainingAmountLCY] > 0
 			)
-		formatString: #,0
+			
+			```
+		formatString: 0
 		displayFolder: Sales
 		lineageTag: 692d79f1-93aa-4e66-a77b-bd383b3e1893
 
@@ -791,6 +794,16 @@ table _Measures
 		lineageTag: 7c9d4525-3884-45e0-a1df-c4142e60e646
 
 		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	measure CreditLimit =
+			
+			MIN(
+			    'gold v_bc_customers'[CreditLimitLCY]
+			)
+		displayFolder: Customers
+		lineageTag: 379c9dd4-cf79-44b8-a02f-89e9b3f9bbc7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden

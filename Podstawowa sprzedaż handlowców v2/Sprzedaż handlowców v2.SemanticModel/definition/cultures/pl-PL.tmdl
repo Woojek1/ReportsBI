@@ -4321,7 +4321,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Wartość faktury netto": {
+			          "Całkowita sprzedaż dla klienta": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4331,7 +4331,17 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Całkowita sprzedaż dla klienta": {
+			          "Sprzedaż całkowita netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Wartość faktury netto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -8810,6 +8820,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.498
 			          }
+			        },
+			        {
+			          "Sprzedaż netto bieżący rok": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -10919,6 +10939,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "NIP": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -11709,7 +11739,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Pozostało do zapłaty": {
+			          "Pozostało do zapłaty brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11729,7 +11759,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Pozostało do zapłaty brutto": {
+			          "Pozostało do zapłaty": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13883,6 +13913,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Wielkosc sprzedazy ostatnie 12 mc": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -14965,6 +15005,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Przeterminowane płatności brutto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Przeterminowane płatnosci brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16076,9 +16126,171 @@ cultureInfo pl-PL
 			        }
 			      ],
 			      "SemanticType": "Time"
+			    },
+			    "entity__measure.credit_limit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CreditLimit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "credit limit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CreditLimit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "limit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "credit boundary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "credit perimeter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "boundary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "perimeter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "credit bound": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit border": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit edge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit frontier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bound": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "border": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_customer_has_entity__measure_credit_limit": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "entity__measure.credit_limit": {
+			          "Target": {
+			            "Entity": "entity__measure.credit_limit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.credit_limit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_credit_limit"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_posting_date": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
