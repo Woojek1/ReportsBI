@@ -179,7 +179,7 @@ table _Measures
 			--Measure for card visualization without date contects
 			
 			CALCULATE(
-			    TOTALQTD(
+			    TOTALMTD(
 			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
 			        'Calendar'[Date]
 			    ),
@@ -523,7 +523,7 @@ table _Measures
 			        )
 			    )
 			)
-		formatString: 0
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 6100c8b1-1f19-4ae8-bf28-6c06ed2ed057
 
@@ -671,6 +671,126 @@ table _Measures
 		lineageTag: facf03c2-754e-4a98-afd6-b47e60b90175
 
 		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure SalesAmountPreviousYearToday =
+			
+			CALCULATE(
+			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        PREVIOUSMONTH(
+			            DATESINPERIOD(
+			                    'Calendar'[Date],
+			                    TODAY(),
+			                    -1,
+			                    MONTH
+			            )
+			        )
+			)
+		displayFolder: Sales
+		lineageTag: b34bf81e-1b14-40d7-8cdc-8afdb22dfbe0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales MTD PY' =
+			
+			CALCULATE(
+			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			    DATESMTD(SAMEPERIODLASTYEAR('Calendar'[Date]))
+			)
+		lineageTag: eed2fded-19ae-4dd1-9e5a-496eee8bc0f4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DistinctInvoiceCountCurrentMonthPreviousYear =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
+			    FILTER(
+			        ALL('Calendar'),
+			        AND(Calendar[Year] = YEAR(TODAY())-1,
+			        Calendar[MonthNumber] = MONTH(TODAY())
+			        )
+			    )
+			)
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 5f72bac1-d3f2-4293-afff-84b85801d34b
+
+	measure AverageInvoiceAmountCurrentMonthPreviousYear = ```
+			
+			VAR PrevYear  = YEAR(TODAY())-1
+			VAR CurrentMonth = MONTH(TODAY())
+			VAR SalesAmountCurrentMonth =
+			    CALCULATE(
+			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        FILTER(
+			            ALL('Calendar'),
+			            AND(Calendar[Year] = PrevYear,
+			                Calendar[MonthNumber] = CurrentMonth
+			            )   
+			        )
+			    )
+			
+			VAR DistinctInvoiceCountCurrentMonth =
+			    CALCULATE(
+			        DISTINCTCOUNT( 'gold v_bc_posted_sales_invoices'[KeyNoInvoice] ),
+			        FILTER(
+			            ALL('Calendar'),
+			            AND(Calendar[Year] = PrevYear,
+			                Calendar[MonthNumber] = CurrentMonth
+			            )
+			        )
+			    )
+			
+			RETURN
+			    DIVIDE(SalesAmountCurrentMonth, DistinctInvoiceCountCurrentMonth)
+			```
+		displayFolder: Sales
+		lineageTag: 089f6bcb-a8e9-41ff-bc84-396752c8c2de
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure AverageDiscountCurrentMonthPreviousYear = ```
+			
+			VAR CurrentYear  = YEAR(TODAY())-1
+			VAR CurrentMonth = MONTH(TODAY())
+			VAR LineDiscountAmountCurrentMonth =
+			    CALCULATE(
+			        SUM('gold v_bc_posted_sales_invoices'[LineDiscountAmount]),
+			        FILTER(
+			            ALL('Calendar'),
+			            AND(Calendar[Year] = CurrentYear,
+			                Calendar[MonthNumber] = CurrentMonth
+			            )   
+			        )
+			    )
+			
+			VAR LinePriceLCY =
+			    CALCULATE(
+			        SUM('gold v_bc_posted_sales_invoices'[LinePriceLCY]),
+			        FILTER(
+			            ALL('Calendar'),
+			            AND(Calendar[Year] = CurrentYear,
+			                Calendar[MonthNumber] = CurrentMonth
+			            )   
+			        )
+			    )
+			
+			RETURN
+			    DIVIDE(LineDiscountAmountCurrentMonth, LinePriceLCY)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: a062b5df-7add-42cb-927b-917d8efda9f2
+
+	measure PostingDate =
+			
+			MAX('gold v_bc_posted_sales_invoices'[PostingDate])
+		formatString: dd/mm/yyyy
+		displayFolder: Sales
+		lineageTag: 7c9d4525-3884-45e0-a1df-c4142e60e646
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column Value
 		isHidden

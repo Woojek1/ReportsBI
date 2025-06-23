@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 34.70347795676787
+        "y": 74.264753981948942
       },
       "nodes": [
         {
@@ -62,8 +62,8 @@
         },
         {
           "location": {
-            "x": 348.84526960828282,
-            "y": 243.5931393262357
+            "x": 391.50800061918966,
+            "y": 237.27273473202732
           },
           "nodeIndex": "gold v_bc_posted_sales_invoices",
           "nodeLineageTag": "5ba58d96-43f3-4d58-abfa-dc96a3312ecd",
@@ -127,7 +127,7 @@
         }
       ],
       "name": "Wszystkie tabele",
-      "zoomValue": 63.287087723234038,
+      "zoomValue": 63.28708772323408,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

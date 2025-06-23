@@ -8660,7 +8660,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż netto bieżący miesiąc": {
+			          "Sprzedaż netto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -8670,7 +8670,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż netto": {
+			          "Sprzedaż netto bieżący miesiąc": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -14175,16 +14175,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Ilość faktur bieżący miesiąc": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14454,16 +14444,6 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "Średnia wartość faktury netto biezacy miesiac": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -15886,9 +15866,417 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.sales_amount_previous_year_today": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "SalesAmountPreviousYearToday"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales amount previous year today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SalesAmountPreviousYearToday": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sale amount previous yr today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "sale amount previous year today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.sales_MTD_PY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sales MTD PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales MTD PY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "MTD PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sale mtd py": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.distinct_invoice_count_current_month_previous_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "DistinctInvoiceCountCurrentMonthPreviousYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distinct invoice count current month previous year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DistinctInvoiceCountCurrentMonthPreviousYear": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_invoice_amount_current_month_previous_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "AverageInvoiceAmountCurrentMonthPreviousYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average invoice amount current month previous year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AverageInvoiceAmountCurrentMonthPreviousYear": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_discount_current_month_previous_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "AverageDiscountCurrentMonthPreviousYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average discount current month previous year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AverageDiscountCurrentMonthPreviousYear": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.posting_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "PostingDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posting date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PostingDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "posting moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "posting period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Data faktury": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_posting_date": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.posting_date": {
+			          "Target": {
+			            "Entity": "entity__measure.posting_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.posting_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_posting_date"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount_current_month_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.average_discount_current_month_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.average_discount_current_month_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_discount_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_average_discount_current_month_previous_year"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount_current_month_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.average_invoice_amount_current_month_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.average_invoice_amount_current_month_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_invoice_amount_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_average_invoice_amount_current_month_previous_year"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_distinct_invoice_count_current_month_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.distinct_invoice_count_current_month_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.distinct_invoice_count_current_month_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.distinct_invoice_count_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_distinct_invoice_count_current_month_previous_year"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_MTD_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_MTD_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_MTD_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_MTD_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_MTD_PY"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_previous_year_today": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_previous_year_today": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_previous_year_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_previous_year_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_amount_previous_year_today"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_item_quantity": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
@@ -22324,6 +22712,48 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_bc_posted_sales_invoices_are_in_regions"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_is_posted_on_entity__measure_posting_date": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.posting_date": {
+			          "Target": {
+			            "Entity": "entity__measure.posting_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "entity__measure.posting_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "post": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "gold_v_bc_posted_sales_invoices_are_posted_on_posting_date"
 			        }
 			      ]
 			    },
