@@ -3592,6 +3592,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Opiekun": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Handlowiec": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4321,16 +4331,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Całkowita sprzedaż dla klienta": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Sprzedaż całkowita netto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4342,6 +4342,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Wartość faktury netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Całkowita sprzedaż dla klienta": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5030,6 +5040,16 @@ cultureInfo pl-PL
 			        {
 			          "day": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dzień": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -9004,6 +9024,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Ilość miesięcy z zakupem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Miesiące z zakupem ostatnie 12 mc": {
 			            "State": "Suggested",
 			            "Source": {
@@ -9155,6 +9185,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "Nr klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -10309,6 +10349,16 @@ cultureInfo pl-PL
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Wykorzystany limit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -10685,6 +10735,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Adres": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -10750,6 +10810,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Miasto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11083,6 +11153,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Grupa księgowa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11739,16 +11819,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Pozostało do zapłaty brutto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Zaległe płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -11760,6 +11830,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Pozostało do zapłaty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Pozostało do zapłaty brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12130,6 +12210,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Ilość przeterminowanych faktur": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -12777,6 +12867,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Ilość zaległych faktur": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -13905,7 +14005,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Kategoria wielkości zakupu ostatnie 12 mc": {
+			          "Wielkosc sprzedazy ostatnie 12 mc": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13915,7 +14015,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Wielkosc sprzedazy ostatnie 12 mc": {
+			          "Kategoria wielkości zakupu ostatnie 12 mc": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16252,6 +16352,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Limit kredytowy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]

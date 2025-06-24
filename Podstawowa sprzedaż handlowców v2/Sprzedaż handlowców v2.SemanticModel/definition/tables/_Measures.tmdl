@@ -343,7 +343,7 @@ table _Measures
 			)
 			
 			```
-		formatString: 0
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 692d79f1-93aa-4e66-a77b-bd383b3e1893
 
@@ -789,7 +789,7 @@ table _Measures
 	measure PostingDate =
 			
 			MAX('gold v_bc_posted_sales_invoices'[PostingDate])
-		formatString: dd/mm/yyyy
+		formatString: dd.mm.yyyy
 		displayFolder: Sales
 		lineageTag: 7c9d4525-3884-45e0-a1df-c4142e60e646
 
