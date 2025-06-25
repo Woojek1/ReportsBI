@@ -1,0 +1,109 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "860bffe4f22e59488b93",
+  "displayName": "DrillInvoice",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f4c44790e9095268a89e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_posted_sales_invoices",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "g"
+                          }
+                        },
+                        "Property": "NoInvoice"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'FVS/25/04/0034'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "ab57e0cee99b6c73ee77",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "001e9969881e9ef121c8",
+        "boundFilter": "f4c44790e9095268a89e",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "2e178acd5fe1b60a7938",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "38ae045cd6a66c5d144b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "15f05722a2ddb5c7f51e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "3b19bc6fc30ce1d10943",
+      "type": "NoFilter"
+    }
+  ]
+}

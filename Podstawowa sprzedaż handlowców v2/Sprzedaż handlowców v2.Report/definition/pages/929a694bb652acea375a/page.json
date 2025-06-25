@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "929a694bb652acea375a",
+  "displayName": "Invoices",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f543e7725b14dbfe43ef",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "RelativeDate",
+        "howCreated": "User"
+      },
+      {
+        "name": "77497b03fff2c724ed80",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_salesperson"
+              }
+            },
+            "Property": "Code"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "5f909e882179ca23879a",
+    "type": "Default",
+    "parameters": []
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E6E6E6'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "4d2e09137e38b7b00ae8",
+      "target": "a76df0bb89ac4948a0dd",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a76df0bb89ac4948a0dd",
+      "target": "4afebfc9430a6c35431a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a76df0bb89ac4948a0dd",
+      "target": "e286fa30f6c4fb89e21c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a76df0bb89ac4948a0dd",
+      "target": "4d2e09137e38b7b00ae8",
+      "type": "NoFilter"
+    }
+  ]
+}

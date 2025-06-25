@@ -1,0 +1,170 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "00a3ed4e0d500d1e3df6",
+  "displayName": "Commission",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1390cb6c61931c350c4b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "RemainingAmountLCY"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_posted_sales_invoices",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "g"
+                        }
+                      },
+                      "Property": "RemainingAmountLCY"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "76ed3fb654976ff2e886",
+    "type": "Default",
+    "parameters": []
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E6E6E6'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "2a5b7b15a82035e40063",
+      "target": "2bc28cb1fc2252da0d35",
+      "type": "DataFilter"
+    },
+    {
+      "source": "e8aa56805e754f83fe92",
+      "target": "2bc28cb1fc2252da0d35",
+      "type": "DataFilter"
+    },
+    {
+      "source": "e8aa56805e754f83fe92",
+      "target": "2a5b7b15a82035e40063",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2a5b7b15a82035e40063",
+      "target": "e8aa56805e754f83fe92",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2a5b7b15a82035e40063",
+      "target": "f2ced7b595ef44fb9e4e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2a5b7b15a82035e40063",
+      "target": "c1c7930d4e5011770279",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c1c7930d4e5011770279",
+      "target": "2a5b7b15a82035e40063",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c1c7930d4e5011770279",
+      "target": "e8aa56805e754f83fe92",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f2ced7b595ef44fb9e4e",
+      "target": "e8aa56805e754f83fe92",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f2ced7b595ef44fb9e4e",
+      "target": "2a5b7b15a82035e40063",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e8aa56805e754f83fe92",
+      "target": "c1c7930d4e5011770279",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e8aa56805e754f83fe92",
+      "target": "f2ced7b595ef44fb9e4e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c1c7930d4e5011770279",
+      "target": "f2ced7b595ef44fb9e4e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "f2ced7b595ef44fb9e4e",
+      "target": "c1c7930d4e5011770279",
+      "type": "DataFilter"
+    },
+    {
+      "source": "f2ced7b595ef44fb9e4e",
+      "target": "2f4e1f15bcbdacfae548",
+      "type": "DataFilter"
+    }
+  ]
+}
