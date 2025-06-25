@@ -9,9 +9,9 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.143.1204.0 (25.05)+23c84aace645781dd62b8a26eb0418c7e6a84b72
+annotation PBIDesktopVersion = 2.144.878.0 (25.06)+9cca29236de5114792f4d7188221f91ad4a5cc50
 
-annotation PBI_QueryOrder = ["gold v_orders","gold v_invoices","gold v_quotes","gold v_projects"]
+annotation PBI_QueryOrder = ["gold v_orders","gold v_invoices","gold v_quotes","gold v_projects","gold v_bc_salesperson"]
 
 annotation PBI_ProTooling = ["TMDLView_Desktop","CalcGroup","DevMode"]
 
@@ -22,6 +22,7 @@ ref table 'gold v_invoices'
 ref table 'gold v_quotes'
 ref table 'gold v_projects'
 ref table 'gold v_orders'
+ref table 'gold v_bc_salesperson'
 
 ref role Zymetric
 ref role Aircon

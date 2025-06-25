@@ -46,15 +46,11 @@ table _Miary
 
 	measure CoolingCapacity = ```
 			
-			VAR Suma = SUMX('gold v_quotes',
+			
+			SUMX('gold v_quotes',
 			                'gold v_quotes'[Quantity] * 'gold v_quotes'[CoolingCapacity]
 			            )
-			RETURN
-			    IF(
-			        ISBLANK(Suma),
-			        0,
-			        Suma
-			    )
+			
 			
 			```
 		displayFolder: Oferty
@@ -172,6 +168,24 @@ table _Miary
 			)
 		displayFolder: Faktury
 		lineageTag: 487258e1-d8b3-4928-abc2-6558f6176ad5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CoolingCapacityForFirstQuote = ```
+			
+			VAR FirstQuoteDate = MIN('gold v_quotes'[QuoteDate])
+			RETURN
+			    CALCULATE(
+			        SUMX(
+			            'gold v_quotes',
+			            'gold v_quotes'[Quantity] * 'gold v_quotes'[CoolingCapacity]
+			        ),
+			        'gold v_quotes'[QuoteDate] = FirstQuoteDate
+			    )
+			
+			```
+		displayFolder: Oferty
+		lineageTag: 838774bc-a484-4515-8245-98c2d87764b7
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

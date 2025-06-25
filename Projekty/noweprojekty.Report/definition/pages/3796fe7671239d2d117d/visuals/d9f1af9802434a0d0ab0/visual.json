@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "d9f1af9802434a0d0ab0",
+  "position": {
+    "x": 448,
+    "y": 16,
+    "z": 1000,
+    "height": 144,
+    "width": 304,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_projekty"
+                    }
+                  },
+                  "Property": "Ilosc projektow"
+                }
+              },
+              "queryRef": "gold v_projekty.Ilosc projektow",
+              "nativeQueryRef": "Ilosc projektow"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold v_projekty"
+                  }
+                },
+                "Property": "Ilosc projektow"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

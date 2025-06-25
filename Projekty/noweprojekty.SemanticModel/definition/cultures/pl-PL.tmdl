@@ -15,7 +15,17 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "CostPLN": {
+			          "Koszt PLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Koszt urządzeń": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -36,7 +46,27 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "AmountPLN": {
+			          "Wartość ofert": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Wartość PLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Wartość operty": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -58,6 +88,16 @@ cultureInfo pl-PL
 			      "Terms": [
 			        {
 			          "ProfitPLN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Zysk PLN": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -172,7 +212,7 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Margin": {
+			          "Rentowność": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -214,7 +254,7 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "ItemsQuantity": {
+			          "Ilość": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -236,6 +276,510 @@ cultureInfo pl-PL
 			      "Terms": [
 			        {
 			          "InvoiceMarginPreviousQuarter": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.coolingcapacityforfirstquote": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "CoolingCapacityForFirstQuote"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Moc chłodnicza (pierwsza oferta)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.projectscount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "ProjectsCount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ilość projektów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.objecttype": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "ObjectType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Typ obiektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.accountmanager": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "AccountManager"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Account Manager": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.planneddeliverydate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "PlannedDeliveryDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Planowana data dostawy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.creationdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "CreationDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Data utworzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.noproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "NoProject"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.projectname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "ProjectName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nazwa projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.noproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "NoProject"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.noquote": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "NoQuote"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.quotedate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "QuoteDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Data oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.salespersoncode": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "SalespersonCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Handlowiec": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.customername": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "CustomerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nazwa klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.quotestatus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "QuoteStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.coolingcapacity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "CoolingCapacity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Moc chłodnicza": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.quoteline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "QuoteLine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Linia oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_quotes.noitem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_quotes",
+			          "ConceptualProperty": "NoItem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Symbol urządzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.noorder": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "NoOrder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr zamówienia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.noproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "NoProject"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.noquote": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "NoQuote"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.orderdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "OrderDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Data zamówienia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.customername": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "CustomerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nazwa klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_orders.orderstatus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_orders",
+			          "ConceptualProperty": "OrderStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status zamówienia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.orderamountpln": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "OrderAmountPLN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Wartość zamówienia": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

@@ -26,8 +26,8 @@ relationship 6ac064d5-5f6c-e942-2ad7-e4246d66b741
 	fromColumn: 'gold v_orders'.KeyNoOrder
 	toColumn: 'gold v_invoices'.KeyNoOrder
 
-relationship fb0311c6-9057-8078-a024-9a4297a7d33e
-	isActive: false
-	fromColumn: 'gold v_invoices'.InvoiceDate
-	toColumn: Calendar.Date
+relationship 7d367f97-cf16-b959-0e04-c1e44d7dacee
+	toCardinality: many
+	fromColumn: 'gold v_projects'.Salesperson_Code
+	toColumn: 'gold v_bc_salesperson'.Code
 

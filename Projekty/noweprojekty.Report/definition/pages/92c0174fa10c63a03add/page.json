@@ -1,0 +1,170 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "92c0174fa10c63a03add",
+  "displayName": "Glowna",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "cb1710e6dd0a2da6681c",
+    "type": "Default",
+    "parameters": [],
+    "referenceScope": "CrossReport",
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "6cd6cc60da8c5725e977",
+      "target": "d0672d5ade003753b024",
+      "type": "DataFilter"
+    },
+    {
+      "source": "6cd6cc60da8c5725e977",
+      "target": "3c0808b7082952215e49",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d0672d5ade003753b024",
+      "target": "3c0808b7082952215e49",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d0672d5ade003753b024",
+      "target": "6cd6cc60da8c5725e977",
+      "type": "NoFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "d0672d5ade003753b024",
+      "type": "NoFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "6cd6cc60da8c5725e977",
+      "type": "DataFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "466e6c2433eb73154379",
+      "type": "NoFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "28debea2311ee970c488",
+      "type": "NoFilter"
+    },
+    {
+      "source": "28debea2311ee970c488",
+      "target": "3c0808b7082952215e49",
+      "type": "DataFilter"
+    },
+    {
+      "source": "28debea2311ee970c488",
+      "target": "d0672d5ade003753b024",
+      "type": "DataFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "3c0808b7082952215e49",
+      "type": "NoFilter"
+    },
+    {
+      "source": "28debea2311ee970c488",
+      "target": "466e6c2433eb73154379",
+      "type": "DataFilter"
+    },
+    {
+      "source": "669a66bfd6ba98362c2e",
+      "target": "28debea2311ee970c488",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d0672d5ade003753b024",
+      "target": "466e6c2433eb73154379",
+      "type": "DataFilter"
+    },
+    {
+      "source": "669a66bfd6ba98362c2e",
+      "target": "466e6c2433eb73154379",
+      "type": "DataFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "28debea2311ee970c488",
+      "type": "DataFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "669a66bfd6ba98362c2e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "d0672d5ade003753b024",
+      "type": "DataFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "6cd6cc60da8c5725e977",
+      "type": "NoFilter"
+    },
+    {
+      "source": "466e6c2433eb73154379",
+      "target": "e54007b90610725d0e6a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "e54007b90610725d0e6a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "3c0808b7082952215e49",
+      "target": "669a66bfd6ba98362c2e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e54007b90610725d0e6a",
+      "target": "466e6c2433eb73154379",
+      "type": "DataFilter"
+    }
+  ]
+}

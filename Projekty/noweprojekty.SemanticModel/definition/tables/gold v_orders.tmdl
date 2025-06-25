@@ -59,7 +59,7 @@ table 'gold v_orders'
 
 	column OrderDate
 		dataType: dateTime
-		formatString: Long Date
+		formatString: dd.mm.yyyy
 		lineageTag: 5dfdcd6a-3c88-4b2b-bd44-b7d22d72f0a6
 		summarizeBy: none
 		sourceColumn: OrderDate
@@ -67,6 +67,8 @@ table 'gold v_orders'
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column OrderLine
 		dataType: int64

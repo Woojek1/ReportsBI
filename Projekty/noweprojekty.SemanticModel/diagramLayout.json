@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 863.66826694009137,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 1731.4269810707392,
-            "y": 831.1266082190474
+            "x": 1599.6039298009359,
+            "y": 778.094346213954
           },
           "nodeIndex": "gold v_projects",
           "nodeLineageTag": "e0159209-563a-44a5-bb65-85d7ebe14b9f",
@@ -98,10 +98,23 @@
             "width": 234
           },
           "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1157.0342647270684,
+            "y": 683.55771431773394
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "nodeLineageTag": "0f132536-8ca5-4d89-b290-2e8a8c6764bc",
+          "size": {
+            "height": 482.61384053451366,
+            "width": 234
+          },
+          "zIndex": 8
         }
       ],
       "name": "Wszystkie tabele",
-      "zoomValue": 65.997562006007826,
+      "zoomValue": 37.253903199499092,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
