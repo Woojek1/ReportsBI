@@ -1,0 +1,112 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/2.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": "5.64",
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Zymetric9727100098817167.json",
+      "reportVersionAtImport": "5.64",
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Rectangle_1_(8)138349025446597.png",
+          "path": "Rectangle_1_(8)138349025446597.png",
+          "type": "Image"
+        },
+        {
+          "name": "Zymetric9727100098817167.json",
+          "path": "Zymetric9727100098817167.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "box7721185644545266.png",
+          "path": "box7721185644545266.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-person-100_(1)5679036949603344.png",
+          "path": "icons8-person-100_(1)5679036949603344.png",
+          "type": "Image"
+        },
+        {
+          "name": "invoice009257779554580958.png",
+          "path": "invoice009257779554580958.png",
+          "type": "Image"
+        },
+        {
+          "name": "kalendarz696399541141763.png",
+          "path": "kalendarz696399541141763.png",
+          "type": "Image"
+        },
+        {
+          "name": "moneys39164314771574327.png",
+          "path": "moneys39164314771574327.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "filterPaneHiddenInEditMode": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

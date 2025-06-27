@@ -805,6 +805,53 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure DaysAfterDueDates =
+			
+			IF(
+			    ISBLANK(MAX('gold v_bc_posted_sales_invoices'[DaysAfterDueDate])),
+			    0,
+			    MAX('gold v_bc_posted_sales_invoices'[DaysAfterDueDate])
+			)
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 26d5bd44-7ac8-4d08-a602-3ac7f9eedfbe
+
+	measure SalesAmountItem_MTD_Today =
+			
+			
+			--Measure for card visualization without date contects
+			
+			CALCULATE(
+			    TOTALMTD(
+			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        'Calendar'[Date]
+			    ),
+			    'Calendar'[Date] = TODAY(),
+			    'gold v_bc_posted_sales_invoices'[Type] = "Item"
+			)
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 8e8ce95f-ea0a-4d40-b32a-cfd71530e670
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure SalesAmountItem_MTD_PreviousYear = ```
+			
+			CALCULATE(
+			    TOTALMTD(
+			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        'Calendar'[Date]
+			    ),
+			    SAMEPERIODLASTYEAR('Calendar'[Date]),
+			    'gold v_bc_posted_sales_invoices'[Type] = "Item"
+			)
+			
+			```
+		displayFolder: Sales
+		lineageTag: b8836a61-f337-47fc-b7f8-cb1eed070f41
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		isHidden
 		formatString: 0
