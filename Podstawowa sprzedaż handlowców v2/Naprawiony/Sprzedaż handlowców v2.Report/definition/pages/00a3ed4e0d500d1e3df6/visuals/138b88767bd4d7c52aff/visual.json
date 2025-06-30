@@ -65,6 +65,13 @@
                   "Value": "'51a90ae80956191c000c'"
                 }
               }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Towary'"
+                }
+              }
             }
           }
         }

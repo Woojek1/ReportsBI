@@ -52,6 +52,13 @@
                   "Value": "'929a694bb652acea375a'"
                 }
               }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Faktury'"
+                }
+              }
             }
           }
         }

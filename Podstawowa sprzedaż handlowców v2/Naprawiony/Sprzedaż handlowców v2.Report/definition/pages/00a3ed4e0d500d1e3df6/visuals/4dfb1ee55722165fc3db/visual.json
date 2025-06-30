@@ -69,7 +69,7 @@
             "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "''"
+                  "Value": "'Regiony i Typy'"
                 }
               }
             }
