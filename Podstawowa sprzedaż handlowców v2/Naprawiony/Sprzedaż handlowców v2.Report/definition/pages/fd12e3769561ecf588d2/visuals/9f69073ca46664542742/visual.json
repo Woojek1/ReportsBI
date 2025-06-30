@@ -63,8 +63,8 @@
                 }
               },
               "queryRef": "_Measures.SalesAmountItemTotalLCY",
-              "nativeQueryRef": "Sprzedaż netto",
-              "displayName": "Sprzedaż netto"
+              "nativeQueryRef": "Sprzedaż towarów netto",
+              "displayName": "Sprzedaż towarów netto"
             }
           ]
         }

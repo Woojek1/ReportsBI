@@ -4,7 +4,7 @@
   "position": {
     "x": 32,
     "y": 16,
-    "z": 20000,
+    "z": 19000,
     "height": 64,
     "width": 184,
     "tabOrder": 0
@@ -45,6 +45,18 @@
               "gold v_bc_salesperson.Name"
             ],
             "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_bc_salesperson"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              }
+            ],
             "isPinned": true
           }
         ],

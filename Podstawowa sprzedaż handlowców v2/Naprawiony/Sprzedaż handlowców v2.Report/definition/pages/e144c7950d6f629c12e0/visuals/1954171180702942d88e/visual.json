@@ -20,20 +20,37 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold v_bc_customers"
+                      "Entity": "gold v_bc_posted_sales_invoices"
                     }
                   },
-                  "Property": "Name"
+                  "Property": "CustomerName"
                 }
               },
-              "queryRef": "gold v_bc_customers.Name",
-              "nativeQueryRef": "Name",
+              "queryRef": "gold v_bc_posted_sales_invoices.CustomerName",
+              "nativeQueryRef": "CustomerName",
               "active": true
             }
           ]
         }
       }
     },
+    "expansionStates": [
+      {
+        "roles": [
+          "Values"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "gold v_bc_posted_sales_invoices.CustomerName"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
     "objects": {
       "data": [
         {

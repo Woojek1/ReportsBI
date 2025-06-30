@@ -4,7 +4,7 @@
   "position": {
     "x": 48,
     "y": 96,
-    "z": 18000,
+    "z": 16000,
     "height": 224.00000000000003,
     "width": 1216,
     "tabOrder": 3000
@@ -44,12 +44,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "SalesAmountTotalLCY"
+                  "Property": "SalesAmountItemTotalLCY"
                 }
               },
-              "queryRef": "_Measures.SalesAmountTotalLCY",
-              "nativeQueryRef": "Sprzedaz netto",
-              "displayName": "Sprzedaz netto"
+              "queryRef": "_Measures.SalesAmountItemTotalLCY",
+              "nativeQueryRef": "Sprzedaz towarów netto",
+              "displayName": "Sprzedaz towarów netto"
             }
           ]
         }
@@ -637,7 +637,8 @@
             "Property": "SalesAmountTotalLCY"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "howCreated": "User"
       },
       {
         "name": "a976e9a2c9af697ae43d",

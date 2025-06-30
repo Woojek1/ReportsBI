@@ -4311,16 +4311,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaz netto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Sprzedaż netto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -16817,6 +16807,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Sprzedaz towarów netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Sprzedaż netto towarów": {
 			            "State": "Suggested",
 			            "Source": {
@@ -16827,7 +16827,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż netto": {
+			          "Sprzedaż towarów netto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

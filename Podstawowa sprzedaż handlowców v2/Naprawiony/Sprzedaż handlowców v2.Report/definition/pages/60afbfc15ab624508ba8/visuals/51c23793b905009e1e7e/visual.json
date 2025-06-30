@@ -4,10 +4,10 @@
   "position": {
     "x": 48,
     "y": 8,
-    "z": 18500,
+    "z": 17000,
     "height": 80,
     "width": 192,
-    "tabOrder": 22000
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "kpi",
