@@ -8678,16 +8678,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Sprzedaż netto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11799,7 +11789,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Zaległe płatności brutto": {
+			          "Otwarte płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12965,7 +12955,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Zaległe płatności brutto": {
+			          "Otwarte płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16634,6 +16624,16 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Sprzedaż towarów netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]

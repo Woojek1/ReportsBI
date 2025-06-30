@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "_Measures.RemainingAmount",
-              "nativeQueryRef": "RemainingAmount",
-              "displayName": "Zaległe płatności brutto"
+              "nativeQueryRef": "Otwarte płatności brutto",
+              "displayName": "Otwarte płatności brutto"
             }
           ]
         }
@@ -228,5 +228,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "538a6ea2a47da3c5e0cb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "RemainingAmountLCY"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

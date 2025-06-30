@@ -615,6 +615,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "e7562ea06c40063a8054",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "MonthName"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

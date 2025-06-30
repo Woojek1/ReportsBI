@@ -69,7 +69,7 @@
             "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "'Regiony i Typy'"
+                  "Value": "'Regiony i Typy urządzeń'"
                 }
               }
             }

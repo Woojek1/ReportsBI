@@ -611,6 +611,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "38168663bbb3218850cc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

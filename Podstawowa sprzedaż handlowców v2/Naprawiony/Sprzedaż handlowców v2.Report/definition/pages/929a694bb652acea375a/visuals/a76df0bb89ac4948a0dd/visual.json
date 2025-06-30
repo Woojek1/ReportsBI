@@ -1984,6 +1984,76 @@
         },
         "type": "Categorical",
         "howCreated": "User"
+      },
+      {
+        "name": "eb52a01078c0e9896d4e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_salesperson"
+              }
+            },
+            "Property": "Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1ea3d98512d3c82c4690",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscount"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a8711bd9a6ca25b03b16",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "RemainingAmountLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "617b7af425d3c19b4609",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "NoOrder"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "37500ba95da840c605ec",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "PaymentMethodCode"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

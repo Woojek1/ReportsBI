@@ -280,5 +280,23 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5482e46614ee20480310",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_posted_sales_invoices"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

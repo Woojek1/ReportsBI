@@ -38,12 +38,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "SalesAmount_MTD_Today"
+                  "Property": "SalesAmountItem_MTD_Today"
                 }
               },
-              "queryRef": "_Measures.SalesAmount_MTD_Today",
-              "nativeQueryRef": "Sprzedaż netto",
-              "displayName": "Sprzedaż netto"
+              "queryRef": "_Measures.SalesAmountItem_MTD_Today",
+              "nativeQueryRef": "Sprzedaż towarów netto",
+              "displayName": "Sprzedaż towarów netto"
             },
             {
               "field": {
@@ -88,7 +88,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "SalesAmount_MTD_Today"
+                "Property": "SalesAmountItem_MTD_Today"
               }
             },
             "direction": "Descending"
@@ -341,20 +341,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "67.66903989441073D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.SalesAmount_MTD_Today"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "60.70093405991909D"
                 }
               }
@@ -369,7 +355,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "154D"
+                  "Value": "131.04307188692087D"
                 }
               }
             }
@@ -383,13 +369,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "60.45161290322581D"
+                  "Value": "51.374939834825746D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "_Measures.ItemQuantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "98D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.SalesAmountItem_MTD_Today"
           }
         }
       ],
@@ -563,27 +563,6 @@
             }
           },
           "selector": {
-            "metadata": "_Measures.SalesAmount_MTD_Today"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
             "metadata": "_Measures.AverageDiscountCurrentMonth"
           }
         },
@@ -606,6 +585,34 @@
           },
           "selector": {
             "metadata": "_Measures.ItemQuantity"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.SalesAmountItem_MTD_Today"
           }
         }
       ],
@@ -1148,6 +1155,62 @@
         },
         "type": "TopN",
         "howCreated": "User"
+      },
+      {
+        "name": "04300fe0d09128cd82b3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ItemTypeA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ba72be50eb26bac8ae0c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscountCurrentMonth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1ac6071ae70ed0b55bb0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "ItemQuantityCurrentMonth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ca003eaea1700a43ebcc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItem_MTD_Today"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
