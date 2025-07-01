@@ -1,0 +1,104 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "860bffe4f22e59488b93",
+  "displayName": "DrillInvoice",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0dbd00709b411b7245b4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "Invoices",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "i"
+                          }
+                        },
+                        "Property": "NoInvoice"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'FKS/25/04/0029'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "6ce65f80e856703872b1",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "43f9c4b05129c052c496",
+        "boundFilter": "0dbd00709b411b7245b4",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "38ae045cd6a66c5d144b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "15f05722a2ddb5c7f51e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "3b19bc6fc30ce1d10943",
+      "type": "NoFilter"
+    }
+  ]
+}

@@ -260,14 +260,6 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column Salesperson
-		dataType: string
-		lineageTag: 098e56d0-7195-415d-a353-ef00e219d80d
-		summarizeBy: none
-		sourceColumn: Salesperson
-
-		annotation SummarizationSetBy = Automatic
-
 	column Region
 		dataType: string
 		lineageTag: fed99c51-f5df-45d8-9658-7acd25f29146
@@ -387,6 +379,22 @@ table 'gold v_bc_posted_sales_invoices'
 		lineageTag: c13e22ba-70df-44d8-ad91-aa41950eabba
 		summarizeBy: none
 		sourceColumn: PaymentMethodCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonCode
+		dataType: string
+		lineageTag: 4237f759-4ab6-4684-9e24-58509eb9df9f
+		summarizeBy: none
+		sourceColumn: SalespersonCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonName
+		dataType: string
+		lineageTag: 394de937-02b5-423a-8339-deff7ea29e97
+		summarizeBy: none
+		sourceColumn: SalespersonName
 
 		annotation SummarizationSetBy = Automatic
 

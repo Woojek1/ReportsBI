@@ -1,0 +1,88 @@
+table Calendar
+	lineageTag: acf5db43-bde3-4841-afd2-b879fe7482c5
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: dd.mm.yyyy
+		lineageTag: f33266d5-3cf4-4699-958c-72964cd2edfc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Year
+		formatString: 0
+		lineageTag: d58b362d-a6e4-4d6c-8d30-7700e20bebf8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 723d7fdb-6661-40ae-8443-db549db7be4b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: de30d8f8-eb5e-4e38-bd3c-69e6c5d57e8f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		lineageTag: 1c966388-6493-4efe-8d5f-3898ea00ea3f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearMonth]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber
+		formatString: 0
+		lineageTag: ee936443-1a41-42f7-a18e-9ca405534fec
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		lineageTag: 5e6a4fd2-fc1e-46a5-9192-8c08c478b40b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthName]
+		sortByColumn: MonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDARAUTO(),
+				    "Year", YEAR([Date]),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "YearMonth", FORMAT([Date], "YYYYMM"),
+				    "MonthNumber", MONTH([Date]),
+				    "MonthName", FORMAT([Date], "MMMM"),
+				    "Day", DAY([Date])
+				)
+				
+				```
+
+	annotation PBI_Id = 3eef5cc03f0f4e7dbcbdb321d2a4246c
+

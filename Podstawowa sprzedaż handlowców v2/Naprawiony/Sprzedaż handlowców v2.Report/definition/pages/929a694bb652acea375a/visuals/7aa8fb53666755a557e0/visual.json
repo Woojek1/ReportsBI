@@ -65,6 +65,13 @@
                   "Value": "'e144c7950d6f629c12e0'"
                 }
               }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Klienci'"
+                }
+              }
             }
           }
         }

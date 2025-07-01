@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "02792fbe059500071977",
+  "position": {
+    "x": 32,
+    "y": 384,
+    "z": 2000,
+    "height": 208,
+    "width": 672,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_projekty"
+                    }
+                  },
+                  "Property": "Account Manager"
+                }
+              },
+              "queryRef": "gold v_projekty.Account Manager",
+              "nativeQueryRef": "Account Manager"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_projekty"
+                    }
+                  },
+                  "Property": "Data utworzenia"
+                }
+              },
+              "queryRef": "gold v_projekty.Data utworzenia",
+              "nativeQueryRef": "Data utworzenia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_projekty"
+                    }
+                  },
+                  "Property": "Numer projektu"
+                }
+              },
+              "queryRef": "gold v_projekty.Numer projektu",
+              "nativeQueryRef": "Numer projektu"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold v_projekty"
+                  }
+                },
+                "Property": "Numer projektu"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

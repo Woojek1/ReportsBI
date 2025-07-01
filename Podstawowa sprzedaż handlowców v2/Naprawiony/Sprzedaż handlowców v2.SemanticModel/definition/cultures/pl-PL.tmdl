@@ -3044,125 +3044,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice.salesperson": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
-			          "ConceptualProperty": "Salesperson"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "salesperson": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "salesclerk": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "floorwalker": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "seller": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "vender": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "vendor": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "retailer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "wholesaler": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "dealer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "hawker": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "purveyor": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_invoice.region": {
 			      "Definition": {
 			        "Binding": {
@@ -8678,16 +8559,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Sprzedaż netto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -8822,7 +8693,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż netto bieżący rok": {
+			          "Zakup netto bieżący rok": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11799,7 +11670,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Zaległe płatności brutto": {
+			          "Otwarte płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12965,7 +12836,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Zaległe płatności brutto": {
+			          "Otwarte płatności brutto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16635,6 +16506,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.605
 			          }
+			        },
+			        {
+			          "Sprzedaż towarów netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -16817,16 +16698,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż netto towarów": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Sprzedaż towarów netto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -16837,9 +16708,128 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.sales_amount_last_year_same_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "SalesAmountLastYearSameMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales amount last year same month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SalesAmountLastYearSameMonth": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_hr_enova_rl.load_ts": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_hr_enova_rls",
+			          "ConceptualProperty": "load_ts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "load ts": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "load_ts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_hr_enova_rl_has_load_ts": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_hr_enova_rls"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_hr_enova_rl": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl"
+			          }
+			        },
+			        "gold_v_hr_enova_rl.load_ts": {
+			          "Target": {
+			            "Entity": "gold_v_hr_enova_rl.load_ts"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_hr_enova_rl"
+			            },
+			            "Object": {
+			              "Role": "gold_v_hr_enova_rl.load_ts"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_hr_enova_rls_have_load_tses"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_last_year_same_month": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_last_year_same_month": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_last_year_same_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_posted_sales_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_last_year_same_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_posted_sales_invoices_have_sales_amount_last_year_same_month"
+			        }
+			      ]
+			    },
 			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_item_total_LCY": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"

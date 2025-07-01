@@ -52,6 +52,13 @@
                   "Value": "'fd12e3769561ecf588d2'"
                 }
               }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Przegląd historyczny'"
+                }
+              }
             }
           }
         }

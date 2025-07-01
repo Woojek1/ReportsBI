@@ -313,13 +313,18 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isDecimal":true}
 
-	measure OverdueInvoicesCount =
+	measure OverdueInvoicesCount = ```
 			
-			CALCULATE(
-			    DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
-			    'gold v_bc_posted_sales_invoices'[DueDate] < TODAY(),
-			    'gold v_bc_posted_sales_invoices'[RemainingAmountLCY] > 0
+			COALESCE(
+			    CALCULATE(
+			        DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
+			        'gold v_bc_posted_sales_invoices'[DueDate] < TODAY(),
+			        'gold v_bc_posted_sales_invoices'[RemainingAmountLCY] > 0
+			    ),
+			    0
 			)
+			
+			```
 		formatString: #,0
 		displayFolder: Sales
 		lineageTag: b3e5ba7f-ffdb-49f4-ae4c-f900e915efc1
@@ -334,15 +339,16 @@ table _Measures
 		displayFolder: Sales
 		lineageTag: acd343fe-4fd1-423a-afb8-7f017609c7b8
 
-	measure RemainingInvoicesCount = ```
+	measure RemainingInvoicesCount =
 			
-			CALCULATE(
-			    DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
-			    // 'gold v_bc_posted_sales_invoices'[DueDate] >= TODAY(),
-			    'gold v_bc_posted_sales_invoices'[RemainingAmountLCY] > 0
+			COALESCE(
+			    CALCULATE(
+			        DISTINCTCOUNT('gold v_bc_posted_sales_invoices'[KeyNoInvoice]),
+			        // 'gold v_bc_posted_sales_invoices'[DueDate] >= TODAY(),
+			        'gold v_bc_posted_sales_invoices'[RemainingAmountLCY] > 0
+			    ),
+			    0
 			)
-			
-			```
 		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 692d79f1-93aa-4e66-a77b-bd383b3e1893
@@ -866,6 +872,17 @@ table _Measures
 		lineageTag: d1bbfbcf-8314-469c-ad97-45ccafa516e0
 
 		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure SalesAmountLastYearSameMonth =
+			
+			CALCULATE(
+			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			    SAMEPERIODLASTYEAR('Calendar'[Date])
+			)
+		displayFolder: Sales
+		lineageTag: 5528cb0d-8390-4e78-9cef-adba48f05f52
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden

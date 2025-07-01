@@ -95,7 +95,7 @@
             "showDefaultTooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -110,6 +110,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'60afbfc15ab624508ba8'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Przegląd miesiąca'"
                 }
               }
             }

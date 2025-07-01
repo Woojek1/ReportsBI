@@ -1,0 +1,166 @@
+table 'gold v_projects'
+	lineageTag: e0159209-563a-44a5-bb65-85d7ebe14b9f
+
+	column NoProject
+		dataType: string
+		lineageTag: 5c7b9129-058d-462b-bb1c-582ce3332266
+		summarizeBy: none
+		sourceColumn: NoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoProject
+		dataType: string
+		lineageTag: 60d14c6e-7eba-4057-9383-d809c588e62d
+		summarizeBy: none
+		sourceColumn: KeyNoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectName
+		dataType: string
+		lineageTag: ac25036b-e811-4eaf-84b7-2d78b4729f96
+		summarizeBy: none
+		sourceColumn: ProjectName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectStage
+		dataType: string
+		lineageTag: 29c35224-214c-47d5-b2b1-719c4a389d14
+		summarizeBy: none
+		sourceColumn: ProjectStage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 165003cd-7376-4742-8e2b-54f8dcf14c29
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationDate
+		dataType: dateTime
+		formatString: dd.mm.yyyy
+		lineageTag: d93d1b83-f4d0-428c-98ec-b7ee41a0b25d
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Manufacturer_Code
+		dataType: string
+		lineageTag: 30164e42-3eb8-4f8b-8f9a-160916d4abde
+		summarizeBy: none
+		sourceColumn: Manufacturer_Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 16eb5e11-a6bb-49f1-9ad2-7ee9565e5cb2
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column County
+		dataType: string
+		lineageTag: fcff140e-2ff4-49f5-ac55-bb1b23754c7a
+		summarizeBy: none
+		sourceColumn: County
+
+		annotation SummarizationSetBy = Automatic
+
+	column ObjectType
+		dataType: string
+		lineageTag: be215d00-5575-460e-85e2-2b5f1a197253
+		summarizeBy: none
+		sourceColumn: ObjectType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectSource
+		dataType: string
+		lineageTag: 13992cb9-0477-4acd-851f-e804952398ef
+		summarizeBy: none
+		sourceColumn: ProjectSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: b2752f31-05de-4351-8309-18394be7246b
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedDeliveryDate
+		dataType: dateTime
+		formatString: dd.mm.yyyy
+		lineageTag: 4a0ddb2f-7855-441b-a914-ea13eeb3b0c1
+		summarizeBy: none
+		sourceColumn: PlannedDeliveryDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column AccountManager
+		dataType: string
+		lineageTag: 5cc7b0ea-048a-471b-bb99-482bd9be4257
+		summarizeBy: none
+		sourceColumn: AccountManager
+
+		annotation SummarizationSetBy = Automatic
+
+	column Salesperson_Code
+		dataType: string
+		lineageTag: 922e8539-8c44-4565-827e-51b484a41e37
+		summarizeBy: none
+		sourceColumn: Salesperson_Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cbce39d6-d228-4de3-a4bd-b142954043a3
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		lineageTag: d72889fc-990e-444d-abac-0d8581623280
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_projects' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_projects = Źródło{[Schema="gold",Item="v_projects"]}[Data],
+				    #"Posortowano wiersze" = Table.Sort(gold_v_projects,{{"LoadDate", Order.Descending}}),
+				    #"Przefiltrowano wiersze" = Table.SelectRows(#"Posortowano wiersze", each true),
+				    #"Posortowano wiersze1" = Table.Sort(#"Przefiltrowano wiersze",{{"LoadDate", Order.Descending}})
+				in
+				    #"Posortowano wiersze1"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

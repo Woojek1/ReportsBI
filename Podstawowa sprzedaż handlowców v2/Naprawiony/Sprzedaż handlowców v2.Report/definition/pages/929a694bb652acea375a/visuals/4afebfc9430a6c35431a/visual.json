@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "_Measures.RemainingAmount",
-              "nativeQueryRef": "RemainingAmount",
-              "displayName": "Zaległe płatności brutto"
+              "nativeQueryRef": "Otwarte płatności brutto",
+              "displayName": "Otwarte płatności brutto"
             }
           ]
         }

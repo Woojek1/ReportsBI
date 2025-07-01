@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "_Measures.RemainingAmountLCY",
-              "nativeQueryRef": "Zaległe płatności brutto",
-              "displayName": "Zaległe płatności brutto"
+              "nativeQueryRef": "Otwarte płatności brutto",
+              "displayName": "Otwarte płatności brutto"
             }
           ]
         }

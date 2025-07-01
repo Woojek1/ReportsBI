@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 74.69465680366136
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1228.3751194984668,
+            "y": 30.475478515051186
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "72ecb6f6-f0b0-4971-a814-2eecd5a998d6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 902.19845293663468,
+            "y": 32.414662386494548
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "acf5db43-bde3-4841-afd2-b879fe7482c5",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 67,
+            "y": 0
+          },
+          "nodeIndex": "gold v_bc_customers",
+          "nodeLineageTag": "42ac4518-5dd2-4ee6-a060-dc62dff4fc75",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 854.28711726533345,
+            "y": 439.80030134300773
+          },
+          "nodeIndex": "gold v_bc_items",
+          "nodeLineageTag": "1d70ad16-52d1-4b70-8c0c-22fd8590c2a0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1349.854540741637,
+            "y": 803.82465992206244
+          },
+          "nodeIndex": "gold v_bc_posted_sales_invoices",
+          "nodeLineageTag": "5ba58d96-43f3-4d58-abfa-dc96a3312ecd",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 168.00459317036737,
+            "y": 416.71744461508467
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "nodeLineageTag": "4e2b4a97-6d28-48ae-a088-2fe3e4b95196",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1153.840479443305,
+            "y": 376.70347795676787
+          },
+          "nodeIndex": "Grupa obliczania",
+          "nodeLineageTag": "5ef29f12-7f98-4392-92b2-0dedbcf1a7e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 619.00895816202194,
+            "y": 1091.8484684039734
+          },
+          "nodeIndex": "RLS",
+          "nodeLineageTag": "bc4e4d92-81c2-45eb-aeda-c8d5df7f1b0c",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 1195.1358568311782
+          },
+          "nodeIndex": "gold v_hr_enova_rls",
+          "nodeLineageTag": "e737bac3-c2ca-4a97-bdcc-73eedebbfb7c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1475.8924744187552,
+            "y": 435.12661983281623
+          },
+          "nodeIndex": "gold v_bc_posted_sales_credit_memo_invoices",
+          "nodeLineageTag": "80fc3bc8-07a3-40f8-964f-6e97f09d710e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 539.44390341698568,
+            "y": 61.43597934351709
+          },
+          "nodeIndex": "Invoices",
+          "nodeLineageTag": "2f193500-f0f2-455c-8a2c-1bad5f81ab16",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 70.95554390096892,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

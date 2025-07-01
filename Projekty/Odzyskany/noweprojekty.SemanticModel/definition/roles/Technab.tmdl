@@ -1,0 +1,13 @@
+role Technab
+	modelPermission: read
+
+	tablePermission 'gold v_invoices' = [Company] == "Technab"
+
+	tablePermission 'gold v_orders' = [Company] == "Technab"
+
+	tablePermission 'gold v_projects' = [Company] == "Technab"
+
+	tablePermission 'gold v_quotes' = [Company] == "Technab"
+
+	annotation PBI_Id = 32917f70ca984a96b4bac894f1f92816
+
