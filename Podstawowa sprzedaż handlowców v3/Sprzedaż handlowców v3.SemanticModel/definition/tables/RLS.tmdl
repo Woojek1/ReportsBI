@@ -1,0 +1,74 @@
+table RLS
+	lineageTag: bc4e4d92-81c2-45eb-aeda-c8d5df7f1b0c
+
+	column User_code
+		dataType: string
+		lineageTag: 1b623d62-62ae-4108-a410-fa1ed26f0eb6
+		summarizeBy: none
+		sourceColumn: User_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_1
+		dataType: string
+		lineageTag: 885ebd8c-91df-4b01-aca2-d8d804d115ec
+		summarizeBy: none
+		sourceColumn: user_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_2
+		dataType: string
+		lineageTag: 8e2880a1-4928-4fa0-b97e-13a22930e219
+		summarizeBy: none
+		sourceColumn: user_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_3
+		dataType: string
+		lineageTag: 0d74a299-a61a-458e-88b6-a6e6844f3f13
+		summarizeBy: none
+		sourceColumn: user_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_4
+		dataType: string
+		lineageTag: e19b4115-d6a0-4e3a-98f5-a4387a21d738
+		summarizeBy: none
+		sourceColumn: user_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_5
+		dataType: string
+		lineageTag: 7c764187-8a86-419b-a3b7-fb3d45f4a5a4
+		summarizeBy: none
+		sourceColumn: user_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: e766a99a-706a-421a-8548-90e51ad85137
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RLS = m
+		mode: import
+		source =
+				let
+				    Źródło = Excel.Workbook(Web.Contents("https://zymetric2016-my.sharepoint.com/personal/l_wojcik_zymetric_pl/Documents/Dokumenty/ReportsBI/Podstawowa%20sprzeda%C5%BC%20handlowc%C3%B3w/RLS.xlsx"), null, true),
+				    Arkusz1_Sheet = Źródło{[Item="Arkusz1",Kind="Sheet"]}[Data],
+				    #"Nagłówki o podwyższonym poziomie" = Table.PromoteHeaders(Arkusz1_Sheet, [PromoteAllScalars=true]),
+				    #"Zmieniono typ" = Table.TransformColumnTypes(#"Nagłówki o podwyższonym poziomie",{{"User_code", type text}, {"user_1", type text}, {"user_2", type text}, {"user_3", type text}, {"user_4", type any}, {"user_5", type any}, {"Column7", type any}})
+				in
+				    #"Zmieniono typ"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

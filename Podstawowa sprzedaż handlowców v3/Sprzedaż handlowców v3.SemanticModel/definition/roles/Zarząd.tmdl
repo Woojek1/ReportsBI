@@ -1,0 +1,5 @@
+role Zarząd
+	modelPermission: read
+
+	annotation PBI_Id = 42116c2248e44dc0ac75afb1e201140d
+
