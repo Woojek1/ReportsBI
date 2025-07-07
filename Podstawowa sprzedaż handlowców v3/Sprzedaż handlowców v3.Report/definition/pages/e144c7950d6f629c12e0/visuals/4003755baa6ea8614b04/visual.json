@@ -4,10 +4,10 @@
   "position": {
     "x": 400,
     "y": 192,
-    "z": 22000,
+    "z": 16000,
     "height": 200,
     "width": 864,
-    "tabOrder": 24000
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -44,7 +44,7 @@
               },
               "queryRef": "Calendar.MonthName",
               "nativeQueryRef": "Miesiąc",
-              "active": false,
+              "active": true,
               "displayName": "Miesiąc"
             }
           ]

@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "gold v_bc_items.InventoryGroup",
-              "nativeQueryRef": "InventoryGroup",
-              "active": true
+              "nativeQueryRef": "Grupa produktowa",
+              "active": true,
+              "displayName": "Grupa produktowa"
             }
           ]
         },
@@ -69,6 +70,34 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "border": [
@@ -120,6 +149,32 @@
                       "Value": "'#0d5272'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sprzedaż towarów netto w ostatnich 12 miesiącach'"
                 }
               }
             }

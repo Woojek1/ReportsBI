@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 31.005329239255655
+        "y": 149.38931360732272
       },
       "nodes": [
         {
@@ -62,8 +62,8 @@
         },
         {
           "location": {
-            "x": 1334.3518761220091,
-            "y": 836.239322308557
+            "x": 1485.1505228765709,
+            "y": 760.13533235765669
           },
           "nodeIndex": "gold v_bc_posted_sales_invoices",
           "nodeLineageTag": "5ba58d96-43f3-4d58-abfa-dc96a3312ecd",
@@ -114,8 +114,8 @@
         },
         {
           "location": {
-            "x": 0,
-            "y": 1195.1358568311782
+            "x": 47.917327006122392,
+            "y": 903.40389535272732
           },
           "nodeIndex": "gold v_hr_enova_rls",
           "nodeLineageTag": "e737bac3-c2ca-4a97-bdcc-73eedebbfb7c",

@@ -1,0 +1,9 @@
+role Technab
+	modelPermission: read
+
+	tablePermission Invoices = [Company] == "Technab"
+
+	tablePermission 'gold v_bc_salesperson' = [Company] == "Technab"
+
+	annotation PBI_Id = 78f6dc073d4c485683c67cd4f28bf461
+

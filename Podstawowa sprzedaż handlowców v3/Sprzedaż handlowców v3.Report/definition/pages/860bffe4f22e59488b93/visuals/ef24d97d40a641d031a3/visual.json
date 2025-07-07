@@ -4,7 +4,7 @@
   "position": {
     "x": 1152,
     "y": 16,
-    "z": 7000,
+    "z": 14000,
     "height": 80,
     "width": 96,
     "tabOrder": 7000
@@ -135,7 +135,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "KolorPoTerminowości"
+                      "Property": "DueDateColor"
                     }
                   }
                 }

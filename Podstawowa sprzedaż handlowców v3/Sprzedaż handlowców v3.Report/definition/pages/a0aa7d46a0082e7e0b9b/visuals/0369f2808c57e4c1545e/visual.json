@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
+                      "Entity": "gold v_bc_customers"
                     }
                   },
-                  "Property": "CustomerName"
+                  "Property": "Name"
                 }
               },
-              "queryRef": "Invoices.CustomerName",
-              "nativeQueryRef": "CustomerName1",
+              "queryRef": "gold v_bc_customers.Name",
+              "nativeQueryRef": "Name",
               "active": true
             }
           ]

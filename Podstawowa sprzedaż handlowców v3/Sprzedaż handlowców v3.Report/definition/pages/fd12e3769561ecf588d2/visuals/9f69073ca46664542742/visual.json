@@ -4,10 +4,10 @@
   "position": {
     "x": 64,
     "y": 96,
-    "z": 17000,
+    "z": 16000,
     "height": 224,
     "width": 1200,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "Calendar.Year",
-              "nativeQueryRef": "Year",
-              "active": true
+              "nativeQueryRef": "Rok",
+              "active": true,
+              "displayName": "Rok"
             },
             {
               "field": {

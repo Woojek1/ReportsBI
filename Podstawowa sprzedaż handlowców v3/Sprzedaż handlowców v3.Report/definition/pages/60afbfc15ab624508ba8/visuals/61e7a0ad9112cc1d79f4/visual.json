@@ -1275,6 +1275,22 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "9da87ab4da4a5c0b4578",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
       }
     ],
     "filterSortOrder": "Custom"

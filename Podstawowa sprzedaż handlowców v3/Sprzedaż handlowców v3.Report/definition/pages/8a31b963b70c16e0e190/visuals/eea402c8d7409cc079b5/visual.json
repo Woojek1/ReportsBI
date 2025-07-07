@@ -6,7 +6,7 @@
     "y": 48,
     "z": 0,
     "height": 576,
-    "width": 568,
+    "width": 512,
     "tabOrder": 0
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Measures.SalesAmountLast12MonthsLCY",
-              "nativeQueryRef": "SalesAmountLast12MonthsLCY"
+              "nativeQueryRef": "Wartość sprzedaży ostatnie 12 mc",
+              "displayName": "Wartość sprzedaży ostatnie 12 mc"
             }
           ]
         },
@@ -45,8 +46,9 @@
                 }
               },
               "queryRef": "gold v_bc_items.ItemTypeB",
-              "nativeQueryRef": "ItemTypeB",
-              "active": true
+              "nativeQueryRef": "Typ B",
+              "active": true,
+              "displayName": "Typ B"
             },
             {
               "field": {
@@ -60,8 +62,27 @@
                 }
               },
               "queryRef": "gold v_bc_items.NoItem",
-              "nativeQueryRef": "NoItem",
-              "active": true
+              "nativeQueryRef": "Symbol urządzenia",
+              "active": true,
+              "displayName": "Symbol urządzenia"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "DistinctInvoiceCount"
+                }
+              },
+              "queryRef": "_Measures.DistinctInvoiceCount",
+              "nativeQueryRef": "DistinctInvoiceCount"
             }
           ]
         }
@@ -126,7 +147,7 @@
               "identityValues": [
                 {
                   "Literal": {
-                    "Value": "'WEWNETRZNA_154'"
+                    "Value": "'ZEWNETRZNA_171'"
                   }
                 }
               ],
@@ -143,7 +164,14 @@
             "effectiveBarsPerLevel": {
               "expr": {
                 "Literal": {
-                  "Value": "7L"
+                  "Value": "9L"
+                }
+              }
+            },
+            "density": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dense'"
                 }
               }
             }
@@ -275,6 +303,26 @@
                       "Value": "'#0d5272'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }

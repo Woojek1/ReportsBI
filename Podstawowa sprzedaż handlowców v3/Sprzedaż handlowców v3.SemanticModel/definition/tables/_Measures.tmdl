@@ -239,7 +239,7 @@ table _Measures
 	measure SalesAmountLast12MonthsLCYToday =
 			
 			CALCULATE(
-			    SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			    SUM('Invoices'[AmountLCY]),
 			    DATESINPERIOD(
 			        'Calendar'[Date],
 			        TODAY(),         -- punkt końcowy (dzisiejsza data)
@@ -247,10 +247,11 @@ table _Measures
 			        MONTH            -- jednostka czasu: miesiąc
 			    )
 			)
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 3a9627e9-d7eb-4d9a-a863-5feb388918f3
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure RemainingAmountLCY =
 			
@@ -269,7 +270,7 @@ table _Measures
 
 	measure SalesAmountTotal = ```
 			
-			    SUM('gold v_bc_posted_sales_invoices'[Amount])
+			    SUM('invoices'[Amount])
 			
 			
 			```
@@ -485,7 +486,7 @@ table _Measures
 			
 			VAR SalesAmountLast12Months =
 			    CALCULATE(
-			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        SUM('invoices'[AmountLCY]),
 			        DATESINPERIOD(
 			            'Calendar'[Date],
 			            SelectedDate,

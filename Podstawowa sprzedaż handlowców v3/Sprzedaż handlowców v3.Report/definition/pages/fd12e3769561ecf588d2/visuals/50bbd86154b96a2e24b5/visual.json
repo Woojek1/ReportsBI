@@ -3,11 +3,11 @@
   "name": "50bbd86154b96a2e24b5",
   "position": {
     "x": 0,
-    "y": 248,
-    "z": 15000,
-    "height": 112,
+    "y": 272,
+    "z": 14000,
+    "height": 96,
     "width": 48,
-    "tabOrder": 16000
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -593,6 +593,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Year",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
@@ -667,20 +672,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "58730599996038916960",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

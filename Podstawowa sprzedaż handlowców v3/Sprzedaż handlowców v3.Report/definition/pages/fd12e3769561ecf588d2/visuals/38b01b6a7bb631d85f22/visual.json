@@ -4,10 +4,10 @@
   "position": {
     "x": 596.2,
     "y": 8,
-    "z": 12000,
+    "z": 11000,
     "height": 72,
     "width": 125,
-    "tabOrder": 13000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "card",
@@ -241,23 +241,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "634e7b743e9ca619a9d5",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

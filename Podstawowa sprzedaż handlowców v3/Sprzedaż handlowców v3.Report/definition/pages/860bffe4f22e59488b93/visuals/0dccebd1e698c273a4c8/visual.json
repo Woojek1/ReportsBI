@@ -83,21 +83,6 @@
                       "Entity": "Invoices"
                     }
                   },
-                  "Property": "ProfitLCY"
-                }
-              },
-              "queryRef": "Invoices.ProfitLCY",
-              "nativeQueryRef": "Zysk1",
-              "displayName": "Zysk"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
                   "Property": "Profitability"
                 }
               },
@@ -125,6 +110,21 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
+                      "Entity": "gold v_bc_items"
+                    }
+                  },
+                  "Property": "ItemTypeA"
+                }
+              },
+              "queryRef": "gold v_bc_items.ItemTypeA",
+              "nativeQueryRef": "Grupa produktowa",
+              "displayName": "Grupa produktowa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
                       "Entity": "Invoices"
                     }
                   },
@@ -140,15 +140,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold v_bc_items"
+                      "Entity": "Invoices"
                     }
                   },
-                  "Property": "ItemTypeA"
+                  "Property": "Region"
                 }
               },
-              "queryRef": "gold v_bc_items.ItemTypeA",
-              "nativeQueryRef": "Typ A",
-              "displayName": "Typ A"
+              "queryRef": "Invoices.Region",
+              "nativeQueryRef": "Region"
             }
           ]
         }
@@ -486,7 +485,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "110.5630922171158D"
+                  "Value": "105.54330702774327D"
                 }
               }
             }
@@ -528,27 +527,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "115.75178349922919D"
+                  "Value": "123.0818668068503D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Invoices.AmountLCY"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "94.8795079534042D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.ProfitLCY"
           }
         },
         {
@@ -570,7 +555,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "189.23711124009108D"
+                  "Value": "256.29581170768586D"
                 }
               }
             }
@@ -1057,34 +1042,6 @@
         },
         {
           "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.ProfitLCY"
-          }
-        },
-        {
-          "properties": {
             "alignment": {
               "expr": {
                 "Literal": {
@@ -1366,14 +1323,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'1b41b62861a92453ea0c'"
+                  "Value": "'2efeaae231ef10c9e628'"
                 }
               }
             },

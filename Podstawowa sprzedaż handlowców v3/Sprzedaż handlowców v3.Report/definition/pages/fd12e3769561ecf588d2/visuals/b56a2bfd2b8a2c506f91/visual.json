@@ -4,10 +4,10 @@
   "position": {
     "x": 420.8,
     "y": 8,
-    "z": 9000,
+    "z": 8000,
     "height": 72,
     "width": 160,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "card",
@@ -241,23 +241,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "542a82042ea1b708ee81",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageInvoiceAmount"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

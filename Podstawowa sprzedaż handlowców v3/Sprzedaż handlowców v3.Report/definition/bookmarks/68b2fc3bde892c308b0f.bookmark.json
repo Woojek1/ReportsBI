@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
-  "displayName": "Slicer",
+  "displayName": "Slicer - overview month",
   "name": "68b2fc3bde892c308b0f",
   "options": {
     "targetVisualNames": [],
@@ -113,7 +113,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "6bfb1b960b9b3a43e074",
+                  "name": "0cbb41e04b7ede795e0b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -161,92 +161,6 @@
                   }
                 ]
               }
-            }
-          },
-          "26d5fb7db556d99c52ab": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "6326714b08d02094dc2b",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold v_bc_salesperson"
-                        }
-                      },
-                      "Property": "Name"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold v_bc_salesperson"
-                        }
-                      },
-                      "Property": "Name"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Values"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "gold v_bc_salesperson.Name"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "gold v_bc_salesperson"
-                              }
-                            },
-                            "Property": "Name"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": []
-                  }
-                }
-              ]
             }
           },
           "291b0e90d289642a0dc8": {
@@ -323,7 +237,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "d93b2d30cb1d0a6d1a04",
+                  "name": "8acad999309b408c9d82",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -338,7 +252,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "6a00bf9698435c49183d",
+                  "name": "ad38de2940380d517b7e",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -353,7 +267,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "dda3ba59ec00a7418531",
+                  "name": "49d0be2330a732dc5b1d",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -384,6 +298,58 @@
             "filters": {
               "byExpr": [
                 {
+                  "name": "d5260ab9005e85621deb",
+                  "type": "RelativeDate",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "Calendar",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "Right": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "Now": {}
+                                },
+                                "TimeUnit": 2
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
                   "name": "dcc767768432444d4830",
                   "type": "TopN",
                   "expression": {
@@ -397,6 +363,21 @@
                     }
                   },
                   "howCreated": 1
+                },
+                {
+                  "name": "7e1214e0605362574539",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_customers"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  },
+                  "howCreated": 0
                 },
                 {
                   "name": "4feddc88daabd5ac024a",
@@ -414,7 +395,7 @@
                       {
                         "Condition": {
                           "Comparison": {
-                            "ComparisonKind": 1,
+                            "ComparisonKind": 2,
                             "Left": {
                               "Measure": {
                                 "Expression": {
@@ -427,7 +408,7 @@
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "0L"
+                                "Value": "2L"
                               }
                             }
                           }
@@ -445,25 +426,25 @@
                       "Property": "SalesAmount_MTD_Today"
                     }
                   },
-                  "howCreated": 0
+                  "howCreated": 1
                 },
                 {
-                  "name": "16ee99a59a065b021a67",
-                  "type": "Categorical",
+                  "name": "aabd93aeb2de05e5d047",
+                  "type": "Advanced",
                   "expression": {
-                    "Column": {
+                    "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "gold v_bc_customers"
+                          "Entity": "_Measures"
                         }
                       },
-                      "Property": "Name"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "ef6451ed10cc6a342b84",
+                  "name": "619c2fbd0a49a76c44b0",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -476,6 +457,21 @@
                     }
                   },
                   "howCreated": 0
+                },
+                {
+                  "name": "9da87ab4da4a5c0b4578",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Invoices"
+                        }
+                      },
+                      "Property": "Type"
+                    }
+                  },
+                  "howCreated": 1
                 }
               ]
             },
@@ -492,7 +488,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "SalesAmount_MTD_Today"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   }
                 }
@@ -561,7 +557,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "64b34a9ecc1b5029b8b8",
+                  "name": "526cf4503b3312467587",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -576,7 +572,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "d76b8cb1e2c590145899",
+                  "name": "a4a1241450097ee34d8c",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -591,7 +587,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "57c1c40914a719ccc6da",
+                  "name": "25c670faa126ed00a1c3",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -616,7 +612,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "6cd91ca57889edcee35c",
+                  "name": "8ae42e103a0150bead50",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -625,7 +621,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "RemainingAmountLCYTotal"
+                      "Property": "RemainingAmountLCY"
                     }
                   },
                   "howCreated": 0
@@ -645,7 +641,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "RemainingAmountLCYTotal"
+                      "Property": "RemainingAmountLCY"
                     }
                   }
                 }
@@ -677,7 +673,22 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "7654be5d17550cac6e3c",
+                  "name": "6f004c8036421b04e386",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Invoices"
+                        }
+                      },
+                      "Property": "Type"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "e19d6e88673e0738e9e8",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -692,7 +703,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "0e080d7552e10bebcc60",
+                  "name": "5add9979471b4d038036",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -701,13 +712,13 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "SalesAmount_MTD_Today"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "7d0fafbdec707b5d5480",
+                  "name": "5fc57696a40db530e102",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -736,17 +747,11 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "SalesAmount_MTD_Today"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   }
                 }
               ]
-            }
-          },
-          "a6dca7c7ec686938e065": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
             }
           },
           "ac58c730aba8e5250f11": {
@@ -774,7 +779,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "8a0bfe1871e462d4e741",
+                  "name": "06c3b19129a575327ee6",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -789,7 +794,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "05d86bd4c0b631596de9",
+                  "name": "9c6f178357030ba05c6b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -798,13 +803,13 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "SalesAmount_MTD_Today"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "895dbbb0346a4172e397",
+                  "name": "2afd78db0c043b55dce3",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -819,7 +824,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "00ff740454d180e4cb87",
+                  "name": "341773106b563304dd0d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -848,7 +853,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "SalesAmount_MTD_Today"
+                      "Property": "SalesAmountItem_MTD_Today"
                     }
                   }
                 }
@@ -911,7 +916,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "5067523b4d6a89257782",
+                  "name": "6284bf45152011a44b63",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -926,7 +931,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "e79c7c91800a731d278c",
+                  "name": "32a058003008e1293b45",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -941,7 +946,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "57e316b20234243210c3",
+                  "name": "a49acce5e680722e7cbb",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -966,7 +971,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "b9d3da7629c3977a2a26",
+                  "name": "20bfd39c16539c60589a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1064,7 +1069,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "a5ab7ac0ea0510dd045c",
+                  "name": "bf5f190e00b2963315c1",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1079,7 +1084,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "66dd1178e892be758464",
+                  "name": "a3d7e4ce437d98c8e801",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1094,7 +1099,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "601662a70108c3162bcc",
+                  "name": "67b8b3065353c5299dbe",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1115,17 +1120,11 @@
               "objects": {}
             }
           },
-          "f88b1a1bc90a67960563": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
           "fffd07fd53820135232c": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "b90693e108b94ae8910b",
+                  "name": "68f3e6015233544ddd80",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1140,7 +1139,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "dccf1d3036d045b61095",
+                  "name": "a29d53808e902d058586",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1161,65 +1160,20 @@
               "objects": {}
             }
           },
-          "44758cd00c318050d87d": {
+          "6b0d19c4cd63632d4076": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "87db5e51c7e7e14a360b",
+                  "name": "8638dde7230c9b1c3497",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "gold v_hr_enova_rls"
+                          "Entity": "gold v_bc_salesperson"
                         }
                       },
-                      "Property": "Pracownik"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "fa899b810e5c90281076",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold v_hr_enova_rls"
-                        }
-                      },
-                      "Property": "Przelozony (N-1)"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "1c39ec1a48508125d360",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold v_hr_enova_rls"
-                        }
-                      },
-                      "Property": "Przelozony (N-3)"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0208b455c408ea1b2147",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold v_hr_enova_rls"
-                        }
-                      },
-                      "Property": "Przelozony (N-2)"
+                      "Property": "Name"
                     }
                   },
                   "howCreated": 0
@@ -1251,10 +1205,10 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "gold v_hr_enova_rls"
+                          "Entity": "gold v_bc_salesperson"
                         }
                       },
-                      "Property": "Przelozony (N-1)"
+                      "Property": "Name"
                     }
                   }
                 ]
@@ -1267,7 +1221,7 @@
                   "levels": [
                     {
                       "queryRefs": [
-                        "gold v_hr_enova_rls.Przelozony (N-1)"
+                        "gold v_bc_salesperson.Name"
                       ],
                       "isCollapsed": true,
                       "identityKeys": [
@@ -1275,67 +1229,10 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Entity": "gold v_hr_enova_rls"
+                                "Entity": "gold v_bc_salesperson"
                               }
                             },
-                            "Property": "Przelozony (N-1)"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "gold v_hr_enova_rls.Przelozony (N-2)"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "gold v_hr_enova_rls"
-                              }
-                            },
-                            "Property": "Przelozony (N-2)"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "gold v_hr_enova_rls.Przelozony (N-3)"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "gold v_hr_enova_rls"
-                              }
-                            },
-                            "Property": "Przelozony (N-3)"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "gold v_hr_enova_rls.Pracownik"
-                      ],
-                      "isCollapsed": true,
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "gold v_hr_enova_rls"
-                              }
-                            },
-                            "Property": "Pracownik"
+                            "Property": "Name"
                           }
                         }
                       ],
@@ -1343,34 +1240,28 @@
                     }
                   ],
                   "root": {
-                    "identityValues": null,
-                    "children": [
-                      {
-                        "identityValues": [
-                          {
-                            "Literal": {
-                              "Value": "'Stasiak Paweł'"
-                            }
-                          }
-                        ],
-                        "children": [
-                          {
-                            "identityValues": [
-                              {
-                                "Literal": {
-                                  "Value": "'Łata Artur'"
-                                }
-                              }
-                            ],
-                            "isToggled": true
-                          }
-                        ]
-                      }
-                    ]
+                    "identityValues": []
                   }
                 }
               ]
             }
+          },
+          "a592bd83c211811d5763": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "0753209b47600b1d6739": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "b54c17ec30090a0de05e": {
+            "isHidden": false
           }
         }
       }

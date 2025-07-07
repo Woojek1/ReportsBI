@@ -1105,6 +1105,21 @@
         },
         "type": "TopN",
         "howCreated": "User"
+      },
+      {
+        "name": "6f004c8036421b04e386",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
       }
     ]
   }

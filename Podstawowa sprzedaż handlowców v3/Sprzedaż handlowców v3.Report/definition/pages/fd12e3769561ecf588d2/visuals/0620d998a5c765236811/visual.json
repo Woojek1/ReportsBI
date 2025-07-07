@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 368,
-    "z": 18000,
-    "height": 336,
+    "z": 17000,
+    "height": 320,
     "width": 48,
-    "tabOrder": 18000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -571,6 +571,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "MonthNumber",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
@@ -645,20 +650,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "dffbec5283ea8cb84d97",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "MonthNumber"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

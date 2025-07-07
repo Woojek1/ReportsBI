@@ -27,21 +27,8 @@
                 }
               },
               "queryRef": "Invoices.NoOrder",
-              "nativeQueryRef": "NoOrder"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "NoProject"
-                }
-              },
-              "queryRef": "Invoices.NoProject",
-              "nativeQueryRef": "NoProject"
+              "nativeQueryRef": "Nr zamówienia",
+              "displayName": "Nr zamówienia"
             },
             {
               "field": {
@@ -55,7 +42,23 @@
                 }
               },
               "queryRef": "Invoices.NoQuote",
-              "nativeQueryRef": "NoQuote"
+              "nativeQueryRef": "Nr oferty",
+              "displayName": "Nr oferty"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "NoProject"
+                }
+              },
+              "queryRef": "Invoices.NoProject",
+              "nativeQueryRef": "Nr projektu",
+              "displayName": "Nr projektu"
             }
           ]
         }
