@@ -1,0 +1,9 @@
+role Aircon
+	modelPermission: read
+
+	tablePermission 'gold v_bc_salesperson' = [Company] == "Aircon"
+
+	tablePermission 'gold v_bc_quotes' = [Company] == "Aircon"
+
+	annotation PBI_Id = a2bee2213f17468d9289364b016b1d0b
+

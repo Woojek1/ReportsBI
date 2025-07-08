@@ -146,7 +146,7 @@
                 }
               },
               "queryRef": "_Miary.CoolingCapacityForFirstQuote",
-              "nativeQueryRef": "Moc chłodnicza (pierwsza oferta)",
+              "nativeQueryRef": "CoolingCapacityForFirstQuote",
               "displayName": "Moc chłodnicza (pierwsza oferta)"
             }
           ]
@@ -486,20 +486,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "99.08105846552014D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.CoolingCapacityForFirstQuote"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "95.7741935483871D"
                 }
               }
@@ -507,6 +493,20 @@
           },
           "selector": {
             "metadata": "_Miary.QuoteAmountPLN"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "101.572799250368D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Miary.CoolingCapacityForFirstQuote"
           }
         }
       ],
@@ -737,34 +737,6 @@
           },
           "selector": {
             "metadata": "_Miary.QuoteAmountPLN"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.CoolingCapacityForFirstQuote"
           }
         }
       ]

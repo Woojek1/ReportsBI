@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "714a38adda207e8d77d0",
   "position": {
-    "x": 200,
+    "x": 216,
     "y": 32,
     "z": 2000,
     "height": 64,
@@ -23,7 +23,7 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "MarzaOferty%"
+                  "Property": "Marza_Oferty%"
                 }
               },
               "queryRef": "_Miary.MarzaOferty%",
@@ -43,7 +43,7 @@
                     "Entity": "_Miary"
                   }
                 },
-                "Property": "MarzaOferty%"
+                "Property": "Marza_Oferty%"
               }
             },
             "direction": "Descending"

@@ -99,16 +99,6 @@ table 'gold v_quotes'
 
 		annotation SummarizationSetBy = Automatic
 
-	column CurrencyExchangeRate
-		dataType: double
-		lineageTag: 8b684fd3-64f3-4b7b-851d-577eb83a40f3
-		summarizeBy: sum
-		sourceColumn: CurrencyExchangeRate
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column LineAmountPLN
 		dataType: double
 		lineageTag: 9bc8e96a-b532-4a8b-a113-f76a10beb057
@@ -206,12 +196,22 @@ table 'gold v_quotes'
 
 		annotation SummarizationSetBy = Automatic
 
+	column RelationalExchRateAmount
+		dataType: double
+		lineageTag: 83fa4f48-a530-4bd0-9762-43ef39abf780
+		summarizeBy: sum
+		sourceColumn: RelationalExchRateAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'gold v_quotes' = m
 		mode: import
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_quotes = Źródło{[Schema="gold",Item="v_quotes"]}[Data],
+				    gold_v_quotes = Źródło{[Schema="gold",Item="v_bc_quotes"]}[Data],
 				    #"Posortowano wiersze" = Table.Sort(gold_v_quotes,{{"LoadDate", Order.Descending}})
 				in
 				    #"Posortowano wiersze"

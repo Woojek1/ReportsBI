@@ -1,0 +1,9 @@
+role Zymetric
+	modelPermission: read
+
+	tablePermission 'gold v_bc_quotes' = [Company] == "Zymetric"
+
+	tablePermission 'gold v_bc_salesperson' = [Code] == "Zymetric"
+
+	annotation PBI_Id = 4c591c9b1d5b4c86a47b4fc6abb5761e
+

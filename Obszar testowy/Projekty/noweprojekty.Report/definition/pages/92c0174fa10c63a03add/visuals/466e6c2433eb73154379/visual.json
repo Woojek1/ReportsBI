@@ -95,6 +95,25 @@
               "displayName": "Ilość projektów"
             }
           ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Miary"
+                    }
+                  },
+                  "Property": "CoolingCapacityForFirstQuote"
+                }
+              },
+              "queryRef": "_Miary.CoolingCapacityForFirstQuote",
+              "nativeQueryRef": "Moc chłodnicza pierwsza oferta",
+              "displayName": "Moc chłodnicza pierwsza oferta"
+            }
+          ]
         }
       }
     },
@@ -246,5 +265,94 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ec092ef7296a5023ad0d",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Hierarchy": "Date Hierarchia"
+              }
+            },
+            "Level": "Year"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1d5d2c64202000464049",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Hierarchy": "Date Hierarchia"
+              }
+            },
+            "Level": "Quarter"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "88256984425b36777180",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Hierarchy": "Date Hierarchia"
+              }
+            },
+            "Level": "Month Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "84650c08c47e34b17d67",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Miary"
+              }
+            },
+            "Property": "ProjectsCount"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2534c00048d9053ec0bb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Miary"
+              }
+            },
+            "Property": "CoolingCapacityForFirstQuote"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

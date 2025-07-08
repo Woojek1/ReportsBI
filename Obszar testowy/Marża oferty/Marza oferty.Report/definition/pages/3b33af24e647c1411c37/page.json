@@ -49,7 +49,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'OF/25/07/0147'"
+                          "Value": "'OF/24/11/0090'"
                         }
                       }
                     ]
@@ -83,5 +83,32 @@
       }
     ]
   },
-  "visibility": "HiddenInViewMode"
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "ebfc4a2b00a21e22bbd5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "714a38adda207e8d77d0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "0e23b47dcac02cc88536",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "524d0c64cde62042528b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "e3c7a53a92069ed55d8e",
+      "type": "NoFilter"
+    }
+  ]
 }

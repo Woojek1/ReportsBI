@@ -83,7 +83,7 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "WartośćOferty"
+                  "Property": "Wartość_Oferty"
                 }
               },
               "queryRef": "_Miary.WartośćOferty",
@@ -98,7 +98,7 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "MarzaOferty%"
+                  "Property": "Marza_Oferty%"
                 }
               },
               "queryRef": "_Miary.MarzaOferty%",
@@ -2209,6 +2209,62 @@
           },
           "selector": {
             "metadata": "gold v_oferty.Nr projektu"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Miary.MarzaOferty%"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Miary.WartośćOferty"
           }
         }
       ]

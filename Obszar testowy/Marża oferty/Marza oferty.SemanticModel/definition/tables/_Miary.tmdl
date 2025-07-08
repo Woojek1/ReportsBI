@@ -1,21 +1,21 @@
 table _Miary
 	lineageTag: 42bcf88b-c31d-4748-8161-39456f97632e
 
-	measure WartośćOferty =
+	measure Wartość_Oferty =
 			
 			SUM('gold v_bc_quotes'[LineAmountPLN])
 		lineageTag: 47ee8dab-db00-4623-8ba0-5fff51ad5b77
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure KosztUrzadzenOferty =
+	measure Koszt_Urzadzen_Oferty =
 			
 			SUM('gold v_bc_quotes'[LineCostsPLN])
 		lineageTag: 4e11af73-efd9-4915-be49-473b445ea645
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure ZyskOferty = ```
+	measure Zysk_Oferty = ```
 			
 			VAR _Koszt = 
 			    SUM('gold v_bc_quotes'[LineCostsPLN])
@@ -30,18 +30,27 @@ table _Miary
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure MarzaOferty% = ```
+	measure Marza_Oferty% = ```
 			
 			VAR _Koszt = 
 			    SUM('gold v_bc_quotes'[LineCostsPLN])
 			VAR _WartoscOferty = 
 			    SUM('gold v_bc_quotes'[LineAmountPLN])
 			VAR _ZyskOferty =
-			   _WartoscOferty - _Koszt
+			SUMX(
+			    'gold v_bc_quotes',
+			    IF(
+			        ISBLANK('gold v_bc_quotes'[LineCostsPLN]) || 'gold v_bc_quotes'[LineCostsPLN] = 0,
+			        0,
+			        'gold v_bc_quotes'[ProfitPLN]
+			    )
+			)
 			VAR MarzaOferty =
 			    DIVIDE(_ZyskOferty,
 			            _WartoscOferty
 			    )
+			
+			
 			
 			RETURN MarzaOferty
 			```
@@ -71,6 +80,11 @@ table _Miary
 		lineageTag: d2f8791d-8336-40f1-9d2b-6dd6fbf217f1
 
 		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	measure LoggedSalesperson =
+			
+			USERPRINCIPALNAME()
+		lineageTag: cdaa2d63-5b39-4e7f-adbb-514ed723b701
 
 	column Value
 		isHidden

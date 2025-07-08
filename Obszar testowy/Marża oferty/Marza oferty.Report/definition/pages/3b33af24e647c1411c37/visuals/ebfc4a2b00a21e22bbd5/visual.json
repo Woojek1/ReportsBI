@@ -6,7 +6,7 @@
     "y": 32,
     "z": 3000,
     "height": 64,
-    "width": 136,
+    "width": 152,
     "tabOrder": 3000
   },
   "visual": {
@@ -23,7 +23,7 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "WartośćOferty"
+                  "Property": "Wartość_Oferty"
                 }
               },
               "queryRef": "_Miary.WartośćOferty",
@@ -43,7 +43,7 @@
                     "Entity": "_Miary"
                   }
                 },
-                "Property": "WartośćOferty"
+                "Property": "Wartość_Oferty"
               }
             },
             "direction": "Descending"

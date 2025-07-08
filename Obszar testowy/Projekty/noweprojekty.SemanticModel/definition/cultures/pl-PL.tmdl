@@ -167,19 +167,7 @@ cultureInfo pl-PL
 			          "ConceptualProperty": "InvoiceLineCost"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "CostPLN": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_miary.zysk_wiersza_faktury": {
 			      "Definition": {
@@ -188,19 +176,7 @@ cultureInfo pl-PL
 			          "ConceptualProperty": "InvoiceProfitPLN"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ProfitPLN": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_miary.quotemargin": {
 			      "Definition": {
@@ -213,27 +189,6 @@ cultureInfo pl-PL
 			      "Terms": [
 			        {
 			          "Rentowność": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "gold_v_invoices.salesperson": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_invoices",
-			          "ConceptualProperty": "Salesperson"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "SalespersonCode": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -297,6 +252,16 @@ cultureInfo pl-PL
 			      "Terms": [
 			        {
 			          "Moc chłodnicza (pierwsza oferta)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Moc chłodnicza pierwsza oferta": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

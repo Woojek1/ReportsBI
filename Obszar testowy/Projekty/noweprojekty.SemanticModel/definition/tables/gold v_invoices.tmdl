@@ -160,14 +160,6 @@ table 'gold v_invoices'
 
 		annotation SummarizationSetBy = Automatic
 
-	column Salesperson
-		dataType: string
-		lineageTag: f05e045c-1dc5-4bd3-a520-78317a7b3a78
-		summarizeBy: none
-		sourceColumn: Salesperson
-
-		annotation SummarizationSetBy = Automatic
-
 	column LoadDate
 		dataType: dateTime
 		formatString: General Date
@@ -383,6 +375,22 @@ table 'gold v_invoices'
 		lineageTag: 11820b68-3538-4582-a0fb-1ccb2dcc76d2
 		summarizeBy: none
 		sourceColumn: PaymentMethodCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonCode
+		dataType: string
+		lineageTag: d2bcc5ab-6fbc-4dc7-8f15-e9bb9912de48
+		summarizeBy: none
+		sourceColumn: SalespersonCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonName
+		dataType: string
+		lineageTag: 2bf531b6-b31a-46ab-9252-47e08174af08
+		summarizeBy: none
+		sourceColumn: SalespersonName
 
 		annotation SummarizationSetBy = Automatic
 

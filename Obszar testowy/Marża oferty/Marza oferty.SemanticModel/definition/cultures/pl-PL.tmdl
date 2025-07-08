@@ -120,28 +120,16 @@ cultureInfo pl-PL
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Miary",
-			          "ConceptualProperty": "KosztUrzadzenOferty"
+			          "ConceptualProperty": "Koszt_Urzadzen_Oferty"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Koszt urządzenia": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_miary.zyskoferty": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Miary",
-			          "ConceptualProperty": "ZyskOferty"
+			          "ConceptualProperty": "Zysk_Oferty"
 			        }
 			      },
 			      "State": "Generated"
@@ -202,7 +190,7 @@ cultureInfo pl-PL
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Miary",
-			          "ConceptualProperty": "MarzaOferty%"
+			          "ConceptualProperty": "Marza_Oferty%"
 			        }
 			      },
 			      "State": "Generated",
@@ -350,7 +338,7 @@ cultureInfo pl-PL
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Miary",
-			          "ConceptualProperty": "WartośćOferty"
+			          "ConceptualProperty": "Wartość_Oferty"
 			        }
 			      },
 			      "State": "Generated",
@@ -420,6 +408,48 @@ cultureInfo pl-PL
 			      "Terms": [
 			        {
 			          "Data oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_items.description2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "Description2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Opis urządzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.loggedsalesperson": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "LoggedSalesperson"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Zalogowany użytkownik": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

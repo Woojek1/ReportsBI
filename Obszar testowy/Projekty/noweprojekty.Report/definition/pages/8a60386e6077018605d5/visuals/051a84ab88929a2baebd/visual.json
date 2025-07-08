@@ -65,21 +65,6 @@
                       "Entity": "gold v_invoices"
                     }
                   },
-                  "Property": "Salesperson"
-                }
-              },
-              "queryRef": "gold v_invoices.Salesperson",
-              "nativeQueryRef": "SalespersonCode",
-              "displayName": "SalespersonCode"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "gold v_invoices"
-                    }
-                  },
                   "Property": "CustomerName"
                 }
               },
@@ -713,34 +698,6 @@
         },
         {
           "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_invoices.Salesperson"
-          }
-        },
-        {
-          "properties": {
             "styleTotal": {
               "expr": {
                 "Literal": {
@@ -1131,20 +1088,6 @@
           },
           "selector": {
             "metadata": "gold v_invoices.NoQuote"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "96D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_invoices.Salesperson"
           }
         },
         {

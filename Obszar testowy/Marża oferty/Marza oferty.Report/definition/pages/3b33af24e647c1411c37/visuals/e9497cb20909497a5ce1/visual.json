@@ -78,22 +78,7 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "KosztUrzadzenOferty"
-                }
-              },
-              "queryRef": "_Miary.KosztUrzadzenOferty",
-              "nativeQueryRef": "Koszt urządzenia",
-              "displayName": "Koszt urządzenia"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Miary"
-                    }
-                  },
-                  "Property": "WartośćOferty"
+                  "Property": "Wartość_Oferty"
                 }
               },
               "queryRef": "_Miary.WartośćOferty",
@@ -108,12 +93,27 @@
                       "Entity": "_Miary"
                     }
                   },
-                  "Property": "MarzaOferty%"
+                  "Property": "Marza_Oferty%"
                 }
               },
               "queryRef": "_Miary.MarzaOferty%",
               "nativeQueryRef": "Rentowność %",
               "displayName": "Rentowność %"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_bc_items"
+                    }
+                  },
+                  "Property": "Description2"
+                }
+              },
+              "queryRef": "gold v_bc_items.Description2",
+              "nativeQueryRef": "Opis urządzenia",
+              "displayName": "Opis urządzenia"
             }
           ]
         }
@@ -1644,34 +1644,6 @@
         },
         {
           "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.KosztUrzadzenOferty"
-          }
-        },
-        {
-          "properties": {
             "styleTotal": {
               "expr": {
                 "Literal": {
@@ -2321,7 +2293,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "171.90494892665797D"
+                  "Value": "184.02916358322494D"
                 }
               }
             }
@@ -2335,7 +2307,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "144.38514257782438D"
+                  "Value": "159.25902985559514D"
                 }
               }
             }
@@ -2377,20 +2349,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "200.37851170255823D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.KosztUrzadzenOferty"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "57.300977371462224D"
                 }
               }
@@ -2398,6 +2356,20 @@
           },
           "selector": {
             "metadata": "Sum(gold v_bc_quotes.Quantity)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "191.18446601941747D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_bc_items.Description2"
           }
         }
       ]
