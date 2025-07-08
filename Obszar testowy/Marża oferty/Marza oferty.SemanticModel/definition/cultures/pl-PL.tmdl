@@ -1,0 +1,436 @@
+cultureInfo pl-PL
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "gold_v_bc_quotes.noquote": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "NoQuote"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_quotes.keynoproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "KeyNoProject"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "gold_v_bc_quotes.noproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "NoProject"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nr projektu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_quotes.company": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "Company"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Firma": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.noproject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "NoProject"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "gold_v_bc_quotes.quotedate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "QuoteDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Data oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_projects.projectname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_projects",
+			          "ConceptualProperty": "ProjectName"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_miary.koszturzadzenoferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "KosztUrzadzenOferty"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Koszt urządzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.zyskoferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "ZyskOferty"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "gold_v_bc_salesperson.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_salesperson",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Handlowiec": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Handloweic": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_quotes.customername": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "CustomerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nazwa klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.marzaoferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "MarzaOferty%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Marza%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Rentowność %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_quotes.salespersoncode": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "SalespersonCode"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "calendar.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.noinvoice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "NoInvoice"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.postingdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "PostingDate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.salespersonname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "SalespersonName"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.duedate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "DueDate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.noorder": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "NoOrder"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "invoices.paymentmethodcode": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "PaymentMethodCode"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "gold_v_bc_customers.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_customers",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.salesamounttotallcy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "SalesAmountTotalLCY"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.salesamounttotalvatlcy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "SalesAmountTotalVATLCY"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.averagediscount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "AverageDiscount"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.remainingamountlcy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "RemainingAmountLCY"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_miary.wartośćoferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "WartośćOferty"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Wartość oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_quotes.noitem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_quotes",
+			          "ConceptualProperty": "NoItem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Symbol urządzenia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.nazwa_klienta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Nazwa_klienta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nazwa klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_miary.data_oferty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Data_oferty"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Data oferty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

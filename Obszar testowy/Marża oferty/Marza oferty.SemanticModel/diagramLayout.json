@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 323.98290403224195,
+            "y": 59.626373375573969
+          },
+          "nodeIndex": "gold v_bc_quotes",
+          "nodeLineageTag": "0ce3d45d-984a-4c73-98d3-e26ed19476c5",
+          "size": {
+            "height": 648,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 948,
+            "y": 36
+          },
+          "nodeIndex": "_Miary",
+          "nodeLineageTag": "42bcf88b-c31d-4748-8161-39456f97632e",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 652,
+            "y": 62
+          },
+          "nodeIndex": "gold v_projects",
+          "nodeLineageTag": "a6dc283e-ce97-43fa-9759-7066308c8c51",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 684,
+            "y": 550.5
+          },
+          "nodeIndex": "Kalendarz",
+          "nodeLineageTag": "52dbaba1-6dc1-4115-94e9-832327eecd49",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 58.524116710845519
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "nodeLineageTag": "609cf54c-ea0a-4154-af24-592d3d41fa9f",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 79.553182037699813,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

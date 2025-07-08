@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "a0aa7d46a0082e7e0b9b",
+  "displayName": "Customers - month",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "67ecbcc00d8a133074a7",
+    "type": "Default",
+    "parameters": []
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E6E6E6'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "30de5ad17c30d36aac87",
+      "target": "b18fa80c98d24e6e60e3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "30de5ad17c30d36aac87",
+      "target": "0369f2808c57e4c1545e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b18fa80c98d24e6e60e3",
+      "target": "30de5ad17c30d36aac87",
+      "type": "DataFilter"
+    }
+  ]
+}

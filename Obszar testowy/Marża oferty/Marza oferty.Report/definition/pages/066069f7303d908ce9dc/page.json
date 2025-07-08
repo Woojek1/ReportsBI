@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "066069f7303d908ce9dc",
+  "displayName": "Strona 1",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "0c676ea8020d13390e41",
+    "type": "Default",
+    "parameters": []
+  },
+  "visualInteractions": [
+    {
+      "source": "6d4e7660a800b6994cd5",
+      "target": "ba11aa45a7ab7a7dc677",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6d4e7660a800b6994cd5",
+      "target": "baff387c1c69b3780a60",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6d4e7660a800b6994cd5",
+      "target": "0b7d8106de64412c8775",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6d4e7660a800b6994cd5",
+      "target": "63082487042d45c6355d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6d4e7660a800b6994cd5",
+      "target": "fad80acae451d2928a44",
+      "type": "NoFilter"
+    }
+  ]
+}

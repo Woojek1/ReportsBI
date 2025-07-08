@@ -1,0 +1,36 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.144.1378.0 (25.06)+cba1e61f16ea36d44901f06fa446299040122394
+
+annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers","gold v_hr_enova_rls","gold v_bc_posted_sales_credit_memo_invoices","Invoices"]
+
+annotation PBI_ProTooling = ["CalcGroup","DevMode"]
+
+ref table 'gold v_bc_posted_sales_invoices'
+ref table 'gold v_bc_salesperson'
+ref table _Measures
+ref table 'Grupa obliczania'
+ref table Calendar
+ref table 'gold v_bc_items'
+ref table 'gold v_bc_customers'
+ref table 'gold v_hr_enova_rls'
+ref table 'gold v_bc_posted_sales_credit_memo_invoices'
+ref table Invoices
+
+ref role DTH
+ref role Zarząd
+ref role Aircon
+ref role Technab
+ref role Zymetric
+
+ref cultureInfo pl-PL
+

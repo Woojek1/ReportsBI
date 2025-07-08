@@ -1,0 +1,1322 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Slicer - overview",
+  "name": "b822a8a171e0600e42d3",
+  "options": {
+    "targetVisualNames": [
+      "d03b6cea0579d7ac8b14"
+    ],
+    "suppressActiveSection": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "fd12e3769561ecf588d2",
+    "sections": {
+      "fd12e3769561ecf588d2": {
+        "visualContainers": {
+          "035aef9475d98e389fe3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7a6a2009e39b46b8a253",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_salesperson"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_salesperson"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "04abfef855a5e13021d8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "077257d33077201268ce",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "RemainingAmountLCY"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "RemainingAmountLCY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "0620d998a5c765236811": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "48754c15ea7f602b644c",
+                  "type": "RelativeDate",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "Calendar",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Between": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "LowerBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "DateAdd": {
+                                    "Expression": {
+                                      "DateAdd": {
+                                        "Expression": {
+                                          "Now": {}
+                                        },
+                                        "Amount": 1,
+                                        "TimeUnit": 0
+                                      }
+                                    },
+                                    "Amount": -5,
+                                    "TimeUnit": 3
+                                  }
+                                },
+                                "TimeUnit": 0
+                              }
+                            },
+                            "UpperBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "Now": {}
+                                },
+                                "TimeUnit": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a7cabcadece073546226",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "MonthNumber"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {}
+            }
+          },
+          "2b89641232309bb5f55c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "2c0ae0639831c87e88d8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2d02560f3c8dbcc01122",
+                  "type": "TopN",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_customers"
+                        }
+                      },
+                      "Property": "KeyNoCustomer"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "b2dc7c60350642371341",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_items"
+                        }
+                      },
+                      "Property": "ItemTypeA"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "38bf390d0aa510cc8954",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cb78578253c2406b63de",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageDiscount"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "74db1f950ee08073eee9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ItemQuantity"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "2ce7c3ba4ad624a2657c": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "31f3a46d4490fa1428e3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8b51ee72364363a67a07",
+                  "type": "TopN",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_customers"
+                        }
+                      },
+                      "Property": "KeyNoCustomer"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a0b30dd00d22e304a2c1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_items"
+                        }
+                      },
+                      "Property": "ManufacturerCode"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1cc06f107415239986be",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3670fdb0be5870e15c20",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageDiscount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "33265a97331a490212b2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0febf72e9442bea6770b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "04c365e511ec18073088",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Day"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "195fe4136c4e4711e106",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountItemTotalLCY"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountItemTotalLCY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "38b01b6a7bb631d85f22": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "37bce9af8126ae6cae70",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageDiscount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageDiscount"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "4ec6493615b93df2573a": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "50bbd86154b96a2e24b5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "48754c15ea7f602b644c",
+                  "type": "RelativeDate",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "Calendar",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Between": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "LowerBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "DateAdd": {
+                                    "Expression": {
+                                      "DateAdd": {
+                                        "Expression": {
+                                          "Now": {}
+                                        },
+                                        "Amount": 1,
+                                        "TimeUnit": 0
+                                      }
+                                    },
+                                    "Amount": -5,
+                                    "TimeUnit": 3
+                                  }
+                                },
+                                "TimeUnit": 0
+                              }
+                            },
+                            "UpperBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "Now": {}
+                                },
+                                "TimeUnit": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "576cd051079a0cc6cbd3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5f616639c8efac330dbc": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "48754c15ea7f602b644c",
+                  "type": "RelativeDate",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "Calendar",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Between": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "LowerBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "DateAdd": {
+                                    "Expression": {
+                                      "DateAdd": {
+                                        "Expression": {
+                                          "Now": {}
+                                        },
+                                        "Amount": 1,
+                                        "TimeUnit": 0
+                                      }
+                                    },
+                                    "Amount": -5,
+                                    "TimeUnit": 3
+                                  }
+                                },
+                                "TimeUnit": 0
+                              }
+                            },
+                            "UpperBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "Now": {}
+                                },
+                                "TimeUnit": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "38883909c0a800dd67c9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "76f03a0e47d9e30d481c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "230ac720dd08e67aebcc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "OverdueAmountLCYTotal"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "OverdueAmountLCYTotal"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "8479f546decab3e0fff7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "99ee2b82c42e5ed508b9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "DistinctInvoiceCount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "DistinctInvoiceCount"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "891273ab79fd76914a75": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "914ebcb02bc0d2a49745": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a3ca51fea0b5eeb90c54",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "LoggedSalesperson"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9f042a11aaa9578bb7ce",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Username"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "multiRowCard",
+              "objects": {}
+            }
+          },
+          "9f3d0da2fbaa80159b7f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "9f69073ca46664542742": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a976e9a2c9af697ae43d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c286087169082a5b2f11",
+                  "type": "RelativeDate",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "Calendar",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Between": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "LowerBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "DateAdd": {
+                                    "Expression": {
+                                      "DateAdd": {
+                                        "Expression": {
+                                          "Now": {}
+                                        },
+                                        "Amount": 1,
+                                        "TimeUnit": 0
+                                      }
+                                    },
+                                    "Amount": -5,
+                                    "TimeUnit": 3
+                                  }
+                                },
+                                "TimeUnit": 0
+                              }
+                            },
+                            "UpperBound": {
+                              "DateSpan": {
+                                "Expression": {
+                                  "Now": {}
+                                },
+                                "TimeUnit": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "607dd2728101aa850400",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5311cc8754ded8d8edab",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountItemTotalLCY"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a0a4c0fdacc808552a10": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "b56a2bfd2b8a2c506f91": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7b7410f816c4913b51c5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageInvoiceAmount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageInvoiceAmount"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "bbe7fd51dd386489427d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5d9aadd000ebe2390305",
+                  "type": "TopN",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_customers"
+                        }
+                      },
+                      "Property": "KeyNoCustomer"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "503c7be119606a0454e3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_customers"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1fd6d436599093004d3c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6a66403de07b7dcb6688",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "AverageDiscount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "SalesAmountTotalLCY"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "eca5c3a22ce50400e3cd": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "f16123d085079c205072": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "fe9cab1f65b06076f646": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "d03b6cea0579d7ac8b14": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "9f69f842c0495906b035": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "82d8f39fc265556a8ea1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "013ae0a090bec9e16422",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_salesperson"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold v_bc_salesperson"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Values"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "gold v_bc_salesperson.Name"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "gold v_bc_salesperson"
+                              }
+                            },
+                            "Property": "Name"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "fa5a42b2ec9ac7da0198": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "bef4352a79b6e50b0cc2": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

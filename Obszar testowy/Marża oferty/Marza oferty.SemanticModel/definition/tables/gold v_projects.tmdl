@@ -1,0 +1,176 @@
+table 'gold v_projects'
+	lineageTag: 8349f38b-1288-4ec0-9f86-73be665efea6
+
+	column NoProject
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 868185b2-4636-431d-aac6-9a7fe1f7d236
+		summarizeBy: none
+		sourceColumn: NoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoProject
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: a2fd49c3-f5a4-4226-b5a9-a1871c3884d1
+		summarizeBy: none
+		sourceColumn: KeyNoProject
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: b0c24a6b-6ed1-4f81-b0c2-5ef5524ecdde
+		summarizeBy: none
+		sourceColumn: ProjectName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectStage
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: e744e98c-8c88-4e54-a413-01ca0bffc19f
+		summarizeBy: none
+		sourceColumn: ProjectStage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 42de66c4-a812-4677-af90-c496efba98c2
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationDate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 61a8d8a5-0b78-4e34-baaa-326011ac32e7
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Manufacturer_Code
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 1e8b67d4-bc2c-430b-ab65-a104c71a4e12
+		summarizeBy: none
+		sourceColumn: Manufacturer_Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3bff8608-fe3b-4849-a0e3-0695608caa68
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column County
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 795ddeba-ecec-430a-9d50-1c764f299816
+		summarizeBy: none
+		sourceColumn: County
+
+		annotation SummarizationSetBy = Automatic
+
+	column ObjectType
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: ab6f18f5-1683-4f84-838f-7909405f2a66
+		summarizeBy: none
+		sourceColumn: ObjectType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectSource
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 039ca1f4-68d9-44e7-84cc-97d54aa7ffac
+		summarizeBy: none
+		sourceColumn: ProjectSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3c97e64c-3213-4987-b8fa-0cb9e1a4abf7
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedDeliveryDate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: d760b4fb-965f-4757-bf06-3e78ea045e54
+		summarizeBy: none
+		sourceColumn: PlannedDeliveryDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column AccountManager
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: e3fa19f8-176a-4755-b136-76676fdcf604
+		summarizeBy: none
+		sourceColumn: AccountManager
+
+		annotation SummarizationSetBy = Automatic
+
+	column Salesperson_Code
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 669f2fbe-8db7-47cd-85d8-2cc1a6ff1c72
+		summarizeBy: none
+		sourceColumn: Salesperson_Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 05e9e3ae-d273-4691-bedf-45718cd79b60
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 425b0c07-b533-4e05-b140-4d7f87ce2a1b
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_projects' = m
+		mode: directQuery
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_projects = Źródło{[Schema="gold",Item="v_projects"]}[Data]
+				in
+				    gold_v_projects
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

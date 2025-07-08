@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "3b33af24e647c1411c37",
+  "displayName": "Szczegóły oferty",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "703f55188bac25d830a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_quotes"
+              }
+            },
+            "Property": "NoQuote"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_quotes",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "g"
+                          }
+                        },
+                        "Property": "NoQuote"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'OF/25/07/0147'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "4b0f33cbbddc37229a0e",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "22999b5ad6d914c08e51",
+        "boundFilter": "703f55188bac25d830a8",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_quotes"
+              }
+            },
+            "Property": "NoQuote"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode"
+}

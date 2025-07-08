@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Marza oferty"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8110c5f9-cf91-40e9-b405-8c4c94b780cc"
+  }
+}

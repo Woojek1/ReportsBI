@@ -1,0 +1,13 @@
+relationship 92d867eb-b810-28d4-135c-9a2c52abf49c
+	fromColumn: 'gold v_bc_quotes'.QuoteDate
+	toColumn: Kalendarz.Date
+
+relationship 4856095d-691c-fc12-b86c-0654d60e651e
+	fromColumn: 'gold v_bc_quotes'.KeyNoProject
+	toColumn: 'gold v_projects'.KeyNoProject
+
+relationship 2f7e4c47-c1b3-5527-7e00-de4121c371b2
+	toCardinality: many
+	fromColumn: 'gold v_bc_quotes'.SalespersonCode
+	toColumn: 'gold v_bc_salesperson'.Code
+

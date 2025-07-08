@@ -1,0 +1,9 @@
+role 'Dyrektor Zymetric'
+	modelPermission: read
+
+	tablePermission Invoices = [Company] == "Zymetric"
+
+	tablePermission 'gold v_bc_salesperson' = [Company] == "Zymetric"
+
+	annotation PBI_Id = 2bfcb5726faa4d289bef64e6c2c1e755
+

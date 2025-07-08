@@ -1,0 +1,26 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.144.1378.0 (25.06)+cba1e61f16ea36d44901f06fa446299040122394
+
+annotation PBI_QueryOrder = ["gold v_projects","gold v_bc_quotes","gold v_bc_salesperson"]
+
+annotation PBI_ProTooling = ["DevMode","CalcGroup"]
+
+ref table _Miary
+ref table Kalendarz
+ref table 'gold v_projects'
+ref table 'gold v_bc_quotes'
+ref table 'gold v_bc_salesperson'
+ref table 'Grupa obliczania'
+
+ref cultureInfo pl-PL
+

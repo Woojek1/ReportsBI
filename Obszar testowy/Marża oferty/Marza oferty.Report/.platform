@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Marza oferty"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fdca4341-285a-4682-a702-10b0ef0b63a3"
+  }
+}
