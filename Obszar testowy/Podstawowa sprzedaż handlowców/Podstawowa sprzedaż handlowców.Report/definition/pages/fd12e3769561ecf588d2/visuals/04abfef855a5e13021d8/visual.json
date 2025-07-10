@@ -4,7 +4,7 @@
   "position": {
     "x": 856,
     "y": 8,
-    "z": 15500,
+    "z": 11000,
     "height": 72,
     "width": 152,
     "tabOrder": 12000
@@ -207,7 +207,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -220,6 +220,19 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

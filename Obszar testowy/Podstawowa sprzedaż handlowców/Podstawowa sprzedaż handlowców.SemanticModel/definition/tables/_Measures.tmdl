@@ -3,7 +3,7 @@ table _Measures
 
 	measure SalesAmountTotalLCY = ```
 			
-			    SUM('invoices'[AmountLCY])
+			    SUM('Invoices'[AmountLCY])
 			
 			
 			```
@@ -873,7 +873,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[AmountLCY]),
-			    'invoices'[Type] = "Item"
+			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			)
 			
 			
@@ -975,7 +975,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('Invoices'[ProfitLCY]),
-			    'invoices'[Type] = "Item"
+			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			)
 			
 			
@@ -991,19 +991,24 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item"
-			                    )
+			                        Invoices[Type] == "Item" ||
+			                        Invoices[Type] = "Charge (Item)"
+			                        )
+			                    
+			                
+			
 			VAR _ProfitLCY = 
 			            CALCULATE(
 			                SUM(Invoices[ProfitLCY]),
-			                    Invoices[Type] = "Item"
-			                    )                
+			                        Invoices[Type] == "Item" ||
+			                        Invoices[Type] = "Charge (Item)"
+			            )            
 			
-			RETURN
-			    DIVIDE(
-			           _ProfitLCY,
-			            _SalesAmountLCY
-			    )
+			VAR Margin = 
+			        DIVIDE(_ProfitLCY, _SalesAmountLCY)
+			
+			
+			RETURN Margin
 			
 			```
 		formatString: 0.00%;-0.00%;0.00%
@@ -1085,6 +1090,18 @@ table _Measures
 		lineageTag: a89291f6-f1e4-4d5b-b289-98ed44b10928
 
 		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure Cost_Amount_Item_LCY =
+			
+			CALCULATE(
+			    SUM(Invoices[LineCostsLCY]),
+			    'Invoices'[Type] = "Item"
+			    || 'Invoices'[Type] = "Charge (Item)"
+			    )
+		displayFolder: Sales
+		lineageTag: 9473014a-3c7f-4c99-b1e2-03c1e69ee89e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden

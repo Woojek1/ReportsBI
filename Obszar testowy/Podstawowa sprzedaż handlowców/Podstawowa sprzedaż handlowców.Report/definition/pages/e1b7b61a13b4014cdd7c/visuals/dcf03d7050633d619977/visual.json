@@ -1,57 +1,42 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "dfc9902951ba0121ce26",
+  "name": "dcf03d7050633d619977",
   "position": {
-    "x": 240,
-    "y": 16,
-    "z": 11000,
+    "x": 8,
+    "y": 83,
+    "z": 12000,
     "height": 32,
     "width": 32,
-    "tabOrder": 12000
+    "tabOrder": 11000
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "image",
     "objects": {
-      "icon": [
+      "general": [
         {
           "properties": {
-            "shapeType": {
+            "imageUrl": {
               "expr": {
-                "Literal": {
-                  "Value": "'information'"
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "icons8-person-100_(1)5679036949603344.png"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ],
-      "outline": [
+      "imageScaling": [
         {
           "properties": {
-            "show": {
+            "imageScalingType": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Fill'"
                 }
               }
             }
-          }
-        },
-        {
-          "properties": {
-            "weight": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ]
@@ -67,24 +52,24 @@
                 }
               }
             },
-            "tooltip": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Wartość sprzedaży netto towarów dla zapłaconych faktur'"
-                }
-              }
-            },
-            "showDefaultTooltip": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "type": {
               "expr": {
                 "Literal": {
                   "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'e144c7950d6f629c12e0'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Klienci'"
                 }
               }
             }

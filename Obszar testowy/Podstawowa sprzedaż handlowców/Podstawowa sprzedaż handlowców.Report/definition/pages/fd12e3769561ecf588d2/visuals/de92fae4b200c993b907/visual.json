@@ -4,10 +4,10 @@
   "position": {
     "x": 208,
     "y": 8,
-    "z": 35000,
+    "z": 26000,
     "height": 72,
     "width": 136,
-    "tabOrder": 27000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "card",
@@ -97,6 +97,17 @@
                   "Value": "false"
                 }
               }
+            },
+            "foreground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0D5272'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -111,13 +122,6 @@
                 }
               }
             },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
             "color": {
               "solid": {
                 "color": {
@@ -127,6 +131,20 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -139,7 +157,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -165,6 +183,56 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "actionFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0D5272'"
+                    }
+                  }
                 }
               }
             }

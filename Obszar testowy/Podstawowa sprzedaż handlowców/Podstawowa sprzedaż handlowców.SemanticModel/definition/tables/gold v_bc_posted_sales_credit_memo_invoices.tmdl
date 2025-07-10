@@ -319,7 +319,7 @@ table 'gold v_bc_posted_sales_credit_memo_invoices'
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column LineCostsLCY
-		dataType: int64
+		dataType: double
 		isHidden
 		lineageTag: 6418522f-19d7-49c2-8a92-fc9990822b4c
 		summarizeBy: sum
@@ -332,7 +332,7 @@ table 'gold v_bc_posted_sales_credit_memo_invoices'
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column ProfitLCY
-		dataType: int64
+		dataType: double
 		isHidden
 		lineageTag: f34ba55c-0a40-48c3-8381-a7854351d8f8
 		summarizeBy: sum
@@ -519,6 +519,31 @@ table 'gold v_bc_posted_sales_credit_memo_invoices'
 		sourceColumn: Company
 
 		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ECOM
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1d0045c4-733b-43bb-9c99-fa63535e6e03
+		summarizeBy: none
+		sourceColumn: ECOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column CorrectionReason
+		dataType: string
+		lineageTag: 74637856-e8e9-4d5f-9b44-a52a4fe1d587
+		summarizeBy: none
+		sourceColumn: CorrectionReason
+
+		annotation SummarizationSetBy = Automatic
+
+	column Invoice_Type
+		dataType: string
+		lineageTag: c0521e8d-ae5d-4c41-9438-fba452aa19e2
+		summarizeBy: none
+		sourceColumn: Invoice_Type
 
 		annotation SummarizationSetBy = Automatic
 

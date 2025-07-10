@@ -7,7 +7,7 @@
     "z": 14000,
     "height": 64,
     "width": 192,
-    "tabOrder": 15000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "slicer",
@@ -133,133 +133,18 @@
                   "Value": "true"
                 }
               }
-            },
-            "selfFilter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "i",
-                    "Entity": "Invoices",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Contains": {
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "i"
-                              }
-                            },
-                            "Property": "NoInvoice"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "'fks'"
-                          }
-                        }
-                      }
-                    },
-                    "Annotations": {
-                      "PowerBI.MParameterBehavior": 1
-                    }
-                  }
-                ]
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "i",
-                    "Entity": "Invoices",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "i"
-                                }
-                              },
-                              "Property": "NoInvoice"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/07/0005'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/07/0003'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/07/0002'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/07/0001'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/06/0030'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/06/0029'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/06/0028'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'FKS/25/07/0004'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
               }
             }
           }

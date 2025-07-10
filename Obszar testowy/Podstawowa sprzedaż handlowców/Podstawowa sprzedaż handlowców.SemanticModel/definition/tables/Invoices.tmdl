@@ -399,6 +399,31 @@ table Invoices
 
 		annotation SummarizationSetBy = Automatic
 
+	column ECOM
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d8db2845-9cc6-4aa8-b3a0-097477eabb34
+		summarizeBy: none
+		sourceColumn: ECOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column Invoice_Type
+		dataType: string
+		lineageTag: 4aa9d709-0b5f-4c57-9d4c-1315f77a9567
+		summarizeBy: none
+		sourceColumn: Invoice_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column CorrectionReason
+		dataType: string
+		lineageTag: 3cf88133-bc24-4845-a4fa-f429b89d1518
+		summarizeBy: none
+		sourceColumn: CorrectionReason
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Invoices = m
 		mode: import
 		source =

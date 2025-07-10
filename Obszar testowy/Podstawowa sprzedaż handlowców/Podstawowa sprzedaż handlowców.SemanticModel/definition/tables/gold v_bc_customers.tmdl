@@ -284,6 +284,14 @@ table 'gold v_bc_customers'
 
 		annotation SummarizationSetBy = Automatic
 
+	column RelatedCompany
+		dataType: string
+		lineageTag: 2e334559-6513-444f-bf95-38cda6ed8697
+		summarizeBy: none
+		sourceColumn: RelatedCompany
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_customers' = m
 		mode: import
 		source =

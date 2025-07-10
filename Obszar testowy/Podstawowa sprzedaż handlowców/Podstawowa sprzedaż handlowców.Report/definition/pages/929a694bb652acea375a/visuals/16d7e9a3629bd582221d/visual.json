@@ -4,10 +4,10 @@
   "position": {
     "x": 56,
     "y": 16,
-    "z": 20001,
+    "z": 7000,
     "height": 64,
-    "width": 304,
-    "tabOrder": 20001
+    "width": 144,
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "slicer",
@@ -117,6 +117,19 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
                   "Value": "true"

@@ -531,6 +531,23 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation SummarizationSetBy = Automatic
 
+	column ECOM
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3138fc35-6ad9-4e77-8943-4068bf0283a7
+		summarizeBy: none
+		sourceColumn: ECOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column Invoice_Type
+		dataType: string
+		lineageTag: 5a90e507-3775-4431-91b7-2cb2964a019c
+		summarizeBy: none
+		sourceColumn: Invoice_Type
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =

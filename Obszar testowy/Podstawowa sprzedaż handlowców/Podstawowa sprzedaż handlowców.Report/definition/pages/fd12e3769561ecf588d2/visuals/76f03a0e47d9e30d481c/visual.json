@@ -4,7 +4,7 @@
   "position": {
     "x": 1016,
     "y": 8,
-    "z": 9000,
+    "z": 7000,
     "height": 72,
     "width": 144,
     "tabOrder": 11000
@@ -82,26 +82,6 @@
                   "Value": "8D"
                 }
               }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "wordWrap": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             }
           }
         }
@@ -135,20 +115,6 @@
       "title": [
         {
           "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
             "text": {
               "expr": {
                 "Literal": {
@@ -156,10 +122,10 @@
                 }
               }
             },
-            "fontSize": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "true"
                 }
               }
             }
@@ -231,7 +197,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -273,7 +239,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }

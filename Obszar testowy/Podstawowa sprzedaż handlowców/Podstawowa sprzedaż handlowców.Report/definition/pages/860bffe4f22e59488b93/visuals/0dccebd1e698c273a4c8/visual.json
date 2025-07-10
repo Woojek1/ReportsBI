@@ -4,7 +4,7 @@
   "position": {
     "x": 64,
     "y": 128,
-    "z": 2000,
+    "z": 1000,
     "height": 304,
     "width": 1184,
     "tabOrder": 2000
@@ -80,21 +80,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "Profitability"
-                }
-              },
-              "queryRef": "Invoices.Profitability",
-              "nativeQueryRef": "Rentowność1",
-              "displayName": "Rentowność"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "gold v_bc_items"
                     }
                   },
@@ -162,6 +147,34 @@
               },
               "queryRef": "Invoices.Type",
               "nativeQueryRef": "Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "LineCostsLCY"
+                }
+              },
+              "queryRef": "Invoices.LineCostsLCY",
+              "nativeQueryRef": "LineCostsLCY"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "CorrectionReason"
+                }
+              },
+              "queryRef": "Invoices.CorrectionReason",
+              "nativeQueryRef": "CorrectionReason"
             }
           ]
         }
@@ -555,21 +568,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "91.68751948842973D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Profitability"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "256.29581170768586D"
+                  "Value": "207.0526146025207D"
                 }
               }
             }
@@ -1052,34 +1051,6 @@
           },
           "selector": {
             "metadata": "Invoices.AmountLCY"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Profitability"
           }
         },
         {

@@ -4,10 +4,10 @@
   "position": {
     "x": 56,
     "y": 176,
-    "z": 13000,
-    "height": 496,
+    "z": 0,
+    "height": 488,
     "width": 1208,
-    "tabOrder": 14000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "tableEx",
@@ -89,6 +89,21 @@
               "queryRef": "_Measures.SalesAmountTotalLCY",
               "nativeQueryRef": "Wartość faktury netto",
               "displayName": "Wartość faktury netto"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "SalesAmountItemTotalLCY"
+                }
+              },
+              "queryRef": "_Measures.SalesAmountItemTotalLCY",
+              "nativeQueryRef": "Wartość towarów netto",
+              "displayName": "Wartość towarów netto"
             },
             {
               "field": {
@@ -193,6 +208,48 @@
               },
               "queryRef": "Invoices.Company",
               "nativeQueryRef": "Company"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "ProfitAmountItemTotalLCY"
+                }
+              },
+              "queryRef": "_Measures.ProfitAmountItemTotalLCY",
+              "nativeQueryRef": "ProfitAmountItemTotalLCY"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Cost_Amount_Item_LCY"
+                }
+              },
+              "queryRef": "_Measures.Cost_Amount_Item_LCY",
+              "nativeQueryRef": "Cost_Amount_Item_LCY"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "MarginItems"
+                }
+              },
+              "queryRef": "_Measures.MarginItems",
+              "nativeQueryRef": "MarginItems"
             }
           ]
         }
@@ -1631,6 +1688,34 @@
           "selector": {
             "metadata": "Invoices.PaymentMethodCode"
           }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
         }
       ],
       "columnWidth": [
@@ -2073,7 +2158,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "92.69138075826416D"
+                  "Value": "88.67789458159524D"
                 }
               }
             }
@@ -2143,7 +2228,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "99.95659369371229D"
+                  "Value": "147.97910424553345D"
                 }
               }
             }
@@ -2206,6 +2291,62 @@
           },
           "selector": {
             "metadata": "Invoices.Company"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "146D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.ProfitAmountItemTotalLCY"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "128D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Cost_Amount_Item_LCY"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.MarginItems"
           }
         }
       ]

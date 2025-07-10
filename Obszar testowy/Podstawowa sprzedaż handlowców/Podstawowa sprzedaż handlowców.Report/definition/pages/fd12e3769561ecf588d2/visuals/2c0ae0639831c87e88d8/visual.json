@@ -4,7 +4,7 @@
   "position": {
     "x": 808,
     "y": 336,
-    "z": 13000,
+    "z": 9000,
     "height": 368,
     "width": 456,
     "tabOrder": 15000
@@ -398,7 +398,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "75D"
+                  "Value": "66D"
                 }
               }
             }
@@ -428,7 +428,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },

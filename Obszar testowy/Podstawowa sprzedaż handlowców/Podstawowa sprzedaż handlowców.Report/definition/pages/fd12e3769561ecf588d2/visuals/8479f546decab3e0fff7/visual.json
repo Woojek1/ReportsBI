@@ -4,7 +4,7 @@
   "position": {
     "x": 464,
     "y": 8,
-    "z": 20500,
+    "z": 18000,
     "height": 72,
     "width": 96,
     "tabOrder": 5000
@@ -69,13 +69,6 @@
                   "Value": "1D"
                 }
               }
-            },
-            "preserveWhitespace": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             }
           }
         }
@@ -99,13 +92,6 @@
         {
           "properties": {
             "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -138,24 +124,10 @@
       "border": [
         {
           "properties": {
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
                 }
               }
             },
@@ -168,6 +140,20 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -194,6 +180,13 @@
       "visualHeader": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "foreground": {
               "solid": {
                 "color": {
@@ -202,13 +195,6 @@
                       "Value": "'#0D5272'"
                     }
                   }
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
                 }
               }
             }
@@ -221,7 +207,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -243,17 +229,23 @@
       "subTitle": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "text": {
               "expr": {
                 "Literal": {
                   "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

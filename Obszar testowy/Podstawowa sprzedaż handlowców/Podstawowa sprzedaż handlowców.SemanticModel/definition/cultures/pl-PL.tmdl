@@ -4061,6 +4061,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Wartość faktury netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Sprzedaż netto": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4072,16 +4082,6 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Sprzedaż całkowita netto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Wartość faktury netto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16241,6 +16241,26 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Wartość towarów netto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Sprzedaż": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -22624,6 +22644,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Rodzaj sprzedaży": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -23843,16 +23873,6 @@ cultureInfo pl-PL
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "Rentowność": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -25296,6 +25316,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Zysk": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -26169,6 +26199,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Marża towarów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -26255,9 +26295,280 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.ecom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "ECOM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ecom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_credit_memo_invoice.ecom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_credit_memo_invoices",
+			          "ConceptualProperty": "ECOM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ecom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "invoice.ecom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "ECOM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ecom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.cost_amount_item_LCY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Cost_Amount_Item_LCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cost amount item LCY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cost_Amount_Item_LCY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount item LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cost amount product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cost amount element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cost amount entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "amount product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "amount element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "amount entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "cost amount article lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Koszt": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "entity__measure_has_margin_items_MTD_today_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.margin_items_MTD_today_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_MTD_today_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_MTD_today_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_margin_items_MTD_today_previous_year"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_margin_items_MTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.margin_items_MTD_today": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_MTD_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_MTD_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_margin_items_MTD_today"
+			        }
+			      ]
+			    },
 			    "invoice_has_entity__measure_margin_items": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -33783,72 +34094,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_margin_items_MTD_today": {
-			      "Binding": {
-			        "ConceptualEntity": "_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__measure": {
-			          "Target": {
-			            "Entity": "entity__measure"
-			          }
-			        },
-			        "entity__measure.margin_items_MTD_today": {
-			          "Target": {
-			            "Entity": "entity__measure.margin_items_MTD_today"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__measure"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.margin_items_MTD_today"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_margin_items_MTD_today"
-			        }
-			      ]
-			    },
-			    "entity__measure_has_margin_items_MTD_today_previous_year": {
-			      "Binding": {
-			        "ConceptualEntity": "_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__measure": {
-			          "Target": {
-			            "Entity": "entity__measure"
-			          }
-			        },
-			        "entity__measure.margin_items_MTD_today_previous_year": {
-			          "Target": {
-			            "Entity": "entity__measure.margin_items_MTD_today_previous_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__measure"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.margin_items_MTD_today_previous_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_margin_items_MTD_today_previous_year"
-			        }
-			      ]
-			    },
 			    "invoice_has_entity__measure_zysk_na_towarach": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -33879,6 +34124,72 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "invoices_have_zysk_na_towarach"
+			        }
+			      ]
+			    },
+			    "invoice_has_ecom": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.ecom": {
+			          "Target": {
+			            "Entity": "invoice.ecom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.ecom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_ecoms"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_cost_amount_item_LCY": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.cost_amount_item_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.cost_amount_item_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.cost_amount_item_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_cost_amount_item_LCY"
 			        }
 			      ]
 			    },

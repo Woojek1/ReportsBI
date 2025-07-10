@@ -118,6 +118,44 @@
                   "Value": "true"
                 }
               }
+            },
+            "selfFilter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "g",
+                    "Entity": "gold v_bc_salesperson",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Contains": {
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "g"
+                              }
+                            },
+                            "Property": "Name"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'bąk'"
+                          }
+                        }
+                      }
+                    },
+                    "Annotations": {
+                      "PowerBI.MParameterBehavior": 1
+                    }
+                  }
+                ]
+              }
             }
           }
         }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "8bcfe4769160d763a851",
   "position": {
-    "x": 376,
+    "x": 368,
     "y": 16,
-    "z": 9000,
+    "z": 10000,
     "height": 64,
     "width": 304,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "slicer",
@@ -118,6 +118,19 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
                   "Value": "true"
