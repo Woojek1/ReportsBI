@@ -118,44 +118,6 @@
                   "Value": "true"
                 }
               }
-            },
-            "selfFilter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "g",
-                    "Entity": "gold v_bc_salesperson",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Contains": {
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "g"
-                              }
-                            },
-                            "Property": "Name"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "'głowac'"
-                          }
-                        }
-                      }
-                    },
-                    "Annotations": {
-                      "PowerBI.MParameterBehavior": 1
-                    }
-                  }
-                ]
-              }
             }
           }
         }
@@ -267,5 +229,60 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "b54c17ec30090a0de05e"
+  "parentGroupName": "b54c17ec30090a0de05e",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "305a0ecd9418eab064ea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_salesperson"
+              }
+            },
+            "Property": "Name"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_salesperson",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Contains": {
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "g"
+                            }
+                          },
+                          "Property": "Name"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "'value'"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

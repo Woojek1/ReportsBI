@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "28702914936014437ee8",
+  "name": "a8898aa47d5150695288",
   "position": {
-    "x": 592,
-    "y": 32,
+    "x": 568,
+    "y": 16,
     "z": 32000,
     "height": 64,
-    "width": 152,
-    "tabOrder": 32000
+    "width": 280,
+    "tabOrder": 33000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold v_bc_customers"
+                      "Entity": "gold v_bc_items"
                     }
                   },
-                  "Property": "RelatedCompany"
+                  "Property": "ItemTypeA"
                 }
               },
-              "queryRef": "gold v_bc_customers.RelatedCompany",
-              "nativeQueryRef": "RelatedCompany",
+              "queryRef": "gold v_bc_items.ItemTypeA",
+              "nativeQueryRef": "ItemTypeA",
               "active": true
             }
           ]
@@ -48,13 +48,40 @@
           }
         }
       ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Grupa produktowa'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             },
@@ -62,26 +89,6 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Firmy powiązane'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "pendingChangesIcon": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
@@ -109,64 +116,31 @@
                   }
                 }
               }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "g",
-                    "Entity": "gold v_bc_customers",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "g"
-                                }
-                              },
-                              "Property": "RelatedCompany"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Niepowiązane'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
               }
             }
           }
         }
       ],
-      "selection": [
+      "pendingChangesIcon": [
         {
           "properties": {
-            "selectAllCheckboxEnabled": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -178,6 +152,13 @@
       "title": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nazwa klienta'"
+                }
+              }
+            },
             "titleWrap": {
               "expr": {
                 "Literal": {
@@ -253,7 +234,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -312,10 +293,44 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "syncGroup": {
-      "groupName": "RelatedCompany",
+      "groupName": "ItemTypeA",
       "fieldChanges": true,
       "filterChanges": true
     },

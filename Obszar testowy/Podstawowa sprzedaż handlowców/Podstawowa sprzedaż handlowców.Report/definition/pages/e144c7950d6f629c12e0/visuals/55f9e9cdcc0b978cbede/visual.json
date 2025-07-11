@@ -3,8 +3,8 @@
   "name": "55f9e9cdcc0b978cbede",
   "position": {
     "x": 64,
-    "y": 280,
-    "z": 18000,
+    "y": 304,
+    "z": 19000,
     "height": 64,
     "width": 320,
     "tabOrder": 22000
@@ -64,6 +64,13 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Region'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -71,10 +78,10 @@
                 }
               }
             },
-            "text": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Region'"
+                  "Value": "8D"
                 }
               }
             },
@@ -91,6 +98,13 @@
       "items": [
         {
           "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -103,10 +117,10 @@
                 }
               }
             },
-            "textSize": {
+            "padding": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "2D"
                 }
               }
             }
@@ -120,6 +134,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -213,7 +234,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -267,6 +288,40 @@
                       "Value": "'#0D5272'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

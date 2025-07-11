@@ -229,5 +229,60 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "fae435c563590869dc41"
+  "parentGroupName": "fae435c563590869dc41",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e03e94b07116d8ca3020",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_salesperson"
+              }
+            },
+            "Property": "Name"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_salesperson",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Contains": {
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "g"
+                            }
+                          },
+                          "Property": "Name"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "'value'"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

@@ -3,8 +3,8 @@
   "name": "9535d500429c28623712",
   "position": {
     "x": 1040,
-    "y": 96,
-    "z": 28000,
+    "y": 168,
+    "z": 27000,
     "height": 224,
     "width": 224,
     "tabOrder": 28000
@@ -955,7 +955,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -975,6 +975,41 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "angle": {
+              "expr": {
+                "Literal": {
+                  "Value": "45L"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "shadowBlur": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "shadowSpread": {
+              "expr": {
+                "Literal": {
+                  "Value": "3L"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "70L"
                 }
               }
             }

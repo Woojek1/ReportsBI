@@ -281,7 +281,7 @@ table _Measures
 
 	measure SalesAmountTotalVAT = ```
 			
-			    SUM('gold v_bc_posted_sales_invoices'[AmountIncludingVAT])
+			    SUM('invoices'[AmountIncludingVAT])
 			
 			
 			```
@@ -682,7 +682,11 @@ table _Measures
 
 	measure ItemQuantity =
 			
-			SUM('invoices'[Quantity])
+			CALCULATE(
+			    SUM('invoices'[Quantity]),
+			    'Invoices'[Type] = "Item"
+			    || 'Invoices'[Type] = "Charge (Item)"
+			    )
 		formatString: 0
 		displayFolder: Sales
 		lineageTag: facf03c2-754e-4a98-afd6-b47e60b90175
@@ -873,7 +877,8 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[AmountLCY]),
-			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			    'invoices'[Type] == "Item"
+			    || 'invoices'[Type] == "Charge (Item)"
 			)
 			
 			
@@ -991,7 +996,7 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] == "Item" ||
+			                        Invoices[Type] = "Item" ||
 			                        Invoices[Type] = "Charge (Item)"
 			                        )
 			                    
@@ -1000,7 +1005,7 @@ table _Measures
 			VAR _ProfitLCY = 
 			            CALCULATE(
 			                SUM(Invoices[ProfitLCY]),
-			                        Invoices[Type] == "Item" ||
+			                        Invoices[Type] = "Item" ||
 			                        Invoices[Type] = "Charge (Item)"
 			            )            
 			

@@ -3,10 +3,10 @@
   "name": "5c13eeb8181a125c4023",
   "position": {
     "x": 864,
-    "y": 96,
+    "y": 88,
     "z": 14000,
     "height": 64,
-    "width": 192,
+    "width": 200,
     "tabOrder": 14000
   },
   "visual": {
@@ -76,6 +76,13 @@
                 }
               }
             },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
             "outlineStyle": {
               "expr": {
                 "Literal": {
@@ -93,6 +100,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -120,6 +134,13 @@
                   }
                 }
               }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
             }
           }
         }
@@ -128,19 +149,6 @@
         {
           "properties": {
             "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -230,7 +238,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -284,6 +292,40 @@
                       "Value": "'#0D5272'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

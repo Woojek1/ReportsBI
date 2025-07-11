@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Measures.RemainingInvoicesCount",
-              "nativeQueryRef": "RemainingInvoicesCount"
+              "nativeQueryRef": "Ilość otwartych faktur",
+              "displayName": "Ilość otwartych faktur"
             }
           ]
         }
@@ -165,7 +166,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

@@ -3,9 +3,9 @@
   "name": "8b558aed95730a78d9db",
   "position": {
     "x": 64,
-    "y": 192,
-    "z": 17000,
-    "height": 80,
+    "y": 232,
+    "z": 18000,
+    "height": 64,
     "width": 320,
     "tabOrder": 21000
   },
@@ -65,6 +65,13 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Profil Klienta'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -72,10 +79,10 @@
                 }
               }
             },
-            "text": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Profil Klienta'"
+                  "Value": "8D"
                 }
               }
             },
@@ -92,6 +99,13 @@
       "items": [
         {
           "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -104,10 +118,10 @@
                 }
               }
             },
-            "textSize": {
+            "padding": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "2D"
                 }
               }
             }
@@ -121,6 +135,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -214,7 +235,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -268,6 +289,40 @@
                       "Value": "'#0D5272'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

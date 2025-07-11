@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "647176e10ab57629a9e6",
+  "name": "3215917e64405a84263c",
   "position": {
-    "x": 752,
-    "y": 32,
-    "z": 33000,
+    "x": 64,
+    "y": 16,
+    "z": 28000,
     "height": 64,
-    "width": 184,
-    "tabOrder": 33000
+    "width": 136,
+    "tabOrder": 31000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,12 @@
                       "Entity": "Invoices"
                     }
                   },
-                  "Property": "Type"
+                  "Property": "Company"
                 }
               },
-              "queryRef": "Invoices.Type",
-              "nativeQueryRef": "Rodzaj sprzedaży",
-              "active": true,
-              "displayName": "Rodzaj sprzedaży"
+              "queryRef": "Invoices.Company",
+              "nativeQueryRef": "Company",
+              "active": true
             }
           ]
         }
@@ -58,47 +57,6 @@
                   "Value": "true"
                 }
               }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "i",
-                    "Entity": "Invoices",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "i"
-                                }
-                              },
-                              "Property": "Type"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Item'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
             }
           }
         }
@@ -106,6 +64,13 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Spółka'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -113,10 +78,10 @@
                 }
               }
             },
-            "text": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Rodzaj sprzedaży'"
+                  "Value": "8D"
                 }
               }
             },
@@ -133,6 +98,13 @@
       "items": [
         {
           "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -145,10 +117,10 @@
                 }
               }
             },
-            "textSize": {
+            "padding": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "2D"
                 }
               }
             }
@@ -164,17 +136,11 @@
                   "Value": "true"
                 }
               }
-            }
-          }
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
+            },
+            "size": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "10D"
                 }
               }
             }
@@ -268,7 +234,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -327,10 +293,44 @@
             }
           }
         }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "syncGroup": {
-      "groupName": "Type",
+      "groupName": "Company",
       "fieldChanges": true,
       "filterChanges": true
     },
