@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 304,
     "width": 304,
-    "tabOrder": 14000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1194,48 +1194,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "a14854213d80668bbbc5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_items"
-              }
-            },
-            "Property": "ManufacturerCode"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a12199a907a0b58e2dd7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5a84044005ac0770e080",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

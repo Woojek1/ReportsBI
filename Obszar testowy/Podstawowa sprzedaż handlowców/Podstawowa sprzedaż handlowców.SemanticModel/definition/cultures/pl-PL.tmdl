@@ -26211,6 +26211,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Marża na towarach%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Marża towarów": {
 			            "State": "Suggested",
 			            "Source": {
@@ -27272,6 +27282,105 @@ cultureInfo pl-PL
 			    }
 			  },
 			  "Relationships": {
+			    "invoice_has_entity__measure_cost_amount_item_LCY": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.cost_amount_item_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.cost_amount_item_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.cost_amount_item_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_cost_amount_item_LCY"
+			        }
+			      ]
+			    },
+			    "invoice_has_ecom": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.ecom": {
+			          "Target": {
+			            "Entity": "invoice.ecom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.ecom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_ecoms"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_zysk_na_towarach": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.zysk_na_towarach": {
+			          "Target": {
+			            "Entity": "entity__measure.zysk_na_towarach"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.zysk_na_towarach"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_zysk_na_towarach"
+			        }
+			      ]
+			    },
 			    "entity__measure_has_margin_items_MTD_today_previous_year": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measures"
@@ -30973,15 +31082,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_total_VAT": {
+			    "invoice_has_entity__measure_sales_amount_total_VAT": {
 			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.sales_amount_total_VAT": {
@@ -30989,7 +31098,22 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure.sales_amount_total_VAT"
 			          }
 			        }
-			      }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_total_VAT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_sales_amount_total_VAT"
+			        }
+			      ]
 			    },
 			    "invoice_has_entity__measure_sales_amount_total": {
 			      "Binding": {
@@ -34860,105 +34984,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_gold_v_bc_items_are_blocked_gold_v_bc_items"
-			        }
-			      ]
-			    },
-			    "invoice_has_entity__measure_zysk_na_towarach": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "entity__measure.zysk_na_towarach": {
-			          "Target": {
-			            "Entity": "entity__measure.zysk_na_towarach"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.zysk_na_towarach"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_zysk_na_towarach"
-			        }
-			      ]
-			    },
-			    "invoice_has_ecom": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "invoice.ecom": {
-			          "Target": {
-			            "Entity": "invoice.ecom"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "invoice.ecom"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_ecoms"
-			        }
-			      ]
-			    },
-			    "invoice_has_entity__measure_cost_amount_item_LCY": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "entity__measure.cost_amount_item_LCY": {
-			          "Target": {
-			            "Entity": "entity__measure.cost_amount_item_LCY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.cost_amount_item_LCY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_cost_amount_item_LCY"
 			        }
 			      ]
 			    },

@@ -1192,62 +1192,6 @@
         "howCreated": "User"
       },
       {
-        "name": "f8cfe7c001825449b654",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_items"
-              }
-            },
-            "Property": "ItemTypeA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "793bef485b75eabc041a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5ceb8eec358c283e8b78",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7afdfd7362dda7d6860e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "ItemQuantity"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "c5cc23209ec20261ace0",
         "field": {
           "Column": {

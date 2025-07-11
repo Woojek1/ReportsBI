@@ -6,7 +6,8 @@
     "y": 0,
     "z": 33000,
     "height": 184,
-    "width": 240
+    "width": 240,
+    "tabOrder": 33000
   },
   "visualGroup": {
     "displayName": "Slicer",

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "0dccebd1e698c273a4c8",
+  "name": "7592e386b457509bc03e",
   "position": {
-    "x": 64,
-    "y": 104,
-    "z": 1000,
-    "height": 288,
-    "width": 1184,
-    "tabOrder": 2000
+    "x": 376,
+    "y": 488,
+    "z": 14002,
+    "height": 208,
+    "width": 456,
+    "tabOrder": 14002
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,81 +20,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "InvoiceLine"
-                }
-              },
-              "queryRef": "Invoices.InvoiceLine",
-              "nativeQueryRef": "Numer wiersza",
-              "displayName": "Numer wiersza"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "NoItem"
-                }
-              },
-              "queryRef": "Invoices.NoItem",
-              "nativeQueryRef": "Symbol urządzenia1",
-              "displayName": "Symbol urządzenia"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "Quantity"
-                }
-              },
-              "queryRef": "Invoices.Quantity",
-              "nativeQueryRef": "Ilość1",
-              "displayName": "Ilość"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "AmountLCY"
-                }
-              },
-              "queryRef": "Invoices.AmountLCY",
-              "nativeQueryRef": "Wartość netto1",
-              "displayName": "Wartość netto"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "gold v_bc_items"
-                    }
-                  },
-                  "Property": "ManufacturerCode"
-                }
-              },
-              "queryRef": "gold v_bc_items.ManufacturerCode",
-              "nativeQueryRef": "Producent",
-              "displayName": "Producent"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "gold v_bc_items"
                     }
                   },
@@ -102,79 +27,68 @@
                 }
               },
               "queryRef": "gold v_bc_items.ItemTypeA",
-              "nativeQueryRef": "Grupa produktowa",
-              "displayName": "Grupa produktowa"
+              "nativeQueryRef": "TypeA",
+              "displayName": "TypeA"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "ItemDescription"
+                  "Property": "SalesAmountItemTotalLCY"
                 }
               },
-              "queryRef": "Invoices.ItemDescription",
-              "nativeQueryRef": "Opis",
-              "displayName": "Opis"
+              "queryRef": "_Measures.SalesAmountItemTotalLCY",
+              "nativeQueryRef": "Sprzedaż towarów netto",
+              "displayName": "Sprzedaż towarów netto"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "ItemQuantity"
                 }
               },
-              "queryRef": "Invoices.Region",
-              "nativeQueryRef": "Region"
+              "queryRef": "_Measures.ItemQuantity",
+              "nativeQueryRef": "Ilość",
+              "displayName": "Ilość"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "Type"
+                  "Property": "AverageDiscount"
                 }
               },
-              "queryRef": "Invoices.Type",
-              "nativeQueryRef": "Type"
+              "queryRef": "_Measures.AverageDiscount",
+              "nativeQueryRef": "Średni rabat",
+              "displayName": "Średni rabat"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Invoices"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "LineCostsLCY"
+                  "Property": "MarginItems"
                 }
               },
-              "queryRef": "Invoices.LineCostsLCY",
-              "nativeQueryRef": "LineCostsLCY"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "CorrectionReason"
-                }
-              },
-              "queryRef": "Invoices.CorrectionReason",
-              "nativeQueryRef": "CorrectionReason"
+              "queryRef": "_Measures.MarginItems",
+              "nativeQueryRef": "Marża%",
+              "displayName": "Marża%"
             }
           ]
         }
@@ -183,16 +97,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Invoices"
+                    "Entity": "_Measures"
                   }
                 },
-                "Property": "InvoiceLine"
+                "Property": "SalesAmountItemTotalLCY"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -442,63 +356,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "274.7369693571012D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_bc_customers.Name"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "92.45121951219512D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.SalesAmount_MTD_Today"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "91.7500138509816D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.AverageDiscountCurrentMonth"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "102.2258064516129D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_bc_items.ManufacturerCode"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "159.53502090230617D"
+                  "Value": "137.48387096774195D"
                 }
               }
             }
@@ -512,13 +370,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "92.48556346837104D"
+                  "Value": "66.18027673467034D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Invoices.InvoiceLine"
+            "metadata": "_Measures.AverageDiscount"
           }
         },
         {
@@ -526,13 +384,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "171.8696738642906D"
+                  "Value": "60.45161290322581D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Invoices.NoItem"
+            "metadata": "_Measures.ItemQuantity"
           }
         },
         {
@@ -540,13 +398,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "74.68077331468345D"
+                  "Value": "66D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Invoices.Quantity"
+            "metadata": "_Measures.MarginItems"
           }
         },
         {
@@ -554,188 +412,26 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "123.0818668068503D"
+                  "Value": "84D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Invoices.AmountLCY"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "207.0526146025207D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.ItemDescription"
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "gridHorizontal": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "rowPadding": {
-              "expr": {
-                "Literal": {
-                  "Value": "2D"
-                }
-              }
-            },
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "imageWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "outlineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "columnHeaders": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Auto'"
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "values": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "fontColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "backColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "fontColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
+            "metadata": "_Measures.SalesAmountItemTotalLCY"
           }
         }
       ],
       "total": [
         {
           "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -866,69 +562,6 @@
         },
         {
           "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Left'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_bc_customers.Name"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.SalesAmount_MTD_Today"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.AverageDiscountCurrentMonth"
-          }
-        },
-        {
-          "properties": {
             "styleValues": {
               "expr": {
                 "Literal": {
@@ -950,13 +583,6 @@
                 }
               }
             },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "alignment": {
               "expr": {
                 "Literal": {
@@ -966,18 +592,11 @@
             }
           },
           "selector": {
-            "metadata": "Invoices.InvoiceLine"
+            "metadata": "_Measures.AverageDiscount"
           }
         },
         {
           "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "styleHeader": {
               "expr": {
                 "Literal": {
@@ -994,18 +613,11 @@
             }
           },
           "selector": {
-            "metadata": "Invoices.NoItem"
+            "metadata": "_Measures.ItemQuantity"
           }
         },
         {
           "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "styleHeader": {
               "expr": {
                 "Literal": {
@@ -1013,28 +625,7 @@
                 }
               }
             },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Quantity"
-          }
-        },
-        {
-          "properties": {
             "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -1050,35 +641,7 @@
             }
           },
           "selector": {
-            "metadata": "Invoices.AmountLCY"
-          }
-        },
-        {
-          "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_bc_items.ManufacturerCode"
+            "metadata": "_Measures.MarginItems"
           }
         },
         {
@@ -1100,13 +663,168 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Center'"
+                  "Value": "'Right'"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "gold v_bc_items.ItemTypeA"
+            "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "imageWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            }
           }
         }
       ]
@@ -1161,37 +879,11 @@
                   "Value": "true"
                 }
               }
-            }
-          }
-        }
-      ],
-      "subTitle": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "spacing": [
-        {
-          "properties": {
-            "customizeSpacing": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             },
-            "spaceBelowTitle": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "'Grupa produktowa'"
                 }
               }
             }
@@ -1218,22 +910,16 @@
           }
         }
       ],
-      "padding": [
-        {
-          "properties": {
-            "left": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "border": [
         {
           "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -1259,80 +945,6 @@
                   "Value": "10D"
                 }
               }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "preset": {
-              "expr": {
-                "Literal": {
-                  "Value": "'BottomRight'"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "angle": {
-              "expr": {
-                "Literal": {
-                  "Value": "45L"
-                }
-              }
-            },
-            "shadowDistance": {
-              "expr": {
-                "Literal": {
-                  "Value": "10L"
-                }
-              }
-            },
-            "shadowBlur": {
-              "expr": {
-                "Literal": {
-                  "Value": "10L"
-                }
-              }
-            },
-            "shadowSpread": {
-              "expr": {
-                "Literal": {
-                  "Value": "3L"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "70L"
-                }
-              }
             }
           }
         }
@@ -1343,14 +955,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'2efeaae231ef10c9e628'"
+                  "Value": "'1b41b62861a92453ea0c'"
                 }
               }
             },
@@ -1368,19 +980,6 @@
           }
         }
       ],
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Minimal'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "visualHeader": [
         {
           "properties": {
@@ -1388,13 +987,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             },
@@ -1492,11 +1084,224 @@
                   "Value": "false"
                 }
               }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "customizeSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "spaceBelowTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "preset": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BottomRight'"
+                }
+              }
+            },
+            "angle": {
+              "expr": {
+                "Literal": {
+                  "Value": "45L"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "shadowBlur": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "shadowSpread": {
+              "expr": {
+                "Literal": {
+                  "Value": "3L"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "70L"
+                }
+              }
             }
           }
         }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2d02560f3c8dbcc01122",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_customers"
+              }
+            },
+            "Property": "KeyNoCustomer"
+          }
+        },
+        "type": "TopN",
+        "howCreated": "User"
+      },
+      {
+        "name": "456d0c28a23802e074c9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Type"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "Invoices",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "i"
+                          }
+                        },
+                        "Property": "Type"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Item'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
   }
 }

@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 304,
     "width": 456,
-    "tabOrder": 15000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "tableEx",
@@ -428,7 +428,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -1247,76 +1247,6 @@
         },
         "type": "TopN",
         "howCreated": "User"
-      },
-      {
-        "name": "8b6b896003d93cb458e0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_items"
-              }
-            },
-            "Property": "ItemTypeA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6b6adb05a7a408437a4e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b08959fd6e3c20207367",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "ItemQuantity"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a181f0005d20609a5191",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a57f179a15036bea65d0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "MarginItems"
-          }
-        },
-        "type": "Advanced"
       },
       {
         "name": "456d0c28a23802e074c9",

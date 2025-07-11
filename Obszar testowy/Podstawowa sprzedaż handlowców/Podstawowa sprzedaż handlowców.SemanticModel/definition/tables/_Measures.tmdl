@@ -980,7 +980,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('Invoices'[ProfitLCY]),
-			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			    'invoices'[Type] == "Item" || 'invoices'[Type] == "Charge (Item)"
 			)
 			
 			

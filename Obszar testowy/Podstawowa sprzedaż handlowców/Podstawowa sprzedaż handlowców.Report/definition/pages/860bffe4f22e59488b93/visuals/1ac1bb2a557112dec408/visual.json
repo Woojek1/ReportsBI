@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "bbe7fd51dd386489427d",
+  "name": "1ac1bb2a557112dec408",
   "position": {
     "x": 64,
-    "y": 400,
-    "z": 14000,
-    "height": 304,
-    "width": 424,
-    "tabOrder": 5000
+    "y": 488,
+    "z": 14001,
+    "height": 208,
+    "width": 304,
+    "tabOrder": 14001
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,15 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold v_bc_customers"
+                      "Entity": "gold v_bc_items"
                     }
                   },
-                  "Property": "Name"
+                  "Property": "ManufacturerCode"
                 }
               },
-              "queryRef": "gold v_bc_customers.Name",
-              "nativeQueryRef": "Nazwa klienta",
-              "displayName": "Nazwa klienta"
+              "queryRef": "gold v_bc_items.ManufacturerCode",
+              "nativeQueryRef": "Marka",
+              "displayName": "Marka"
             },
             {
               "field": {
@@ -326,13 +326,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "252.50317229823185D"
+                  "Value": "97.03694420932992D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "gold v_bc_customers.Name"
+            "metadata": "gold v_bc_items.ManufacturerCode"
           }
         },
         {
@@ -340,7 +340,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "61.17936533387753D"
+                  "Value": "67.96984193482078D"
                 }
               }
             }
@@ -354,7 +354,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "86D"
+                  "Value": "92D"
                 }
               }
             }
@@ -514,27 +514,6 @@
           },
           "selector": {
             "metadata": "gold v_oferty.Nr projektu"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Left'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "gold v_bc_customers.Name"
           }
         },
         {
@@ -797,7 +776,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Klienci'"
+                  "Value": "'Marka'"
                 }
               }
             }
@@ -1148,7 +1127,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "5d9aadd000ebe2390305",
+        "name": "8b51ee72364363a67a07",
         "field": {
           "Column": {
             "Expression": {
@@ -1163,7 +1142,7 @@
         "howCreated": "User"
       },
       {
-        "name": "1a54199be6443bba2263",
+        "name": "a5d2d5221901945c141a",
         "field": {
           "Column": {
             "Expression": {
