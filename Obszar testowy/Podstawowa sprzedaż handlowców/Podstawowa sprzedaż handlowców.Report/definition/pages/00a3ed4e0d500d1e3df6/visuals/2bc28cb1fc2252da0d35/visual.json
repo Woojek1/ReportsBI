@@ -65,7 +65,23 @@
                 }
               },
               "queryRef": "_Measures.SalesAmountItemTotalLCY",
-              "nativeQueryRef": "SalesAmountItemTotalLCY"
+              "nativeQueryRef": "Wartość sprzedaży",
+              "displayName": "Wartość sprzedaży"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "MarginItems"
+                }
+              },
+              "queryRef": "_Measures.MarginItems",
+              "nativeQueryRef": "Marża na towarach%",
+              "displayName": "Marża na towarach%"
             }
           ]
         }
@@ -157,7 +173,7 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Right'"
+                  "Value": "'Center'"
                 }
               }
             },
@@ -172,6 +188,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "titleAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
                 }
               }
             }
@@ -489,13 +512,41 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Right'"
+                  "Value": "'Center'"
                 }
               }
             }
           },
           "selector": {
             "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.MarginItems"
           }
         }
       ],

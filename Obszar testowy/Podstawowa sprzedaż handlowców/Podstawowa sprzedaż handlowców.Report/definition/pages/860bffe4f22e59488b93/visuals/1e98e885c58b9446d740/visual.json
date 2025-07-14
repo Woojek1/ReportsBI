@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "13f223257ae42c8db232",
+  "name": "1e98e885c58b9446d740",
   "position": {
-    "x": 1080,
-    "y": 568,
-    "z": 13000,
+    "x": 776,
+    "y": 640,
+    "z": 19000,
     "height": 80,
-    "width": 160,
-    "tabOrder": 13000
+    "width": 144,
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems"
+                  "Property": "ProfitAmountTotalLCY"
                 }
               },
-              "queryRef": "_Measures.MarginItems",
-              "nativeQueryRef": "Marża towarów",
-              "displayName": "Marża towarów"
+              "queryRef": "_Measures.ProfitAmountTotalLCY",
+              "nativeQueryRef": "ProfitAmountTotalLCY"
             }
           ]
         }
@@ -43,7 +42,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "MarginItems"
+                "Property": "ProfitAmountTotalLCY"
               }
             },
             "direction": "Descending"

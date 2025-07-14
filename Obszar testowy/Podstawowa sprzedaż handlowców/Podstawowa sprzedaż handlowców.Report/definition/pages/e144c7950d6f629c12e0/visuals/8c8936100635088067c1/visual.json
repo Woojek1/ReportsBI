@@ -59,20 +59,6 @@
               "queryRef": "_Measures.AverageDiscount",
               "nativeQueryRef": "Średni rabat",
               "displayName": "Średni rabat"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "Type"
-                }
-              },
-              "queryRef": "Invoices.Type",
-              "nativeQueryRef": "Type"
             }
           ]
         }
@@ -375,20 +361,6 @@
           },
           "selector": {
             "metadata": "_Measures.SalesAmountItemTotalLCY"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "75D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Type"
           }
         }
       ],
@@ -1241,7 +1213,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

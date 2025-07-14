@@ -1108,6 +1108,50 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure ProfitAmountTotalLCY = ```
+			
+			    SUM('Invoices'[ProfitLCY])
+			
+			
+			
+			```
+		displayFolder: Sales
+		lineageTag: 2403684f-d015-4f9b-8239-08742de58d52
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MarginItemsSingleInvoice = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        SUM(Invoices[AmountLCY]),
+			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        )
+			                    
+			                
+			
+			VAR _ProfitLCY = 
+			            CALCULATE(
+			                SUM(Invoices[ProfitLCY]),
+			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )            
+			
+			VAR Margin = 
+			        DIVIDE(_ProfitLCY, _SalesAmountLCY)
+			
+			
+			RETURN
+			
+			IF(
+			    max('Invoices'[Invoice_Type]) = "Faktura korygująca",
+			    0,
+			    Margin
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 67d88e80-77d9-4c85-a9c2-8c277f675591
+
 	column Value
 		isHidden
 		formatString: 0

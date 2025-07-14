@@ -10,13 +10,13 @@
       "nodes": [
         {
           "location": {
-            "x": 1228.3751194984668,
-            "y": 30.475478515051186
+            "x": 1552.5217433634123,
+            "y": 0
           },
           "nodeIndex": "_Measures",
           "nodeLineageTag": "72ecb6f6-f0b0-4971-a814-2eecd5a998d6",
           "size": {
-            "height": 300,
+            "height": 242.2173409632054,
             "width": 234
           },
           "zIndex": 2
@@ -36,7 +36,7 @@
         },
         {
           "location": {
-            "x": 67,
+            "x": 112.09866071164461,
             "y": 0
           },
           "nodeIndex": "gold v_bc_customers",
@@ -62,8 +62,8 @@
         },
         {
           "location": {
-            "x": 1485.1505228765709,
-            "y": 760.13533235765669
+            "x": 1555.6171802385156,
+            "y": 733.35800256011771
           },
           "nodeIndex": "gold v_bc_posted_sales_invoices",
           "nodeLineageTag": "5ba58d96-43f3-4d58-abfa-dc96a3312ecd",
@@ -75,8 +75,8 @@
         },
         {
           "location": {
-            "x": 300.4819090108233,
-            "y": 508.32409918561274
+            "x": 330.07790510284008,
+            "y": 442.0854412653847
           },
           "nodeIndex": "gold v_bc_salesperson",
           "nodeLineageTag": "4e2b4a97-6d28-48ae-a088-2fe3e4b95196",
@@ -88,8 +88,8 @@
         },
         {
           "location": {
-            "x": 1153.840479443305,
-            "y": 376.70347795676787
+            "x": 1545.6350943757172,
+            "y": 261.13815988317862
           },
           "nodeIndex": "Grupa obliczania",
           "nodeLineageTag": "5ef29f12-7f98-4392-92b2-0dedbcf1a7e0",
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 4.22799944171669,
-            "y": 762.470580628838
+            "x": 78.922656245378022,
+            "y": 756.83324803988216
           },
           "nodeIndex": "gold v_hr_enova_rls",
           "nodeLineageTag": "e737bac3-c2ca-4a97-bdcc-73eedebbfb7c",
@@ -114,8 +114,8 @@
         },
         {
           "location": {
-            "x": 1475.8924744187552,
-            "y": 435.12661983281623
+            "x": 1557.6337969586109,
+            "y": 406.93995688803841
           },
           "nodeIndex": "gold v_bc_posted_sales_credit_memo_invoices",
           "nodeLineageTag": "80fc3bc8-07a3-40f8-964f-6e97f09d710e",

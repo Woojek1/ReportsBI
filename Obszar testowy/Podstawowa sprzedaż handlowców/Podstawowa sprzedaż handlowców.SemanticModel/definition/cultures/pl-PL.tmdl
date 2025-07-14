@@ -16263,6 +16263,26 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Wartość sprzedaży": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Sprzedaż towarów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Sprzedaż": {
 			            "State": "Suggested",
 			            "Source": {
@@ -20828,6 +20848,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.492
 			          }
+			        },
+			        {
+			          "Kod faktury": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -25328,6 +25358,16 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
+			          "Zysk towarów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Zysk": {
 			            "State": "Suggested",
 			            "Source": {
@@ -27279,9 +27319,321 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.profit_amount_total_LCY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "ProfitAmountTotalLCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit amount total LCY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProfitAmountTotalLCY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount total LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "profit amount aggregate lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "profit amount overall lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "amount aggregate lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "amount overall lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.margin_items_single_invoice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "MarginItemsSingleInvoice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margin items single invoice": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MarginItemsSingleInvoice": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "single invoice": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "items single invoice": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "margin item single statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "item single statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "single statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "margin item single demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "margin item single account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "margin item single bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "item single demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "item single account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "item single bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "single demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Marża na towarach%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "invoice_has_invoice_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.invoice_type": {
+			          "Target": {
+			            "Entity": "invoice.invoice_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.invoice_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_invoice_types"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_customer_has_related_company": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_customers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_customer": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer"
+			          }
+			        },
+			        "gold_v_bc_customer.related_company": {
+			          "Target": {
+			            "Entity": "gold_v_bc_customer.related_company"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_customer"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_customer.related_company"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_customers_have_related_companies"
+			        }
+			      ]
+			    },
 			    "invoice_has_entity__measure_cost_amount_item_LCY": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -34987,72 +35339,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_customer_has_related_company": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_customers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_customer": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer"
-			          }
-			        },
-			        "gold_v_bc_customer.related_company": {
-			          "Target": {
-			            "Entity": "gold_v_bc_customer.related_company"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_customer"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_customer.related_company"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_customers_have_related_companies"
-			        }
-			      ]
-			    },
-			    "invoice_has_invoice_type": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "invoice.invoice_type": {
-			          "Target": {
-			            "Entity": "invoice.invoice_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "invoice.invoice_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_invoice_types"
-			        }
-			      ]
-			    },
 			    "invoice_has_correction_reason": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -35083,6 +35369,72 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "invoices_have_correction_reasons"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_profit_amount_total_LCY": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.profit_amount_total_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_total_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_total_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_profit_amount_total_LCY"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_margin_items_single_invoice": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.margin_items_single_invoice": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_single_invoice"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_single_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_margin_items_single_invoice"
 			        }
 			      ]
 			    },

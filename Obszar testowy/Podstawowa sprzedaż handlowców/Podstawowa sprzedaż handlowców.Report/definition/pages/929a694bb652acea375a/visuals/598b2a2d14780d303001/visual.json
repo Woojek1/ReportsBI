@@ -23,12 +23,12 @@
                       "Entity": "Invoices"
                     }
                   },
-                  "Property": "NoInvoice"
+                  "Property": "KeyNoInvoice"
                 }
               },
-              "queryRef": "Invoices.NoInvoice",
-              "nativeQueryRef": "Nr faktury",
-              "displayName": "Nr faktury"
+              "queryRef": "Invoices.KeyNoInvoice",
+              "nativeQueryRef": "Kod faktury",
+              "displayName": "Kod faktury"
             },
             {
               "field": {
@@ -143,11 +143,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems"
+                  "Property": "MarginItemsSingleInvoice"
                 }
               },
-              "queryRef": "_Measures.MarginItems",
-              "nativeQueryRef": "Marża na towarach%",
+              "queryRef": "_Measures.MarginItemsSingleInvoice",
+              "nativeQueryRef": "Marża na towarach%1",
               "displayName": "Marża na towarach%"
             },
             {
@@ -251,6 +251,20 @@
               },
               "queryRef": "_Measures.Cost_Amount_Item_LCY",
               "nativeQueryRef": "Cost_Amount_Item_LCY"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "Invoice_Type"
+                }
+              },
+              "queryRef": "Invoices.Invoice_Type",
+              "nativeQueryRef": "Invoice_Type"
             }
           ]
         }
@@ -259,13 +273,13 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Invoices"
+                    "Entity": "_Measures"
                   }
                 },
-                "Property": "PostingDate"
+                "Property": "SalesAmountTotalLCY"
               }
             },
             "direction": "Descending"
@@ -778,36 +792,6 @@
                 }
               }
             ],
-            "metadata": "Invoices.NoInvoice"
-          }
-        },
-        {
-          "properties": {
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "DueDateColor"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
             "metadata": "Invoices.PostingDate"
           }
         },
@@ -1078,7 +1062,37 @@
                 }
               }
             ],
-            "metadata": "_Measures.MarginItems"
+            "metadata": "Invoices.KeyNoInvoice"
+          }
+        },
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "DueDateColor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Measures.MarginItemsSingleInvoice"
           }
         }
       ],
@@ -1479,27 +1493,6 @@
         },
         {
           "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Left'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.NoInvoice"
-          }
-        },
-        {
-          "properties": {
             "styleTotal": {
               "expr": {
                 "Literal": {
@@ -1780,10 +1773,38 @@
         },
         {
           "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "styleHeader": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Invoices.KeyNoInvoice"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
                 }
               }
             },
@@ -1794,16 +1815,16 @@
                 }
               }
             },
-            "alignment": {
+            "styleHeader": {
               "expr": {
                 "Literal": {
-                  "Value": "'Center'"
+                  "Value": "true"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "_Measures.MarginItems"
+            "metadata": "_Measures.MarginItemsSingleInvoice"
           }
         }
       ],
@@ -2149,7 +2170,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "90.80820695771473D"
+                  "Value": "84.45440171521759D"
                 }
               }
             }
@@ -2247,7 +2268,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "88.67789458159524D"
+                  "Value": "79.58778116214275D"
                 }
               }
             }
@@ -2275,7 +2296,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "117.87999951086965D"
+                  "Value": "115.898518703175D"
                 }
               }
             }
@@ -2317,7 +2338,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "124.42696729671218D"
+                  "Value": "87.4207839208324D"
                 }
               }
             }
@@ -2359,20 +2380,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "127D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.NoInvoice"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "58D"
                 }
               }
@@ -2387,7 +2394,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "85D"
+                  "Value": "84.09433981896422D"
                 }
               }
             }
@@ -2429,13 +2436,41 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "70.47169811320755D"
+                  "Value": "99.90566050377846D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "_Measures.MarginItems"
+            "metadata": "Invoices.KeyNoInvoice"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Invoices.Invoice_Type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "77.69814658239635D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.MarginItemsSingleInvoice"
           }
         }
       ]

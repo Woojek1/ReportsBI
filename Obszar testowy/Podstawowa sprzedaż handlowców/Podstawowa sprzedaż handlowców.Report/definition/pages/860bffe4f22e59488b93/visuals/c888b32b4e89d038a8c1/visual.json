@@ -3,10 +3,10 @@
   "name": "c888b32b4e89d038a8c1",
   "position": {
     "x": 536,
-    "y": 576,
+    "y": 488,
     "z": 14000,
-    "height": 88,
-    "width": 312,
+    "height": 208,
+    "width": 208,
     "tabOrder": 14000
   },
   "visual": {
@@ -56,6 +56,20 @@
               },
               "queryRef": "Invoices.NoInvoice",
               "nativeQueryRef": "NoInvoice"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              },
+              "queryRef": "Invoices.Region",
+              "nativeQueryRef": "Region"
             }
           ]
         }

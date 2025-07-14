@@ -147,34 +147,6 @@
               },
               "queryRef": "Invoices.Type",
               "nativeQueryRef": "Type"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "LineCostsLCY"
-                }
-              },
-              "queryRef": "Invoices.LineCostsLCY",
-              "nativeQueryRef": "LineCostsLCY"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "CorrectionReason"
-                }
-              },
-              "queryRef": "Invoices.CorrectionReason",
-              "nativeQueryRef": "CorrectionReason"
             }
           ]
         }
