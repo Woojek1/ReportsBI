@@ -87,8 +87,8 @@
                 }
               },
               "queryRef": "_Measures.MarginItems_MTD_Today",
-              "nativeQueryRef": "Marża%",
-              "displayName": "Marża%"
+              "nativeQueryRef": "Marża na towarach%",
+              "displayName": "Marża na towarach%"
             }
           ]
         }
@@ -412,7 +412,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "71D"
+                  "Value": "74D"
                 }
               }
             }
@@ -646,10 +646,10 @@
         },
         {
           "properties": {
-            "alignment": {
+            "styleHeader": {
               "expr": {
                 "Literal": {
-                  "Value": "'Right'"
+                  "Value": "true"
                 }
               }
             },
@@ -660,10 +660,10 @@
                 }
               }
             },
-            "styleHeader": {
+            "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'Center'"
                 }
               }
             }
@@ -1246,6 +1246,21 @@
           }
         },
         "type": "TopN",
+        "howCreated": "User"
+      },
+      {
+        "name": "ea5dbd3678571142c430",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Type"
+          }
+        },
+        "type": "Categorical",
         "howCreated": "User"
       }
     ]

@@ -143,11 +143,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItemsSingleInvoice"
+                  "Property": "_MarginItemsSingleInvoice"
                 }
               },
-              "queryRef": "_Measures.MarginItemsSingleInvoice",
-              "nativeQueryRef": "Marża na towarach%1",
+              "queryRef": "_Measures._MarginItemsSingleInvoice",
+              "nativeQueryRef": "Marża na towarach%",
               "displayName": "Marża na towarach%"
             },
             {
@@ -226,34 +226,6 @@
             },
             {
               "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "ProfitAmountItemTotalLCY"
-                }
-              },
-              "queryRef": "_Measures.ProfitAmountItemTotalLCY",
-              "nativeQueryRef": "ProfitAmountItemTotalLCY"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "Cost_Amount_Item_LCY"
-                }
-              },
-              "queryRef": "_Measures.Cost_Amount_Item_LCY",
-              "nativeQueryRef": "Cost_Amount_Item_LCY"
-            },
-            {
-              "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
@@ -265,6 +237,21 @@
               },
               "queryRef": "Invoices.Invoice_Type",
               "nativeQueryRef": "Invoice_Type"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "_ProfitAmountItemTotalLCY"
+                }
+              },
+              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
+              "nativeQueryRef": "Zysk na towarach",
+              "displayName": "Zysk na towarach"
             }
           ]
         }
@@ -273,13 +260,13 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_Measures"
+                    "Entity": "Invoices"
                   }
                 },
-                "Property": "SalesAmountTotalLCY"
+                "Property": "PostingDate"
               }
             },
             "direction": "Descending"
@@ -1092,7 +1079,7 @@
                 }
               }
             ],
-            "metadata": "_Measures.MarginItemsSingleInvoice"
+            "metadata": "_Measures._MarginItemsSingleInvoice"
           }
         }
       ],
@@ -1801,13 +1788,6 @@
         },
         {
           "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            },
             "styleTotal": {
               "expr": {
                 "Literal": {
@@ -1821,10 +1801,17 @@
                   "Value": "true"
                 }
               }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
             }
           },
           "selector": {
-            "metadata": "_Measures.MarginItemsSingleInvoice"
+            "metadata": "_Measures._MarginItemsSingleInvoice"
           }
         }
       ],
@@ -2352,7 +2339,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "79.93814473383739D"
+                  "Value": "64.92641682140581D"
                 }
               }
             }
@@ -2408,34 +2395,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "146D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.ProfitAmountItemTotalLCY"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "128D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.Cost_Amount_Item_LCY"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "99.90566050377846D"
                 }
               }
@@ -2464,13 +2423,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "77.69814658239635D"
+                  "Value": "71.37953052554295D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "_Measures.MarginItemsSingleInvoice"
+            "metadata": "_Measures._MarginItemsSingleInvoice"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures._ProfitAmountItemTotalLCY"
           }
         }
       ]

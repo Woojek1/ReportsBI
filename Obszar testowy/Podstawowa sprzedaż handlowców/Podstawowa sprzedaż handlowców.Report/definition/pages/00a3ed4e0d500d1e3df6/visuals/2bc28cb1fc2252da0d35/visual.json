@@ -76,12 +76,25 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems"
+                  "Property": "_MarginItems"
                 }
               },
-              "queryRef": "_Measures.MarginItems",
-              "nativeQueryRef": "Marża na towarach%",
-              "displayName": "Marża na towarach%"
+              "queryRef": "_Measures._MarginItems",
+              "nativeQueryRef": "_MarginItems"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "_ProfitAmountItemTotalLCY"
+                }
+              },
+              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
+              "nativeQueryRef": "_ProfitAmountItemTotalLCY"
             }
           ]
         }
@@ -519,34 +532,6 @@
           },
           "selector": {
             "metadata": "_Measures.SalesAmountItemTotalLCY"
-          }
-        },
-        {
-          "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.MarginItems"
           }
         }
       ],
@@ -1469,6 +1454,53 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "b45884486b03017986f1",
+        "ordinal": 4,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "_MarginItems"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "de1bfd45fcf95f2bff9b",
+        "ordinal": 5,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "_MarginItemsSingleInvoice"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "f3d5daa35fdc49ff2ac3",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Invoice_Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
       }
     ],
     "filterSortOrder": "Custom"

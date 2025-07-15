@@ -283,19 +283,6 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column ProfitLCY
-		dataType: double
-		isHidden
-		lineageTag: a7f9a4ce-7b84-44be-8459-62651ca80d14
-		summarizeBy: sum
-		sourceColumn: ProfitLCY
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column LineDiscount
 		dataType: double
 		isHidden
@@ -548,6 +535,26 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Koszt skorygowany'
+		dataType: double
+		lineageTag: 9d7c29ee-c672-4890-87aa-947b0b9bba7e
+		summarizeBy: sum
+		sourceColumn: Koszt skorygowany
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ProfitLCY (based on direct cost)'
+		dataType: double
+		lineageTag: d234055c-cd23-4180-aa17-ffd2a59cdb1f
+		summarizeBy: sum
+		sourceColumn: ProfitLCY (based on direct cost)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =
@@ -561,5 +568,5 @@ table 'gold v_bc_posted_sales_invoices'
 
 	annotation PBI_NavigationStepName = Nawigacja
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

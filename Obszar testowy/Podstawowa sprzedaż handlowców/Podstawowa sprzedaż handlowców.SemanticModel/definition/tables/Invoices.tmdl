@@ -151,13 +151,12 @@ table Invoices
 
 	column CurrencyFactor
 		dataType: double
+		formatString: 0.00000
 		lineageTag: 7083428a-e642-4195-b85c-b9eba98a0af8
 		summarizeBy: sum
 		sourceColumn: CurrencyFactor
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Type
 		dataType: string
@@ -251,17 +250,6 @@ table Invoices
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column ProfitLCY
-		dataType: double
-		formatString: #,0
-		lineageTag: c7961d26-4374-4880-bf41-53b2965e1a9e
-		summarizeBy: sum
-		sourceColumn: ProfitLCY
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column LineDiscount
 		dataType: double
@@ -423,6 +411,26 @@ table Invoices
 		sourceColumn: CorrectionReason
 
 		annotation SummarizationSetBy = Automatic
+
+	column 'Koszt skorygowany'
+		dataType: double
+		lineageTag: d7f2bd80-1441-45cb-a8d4-33ebff2d0099
+		summarizeBy: sum
+		sourceColumn: Koszt skorygowany
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ProfitLCY (based on direct cost)'
+		dataType: double
+		lineageTag: fd96808c-5d61-4d82-ab96-6be5ebe34045
+		summarizeBy: sum
+		sourceColumn: ProfitLCY (based on direct cost)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition Invoices = m
 		mode: import

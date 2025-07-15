@@ -742,7 +742,7 @@ table _Measures
 			VAR CurrentMonth = MONTH(TODAY())
 			VAR SalesAmountCurrentMonth =
 			    CALCULATE(
-			        SUM('gold v_bc_posted_sales_invoices'[AmountLCY]),
+			        SUM('invoices'[AmountLCY]),
 			        FILTER(
 			            ALL('Calendar'),
 			            AND(Calendar[Year] = PrevYear,
@@ -753,7 +753,7 @@ table _Measures
 			
 			VAR DistinctInvoiceCountCurrentMonth =
 			    CALCULATE(
-			        DISTINCTCOUNT( 'gold v_bc_posted_sales_invoices'[KeyNoInvoice] ),
+			        DISTINCTCOUNT( 'invoices'[KeyNoInvoice] ),
 			        FILTER(
 			            ALL('Calendar'),
 			            AND(Calendar[Year] = PrevYear,
@@ -776,7 +776,7 @@ table _Measures
 			VAR CurrentMonth = MONTH(TODAY())
 			VAR LineDiscountAmountCurrentMonth =
 			    CALCULATE(
-			        SUM('gold v_bc_posted_sales_invoices'[LineDiscountAmount]),
+			        SUM('invoices'[LineDiscountAmount]),
 			        FILTER(
 			            ALL('Calendar'),
 			            AND(Calendar[Year] = CurrentYear,
@@ -787,7 +787,7 @@ table _Measures
 			
 			VAR LinePriceLCY =
 			    CALCULATE(
-			        SUM('gold v_bc_posted_sales_invoices'[LinePriceLCY]),
+			        SUM('invoices'[LinePriceLCY]),
 			        FILTER(
 			            ALL('Calendar'),
 			            AND(Calendar[Year] = CurrentYear,
@@ -846,7 +846,7 @@ table _Measures
 			            'Calendar'[Date]
 			        ),
 			        'Calendar'[Date] = TODAY(),
-			        'invoices'[Type] = "Item"
+			        'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			    )
 			    // 0
 			// )
@@ -864,7 +864,7 @@ table _Measures
 			        'Calendar'[Date]
 			    ),
 			    SAMEPERIODLASTYEAR('Calendar'[Date]),
-			    'invoices'[Type] = "Item"
+			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			)
 			
 			```
@@ -877,8 +877,8 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[AmountLCY]),
-			    'invoices'[Type] == "Item"
-			    || 'invoices'[Type] == "Charge (Item)"
+			    'invoices'[Type] = "Item"
+			    || 'invoices'[Type] = "Charge (Item)"
 			)
 			
 			
@@ -937,22 +937,21 @@ table _Measures
 			```
 		lineageTag: d5c1fe01-6ebd-472a-9356-561694213c60
 
-	measure ProfitAmountItem_MTD_Today =
+	measure ProfitAmountItem_MTD_Today = ```
 			
 			
 			--Measure for card visualization without date contects
 			
-			// COALESCE(
-			    CALCULATE(
-			        TOTALMTD(
-			            SUM('invoices'[ProfitLCY]),
-			            'Calendar'[Date]
-			        ),
-			        'Calendar'[Date] = TODAY(),
-			        'invoices'[Type] = "Item"
-			    )
-			    // 0
-			// )
+			CALCULATE(
+			    TOTALMTD(
+			        SUM('invoices'[ProfitLCY]),
+			        'Calendar'[Date]
+			    ),
+			    'Calendar'[Date] = TODAY(),
+			    'invoices'[Type] = "Item"
+			)
+			
+			```
 		formatString: #,0
 		displayFolder: Sales
 		lineageTag: 8e91bcbc-942d-4c69-8903-c660564f6349
@@ -967,7 +966,7 @@ table _Measures
 			        'Calendar'[Date]
 			    ),
 			    SAMEPERIODLASTYEAR('Calendar'[Date]),
-			    'invoices'[Type] = "Item"
+			    'invoices'[Type] = "Item"  
 			)
 			
 			```
@@ -979,8 +978,8 @@ table _Measures
 	measure ProfitAmountItemTotalLCY = ```
 			
 			CALCULATE(
-			    SUM('Invoices'[ProfitLCY]),
-			    'invoices'[Type] == "Item" || 'invoices'[Type] == "Charge (Item)"
+			    SUM('Invoices'[ProfitLCY (based on direct cost)]),
+			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			)
 			
 			
@@ -1029,23 +1028,30 @@ table _Measures
 			                            'Calendar'[Date]
 			                        ),
 			                        'Calendar'[Date] = TODAY(),
-			                        'invoices'[Type] = "Item"
+			                        'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
 			    )
+			
+			VAR _Costs = 
+			            CALCULATE(
+			                TOTALMTD(
+			                    SUM('Invoices'[Koszt skorygowany]),
+			                    'Calendar'[Date]
+			                ),
+			                'Calendar'[Date] = TODAY(),
+			                'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			            )
+			
+			
 			VAR _ProfitLCY = 
-			        CALCULATE(
-			        TOTALMTD(
-			            SUM('Invoices'[ProfitLCY]),
-			            'Calendar'[Date]
-			        ),
-			        'Calendar'[Date] = TODAY(),
-			        'invoices'[Type] = "Item"
-			    )               
+			            _SalesAmountLCY - _Costs   
 			
 			RETURN
 			    DIVIDE(
 			            _ProfitLCY,
 			            _SalesAmountLCY
 			    )
+			
+			
 			
 			```
 		formatString: 0.00%;-0.00%;0.00%
@@ -1151,6 +1157,263 @@ table _Measures
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Sales
 		lineageTag: 67d88e80-77d9-4c85-a9c2-8c277f675591
+
+	measure _MarginItemsSingleInvoice = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        SUM(Invoices[AmountLCY]),
+			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        )
+			                    
+			VAR _Costs = 
+			            CALCULATE(
+			            SUM(Invoices[Koszt skorygowany]),
+			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )
+			
+			VAR _ProfitLCY = 
+			            _SalesAmountLCY - _Costs 
+			
+			VAR _Margin = 
+			        DIVIDE(_ProfitLCY, _SalesAmountLCY)
+			
+			
+			RETURN
+			
+			IF(
+			    max('Invoices'[Invoice_Type]) = "Faktura korygująca",
+			    0,
+			    _Margin
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 0f2a273d-5603-4c45-917a-791736245036
+
+	measure _ProfitAmountItemTotalLCY = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        SUM(Invoices[AmountLCY]),
+			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        )
+			                    
+			VAR _Costs = 
+			            CALCULATE(
+			            SUM(Invoices[Koszt skorygowany]),
+			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )
+			
+			VAR _ProfitLCY = 
+			             _SalesAmountLCY - _Costs
+			
+			
+			RETURN
+			_ProfitLCY
+			
+			
+			
+			
+			```
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 6c0b4eea-149c-42e4-8e39-a3ce504a3232
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure _MarginItems = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        SUM(Invoices[AmountLCY]),
+			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        )
+			                    
+			VAR _Costs = 
+			            CALCULATE(
+			            SUM(Invoices[Koszt skorygowany]),
+			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )
+			
+			VAR _ProfitLCY = 
+			            _SalesAmountLCY - _Costs           
+			
+			VAR _Margin = 
+			        DIVIDE(_ProfitLCY, _SalesAmountLCY)
+			
+			
+			RETURN
+			    _Margin
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 3f071a53-6e7f-40b1-9bae-70ed130f4cb5
+
+	measure _ProfitAmountItem_MTD_Today = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        TOTALMTD(
+			                            SUM('invoices'[AmountLCY]),
+			                            'Calendar'[Date]
+			                        ),
+			                        'Calendar'[Date] = TODAY(),
+			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                    )
+			                    
+			VAR _Costs = 
+			            CALCULATE(
+			                TOTALMTD(
+			                    SUM('Invoices'[Koszt skorygowany]),
+			                    'Calendar'[Date]
+			                ),
+			                'Calendar'[Date] = TODAY(),
+			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )
+			
+			VAR _ProfitLCY = 
+			             _SalesAmountLCY - _Costs
+			
+			
+			RETURN
+			_ProfitLCY
+			
+			```
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 8cd91cbe-cca9-410a-88d7-81e6dcec3028
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure _ProfitAmountItem_CurrentMonth_Previous_Year = ```
+			
+			VAR _PreviousYear  = YEAR(TODAY())-1
+			VAR _CurrentMonth = MONTH(TODAY())
+			
+			VAR _SalesAmountLCY =
+			                    CALCULATE(
+			                        SUM('invoices'[AmountLCY]),
+			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                        FILTER(
+			                            ALL('Calendar'),
+			                            AND(Calendar[Year] = _PreviousYear,
+			                                Calendar[MonthNumber] = _CurrentMonth
+			                            )
+			                        )
+			                    )
+			                    
+			VAR _Costs =
+			            CALCULATE(
+			                SUM('Invoices'[Koszt skorygowany]),
+			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                FILTER(
+			                    ALL('Calendar'),
+			                    AND(Calendar[Year] = _PreviousYear,
+			                        Calendar[MonthNumber] = _CurrentMonth
+			                    )
+			                )
+			            )
+			
+			VAR _ProfitLCY = 
+			             _SalesAmountLCY - _Costs
+			
+			
+			RETURN
+			_ProfitLCY
+			
+			
+			
+			```
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 83bf6a99-14be-4938-ac15-aef841ddf897
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure _MarginItems_MTD_Today = ```
+			
+			VAR _SalesAmountLCY = 
+			                    CALCULATE(
+			                        TOTALMTD(
+			                            SUM('invoices'[AmountLCY]),
+			                            'Calendar'[Date]
+			                        ),
+			                        'Calendar'[Date] = TODAY(),
+			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                    )
+			                    
+			VAR _Costs = 
+			            CALCULATE(
+			                TOTALMTD(
+			                    SUM('Invoices'[Koszt skorygowany]),
+			                    'Calendar'[Date]
+			                ),
+			                'Calendar'[Date] = TODAY(),
+			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            )
+			
+			VAR _ProfitLCY = 
+			             _SalesAmountLCY - _Costs
+			
+			
+			RETURN
+			DIVIDE(
+			        _ProfitLCY,
+			        _SalesAmountLCY
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 15aa07aa-a39b-4e4b-abfd-fab5651a2ba7
+
+	measure _MargintItem_CurrentMonth_Previous_Year = ```
+			
+			VAR _PreviousYear  = YEAR(TODAY())-1
+			VAR _CurrentMonth = MONTH(TODAY())
+			
+			VAR _SalesAmountLCY =
+			                    CALCULATE(
+			                        SUM('invoices'[AmountLCY]),
+			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                        FILTER(
+			                            ALL('Calendar'),
+			                            AND(Calendar[Year] = _PreviousYear,
+			                                Calendar[MonthNumber] = _CurrentMonth
+			                            )
+			                        )
+			                    )
+			                    
+			VAR _Costs =
+			            CALCULATE(
+			                SUM('Invoices'[Koszt skorygowany]),
+			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                FILTER(
+			                    ALL('Calendar'),
+			                    AND(Calendar[Year] = _PreviousYear,
+			                        Calendar[MonthNumber] = _CurrentMonth
+			                    )
+			                )
+			            )
+			
+			VAR _ProfitLCY = 
+			             _SalesAmountLCY - _Costs
+			
+			
+			RETURN
+			DIVIDE(
+			    _ProfitLCY,
+			    _SalesAmountLCY
+			)
+			
+			
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: f86aa5da-1051-4c11-8489-02d2d8c7f37c
 
 	column Value
 		isHidden

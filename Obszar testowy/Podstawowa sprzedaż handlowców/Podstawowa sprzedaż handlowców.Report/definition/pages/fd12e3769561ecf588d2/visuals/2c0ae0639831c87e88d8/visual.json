@@ -83,10 +83,10 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems"
+                  "Property": "_MarginItems"
                 }
               },
-              "queryRef": "_Measures.MarginItems",
+              "queryRef": "_Measures._MarginItems",
               "nativeQueryRef": "Marża%",
               "displayName": "Marża%"
             }
@@ -398,20 +398,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "66D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.MarginItems"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "84D"
                 }
               }
@@ -419,6 +405,20 @@
           },
           "selector": {
             "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures._MarginItems"
           }
         }
       ],
@@ -428,7 +428,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -641,7 +641,7 @@
             }
           },
           "selector": {
-            "metadata": "_Measures.MarginItems"
+            "metadata": "_Measures.SalesAmountItemTotalLCY"
           }
         },
         {
@@ -663,13 +663,13 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Right'"
+                  "Value": "'Center'"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "_Measures.SalesAmountItemTotalLCY"
+            "metadata": "_Measures._MarginItems"
           }
         }
       ],
@@ -1234,21 +1234,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2d02560f3c8dbcc01122",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_customers"
-              }
-            },
-            "Property": "KeyNoCustomer"
-          }
-        },
-        "type": "TopN",
-        "howCreated": "User"
-      },
-      {
         "name": "456d0c28a23802e074c9",
         "field": {
           "Column": {
@@ -1261,45 +1246,6 @@
           }
         },
         "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "i",
-              "Entity": "Invoices",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "i"
-                          }
-                        },
-                        "Property": "Type"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Item'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
       }
     ]

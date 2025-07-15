@@ -23,10 +23,10 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems"
+                  "Property": "_MarginItems"
                 }
               },
-              "queryRef": "_Measures.MarginItems",
+              "queryRef": "_Measures._MarginItems",
               "nativeQueryRef": "Marża na towarach",
               "displayName": "Marża na towarach"
             }
@@ -43,7 +43,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "MarginItems"
+                "Property": "_MarginItems"
               }
             },
             "direction": "Descending"

@@ -331,19 +331,6 @@ table 'gold v_bc_posted_sales_credit_memo_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column ProfitLCY
-		dataType: double
-		isHidden
-		lineageTag: f34ba55c-0a40-48c3-8381-a7854351d8f8
-		summarizeBy: sum
-		sourceColumn: ProfitLCY
-
-		changedProperty = IsHidden
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column LineDiscount
 		dataType: double
 		isHidden
@@ -546,6 +533,26 @@ table 'gold v_bc_posted_sales_credit_memo_invoices'
 		sourceColumn: Invoice_Type
 
 		annotation SummarizationSetBy = Automatic
+
+	column 'Koszt skorygowany'
+		dataType: double
+		lineageTag: d97a69fd-9969-4ad5-bb51-2f0f1123a927
+		summarizeBy: sum
+		sourceColumn: Koszt skorygowany
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ProfitLCY (based on direct cost)'
+		dataType: double
+		lineageTag: fb358e39-e918-455b-bf27-b48ec0b75243
+		summarizeBy: sum
+		sourceColumn: ProfitLCY (based on direct cost)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition 'gold v_bc_posted_sales_credit_memo_invoices' = m
 		mode: import

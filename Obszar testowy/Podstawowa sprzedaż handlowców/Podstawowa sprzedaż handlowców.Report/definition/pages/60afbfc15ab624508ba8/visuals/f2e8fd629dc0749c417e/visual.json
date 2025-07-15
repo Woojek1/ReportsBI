@@ -23,11 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems_MTD_Today_Previous_Year"
+                  "Property": "_MargintItem_CurrentMonth_Previous_Year"
                 }
               },
-              "queryRef": "_Measures.MarginItems_MTD_Today_Previous_Year",
-              "nativeQueryRef": "MarginItems_MTD_Today_Previous_Year"
+              "queryRef": "_Measures._MargintItem_CurrentMonth_Previous_Year",
+              "nativeQueryRef": "_MargintItem_CurrentMonth_Previous_Year"
             }
           ]
         },
@@ -41,11 +41,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "MarginItems_MTD_Today"
+                  "Property": "_MarginItems_MTD_Today"
                 }
               },
-              "queryRef": "_Measures.MarginItems_MTD_Today",
-              "nativeQueryRef": "MarginItems_MTD_Today"
+              "queryRef": "_Measures._MarginItems_MTD_Today",
+              "nativeQueryRef": "_MarginItems_MTD_Today"
             }
           ]
         },

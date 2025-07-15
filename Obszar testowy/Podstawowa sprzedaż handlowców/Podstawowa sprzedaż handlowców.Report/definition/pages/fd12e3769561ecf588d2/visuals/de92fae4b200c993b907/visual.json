@@ -23,10 +23,10 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "ProfitAmountItemTotalLCY"
+                  "Property": "_ProfitAmountItemTotalLCY"
                 }
               },
-              "queryRef": "_Measures.ProfitAmountItemTotalLCY",
+              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
               "nativeQueryRef": "Zysk ze sprzedaży towarów",
               "displayName": "Zysk ze sprzedaży towarów"
             }
@@ -43,7 +43,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "ProfitAmountItemTotalLCY"
+                "Property": "_ProfitAmountItemTotalLCY"
               }
             },
             "direction": "Descending"

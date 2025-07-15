@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "4d1c988566eb50b1fe33",
+  "name": "cd4d19693cae9e818def",
   "position": {
-    "x": 776,
-    "y": 568,
-    "z": 18000,
+    "x": 584,
+    "y": 104,
+    "z": 31000,
     "height": 80,
-    "width": 144,
-    "tabOrder": 18000
+    "width": 168,
+    "tabOrder": 31000
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "ProfitAmountItemTotalLCY"
+                  "Property": "_ProfitAmountItemTotalLCY"
                 }
               },
-              "queryRef": "_Measures.ProfitAmountItemTotalLCY",
-              "nativeQueryRef": "Zysk towarów",
-              "displayName": "Zysk towarów"
+              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
+              "nativeQueryRef": "Zysk ze sprzedaży towarów",
+              "displayName": "Zysk ze sprzedaży towarów"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "ProfitAmountItemTotalLCY"
+                "Property": "_ProfitAmountItemTotalLCY"
               }
             },
             "direction": "Descending"
@@ -59,7 +59,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "18D"
                 }
               }
             },
@@ -88,40 +88,7 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "lockAspect": [
+      "visualHeader": [
         {
           "properties": {
             "show": {
@@ -144,6 +111,13 @@
                 }
               }
             },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
             "color": {
               "solid": {
                 "color": {
@@ -153,20 +127,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
                 }
               }
             }
@@ -179,7 +139,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -198,24 +158,7 @@
           }
         }
       ],
-      "visualTooltip": [
-        {
-          "properties": {
-            "actionFontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0D5272'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "visualHeader": [
+      "lockAspect": [
         {
           "properties": {
             "show": {
@@ -224,22 +167,45 @@
                   "Value": "false"
                 }
               }
-            },
-            "foreground": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0D5272'"
-                    }
-                  }
-                }
-              }
             }
           }
         }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0febf72e9442bea6770b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "04c365e511ec18073088",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Day"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      }
+    ]
   }
 }

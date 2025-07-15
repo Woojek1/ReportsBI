@@ -23,11 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "ProfitAmountItem_MTD_PreviousYear"
+                  "Property": "_ProfitAmountItem_CurrentMonth_Previous_Year"
                 }
               },
-              "queryRef": "_Measures.ProfitAmountItem_MTD_PreviousYear",
-              "nativeQueryRef": "ProfitAmountItem_MTD_PreviousYear"
+              "queryRef": "_Measures._ProfitAmountItem_CurrentMonth_Previous_Year",
+              "nativeQueryRef": "_ProfitAmountItem_CurrentMonth_Previous_Year"
             }
           ]
         },
@@ -41,11 +41,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "ProfitAmountItem_MTD_Today"
+                  "Property": "_ProfitAmountItem_MTD_Today"
                 }
               },
-              "queryRef": "_Measures.ProfitAmountItem_MTD_Today",
-              "nativeQueryRef": "ProfitAmountItem_MTD_Today"
+              "queryRef": "_Measures._ProfitAmountItem_MTD_Today",
+              "nativeQueryRef": "_ProfitAmountItem_MTD_Today"
             }
           ]
         },
@@ -125,6 +125,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "indicatorDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

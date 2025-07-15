@@ -1207,6 +1207,13 @@
                           "Value": "'Item'"
                         }
                       }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Charge (Item)'"
+                        }
+                      }
                     ]
                   ]
                 }

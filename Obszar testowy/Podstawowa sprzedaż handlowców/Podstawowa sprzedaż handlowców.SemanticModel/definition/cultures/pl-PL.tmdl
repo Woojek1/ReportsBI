@@ -2454,38 +2454,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice.profit_LCY": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
-			          "ConceptualProperty": "ProfitLCY"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "profit LCY": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ProfitLCY": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "LCY": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_invoice.line_discount": {
 			      "Definition": {
 			        "Binding": {
@@ -19269,38 +19237,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_credit_memo_invoice.profit_LCY": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_bc_posted_sales_credit_memo_invoices",
-			          "ConceptualProperty": "ProfitLCY"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "profit LCY": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ProfitLCY": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "LCY": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
 			    "gold_v_bc_posted_sales_credit_memo_invoice.line_discount": {
 			      "Definition": {
 			        "Binding": {
@@ -23485,35 +23421,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice.profit_LCY": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Invoices",
-			          "ConceptualProperty": "ProfitLCY"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "profit LCY": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ProfitLCY": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "LCY": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
 			    "invoice.line_discount": {
 			      "Definition": {
 			        "Binding": {
@@ -25348,26 +25255,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Zysk ze sprzedaży towarów": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Zysk towarów": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Zysk": {
 			            "State": "Suggested",
 			            "Source": {
@@ -26241,26 +26128,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Marża na towarach": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Marża na towarach%": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Marża towarów": {
 			            "State": "Suggested",
 			            "Source": {
@@ -26306,7 +26173,7 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Marża%": {
+			          "Marża na towarach%": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -27553,6 +27420,41 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.485
 			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.koszt_skorygowany": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "Koszt skorygowany"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "koszt skorygowany": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__MarginItemsSingleInvoice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_MarginItemsSingleInvoice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_MarginItemsSingleInvoice": {
+			            "State": "Generated"
+			          }
 			        },
 			        {
 			          "Marża na towarach%": {
@@ -27565,9 +27467,550 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.entity__ProfitAmountItemTotalLCY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_ProfitAmountItemTotalLCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_ProfitAmountItemTotalLCY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Zysk ze sprzedaży towarów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Zysk na towarach": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__MarginItems": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_MarginItems"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_MarginItems": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Marża%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Marża na towarach": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_credit_memo_invoice.koszt_skorygowany": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_credit_memo_invoices",
+			          "ConceptualProperty": "Koszt skorygowany"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "koszt skorygowany": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "invoice.koszt_skorygowany": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "Koszt skorygowany"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "koszt skorygowany": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice.ProfitLCY_based_on_direct_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_invoices",
+			          "ConceptualProperty": "ProfitLCY (based on direct cost)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ProfitLCY (based on direct cost)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProfitLCY": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "invoice.ProfitLCY_based_on_direct_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Invoices",
+			          "ConceptualProperty": "ProfitLCY (based on direct cost)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ProfitLCY (based on direct cost)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProfitLCY": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.profit_amount_item_MTD_today1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_ProfitAmountItem_MTD_Today"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit amount item MTD today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ProfitAmountItem_MTD_Today": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "MTD today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item MTD today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount item MTD today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "profit amount product mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "profit amount element mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "profit amount entry mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "amount product mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "amount element mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "amount entry mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "product mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "profit amount article mtd today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.profit_amount_item_MTD_previous_year1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_ProfitAmountItem_CurrentMonth_Previous_Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit amount item MTD previous year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ProfitAmountItem_MTD_Previous_Year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_credit_memo_invoice.ProfitLCY_based_on_direct_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_posted_sales_credit_memo_invoices",
+			          "ConceptualProperty": "ProfitLCY (based on direct cost)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ProfitLCY (based on direct cost)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProfitLCY": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "invoice_has_entity__measure_entity__MarginItems": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.entity__MarginItems": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__MarginItems"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__MarginItems"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have__MarginItems"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_entity__ProfitAmountItemTotalLCY": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.entity__ProfitAmountItemTotalLCY": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__ProfitAmountItemTotalLCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__ProfitAmountItemTotalLCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have__ProfitAmountItemTotalLCY"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_entity__MarginItemsSingleInvoice": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.entity__MarginItemsSingleInvoice": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__MarginItemsSingleInvoice"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__MarginItemsSingleInvoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have__MarginItemsSingleInvoice"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_margin_items_single_invoice": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.margin_items_single_invoice": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_single_invoice"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_single_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_margin_items_single_invoice"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_profit_amount_total_LCY": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.profit_amount_total_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_total_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_total_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_profit_amount_total_LCY"
+			        }
+			      ]
+			    },
+			    "invoice_has_correction_reason": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.correction_reason": {
+			          "Target": {
+			            "Entity": "invoice.correction_reason"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.correction_reason"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_correction_reasons"
+			        }
+			      ]
+			    },
 			    "invoice_has_invoice_type": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -27700,15 +28143,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice_has_entity__measure_zysk_na_towarach": {
+			    "entity__measure_has_zysk_na_towarach": {
 			      "Binding": {
-			        "ConceptualEntity": "Invoices"
+			        "ConceptualEntity": "_Measures"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "invoice": {
+			        "entity__measure": {
 			          "Target": {
-			            "Entity": "invoice"
+			            "Entity": "entity__measure"
 			          }
 			        },
 			        "entity__measure.zysk_na_towarach": {
@@ -27721,7 +28164,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "invoice"
+			              "Role": "entity__measure"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.zysk_na_towarach"
@@ -27729,7 +28172,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_zysk_na_towarach"
+			          "ID": "Phrasing_measures_have_zysk_na_towarach"
 			        }
 			      ]
 			    },
@@ -27799,15 +28242,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice_has_entity__measure_margin_items": {
+			    "entity__measure_has_margin_items": {
 			      "Binding": {
-			        "ConceptualEntity": "Invoices"
+			        "ConceptualEntity": "_Measures"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "invoice": {
+			        "entity__measure": {
 			          "Target": {
-			            "Entity": "invoice"
+			            "Entity": "entity__measure"
 			          }
 			        },
 			        "entity__measure.margin_items": {
@@ -27820,7 +28263,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "invoice"
+			              "Role": "entity__measure"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.margin_items"
@@ -27828,7 +28271,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_margin_items"
+			          "ID": "Phrasing_measures_have_margin_items"
 			        }
 			      ]
 			    },
@@ -28950,39 +29393,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "invoices_have_line_discounts"
-			        }
-			      ]
-			    },
-			    "invoice_has_profit_LCY": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "invoice.profit_LCY": {
-			          "Target": {
-			            "Entity": "invoice.profit_LCY"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "invoice.profit_LCY"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_profit_LCies"
 			        }
 			      ]
 			    },
@@ -35339,7 +35749,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice_has_correction_reason": {
+			    "invoice_has_koszt_skorygowany": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
 			      },
@@ -35350,9 +35760,9 @@ cultureInfo pl-PL
 			            "Entity": "invoice"
 			          }
 			        },
-			        "invoice.correction_reason": {
+			        "invoice.koszt_skorygowany": {
 			          "Target": {
-			            "Entity": "invoice.correction_reason"
+			            "Entity": "invoice.koszt_skorygowany"
 			          }
 			        }
 			      },
@@ -35363,16 +35773,16 @@ cultureInfo pl-PL
 			              "Role": "invoice"
 			            },
 			            "Object": {
-			              "Role": "invoice.correction_reason"
+			              "Role": "invoice.koszt_skorygowany"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_correction_reasons"
+			          "ID": "invoices_have_koszt_skorygowanies"
 			        }
 			      ]
 			    },
-			    "invoice_has_entity__measure_profit_amount_total_LCY": {
+			    "invoice_has_ProfitLCY_based_on_direct_cost": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
 			      },
@@ -35383,9 +35793,9 @@ cultureInfo pl-PL
 			            "Entity": "invoice"
 			          }
 			        },
-			        "entity__measure.profit_amount_total_LCY": {
+			        "invoice.ProfitLCY_based_on_direct_cost": {
 			          "Target": {
-			            "Entity": "entity__measure.profit_amount_total_LCY"
+			            "Entity": "invoice.ProfitLCY_based_on_direct_cost"
 			          }
 			        }
 			      },
@@ -35396,16 +35806,16 @@ cultureInfo pl-PL
 			              "Role": "invoice"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.profit_amount_total_LCY"
+			              "Role": "invoice.ProfitLCY_based_on_direct_cost"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_profit_amount_total_LCY"
+			          "ID": "invoices_have_ProfitLCY_based_on_direct_cost"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_margin_items_single_invoice": {
+			    "entity__measure_has_profit_amount_item_MTD_today1": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measures"
 			      },
@@ -35416,9 +35826,9 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure"
 			          }
 			        },
-			        "entity__measure.margin_items_single_invoice": {
+			        "entity__measure.profit_amount_item_MTD_today1": {
 			          "Target": {
-			            "Entity": "entity__measure.margin_items_single_invoice"
+			            "Entity": "entity__measure.profit_amount_item_MTD_today1"
 			          }
 			        }
 			      },
@@ -35429,12 +35839,45 @@ cultureInfo pl-PL
 			              "Role": "entity__measure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.margin_items_single_invoice"
+			              "Role": "entity__measure.profit_amount_item_MTD_today1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_margin_items_single_invoice"
+			          "ID": "Phrasing_measures_have_profit_amount_item_MTD_today1"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_profit_amount_item_MTD_previous_year1": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.profit_amount_item_MTD_previous_year1": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_item_MTD_previous_year1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_item_MTD_previous_year1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_profit_amount_item_MTD_previous_year1"
 			        }
 			      ]
 			    },
