@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "3b19bc6fc30ce1d10943",
   "position": {
-    "x": 880,
+    "x": 896,
     "y": 16,
     "z": 7000,
     "height": 80,
-    "width": 104,
+    "width": 96,
     "tabOrder": 3000
   },
   "visual": {
@@ -59,7 +59,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "19D"
                 }
               }
             },
@@ -241,5 +241,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "474846ea2d840584299a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscount"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

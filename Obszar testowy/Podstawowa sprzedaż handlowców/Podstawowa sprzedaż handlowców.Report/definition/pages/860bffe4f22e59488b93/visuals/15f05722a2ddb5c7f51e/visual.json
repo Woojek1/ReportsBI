@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "15f05722a2ddb5c7f51e",
   "position": {
-    "x": 744,
+    "x": 656,
     "y": 16,
     "z": 6000,
     "height": 80,
-    "width": 128,
+    "width": 112,
     "tabOrder": 4000
   },
   "visual": {
@@ -59,7 +59,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "19D"
                 }
               }
             },
@@ -241,5 +241,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "182294672d0f7aab7c22",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountTotalLCY"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

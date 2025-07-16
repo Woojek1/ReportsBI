@@ -6,7 +6,7 @@
     "y": 488,
     "z": 15000,
     "height": 208,
-    "width": 152,
+    "width": 376,
     "tabOrder": 15000
   },
   "visual": {
@@ -74,21 +74,6 @@
               "queryRef": "_Measures.AverageDiscount",
               "nativeQueryRef": "Średni rabat",
               "displayName": "Średni rabat"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "MarginItems"
-                }
-              },
-              "queryRef": "_Measures.MarginItems",
-              "nativeQueryRef": "Marża%",
-              "displayName": "Marża%"
             }
           ]
         }
@@ -398,20 +383,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "66D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.MarginItems"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "84D"
                 }
               }
@@ -428,7 +399,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -614,34 +585,6 @@
           },
           "selector": {
             "metadata": "_Measures.ItemQuantity"
-          }
-        },
-        {
-          "properties": {
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.MarginItems"
           }
         },
         {
@@ -1301,6 +1244,62 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "fe74fb30fa6ee7fa592e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ItemTypeA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7167fae313084d0330e9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItemTotalLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0972ffd9b98ef38f9bad",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "ItemQuantity"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b0e819c561e6d5548590",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscount"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

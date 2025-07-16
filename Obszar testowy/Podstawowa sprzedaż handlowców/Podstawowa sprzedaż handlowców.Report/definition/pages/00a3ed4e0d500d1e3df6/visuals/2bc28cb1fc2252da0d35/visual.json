@@ -6,8 +6,7 @@
     "y": 16,
     "z": 0,
     "height": 688,
-    "width": 1024,
-    "tabOrder": 0
+    "width": 1024
   },
   "visual": {
     "visualType": "pivotTable",
@@ -80,7 +79,8 @@
                 }
               },
               "queryRef": "_Measures._MarginItems",
-              "nativeQueryRef": "_MarginItems"
+              "nativeQueryRef": "Marża na towarach%",
+              "displayName": "Marża na towarach%"
             },
             {
               "field": {
@@ -94,7 +94,8 @@
                 }
               },
               "queryRef": "_Measures._ProfitAmountItemTotalLCY",
-              "nativeQueryRef": "_ProfitAmountItemTotalLCY"
+              "nativeQueryRef": "Zysk na towarach",
+              "displayName": "Zysk na towarach"
             }
           ]
         }
@@ -532,6 +533,62 @@
           },
           "selector": {
             "metadata": "_Measures.SalesAmountItemTotalLCY"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures._MarginItems"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures._ProfitAmountItemTotalLCY"
           }
         }
       ],

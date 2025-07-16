@@ -16241,16 +16241,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Sprzedaż towarów": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Sprzedaż": {
 			            "State": "Suggested",
 			            "Source": {
@@ -26118,16 +26108,6 @@ cultureInfo pl-PL
 			          }
 			        },
 			        {
-			          "Marża%": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Marża towarów": {
 			            "State": "Suggested",
 			            "Source": {
@@ -27501,6 +27481,16 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Zysk skorygowany": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -27530,6 +27520,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Marża na towarach": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Marża na towarach%": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -27763,7 +27763,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure.profit_amount_item_MTD_previous_year1": {
+			    "entity__measure.profit_amount_item_current_month_previous_year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
@@ -27773,12 +27773,12 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "profit amount item MTD previous year": {
+			          "profit amount item current month previous year": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "_ProfitAmountItem_MTD_Previous_Year": {
+			          "_ProfitAmountItem_CurrentMonth_Previous_Year": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -27810,9 +27810,574 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.margin_items_MTD_today1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_MarginItems_MTD_Today"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margin items MTD today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_MarginItems_MTD_Today": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "MTD today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "items MTD today": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.margint_item_current_month_previous_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_MargintItem_CurrentMonth_Previous_Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margint item current month previous year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_MargintItem_CurrentMonth_Previous_Year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.cost_amount_item_LCY1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Cost_Amount_Item_LCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cost amount item LCY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_Cost_Amount_Item_LCY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount item LCY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cost amount product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cost amount element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cost amount entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "amount product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "amount element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "amount entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "product lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "element lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "entry lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "cost amount article lcy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Koszt skorygowany": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.unit_price_PLN": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "UnitPricePLN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price PLN": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UnitPricePLN": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PLN": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price PLN": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "module price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entity price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "group price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "component price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "constituent price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "item price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "part price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section price pln": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "invoice_has_entity__measure_margin_items_MTD_today1": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.margin_items_MTD_today1": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_MTD_today1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_MTD_today1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_margin_items_MTD_today"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__measure_margin_items_MTD_today1": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.margin_items_MTD_today1": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_MTD_today1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_MTD_today1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_margin_items_MTD_today"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_profit_amount_item_current_month_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.profit_amount_item_current_month_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_item_current_month_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_item_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_profit_amount_item_current_month_previous_year"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_profit_amount_item_MTD_today1": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.profit_amount_item_MTD_today1": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_item_MTD_today1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_item_MTD_today1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_profit_amount_item_MTD_today"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__measure_profit_amount_item_MTD_today1": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.profit_amount_item_MTD_today1": {
+			          "Target": {
+			            "Entity": "entity__measure.profit_amount_item_MTD_today1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.profit_amount_item_MTD_today1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_profit_amount_item_MTD_today"
+			        }
+			      ]
+			    },
+			    "invoice_has_ProfitLCY_based_on_direct_cost": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.ProfitLCY_based_on_direct_cost": {
+			          "Target": {
+			            "Entity": "invoice.ProfitLCY_based_on_direct_cost"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.ProfitLCY_based_on_direct_cost"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_ProfitLCY_based_on_direct_cost"
+			        }
+			      ]
+			    },
+			    "invoice_has_koszt_skorygowany": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "invoice.koszt_skorygowany": {
+			          "Target": {
+			            "Entity": "invoice.koszt_skorygowany"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "invoice.koszt_skorygowany"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_koszt_skorygowanies"
+			        }
+			      ]
+			    },
 			    "invoice_has_entity__measure_entity__MarginItems": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -27879,15 +28444,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_entity__MarginItemsSingleInvoice": {
+			    "invoice_has_entity__measure_entity__MarginItemsSingleInvoice": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.entity__MarginItemsSingleInvoice": {
@@ -27900,7 +28465,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.entity__MarginItemsSingleInvoice"
@@ -27908,7 +28473,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have__MarginItemsSingleInvoice"
+			          "ID": "invoices_have__MarginItemsSingleInvoice"
 			        }
 			      ]
 			    },
@@ -28209,15 +28774,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_margin_items_MTD_today": {
+			    "invoice_has_entity__measure_margin_items_MTD_today": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.margin_items_MTD_today": {
@@ -28230,7 +28795,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.margin_items_MTD_today"
@@ -28238,7 +28803,40 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_margin_items_MTD_today"
+			          "ID": "invoices_have_margin_items_MTD_today1"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__measure_margin_items_MTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.margin_items_MTD_today": {
+			          "Target": {
+			            "Entity": "entity__measure.margin_items_MTD_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margin_items_MTD_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_margin_items_MTD_today1"
 			        }
 			      ]
 			    },
@@ -30365,15 +30963,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_item_MTD_previous_year": {
+			    "invoice_has_entity__measure_sales_amount_item_MTD_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.sales_amount_item_MTD_previous_year": {
@@ -30386,7 +30984,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_item_MTD_previous_year"
@@ -30394,19 +30992,52 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_item_MTD_previous_year"
+			          "ID": "invoices_have_sales_amount_item_MTD_previous_year"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_item_MTD_today": {
+			    "calendar_has_entity__measure_sales_amount_item_MTD_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Calendar"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.sales_amount_item_MTD_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_item_MTD_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_item_MTD_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_sales_amount_item_MTD_previous_year"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_sales_amount_item_MTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.sales_amount_item_MTD_today": {
@@ -30419,7 +31050,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_item_MTD_today"
@@ -30427,7 +31058,40 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_item_MTD_today"
+			          "ID": "invoices_have_sales_amount_item_MTD_today"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__measure_sales_amount_item_MTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.sales_amount_item_MTD_today": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_item_MTD_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_item_MTD_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_sales_amount_item_MTD_today"
 			        }
 			      ]
 			    },
@@ -30530,15 +31194,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_discount_current_month_previous_year": {
+			    "invoice_has_entity__measure_average_discount_current_month_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.average_discount_current_month_previous_year": {
@@ -30546,17 +31210,32 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure.average_discount_current_month_previous_year"
 			          }
 			        }
-			      }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_discount_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_average_discount_current_month_previous_year"
+			        }
+			      ]
 			    },
-			    "gold_v_bc_posted_sales_invoice_has_entity__measure_average_invoice_amount_current_month_previous_year": {
+			    "invoice_has_entity__measure_average_invoice_amount_current_month_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_v_bc_posted_sales_invoice": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "gold_v_bc_posted_sales_invoice"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.average_invoice_amount_current_month_previous_year": {
@@ -30564,7 +31243,22 @@ cultureInfo pl-PL
 			            "Entity": "entity__measure.average_invoice_amount_current_month_previous_year"
 			          }
 			        }
-			      }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_invoice_amount_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_average_invoice_amount_current_month_previous_year"
+			        }
+			      ]
 			    },
 			    "invoice_has_entity__measure_distinct_invoice_count_current_month_previous_year": {
 			      "Binding": {
@@ -30683,15 +31377,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_item_quantity_current_month": {
+			    "invoice_has_entity__measure_item_quantity_current_month": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.item_quantity_current_month": {
@@ -30704,7 +31398,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.item_quantity_current_month"
@@ -30712,19 +31406,52 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_item_quantity_current_month"
+			          "ID": "invoices_have_item_quantity_current_month"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_kolor_po_terminowości": {
+			    "calendar_has_entity__measure_item_quantity_current_month": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Calendar"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.item_quantity_current_month": {
+			          "Target": {
+			            "Entity": "entity__measure.item_quantity_current_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.item_quantity_current_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_item_quantity_current_month"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_kolor_po_terminowości": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.kolor_po_terminowości": {
@@ -30737,7 +31464,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.kolor_po_terminowości"
@@ -30745,7 +31472,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_kolor_po_terminowości"
+			          "ID": "invoices_have_kolor_po_terminowości"
 			        }
 			      ]
 			    },
@@ -31130,15 +31857,15 @@ cultureInfo pl-PL
 			        }
 			      }
 			    },
-			    "entity__measure_has_overdue_amount_LCY": {
+			    "invoice_has_entity__measure_overdue_amount_LCY": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.overdue_amount_LCY": {
@@ -31151,7 +31878,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.overdue_amount_LCY"
@@ -31159,7 +31886,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_overdue_amount_LCY"
+			          "ID": "invoices_have_overdue_amount_LCY"
 			        }
 			      ]
 			    },
@@ -31394,15 +32121,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_category_sales_amount_LCY_last_12_months_today": {
+			    "invoice_has_entity__measure_category_sales_amount_LCY_last_12_months_today": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.category_sales_amount_LCY_last_12_months_today": {
@@ -31415,7 +32142,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.category_sales_amount_LCY_last_12_months_today"
@@ -31423,7 +32150,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_category_sales_amount_LCY_last_12_months_today"
+			          "ID": "invoices_have_category_sales_amount_LCY_last_12_months_today"
 			        }
 			      ]
 			    },
@@ -31661,15 +32388,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_remaining_amount_LCY_total": {
+			    "invoice_has_entity__measure_remaining_amount_LCY_total": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.remaining_amount_LCY_total": {
@@ -31682,7 +32409,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.remaining_amount_LCY_total"
@@ -31690,7 +32417,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_remaining_amount_LCY_total"
+			          "ID": "invoices_have_remaining_amount_LCY_total"
 			        }
 			      ]
 			    },
@@ -31811,15 +32538,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_overdue_amount_LCY_total": {
+			    "invoice_has_entity__measure_overdue_amount_LCY_total": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.overdue_amount_LCY_total": {
@@ -31832,7 +32559,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.overdue_amount_LCY_total"
@@ -31840,7 +32567,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_overdue_amount_LCY_total"
+			          "ID": "invoices_have_overdue_amount_LCY_total"
 			        }
 			      ]
 			    },
@@ -33109,15 +33836,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_YTD_today_LCY": {
+			    "invoice_has_entity__measure_sales_amount_YTD_today_LCY": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "invoice"
 			          }
 			        },
 			        "entity__measure.sales_amount_YTD_today_LCY": {
@@ -33130,7 +33857,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "invoice"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_YTD_today_LCY"
@@ -33138,19 +33865,70 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_YTD_today_LCY"
+			          "ID": "invoices_have_sales_amount_YTD_today_LCY"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_QTD_today": {
+			    "calendar_has_entity__measure_sales_amount_YTD_today_LCY": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Calendar"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__measure.sales_amount_YTD_today_LCY": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_YTD_today_LCY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sales_amount_YTD_today_LCY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_sales_amount_YTD_today_LCY"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_QTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_posted_sales_invoice": {
+			          "Target": {
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_QTD_today": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_QTD_today"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_QTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_QTD_today": {
@@ -33163,7 +33941,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_QTD_today"
@@ -33171,19 +33949,37 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_QTD_today"
+			          "ID": "calendars_have_sales_amount_QTD_today"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_MTD_today": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_MTD_today": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_MTD_today": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_MTD_today"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_MTD_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_MTD_today": {
@@ -33196,7 +33992,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_MTD_today"
@@ -33204,19 +34000,37 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_MTD_today"
+			          "ID": "calendars_have_sales_amount_MTD_today"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_QTD": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_QTD": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_QTD": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_QTD"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_QTD": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_QTD": {
@@ -33229,7 +34043,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_QTD"
@@ -33237,7 +34051,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_QTD"
+			          "ID": "calendars_have_sales_amount_QTD"
 			        }
 			      ]
 			    },
@@ -34637,15 +35451,33 @@ cultureInfo pl-PL
 			        }
 			      }
 			    },
-			    "entity__measure_has_sales_amount_YTD_previous_year": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_YTD_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_YTD_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_YTD_previous_year"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_YTD_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_YTD_previous_year": {
@@ -34658,7 +35490,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_YTD_previous_year"
@@ -34666,7 +35498,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_YTD_previous_year"
+			          "ID": "calendars_have_sales_amount_YTD_previous_year"
 			        }
 			      ]
 			    },
@@ -34739,15 +35571,33 @@ cultureInfo pl-PL
 			        }
 			      }
 			    },
-			    "entity__measure_has_sales_amount_QTD_previous_year": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_QTD_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_QTD_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_QTD_previous_year"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_QTD_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_QTD_previous_year": {
@@ -34760,7 +35610,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_QTD_previous_year"
@@ -34768,19 +35618,37 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_QTD_previous_year"
+			          "ID": "calendars_have_sales_amount_QTD_previous_year"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_MTD_previous_year": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_MTD_previous_year": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_MTD_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_MTD_previous_year"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_MTD_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_MTD_previous_year": {
@@ -34793,7 +35661,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_MTD_previous_year"
@@ -34801,19 +35669,37 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_MTD_previous_year"
+			          "ID": "calendars_have_sales_amount_MTD_previous_year"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_YTD": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_YTD": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_YTD": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_YTD"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_YTD": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_YTD": {
@@ -34826,7 +35712,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_YTD"
@@ -34834,19 +35720,37 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_YTD"
+			          "ID": "calendars_have_sales_amount_YTD"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_sales_amount_MTD": {
+			    "gold_v_bc_posted_sales_invoice_has_entity__measure_sales_amount_MTD": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_posted_sales_invoices"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_posted_sales_invoice": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_posted_sales_invoice"
+			          }
+			        },
+			        "entity__measure.sales_amount_MTD": {
+			          "Target": {
+			            "Entity": "entity__measure.sales_amount_MTD"
+			          }
+			        }
+			      }
+			    },
+			    "calendar_has_entity__measure_sales_amount_MTD": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
 			          }
 			        },
 			        "entity__measure.sales_amount_MTD": {
@@ -34859,7 +35763,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "calendar"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.sales_amount_MTD"
@@ -34867,7 +35771,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_sales_amount_MTD"
+			          "ID": "calendars_have_sales_amount_MTD"
 			        }
 			      ]
 			    },
@@ -35749,7 +36653,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice_has_koszt_skorygowany": {
+			    "invoice_has_entity__measure_margint_item_current_month_previous_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
 			      },
@@ -35760,9 +36664,9 @@ cultureInfo pl-PL
 			            "Entity": "invoice"
 			          }
 			        },
-			        "invoice.koszt_skorygowany": {
+			        "entity__measure.margint_item_current_month_previous_year": {
 			          "Target": {
-			            "Entity": "invoice.koszt_skorygowany"
+			            "Entity": "entity__measure.margint_item_current_month_previous_year"
 			          }
 			        }
 			      },
@@ -35773,16 +36677,16 @@ cultureInfo pl-PL
 			              "Role": "invoice"
 			            },
 			            "Object": {
-			              "Role": "invoice.koszt_skorygowany"
+			              "Role": "entity__measure.margint_item_current_month_previous_year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_koszt_skorygowanies"
+			          "ID": "invoices_have_margint_item_current_month_previous_year"
 			        }
 			      ]
 			    },
-			    "invoice_has_ProfitLCY_based_on_direct_cost": {
+			    "invoice_has_entity__measure_cost_amount_item_LCY1": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
 			      },
@@ -35793,9 +36697,9 @@ cultureInfo pl-PL
 			            "Entity": "invoice"
 			          }
 			        },
-			        "invoice.ProfitLCY_based_on_direct_cost": {
+			        "entity__measure.cost_amount_item_LCY1": {
 			          "Target": {
-			            "Entity": "invoice.ProfitLCY_based_on_direct_cost"
+			            "Entity": "entity__measure.cost_amount_item_LCY1"
 			          }
 			        }
 			      },
@@ -35806,29 +36710,29 @@ cultureInfo pl-PL
 			              "Role": "invoice"
 			            },
 			            "Object": {
-			              "Role": "invoice.ProfitLCY_based_on_direct_cost"
+			              "Role": "entity__measure.cost_amount_item_LCY1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_ProfitLCY_based_on_direct_cost"
+			          "ID": "invoices_have_cost_amount_item_LCY1"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_profit_amount_item_MTD_today1": {
+			    "gold_v_bc_item_has_unit_price_PLN": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "gold v_bc_items"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "gold_v_bc_item": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "gold_v_bc_item"
 			          }
 			        },
-			        "entity__measure.profit_amount_item_MTD_today1": {
+			        "gold_v_bc_item.unit_price_PLN": {
 			          "Target": {
-			            "Entity": "entity__measure.profit_amount_item_MTD_today1"
+			            "Entity": "gold_v_bc_item.unit_price_PLN"
 			          }
 			        }
 			      },
@@ -35836,48 +36740,15 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "gold_v_bc_item"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.profit_amount_item_MTD_today1"
+			              "Role": "gold_v_bc_item.unit_price_PLN"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_profit_amount_item_MTD_today1"
-			        }
-			      ]
-			    },
-			    "entity__measure_has_profit_amount_item_MTD_previous_year1": {
-			      "Binding": {
-			        "ConceptualEntity": "_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__measure": {
-			          "Target": {
-			            "Entity": "entity__measure"
-			          }
-			        },
-			        "entity__measure.profit_amount_item_MTD_previous_year1": {
-			          "Target": {
-			            "Entity": "entity__measure.profit_amount_item_MTD_previous_year1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__measure"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.profit_amount_item_MTD_previous_year1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_profit_amount_item_MTD_previous_year1"
+			          "ID": "gold_v_bc_items_have_unit_price_PLNs"
 			        }
 			      ]
 			    },

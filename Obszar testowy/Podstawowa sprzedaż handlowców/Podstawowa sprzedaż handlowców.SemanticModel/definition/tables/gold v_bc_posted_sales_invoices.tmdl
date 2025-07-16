@@ -568,5 +568,5 @@ table 'gold v_bc_posted_sales_invoices'
 
 	annotation PBI_NavigationStepName = Nawigacja
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 

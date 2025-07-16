@@ -209,49 +209,6 @@
               "queryRef": "Invoices.PaymentMethodCode",
               "nativeQueryRef": "Metoda płatnmości",
               "displayName": "Metoda płatnmości"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "Company"
-                }
-              },
-              "queryRef": "Invoices.Company",
-              "nativeQueryRef": "Company"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Invoices"
-                    }
-                  },
-                  "Property": "Invoice_Type"
-                }
-              },
-              "queryRef": "Invoices.Invoice_Type",
-              "nativeQueryRef": "Invoice_Type"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "_ProfitAmountItemTotalLCY"
-                }
-              },
-              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
-              "nativeQueryRef": "Zysk na towarach",
-              "displayName": "Zysk na towarach"
             }
           ]
         }
@@ -2367,20 +2324,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "58D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Company"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "84.09433981896422D"
                 }
               }
@@ -2409,20 +2352,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "99D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Invoices.Invoice_Type"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "71.37953052554295D"
                 }
               }
@@ -2430,20 +2359,6 @@
           },
           "selector": {
             "metadata": "_Measures._MarginItemsSingleInvoice"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "114D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures._ProfitAmountItemTotalLCY"
           }
         }
       ]

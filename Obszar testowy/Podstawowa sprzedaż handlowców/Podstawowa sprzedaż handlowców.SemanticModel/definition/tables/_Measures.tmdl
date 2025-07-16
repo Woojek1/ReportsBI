@@ -432,7 +432,7 @@ table _Measures
 			    sum('invoices'[LinePriceLCY]),
 			    0
 			)
-		formatString: 0.00%;-0.00%;0.00%
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Sales
 		lineageTag: 141d42d5-af76-47fc-98e3-ff415f40e750
 
@@ -1187,7 +1187,7 @@ table _Measures
 			    _Margin
 			)
 			```
-		formatString: 0.00%;-0.00%;0.00%
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Sales
 		lineageTag: 0f2a273d-5603-4c45-917a-791736245036
 
@@ -1414,6 +1414,18 @@ table _Measures
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Sales
 		lineageTag: f86aa5da-1051-4c11-8489-02d2d8c7f37c
+
+	measure _Cost_Amount_Item_LCY =
+			
+			CALCULATE(
+			    SUM(Invoices[Koszt skorygowany]),
+			    'Invoices'[Type] = "Item"
+			    || 'Invoices'[Type] = "Charge (Item)"
+			    )
+		displayFolder: Sales
+		lineageTag: d8148103-0b57-47aa-adec-511ac9c25bce
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		isHidden

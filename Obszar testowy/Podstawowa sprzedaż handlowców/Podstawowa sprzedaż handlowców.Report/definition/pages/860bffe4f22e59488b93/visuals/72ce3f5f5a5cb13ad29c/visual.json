@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "a08cf35bdf15ef2c0bac",
+  "name": "72ce3f5f5a5cb13ad29c",
   "position": {
-    "x": 776,
-    "y": 576,
-    "z": 18000,
-    "height": 104,
-    "width": 152,
-    "tabOrder": 18000
+    "x": 775,
+    "y": 16,
+    "z": 15001,
+    "height": 80,
+    "width": 112,
+    "tabOrder": 15001
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "_ProfitAmountItemTotalLCY"
+                  "Property": "_MarginItemsSingleInvoice"
                 }
               },
-              "queryRef": "_Measures._ProfitAmountItemTotalLCY",
-              "nativeQueryRef": "_ProfitAmountItemTotalLCY"
+              "queryRef": "_Measures._MarginItemsSingleInvoice",
+              "nativeQueryRef": "Marża na towarach%",
+              "displayName": "Marża na towarach%"
             }
           ]
         }
@@ -42,7 +43,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "_ProfitAmountItemTotalLCY"
+                "Property": "_MarginItemsSingleInvoice"
               }
             },
             "direction": "Descending"
@@ -178,7 +179,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -240,5 +241,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3a018750f48e35d54a8c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "_MarginItemsSingleInvoice"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
