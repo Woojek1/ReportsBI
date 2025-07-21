@@ -6,8 +6,7 @@
     "y": 16,
     "z": 5000,
     "height": 80,
-    "width": 336,
-    "tabOrder": 1000
+    "width": 336
   },
   "visual": {
     "visualType": "card",
@@ -248,28 +247,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b96600891c96667a55c4",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "gold v_bc_customers"
-                  }
-                },
-                "Property": "Name"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 775,
     "y": 16,
-    "z": 15001,
+    "z": 12000,
     "height": 80,
     "width": 112,
-    "tabOrder": 15001
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "card",
@@ -241,23 +241,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3a018750f48e35d54a8c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "_MarginItemsSingleInvoice"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

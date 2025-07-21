@@ -7,7 +7,7 @@
     "z": 0,
     "height": 503.99999999999994,
     "width": 1208,
-    "tabOrder": 13000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "tableEx",
@@ -2694,5 +2694,191 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ae0910731e58b6af91f8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "KeyNoInvoice"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e9fa1453f3fb9d9c5a32",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "PostingDate"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f56af18e2a642fcbf54f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_customers"
+              }
+            },
+            "Property": "Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0f64f469d965208ccfcf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "SalespersonName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1607a58b1a765275fc1a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountTotalLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e2ff30fe38bc7eb26eee",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItemTotalLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b5956261f62a22f8d628",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountTotalVATLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6ab5e14dcd09e856e701",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscount"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4a41e2375e67e38a32b3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "_MarginItemsSingleInvoice"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ea1ee4585ea1dce946b1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "RemainingAmountLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "993fd4464bd9a2dc26dd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "DueDate"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "97ae4f3654a4fdd20221",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoOrder"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7f7d0baefac274eeebf9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "PaymentMethodCode"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

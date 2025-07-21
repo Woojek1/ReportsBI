@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 80,
     "width": 96,
-    "tabOrder": 7000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "card",
@@ -264,23 +264,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f2fb8d0a0ed42a4855e9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "DaysAfterDueDates"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

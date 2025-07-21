@@ -6,7 +6,8 @@
     "y": 64,
     "z": 0,
     "height": 592,
-    "width": 944
+    "width": 944,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",

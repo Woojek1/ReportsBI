@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 288,
     "width": 1184,
-    "tabOrder": 2000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1470,5 +1470,135 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f0c3d4dd9da769017db1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "InvoiceLine"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b751c6c8848167186be9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoItem"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8c4f97616ee1591dbbcb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Quantity"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "402dc6a56ae6116fa509",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "AmountLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "78729d0a0394e37aee5b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ManufacturerCode"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "846401ffaf8a4fe23edf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ItemTypeA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "714e2327c6df9df9a5dd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "ItemDescription"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3e88572cf02db3f40aaa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "923ac9c83d6dcbcf12b2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "Type"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 80,
     "width": 112,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "card",
@@ -241,23 +241,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "182294672d0f7aab7c22",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

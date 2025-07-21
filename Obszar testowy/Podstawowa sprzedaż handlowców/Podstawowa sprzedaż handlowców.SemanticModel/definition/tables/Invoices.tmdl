@@ -263,13 +263,12 @@ table Invoices
 
 	column LineDiscountAmount
 		dataType: double
+		formatString: #,0.00
 		lineageTag: 547bd9dd-ea66-4e9f-b900-c328d9963fd2
 		summarizeBy: sum
 		sourceColumn: LineDiscountAmount
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column MarginBC
 		dataType: double

@@ -1,5 +1,4 @@
 table 'gold v_bc_items'
-	excludeFromModelRefresh
 	lineageTag: 1d70ad16-52d1-4b70-8c0c-22fd8590c2a0
 
 	column NoItem
@@ -261,14 +260,6 @@ table 'gold v_bc_items'
 
 		annotation SummarizationSetBy = Automatic
 
-	column Company
-		dataType: string
-		lineageTag: da0b09cb-f986-42cc-a201-565e81ac9a57
-		summarizeBy: none
-		sourceColumn: Company
-
-		annotation SummarizationSetBy = Automatic
-
 	column Description
 		dataType: string
 		lineageTag: 792efe28-b7e4-4558-8386-0d23b67586e9
@@ -287,48 +278,12 @@ table 'gold v_bc_items'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column netWeight
-		dataType: double
-		lineageTag: d669ee9b-e0e9-4ec7-b45e-6b71bb70797a
-		summarizeBy: none
-		sourceColumn: netWeight
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column ednBatteryCode
-		dataType: string
-		lineageTag: f371cdac-f36b-4899-9727-65397c391b65
-		summarizeBy: none
-		sourceColumn: ednBatteryCode
-
-		annotation SummarizationSetBy = Automatic
-
 	column ednBatteryItem
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
 		lineageTag: 4ef30a01-a16e-4a44-9f4b-8dbb52b8670a
 		summarizeBy: none
 		sourceColumn: ednBatteryItem
-
-		annotation SummarizationSetBy = Automatic
-
-	column ednBatteryQuantity
-		dataType: double
-		lineageTag: 5b4ac9a7-2a19-4418-8c39-df40c531281e
-		summarizeBy: none
-		sourceColumn: ednBatteryQuantity
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	column vendorNo
-		dataType: string
-		lineageTag: a6f7a5d1-b664-4d18-9542-a26fd18879cb
-		summarizeBy: none
-		sourceColumn: vendorNo
 
 		annotation SummarizationSetBy = Automatic
 
@@ -342,14 +297,99 @@ table 'gold v_bc_items'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column UnitPriceCZK
+		dataType: double
+		lineageTag: c032d2f4-b505-4741-896e-d0fdc484a008
+		summarizeBy: none
+		sourceColumn: UnitPriceCZK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceUSD
+		dataType: double
+		lineageTag: a8789216-f6f5-4c26-a5c1-8cbd05d16b53
+		summarizeBy: none
+		sourceColumn: UnitPriceUSD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceEUR
+		dataType: double
+		lineageTag: 3dc5991d-8c10-483e-bba6-ff102dadd27b
+		summarizeBy: none
+		sourceColumn: UnitPriceEUR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceGBP
+		dataType: double
+		lineageTag: bfbc1594-a454-4755-bfe4-0c60d824d591
+		summarizeBy: none
+		sourceColumn: UnitPriceGBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NetWeight
+		dataType: double
+		lineageTag: 39fcf6c3-b43d-4d9f-a101-727245073257
+		summarizeBy: none
+		sourceColumn: NetWeight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EdnBatteryCode
+		dataType: string
+		lineageTag: 79008266-96a7-422a-91b3-17cf808703ea
+		summarizeBy: none
+		sourceColumn: EdnBatteryCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdnBatteryQuantity
+		dataType: double
+		lineageTag: 2bb54b05-4a3c-45b1-8c72-18f023d0d3ac
+		summarizeBy: none
+		sourceColumn: EdnBatteryQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VendorNo
+		dataType: string
+		lineageTag: 20a52f82-87a7-4ebd-adbe-1067c0512f5c
+		summarizeBy: none
+		sourceColumn: VendorNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		lineageTag: a920a5db-65d5-4909-ac24-d1a9be38400b
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_items' = m
 		mode: import
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_bc_items = Źródło{[Schema="gold",Item="v_bc_items"]}[Data]
+				    gold_v_bc_items = Źródło{[Schema="gold",Item="v_bc_items"]}[Data],
+				    #"Przefiltrowano wiersze" = Table.SelectRows(gold_v_bc_items, each true)
 				in
-				    gold_v_bc_items
+				    #"Przefiltrowano wiersze"
 
 	annotation PBI_NavigationStepName = Nawigacja
 
