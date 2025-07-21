@@ -87,21 +87,6 @@
             },
             {
               "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Miary"
-                    }
-                  },
-                  "Property": "Marza_Oferty%"
-                }
-              },
-              "queryRef": "_Miary.MarzaOferty%",
-              "nativeQueryRef": "Rentowność %",
-              "displayName": "Rentowność %"
-            },
-            {
-              "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
@@ -114,6 +99,20 @@
               "queryRef": "gold v_bc_items.Description2",
               "nativeQueryRef": "Opis urządzenia",
               "displayName": "Opis urządzenia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_bc_quotes"
+                    }
+                  },
+                  "Property": "LineDiscount"
+                }
+              },
+              "queryRef": "gold v_bc_quotes.LineDiscount",
+              "nativeQueryRef": "LineDiscount"
             }
           ]
         }
@@ -1669,34 +1668,6 @@
           "selector": {
             "metadata": "_Miary.WartośćOferty"
           }
-        },
-        {
-          "properties": {
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.MarzaOferty%"
-          }
         }
       ],
       "columnWidth": [
@@ -2300,20 +2271,6 @@
           },
           "selector": {
             "metadata": "_Miary.WartośćOferty"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "159.25902985559514D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Miary.MarzaOferty%"
           }
         },
         {

@@ -286,6 +286,101 @@ table 'gold v_bc_items'
 
 		annotation SummarizationSetBy = Automatic
 
+	column UnitPricePLN
+		dataType: double
+		lineageTag: 8343c08a-df0d-48a5-839d-1fef9173548a
+		summarizeBy: sum
+		sourceColumn: UnitPricePLN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceCZK
+		dataType: double
+		lineageTag: ef370472-6700-4649-a9e7-4a275867ff1e
+		summarizeBy: sum
+		sourceColumn: UnitPriceCZK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceUSD
+		dataType: double
+		lineageTag: 32128aea-874a-4a2f-8467-3c549b7e865e
+		summarizeBy: sum
+		sourceColumn: UnitPriceUSD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceEUR
+		dataType: double
+		lineageTag: 242300ad-9644-4c30-9fed-47c2e2eb09b4
+		summarizeBy: sum
+		sourceColumn: UnitPriceEUR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceGBP
+		dataType: double
+		lineageTag: 7bbb9f56-1048-4270-b85c-d68b36b1cf54
+		summarizeBy: sum
+		sourceColumn: UnitPriceGBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NetWeight
+		dataType: double
+		lineageTag: 0cc3c4e5-8862-45ac-aa46-595b027939b3
+		summarizeBy: sum
+		sourceColumn: NetWeight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EdnBatteryCode
+		dataType: string
+		lineageTag: 0171c6f0-0e86-4ac3-8ae6-9a53380e43e3
+		summarizeBy: none
+		sourceColumn: EdnBatteryCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ednBatteryItem
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b1758f33-3902-41c8-b31c-9d3c976c3bf5
+		summarizeBy: none
+		sourceColumn: ednBatteryItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdnBatteryQuantity
+		dataType: double
+		lineageTag: e379e2cb-2db7-4453-8144-db8d03480c95
+		summarizeBy: sum
+		sourceColumn: EdnBatteryQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VendorNo
+		dataType: string
+		lineageTag: 1e6b65a7-d048-40ba-be37-6181b3016656
+		summarizeBy: none
+		sourceColumn: VendorNo
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_items' = m
 		mode: import
 		source =

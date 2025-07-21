@@ -230,6 +230,39 @@ table 'gold v_bc_quotes'
 
 		annotation SummarizationSetBy = Automatic
 
+	column PriceCatalogue
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: b200aae6-422c-4781-803a-00626775beab
+		summarizeBy: sum
+		sourceColumn: PriceCatalogue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineDiscount
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: 9883748a-0396-42a0-a8c9-2ff88d6a9f3e
+		summarizeBy: sum
+		sourceColumn: LineDiscount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineDiscountAmount
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: 4dc60d69-cd79-4e41-b449-726ac9035b4b
+		summarizeBy: sum
+		sourceColumn: LineDiscountAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'gold v_bc_quotes' = m
 		mode: directQuery
 		source =
