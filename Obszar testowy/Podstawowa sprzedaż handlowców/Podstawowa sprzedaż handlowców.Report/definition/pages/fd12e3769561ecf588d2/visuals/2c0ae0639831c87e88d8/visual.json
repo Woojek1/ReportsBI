@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 304,
     "width": 456,
-    "tabOrder": 13000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "tableEx",
@@ -428,7 +428,7 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

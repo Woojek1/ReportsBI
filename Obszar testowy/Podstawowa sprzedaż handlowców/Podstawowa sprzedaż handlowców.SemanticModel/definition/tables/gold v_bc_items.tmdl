@@ -278,15 +278,6 @@ table 'gold v_bc_items'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column ednBatteryItem
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
-		lineageTag: 4ef30a01-a16e-4a44-9f4b-8dbb52b8670a
-		summarizeBy: none
-		sourceColumn: ednBatteryItem
-
-		annotation SummarizationSetBy = Automatic
-
 	column UnitPricePLN
 		dataType: double
 		lineageTag: 1fdf9066-41fa-48e6-86a5-ac232206ea79
@@ -378,6 +369,15 @@ table 'gold v_bc_items'
 		lineageTag: a920a5db-65d5-4909-ac24-d1a9be38400b
 		summarizeBy: none
 		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdnBatteryItem
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ddf7eeb8-a53e-4ca1-b16e-960f91742dca
+		summarizeBy: none
+		sourceColumn: EdnBatteryItem
 
 		annotation SummarizationSetBy = Automatic
 

@@ -6,7 +6,8 @@
     "y": 16,
     "z": 1000,
     "height": 48,
-    "width": 48
+    "width": 48,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "actionButton",

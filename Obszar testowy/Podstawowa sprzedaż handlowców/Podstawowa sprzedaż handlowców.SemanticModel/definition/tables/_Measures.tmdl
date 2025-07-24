@@ -877,8 +877,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[AmountLCY]),
-			    'invoices'[Type] = "Item"
-			    || 'invoices'[Type] = "Charge (Item)"
+			    'invoices'[Type] in {"Item", "Charge (Item)"}
 			)
 			
 			
@@ -1422,10 +1421,11 @@ table _Measures
 			    'Invoices'[Type] = "Item"
 			    || 'Invoices'[Type] = "Charge (Item)"
 			    )
+		formatString: #,0
 		displayFolder: Sales
 		lineageTag: d8148103-0b57-47aa-adec-511ac9c25bce
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column Value
 		isHidden

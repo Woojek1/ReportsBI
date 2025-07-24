@@ -11784,16 +11784,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Przeterminowane płatności brutto": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14566,6 +14556,16 @@ cultureInfo pl-PL
 			        },
 			        {
 			          "Przeterminowane płatności brutto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Przeterminowane płatności": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -25150,99 +25150,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_item.edn_battery_item": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_bc_items",
-			          "ConceptualProperty": "ednBatteryItem"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "edn battery item": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ednBatteryItem": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "edn battery product": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "edn battery element": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "edn battery entry": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "edn battery article": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "edn battery object": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "edn battery piece": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "edn battery token": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        }
-			      ]
-			    },
 			    "gold_v_hr_enova_rl.email_AD": {
 			      "Definition": {
 			        "Binding": {
@@ -27067,16 +26974,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Zysk skorygowany": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -27593,16 +27490,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.599
 			          }
-			        },
-			        {
-			          "Koszt skorygowany": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -27730,9 +27617,1373 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "gold_v_bc_item.unit_price_CZK": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "UnitPriceCZK"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price CZK": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UnitPriceCZK": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "CZK": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price CZK": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "module price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entity price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "group price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "component price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "constituent price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "item price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "part price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section price czk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.unit_price_USD": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "UnitPriceUSD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price USD": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UnitPriceUSD": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "USD": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price USD": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "module price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entity price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "group price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "component price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "constituent price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "item price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "part price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section price usd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.unit_price_EUR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "UnitPriceEUR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price EUR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UnitPriceEUR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "EUR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price EUR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "module price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entity price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "group price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "component price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "constituent price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "item price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "part price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section price eur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.unit_price_GBP": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "UnitPriceGBP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price GBP": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "UnitPriceGBP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "GBP": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price GBP": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "module price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entity price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "group price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "component price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "constituent price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "item price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "part price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section price gbp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.net_weight": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "NetWeight"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net weight": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NetWeight": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weight": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net heaviness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net weightiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "heaviness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "weightiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "net mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "net bulk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "net heft": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bulk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "heft": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.edn_battery_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "EdnBatteryCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edn battery code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EdnBatteryCode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "edn battery id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "edn battery key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.edn_battery_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "EdnBatteryQuantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edn battery quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EdnBatteryQuantity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "edn battery extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "edn battery magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "edn battery amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "edn battery number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "edn battery measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "edn battery size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "edn battery capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "edn battery mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.vendor_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "VendorNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vendor no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VendorNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "vendor number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.company": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "Company"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "company": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "co": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corporation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corps": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "enterprise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "conglomerate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "co inc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item.edn_battery_item": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_bc_items",
+			          "ConceptualProperty": "EdnBatteryItem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edn battery item": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EdnBatteryItem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "edn battery product": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "edn battery element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "edn battery entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "edn battery article": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "edn battery object": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "edn battery piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "edn battery token": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "gold_v_bc_item_has_edn_battery_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.edn_battery_quantity": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.edn_battery_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.edn_battery_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_edn_battery_quantities"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_edn_battery_code": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.edn_battery_code": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.edn_battery_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.edn_battery_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_edn_battery_codes"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_net_weight": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.net_weight": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.net_weight"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.net_weight"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_net_weights"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Adjectives": [
+			              {
+			                "heavy": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "light": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "gold_v_bc_item.net_weight"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "net_weight_indicates_how_heavy_gold_v_bc_items_are"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_unit_price_GBP": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.unit_price_GBP": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.unit_price_GBP"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.unit_price_GBP"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_unit_price_GBPs"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_unit_price_EUR": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.unit_price_EUR": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.unit_price_EUR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.unit_price_EUR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_unit_price_EURs"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_unit_price_USD": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.unit_price_USD": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.unit_price_USD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.unit_price_USD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_unit_price_USD"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_unit_price_CZK": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.unit_price_CZK": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.unit_price_CZK"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.unit_price_CZK"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_unit_price_CZKs"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_unit_price_PLN": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.unit_price_PLN": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.unit_price_PLN"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.unit_price_PLN"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_unit_price_PLNs"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_cost_amount_item_LCY1": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.cost_amount_item_LCY1": {
+			          "Target": {
+			            "Entity": "entity__measure.cost_amount_item_LCY1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.cost_amount_item_LCY1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_cost_amount_item_LCY"
+			        }
+			      ]
+			    },
+			    "invoice_has_entity__measure_margint_item_current_month_previous_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Invoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "invoice": {
+			          "Target": {
+			            "Entity": "invoice"
+			          }
+			        },
+			        "entity__measure.margint_item_current_month_previous_year": {
+			          "Target": {
+			            "Entity": "entity__measure.margint_item_current_month_previous_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.margint_item_current_month_previous_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoices_have_margint_item_current_month_previous_year"
+			        }
+			      ]
+			    },
 			    "invoice_has_entity__measure_margin_items_MTD_today1": {
 			      "Binding": {
 			        "ConceptualEntity": "Invoices"
@@ -28257,7 +29508,7 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "invoices_have_cost_amount_item_LCY"
+			          "ID": "invoices_have_cost_amount_item_LCY1"
 			        }
 			      ]
 			    },
@@ -28705,198 +29956,6 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_v_hr_enova_rls_are_AD_email_AD"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_vendor_no": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.vendor_no": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.vendor_no"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.vendor_no"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_vendor_noes"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_edn_battery_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.edn_battery_quantity": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.edn_battery_quantity"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.edn_battery_quantity"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_edn_battery_quantities"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_edn_battery_item": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.edn_battery_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.edn_battery_item"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.edn_battery_item"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_edn_battery_items"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_edn_battery_code": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.edn_battery_code": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.edn_battery_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.edn_battery_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_edn_battery_codes"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_net_weight": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.net_weight": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.net_weight"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.net_weight"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_net_weights"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Adjectives": [
-			              {
-			                "heavy": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "light": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "gold_v_bc_item.net_weight"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "net_weight_indicates_how_heavy_gold_v_bc_items_are"
 			        }
 			      ]
 			    },
@@ -33641,39 +34700,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_bc_item_has_company": {
-			      "Binding": {
-			        "ConceptualEntity": "gold v_bc_items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_v_bc_item": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item"
-			          }
-			        },
-			        "gold_v_bc_item.company": {
-			          "Target": {
-			            "Entity": "gold_v_bc_item.company"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_v_bc_item"
-			            },
-			            "Object": {
-			              "Role": "gold_v_bc_item.company"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_companies"
-			        }
-			      ]
-			    },
 			    "gold_v_bc_item_has_load_date": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_items"
@@ -36239,73 +37265,7 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "invoice_has_entity__measure_margint_item_current_month_previous_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "entity__measure.margint_item_current_month_previous_year": {
-			          "Target": {
-			            "Entity": "entity__measure.margint_item_current_month_previous_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.margint_item_current_month_previous_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_margint_item_current_month_previous_year"
-			        }
-			      ]
-			    },
-			    "invoice_has_entity__measure_cost_amount_item_LCY1": {
-			      "Binding": {
-			        "ConceptualEntity": "Invoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "invoice": {
-			          "Target": {
-			            "Entity": "invoice"
-			          }
-			        },
-			        "entity__measure.cost_amount_item_LCY1": {
-			          "Target": {
-			            "Entity": "entity__measure.cost_amount_item_LCY1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "invoice"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.cost_amount_item_LCY1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "invoices_have_cost_amount_item_LCY1"
-			        }
-			      ]
-			    },
-			    "gold_v_bc_item_has_unit_price_PLN": {
+			    "gold_v_bc_item_has_vendor_no": {
 			      "Binding": {
 			        "ConceptualEntity": "gold v_bc_items"
 			      },
@@ -36316,9 +37276,9 @@ cultureInfo pl-PL
 			            "Entity": "gold_v_bc_item"
 			          }
 			        },
-			        "gold_v_bc_item.unit_price_PLN": {
+			        "gold_v_bc_item.vendor_no": {
 			          "Target": {
-			            "Entity": "gold_v_bc_item.unit_price_PLN"
+			            "Entity": "gold_v_bc_item.vendor_no"
 			          }
 			        }
 			      },
@@ -36329,12 +37289,78 @@ cultureInfo pl-PL
 			              "Role": "gold_v_bc_item"
 			            },
 			            "Object": {
-			              "Role": "gold_v_bc_item.unit_price_PLN"
+			              "Role": "gold_v_bc_item.vendor_no"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_v_bc_items_have_unit_price_PLNs"
+			          "ID": "gold_v_bc_items_have_vendor_noes"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_company": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.company": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.company"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.company"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_companies"
+			        }
+			      ]
+			    },
+			    "gold_v_bc_item_has_edn_battery_item": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_bc_items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_bc_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item"
+			          }
+			        },
+			        "gold_v_bc_item.edn_battery_item": {
+			          "Target": {
+			            "Entity": "gold_v_bc_item.edn_battery_item"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_bc_item"
+			            },
+			            "Object": {
+			              "Role": "gold_v_bc_item.edn_battery_item"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_bc_items_have_edn_battery_items"
 			        }
 			      ]
 			    },

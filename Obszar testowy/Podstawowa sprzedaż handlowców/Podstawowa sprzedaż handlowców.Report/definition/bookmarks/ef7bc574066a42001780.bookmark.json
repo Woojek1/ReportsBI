@@ -52,46 +52,6 @@
               "objects": {}
             }
           },
-          "4afebfc9430a6c35431a": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "c34da9bae86a2904cb81",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "RemainingAmountLCY"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "card",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "RemainingAmountLCY"
-                    }
-                  }
-                }
-              ]
-            }
-          },
           "598b2a2d14780d303001": {
             "filters": {
               "byExpr": [

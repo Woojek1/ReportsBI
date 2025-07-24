@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 72,
     "width": 144,
-    "tabOrder": 9000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "OverdueAmountLCYTotal"
+                  "Property": "OverdueAmountLCY"
                 }
               },
-              "queryRef": "_Measures.OverdueAmountLCYTotal",
-              "nativeQueryRef": "Przeterminowane płatności brutto",
-              "displayName": "Przeterminowane płatności brutto"
+              "queryRef": "_Measures.OverdueAmountLCY",
+              "nativeQueryRef": "Przeterminowane płatności",
+              "displayName": "Przeterminowane płatności"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "OverdueAmountLCYTotal"
+                "Property": "OverdueAmountLCY"
               }
             },
             "direction": "Descending"
