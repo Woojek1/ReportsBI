@@ -1,0 +1,143 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 992.30352129072128,
+        "y": 36.342326416698391
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2665.2127127004492,
+            "y": 21.175120865501867
+          },
+          "nodeIndex": "Calendar",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2665.2518217749034,
+            "y": 454.38653631905891
+          },
+          "nodeIndex": "gold v_bc_customers",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 2154.0908986730183,
+            "y": -50
+          },
+          "nodeIndex": "gold v_bc_items",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2096.8573841027028,
+            "y": 586.54992621494807
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1812.7111407132329,
+            "y": 897.90884514612731
+          },
+          "nodeIndex": "gold v_hr_enova_rls",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 2381.0558014627468,
+            "y": 300.2035997762315
+          },
+          "nodeIndex": "Invoices",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 3751.251821774903,
+            "y": 559.95442257306365
+          },
+          "nodeIndex": "Grupa obliczania",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 3224.7526583766362,
+            "y": 25.205696384266105
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "af459b0e-aa71-4f9e-a492-8b695a5101e9",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 3183.251821774903,
+            "y": 473.95442257306365
+          },
+          "nodeIndex": "gold v_bc_posted_sales_credit_memo_invoices",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3467.251821774903,
+            "y": 473.95442257306365
+          },
+          "nodeIndex": "gold v_bc_posted_sales_invoices",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 63.287087723234123,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

@@ -1,0 +1,88 @@
+table Calendar
+	lineageTag: 5c1bca66-6584-4c0a-9386-4545129e3c40
+	sourceLineageTag: acf5db43-bde3-4841-afd2-b879fe7482c5
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: dd\.mm\.yyyy
+		lineageTag: 6d43cd68-4185-45fd-98a4-b42125747c1a
+		sourceLineageTag: f33266d5-3cf4-4699-958c-72964cd2edfc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: d57864fa-6782-44e6-957a-8169e3d5b2f0
+		sourceLineageTag: d58b362d-a6e4-4d6c-8d30-7700e20bebf8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: string
+		lineageTag: ef35a5a1-97c0-4306-8b77-ad58c6d0ee2d
+		sourceLineageTag: 723d7fdb-6661-40ae-8443-db549db7be4b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = User
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: f18c56d6-7581-4ce1-ac1e-a2f66115ff8b
+		sourceLineageTag: de30d8f8-eb5e-4e38-bd3c-69e6c5d57e8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = User
+
+	column YearMonth
+		dataType: string
+		lineageTag: 9a858372-c859-4648-8dbd-b678115a0fc5
+		sourceLineageTag: 1c966388-6493-4efe-8d5f-3898ea00ea3f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: YearMonth
+
+		annotation SummarizationSetBy = User
+
+	column MonthNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e81aeea-e282-4801-b0a1-1ff283378281
+		sourceLineageTag: ee936443-1a41-42f7-a18e-9ca405534fec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+		annotation SummarizationSetBy = User
+
+	column MonthName
+		dataType: string
+		lineageTag: 8fe43d1d-bea6-4abc-b189-6bbd6e55f195
+		sourceLineageTag: 5e6a4fd2-fc1e-46a5-9192-8c08c478b40b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MonthName
+		sortByColumn: MonthNumber
+
+		annotation SummarizationSetBy = User
+
+	partition Calendar = entity
+		mode: directQuery
+		source
+			entityName: Calendar
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

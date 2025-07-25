@@ -1,0 +1,194 @@
+table 'gold v_hr_enova_rls'
+	lineageTag: d88ef587-16b4-49ef-98ca-166a78050da2
+	sourceLineageTag: e737bac3-c2ca-4a97-bdcc-73eedebbfb7c
+
+	column PracownikID
+		dataType: int64
+		formatString: 0
+		lineageTag: 89c49fe3-1541-4c60-9418-eae0f389d38c
+		sourceLineageTag: 9390afad-acdd-4b93-b1bb-a5fcc475d291
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: PracownikID
+
+		annotation SummarizationSetBy = User
+
+	column Pracownik
+		dataType: string
+		lineageTag: 7f14864a-a84d-4e34-8b32-89a6d61d4c30
+		sourceLineageTag: 001024cf-235b-4a7f-bded-61ae7a282a19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Pracownik
+
+		annotation SummarizationSetBy = User
+
+	column EmailPracownika
+		dataType: string
+		lineageTag: 12319c54-d385-44bb-8611-b78aee6c7ba9
+		sourceLineageTag: 6fab2b35-8d34-4437-b716-ff2461bf8141
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailPracownika
+
+		annotation SummarizationSetBy = User
+
+	column 'Przelozony (N-3)'
+		dataType: string
+		lineageTag: f76cda9f-afb0-4fee-b29b-f37a1f32ba44
+		sourceLineageTag: fd39eb9b-4b87-4469-9369-6c9ea7589a08
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Przelozony (N-3)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailPrzelozonego (N-3)'
+		dataType: string
+		lineageTag: 09dc6fe1-ff88-4524-8038-ba0189ea22ba
+		sourceLineageTag: 35d678f0-c817-431b-a0b5-4884a76fe464
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailPrzelozonego (N-3)
+
+		annotation SummarizationSetBy = User
+
+	column 'Przelozony (N-2)'
+		dataType: string
+		lineageTag: aade2feb-b513-489f-8d4a-a988c58583be
+		sourceLineageTag: 645d5df3-7b3e-4ba9-9cbb-97c6572dbb06
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Przelozony (N-2)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailPrzelozonego (N-2)'
+		dataType: string
+		lineageTag: 12bfc14a-f0e1-4ab0-885f-c084d5c3475c
+		sourceLineageTag: 97ff4832-bf4d-486e-8fee-4dc4530b583d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailPrzelozonego (N-2)
+
+		annotation SummarizationSetBy = User
+
+	column 'Przelozony (N-1)'
+		dataType: string
+		lineageTag: 03205bca-69ef-4be2-9118-bd2baeb80726
+		sourceLineageTag: a79b0a2b-1c6f-4d9b-aa22-e3c3370f4a83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Przelozony (N-1)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailPrzelozonego (N-1)'
+		dataType: string
+		lineageTag: 9a3f8c11-c859-4690-97a2-b34cf8040338
+		sourceLineageTag: 58feacb5-9f60-4717-9d36-6b0f2c0401d6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailPrzelozonego (N-1)
+
+		annotation SummarizationSetBy = User
+
+	column 'Przelozony (N)'
+		dataType: string
+		lineageTag: b21cd9d7-b51c-4aa2-9ee5-886a7fa8675c
+		sourceLineageTag: 218de8c1-937c-4ff1-98e8-c6ec47127ed4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Przelozony (N)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailPrzelozonego (N)'
+		dataType: string
+		lineageTag: 643e60d0-f386-49b4-bef7-0fcd417b0c98
+		sourceLineageTag: 8b0d729f-0481-4a37-88ac-48fb2faf70ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailPrzelozonego (N)
+
+		annotation SummarizationSetBy = User
+
+	column load_ts
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: e94754fe-2e42-4dcc-992c-4f910a864c7c
+		sourceLineageTag: b67cb95e-b264-4123-9e91-5514593a0889
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: load_ts
+
+		annotation SummarizationSetBy = User
+
+	column EmailAD
+		dataType: string
+		lineageTag: cf14f56b-ea6c-444f-a157-b47103648cad
+		sourceLineageTag: 8b38aa25-17fa-4fe8-bb28-217bab1c589e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailAD
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailAD (N-3)'
+		dataType: string
+		lineageTag: e4856529-c668-4b64-ab73-82c2e9734bad
+		sourceLineageTag: 34abd642-1ded-4439-bb76-a2e0adaf3dfc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailAD (N-3)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailAD (N-2)'
+		dataType: string
+		lineageTag: fce5a049-9871-49c5-993f-b74fb6c7f16f
+		sourceLineageTag: 0e9e0668-d3c4-455c-b562-309baea1501b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailAD (N-2)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailAD (N-1)'
+		dataType: string
+		lineageTag: e6df32d7-042f-4c64-a3f4-39978f10e8db
+		sourceLineageTag: a7ef0211-ce14-48dd-bd07-c03ca09c25e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailAD (N-1)
+
+		annotation SummarizationSetBy = User
+
+	column 'EmailAD (N)'
+		dataType: string
+		lineageTag: bd138d41-c910-468a-adba-4612851c2203
+		sourceLineageTag: 9a882cc4-b228-4e81-9180-34599068c125
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EmailAD (N)
+
+		annotation SummarizationSetBy = User
+
+	column Company
+		dataType: string
+		lineageTag: 76af4fb1-be7c-4942-b663-22aabfa3b1b1
+		sourceLineageTag: 64681495-ca82-4df6-9b9d-a97f38ec6f09
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = User
+
+	partition 'gold v_hr_enova_rls' = entity
+		mode: directQuery
+		source
+			entityName: gold v_hr_enova_rls
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

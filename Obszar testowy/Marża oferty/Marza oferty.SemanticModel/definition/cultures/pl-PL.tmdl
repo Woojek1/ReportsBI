@@ -204,16 +204,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Rentowność %": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },

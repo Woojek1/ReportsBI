@@ -1,0 +1,727 @@
+table _Measures
+	lineageTag: af459b0e-aa71-4f9e-a492-8b695a5101e9
+	sourceLineageTag: 72ecb6f6-f0b0-4971-a814-2eecd5a998d6
+
+	measure SalesAmountTotalLCY = EXTERNALMEASURE("SalesAmountTotalLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 20ef1cad-ec37-474b-b81c-5badf30ac7d3
+		sourceLineageTag: 599da7a2-3b00-44c0-8a80-ce5207150251
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmount_MTD = EXTERNALMEASURE("SalesAmount_MTD", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: b9b5a189-dcf6-427e-be68-a3431fd3982c
+		sourceLineageTag: 3a7937b3-a28e-4cae-ae2e-0c6719ad4235
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmount_YTD = EXTERNALMEASURE("SalesAmount_YTD", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0.00
+		displayFolder: Sales
+		lineageTag: a911fd09-dd51-4fd6-a02e-2017ded1936e
+		sourceLineageTag: 9a497722-9df0-439d-9b8a-b28294c6e4bf
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmount_MTD_PreviousYear = EXTERNALMEASURE("SalesAmount_MTD_PreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: debfe9c9-24cf-4033-b1cc-b3871a2ec149
+		sourceLineageTag: 5d49baa1-d5ee-4135-9d2d-9c02fb5310f0
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmount_QTD_PreviousYear = EXTERNALMEASURE("SalesAmount_QTD_PreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 998f23de-1b93-4f6a-b88d-33240c0220ac
+		sourceLineageTag: c4cf06a7-143d-4e68-b186-aad8bda82cff
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountPreviousQuarter = EXTERNALMEASURE("SalesAmountPreviousQuarter", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 5651a069-2c65-473a-98f0-35e4f7cb449b
+		sourceLineageTag: 9bf1d453-a8ae-44a3-9957-28fd96dde64d
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountPreviousMonth = EXTERNALMEASURE("SalesAmountPreviousMonth", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 7edc7590-8e31-46ad-a107-be08a1b49a50
+		sourceLineageTag: 809a973b-1b81-4cdc-b283-05dec55057fb
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountPreviousYear = EXTERNALMEASURE("SalesAmountPreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 8ab22d0f-2991-4765-abb7-aee1442f8cb6
+		sourceLineageTag: fc5a64fd-7988-46ce-b803-ff54203f5f50
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmount_YTD_PreviousYear = EXTERNALMEASURE("SalesAmount_YTD_PreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: f32b0d55-cedb-4a36-aa89-81ff6d6d246a
+		sourceLineageTag: a5377c1b-80ad-4971-963f-bae662b4908c
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountYoY% = EXTERNALMEASURE("SalesAmountYoY%", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 0ef094bc-59c1-4a37-a0aa-026758d64c01
+		sourceLineageTag: f4ed915e-904b-4925-ad2d-e5050422862a
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmount_QTD = EXTERNALMEASURE("SalesAmount_QTD", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 34cf1b51-5e30-4fc7-8dd5-15473a8ac027
+		sourceLineageTag: b66d65d2-3765-4bda-bc45-89d04bf02254
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmount_MTD_Today = EXTERNALMEASURE("SalesAmount_MTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: a5dcf0c8-9418-4782-ba2c-e50f9c687e16
+		sourceLineageTag: 4647d231-6143-4b08-97c1-6d48b3d24372
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmount_QTD_Today = EXTERNALMEASURE("SalesAmount_QTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 43d83c8b-0989-4fb0-a0f2-61786acd3616
+		sourceLineageTag: 7fba4dac-2eec-4b53-8274-028e33791ee8
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountYTDTodayLCY = EXTERNALMEASURE("SalesAmountYTDTodayLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: eb8196ff-30c3-4bb9-a884-0253f9613279
+		sourceLineageTag: ae3d4b1c-fa27-4d49-9b25-3ca16a0fc50d
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure DistinctInvoiceCount = EXTERNALMEASURE("DistinctInvoiceCount", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 1e3b13c4-66fe-4fa2-bb68-b12658480e55
+		sourceLineageTag: 18535411-e1ec-4de2-b5ec-8a882fbd8aff
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure MonthsWithPurchaseLast12M = EXTERNALMEASURE("MonthsWithPurchaseLast12M", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Customers
+		lineageTag: 5407bd71-17a4-4646-9a4e-6a84d6feee9d
+		sourceLineageTag: e9735530-1ea9-4312-a18a-e9a9c3dac418
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountLast12MonthsLCYToday = EXTERNALMEASURE("SalesAmountLast12MonthsLCYToday", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 60756b55-0116-4ad8-9eec-08d69bd3183b
+		sourceLineageTag: 3a9627e9-d7eb-4d9a-a863-5feb388918f3
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure RemainingAmountLCY = EXTERNALMEASURE("RemainingAmountLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: d82ed3a4-1d09-432f-85e7-854553eed8e1
+		sourceLineageTag: 93bdba25-a1dd-46c2-8833-c5be93e32365
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountTotal = EXTERNALMEASURE("SalesAmountTotal", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 587e5761-f8dd-46e6-8d21-583e9be79f64
+		sourceLineageTag: d8fb7aeb-b399-42df-9c7d-d1f76e3aefb6
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountTotalVAT = EXTERNALMEASURE("SalesAmountTotalVAT", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: f184c80d-605b-491a-87ae-9f86af2c8b59
+		sourceLineageTag: 35db0975-9988-4a86-aedc-f78da413d5fd
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure OverdueAmountLCYTotal = EXTERNALMEASURE("OverdueAmountLCYTotal", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 1f3fb9a3-de9c-4dc0-b617-3ca6a74e9aa3
+		sourceLineageTag: 897ab103-5690-48ce-9654-2966d8f0d32f
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure OverdueInvoicesCount = EXTERNALMEASURE("OverdueInvoicesCount", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 45a6433b-0522-4069-9c2e-3f0c16c2b4a0
+		sourceLineageTag: b3e5ba7f-ffdb-49f4-ae4c-f900e915efc1
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure PaidInvoicesCount = EXTERNALMEASURE("PaidInvoicesCount", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: ac93b62d-5aaf-4084-8ab4-4549f108cee2
+		sourceLineageTag: acd343fe-4fd1-423a-afb8-7f017609c7b8
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure RemainingInvoicesCount = EXTERNALMEASURE("RemainingInvoicesCount", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 3e0c1f4f-cb5c-4426-9f33-9363e43e251f
+		sourceLineageTag: 692d79f1-93aa-4e66-a77b-bd383b3e1893
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure RemainingAmountLCYTotal = EXTERNALMEASURE("RemainingAmountLCYTotal", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: cc56f30a-c6fe-43e9-9bc6-fa3274e42ab2
+		sourceLineageTag: ead1fca9-52c9-453b-a551-88f000597f00
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountTotalVATLCY = EXTERNALMEASURE("SalesAmountTotalVATLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 58e1ec3b-82b2-4bc9-aff7-b2c3454abc2f
+		sourceLineageTag: 6e353139-2aec-4ea0-a266-91c8a4ed02cf
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure LoggedSalesperson = EXTERNALMEASURE("LoggedSalesperson", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: SalesPerson
+		lineageTag: 61169cd5-bc8e-471b-be10-46f7223df4b4
+		sourceLineageTag: a7b19def-5ccd-43af-94f9-25007ee5f667
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure Username = EXTERNALMEASURE("Username", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: SalesPerson
+		lineageTag: 2d21fd23-d571-42cf-9c2d-3de742ff99f3
+		sourceLineageTag: f2702a59-34d7-45a1-991e-b2e47911daec
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure DistinctInvoiceCountCurrentYear = EXTERNALMEASURE("DistinctInvoiceCountCurrentYear", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: b5bff6f7-d52b-4173-82c3-4d4a552e68f8
+		sourceLineageTag: 8a5e62de-97ba-4e4a-92f4-d5e5c901ce83
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure DistinctInvoiceCountPreviousYear = EXTERNALMEASURE("DistinctInvoiceCountPreviousYear", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: ff11ea71-a895-420a-b945-b14db32d157a
+		sourceLineageTag: e5f9901d-13fd-4bb4-b506-05058343a4ac
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure AverageDiscount = EXTERNALMEASURE("AverageDiscount", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Sales
+		lineageTag: a979df5e-6775-4eb1-bb9e-da7bd10eb16d
+		sourceLineageTag: 141d42d5-af76-47fc-98e3-ff415f40e750
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure AverageInvoiceAmount = EXTERNALMEASURE("AverageInvoiceAmount", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 8c3e3c89-f4aa-40a4-a3ee-1ffbf670b417
+		sourceLineageTag: e6064983-f904-4dfc-833e-3441b2fa1dd5
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure CategorySalesAmountLCYLast12MonthsToday = EXTERNALMEASURE("CategorySalesAmountLCYLast12MonthsToday", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Customers
+		lineageTag: b31993e8-7b71-430a-a67e-0e88634b6df1
+		sourceLineageTag: bb1a8f7e-9aa4-457c-b557-9f9aba326bd3
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure SalesAmountLast12Months = EXTERNALMEASURE("SalesAmountLast12Months", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0.00
+		displayFolder: Sales
+		lineageTag: 7fb4903d-b3d6-47ea-a1e8-3d89c61cb1d3
+		sourceLineageTag: d33e8022-0444-47af-8340-805b0863740c
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure DistinctInvoiceCountCurrentMonth = EXTERNALMEASURE("DistinctInvoiceCountCurrentMonth", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: ede5f718-fceb-4f36-931e-5157133c7b6d
+		sourceLineageTag: 6100c8b1-1f19-4ae8-bf28-6c06ed2ed057
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure CurrentYearMonthFromCalendar = EXTERNALMEASURE("CurrentYearMonthFromCalendar", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		lineageTag: 89a9aff8-4dfc-4950-8538-dccaac7ca9b0
+		sourceLineageTag: 32f96e25-2c84-4f3e-b041-c458fa0c5a74
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure AverageInvoiceAmountCurrentMonth = EXTERNALMEASURE("AverageInvoiceAmountCurrentMonth", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: f4beed2c-5f12-4ed1-a054-beb7038869e4
+		sourceLineageTag: 67f8b3df-2c9a-4bca-b581-bfa111df22be
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure AverageDiscountCurrentMonth = EXTERNALMEASURE("AverageDiscountCurrentMonth", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 9a1b4048-baa8-47ff-a55c-d089797577df
+		sourceLineageTag: d1ef47b1-962e-4c34-86b5-3a6cf5f5f986
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure OverdueAmountLCY = EXTERNALMEASURE("OverdueAmountLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 8b38e708-6aa4-49bc-80a7-b0d8f0affe1f
+		sourceLineageTag: 9f01c4f8-93ce-4619-96d4-22ba1056a427
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure DniPoTerminie = EXTERNALMEASURE("DniPoTerminie", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: d4654c2f-8edd-4850-8a70-8860122f4bae
+		sourceLineageTag: a0f3ca58-a221-49a8-a04a-3c617077633a
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure KolorPoTerminowości = EXTERNALMEASURE("KolorPoTerminowości", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 73a0fdbe-7ac8-4531-bd36-5b8d20264d93
+		sourceLineageTag: 2eb404f3-8092-4738-8459-9f80fe8e052d
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure ItemQuantityCurrentMonth = EXTERNALMEASURE("ItemQuantityCurrentMonth", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 713d67dc-9eb1-4007-916f-1abc7ec21991
+		sourceLineageTag: eaa53807-2939-4c5c-93bb-19c60829ab36
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure ItemQuantity = EXTERNALMEASURE("ItemQuantity", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 255a85c2-4d80-4a58-8d6e-39ef6738bbce
+		sourceLineageTag: facf03c2-754e-4a98-afd6-b47e60b90175
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountPreviousYearToday = EXTERNALMEASURE("SalesAmountPreviousYearToday", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: aaff01f1-1834-4d97-9bd4-5a9eb22ce0d0
+		sourceLineageTag: b34bf81e-1b14-40d7-8cdc-8afdb22dfbe0
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales MTD PY' = EXTERNALMEASURE("Sales MTD PY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		lineageTag: 69eeda98-124a-4f2c-9287-9f4932af54ed
+		sourceLineageTag: eed2fded-19ae-4dd1-9e5a-496eee8bc0f4
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DistinctInvoiceCountCurrentMonthPreviousYear = EXTERNALMEASURE("DistinctInvoiceCountCurrentMonthPreviousYear", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: f2a21903-ab56-4c44-9c77-91a576897bdf
+		sourceLineageTag: 5f72bac1-d3f2-4293-afff-84b85801d34b
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure AverageInvoiceAmountCurrentMonthPreviousYear = EXTERNALMEASURE("AverageInvoiceAmountCurrentMonthPreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 1cbbc114-19e1-4426-849f-7a21134a01d8
+		sourceLineageTag: 089f6bcb-a8e9-41ff-bc84-396752c8c2de
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure AverageDiscountCurrentMonthPreviousYear = EXTERNALMEASURE("AverageDiscountCurrentMonthPreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: f44579a9-0c47-4cd4-859f-65251096d86f
+		sourceLineageTag: a062b5df-7add-42cb-927b-917d8efda9f2
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure PostingDate = EXTERNALMEASURE("PostingDate", DATETIME, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: dd\.mm\.yyyy
+		displayFolder: Sales
+		lineageTag: df4f7e91-7265-4f40-8c00-f527da5664c1
+		sourceLineageTag: 7c9d4525-3884-45e0-a1df-c4142e60e646
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure CreditLimit = EXTERNALMEASURE("CreditLimit", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Customers
+		lineageTag: 58f6caa1-e0e5-4f99-8a1d-30ae317f7439
+		sourceLineageTag: 379c9dd4-cf79-44b8-a02f-89e9b3f9bbc7
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DaysAfterDueDates = EXTERNALMEASURE("DaysAfterDueDates", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 1ef1ec42-bc8d-4120-8ac2-74cf5688dc12
+		sourceLineageTag: 26d5bd44-7ac8-4d08-a602-3ac7f9eedfbe
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountItem_MTD_Today = EXTERNALMEASURE("SalesAmountItem_MTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 97c3bc92-a8f2-4bdc-8a0c-2c23fe6c2e7d
+		sourceLineageTag: 8e8ce95f-ea0a-4d40-b32a-cfd71530e670
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountItem_MTD_PreviousYear = EXTERNALMEASURE("SalesAmountItem_MTD_PreviousYear", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 3eb1432e-0279-42d7-8de8-dde14fead5de
+		sourceLineageTag: b8836a61-f337-47fc-b7f8-cb1eed070f41
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure SalesAmountItemTotalLCY = EXTERNALMEASURE("SalesAmountItemTotalLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: e65ea3b5-a880-4826-b370-1253cc0db038
+		sourceLineageTag: d1bbfbcf-8314-469c-ad97-45ccafa516e0
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure SalesAmountLastYearSameMonth = EXTERNALMEASURE("SalesAmountLastYearSameMonth", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 47736ab7-ce62-4594-8362-4f84b444957f
+		sourceLineageTag: 5528cb0d-8390-4e78-9cef-adba48f05f52
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NoInvoiceTekst = EXTERNALMEASURE("NoInvoiceTekst", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		lineageTag: eb518f7f-5dc4-461a-9338-9e9cb7dcf4a6
+		sourceLineageTag: 3713a572-93a0-478a-89a3-2ead81db6777
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure DaysToDueDateIfNotPayed = EXTERNALMEASURE("DaysToDueDateIfNotPayed", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 13e69d34-5d62-45c4-a173-b0bf50de8bd2
+		sourceLineageTag: 10ab670d-fc2d-4e8b-931b-ba983952d6c8
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure DueDateColor = EXTERNALMEASURE("DueDateColor", STRING, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		lineageTag: 01790887-f47f-449f-b77e-d5335bdede4a
+		sourceLineageTag: d5c1fe01-6ebd-472a-9356-561694213c60
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure ProfitAmountItem_MTD_Today = EXTERNALMEASURE("ProfitAmountItem_MTD_Today", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: b49a5b59-895a-4452-a244-0e65892543a4
+		sourceLineageTag: 8e91bcbc-942d-4c69-8903-c660564f6349
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure ProfitAmountItem_MTD_PreviousYear = EXTERNALMEASURE("ProfitAmountItem_MTD_PreviousYear", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 33a1ae0b-8368-4a45-b0f8-5542598adceb
+		sourceLineageTag: f96ac771-53c5-4282-a16b-211a288afbb7
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure ProfitAmountItemTotalLCY = EXTERNALMEASURE("ProfitAmountItemTotalLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 54c60235-5765-4d2a-9b8c-013ca7138308
+		sourceLineageTag: c52fed73-9715-4fd4-bb9c-03ec57cbdf80
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure MarginItems = EXTERNALMEASURE("MarginItems", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 1d500a42-0bfa-4f3b-aec3-1bc463d13b30
+		sourceLineageTag: 78e4d0d7-dcc3-465f-868a-ae92faf3cabc
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure MarginItems_MTD_Today = EXTERNALMEASURE("MarginItems_MTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 78bca3b8-37cc-454e-89a6-aedc6fe49687
+		sourceLineageTag: 539626a7-4335-4770-912e-4baf3eacc858
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure MarginItems_MTD_Today_Previous_Year = EXTERNALMEASURE("MarginItems_MTD_Today_Previous_Year", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: e741e837-e7ae-46d7-a155-1b1a9d20c3a3
+		sourceLineageTag: 011d05b7-b1fa-40ee-a5ec-4099ccc24e8b
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure 'Zysk na towarach' = EXTERNALMEASURE("Zysk na towarach", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 1ba7d1cd-7fd7-4ca5-ba7a-1d6a40d49c28
+		sourceLineageTag: a89291f6-f1e4-4d5b-b289-98ed44b10928
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure Cost_Amount_Item_LCY = EXTERNALMEASURE("Cost_Amount_Item_LCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		displayFolder: Sales
+		lineageTag: 0d8f8ee2-cba3-4b6b-a132-8668857e313a
+		sourceLineageTag: 9473014a-3c7f-4c99-b1e2-03c1e69ee89e
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure ProfitAmountTotalLCY = EXTERNALMEASURE("ProfitAmountTotalLCY", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 3aa99a26-3900-424b-9d77-837487a58585
+		sourceLineageTag: 2403684f-d015-4f9b-8239-08742de58d52
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure MarginItemsSingleInvoice = EXTERNALMEASURE("MarginItemsSingleInvoice", INTEGER, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 85d420cd-b0fd-4578-af7b-9a52e2e127c5
+		sourceLineageTag: 67d88e80-77d9-4c85-a9c2-8c277f675591
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _MarginItemsSingleInvoice = EXTERNALMEASURE("_MarginItemsSingleInvoice", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Sales
+		lineageTag: 84b841db-7fb6-4e6e-b6ea-c0f40c1bacd2
+		sourceLineageTag: 0f2a273d-5603-4c45-917a-791736245036
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _ProfitAmountItemTotalLCY = EXTERNALMEASURE("_ProfitAmountItemTotalLCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 2d0a6cb4-a83c-42bf-874e-a123f5c6e2e8
+		sourceLineageTag: 6c0b4eea-149c-42e4-8e39-a3ce504a3232
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _MarginItems = EXTERNALMEASURE("_MarginItems", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 5a5bc456-b26b-4de4-aec1-a198f72df424
+		sourceLineageTag: 3f071a53-6e7f-40b1-9bae-70ed130f4cb5
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _ProfitAmountItem_MTD_Today = EXTERNALMEASURE("_ProfitAmountItem_MTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 4a80f68f-482e-4d3d-8138-76aad65b849d
+		sourceLineageTag: 8cd91cbe-cca9-410a-88d7-81e6dcec3028
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure '_ProfitAmountItem_CurrentMonth_Previous_Year 2' = EXTERNALMEASURE("_ProfitAmountItem_CurrentMonth_Previous_Year", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: ac49fd81-05f8-4a34-84ee-7de7d7b20c4f
+		sourceLineageTag: 83bf6a99-14be-4938-ac15-aef841ddf897
+		dataCategory: Uncategorized
+
+	measure _MarginItems_MTD_Today = EXTERNALMEASURE("_MarginItems_MTD_Today", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 48d42cea-d214-494a-882c-1ae50d4ed237
+		sourceLineageTag: 15aa07aa-a39b-4e4b-abfd-fab5651a2ba7
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _MargintItem_CurrentMonth_Previous_Year = EXTERNALMEASURE("_MargintItem_CurrentMonth_Previous_Year", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Sales
+		lineageTag: 09532d9c-1bdf-4cdf-8f82-e53aceab992c
+		sourceLineageTag: f86aa5da-1051-4c11-8489-02d2d8c7f37c
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	measure _Cost_Amount_Item_LCY = EXTERNALMEASURE("_Cost_Amount_Item_LCY", DOUBLE, "Połączenie DirectQuery z elementem AS — Sprzedaż - model")
+		formatString: #,0
+		displayFolder: Sales
+		lineageTag: 69b6f3a3-69fe-49e7-b505-a6669cce6b61
+		sourceLineageTag: d8148103-0b57-47aa-adec-511ac9c25bce
+		dataCategory: Uncategorized
+
+		changedProperty = Name
+
+	column Value
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3fcef3cf-cae3-4a90-b72b-ae8196070017
+		sourceLineageTag: c4039d76-35c8-4045-9a49-7f19cc97bf58
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = User
+
+	partition _Measures = entity
+		mode: directQuery
+		source
+			entityName: _Measures
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

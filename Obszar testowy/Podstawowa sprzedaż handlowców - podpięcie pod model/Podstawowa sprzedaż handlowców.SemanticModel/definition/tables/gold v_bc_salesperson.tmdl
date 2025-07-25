@@ -1,0 +1,93 @@
+table 'gold v_bc_salesperson'
+	lineageTag: 6deab6f9-059b-45ef-87a6-adad27fbea2e
+	sourceLineageTag: 4e2b4a97-6d28-48ae-a088-2fe3e4b95196
+
+	column Code
+		dataType: string
+		lineageTag: ef936937-14ea-4cdd-984f-943474a3f0c5
+		sourceLineageTag: c07a1f6b-08c6-402c-942c-8ca3f113937b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoCode
+		dataType: string
+		lineageTag: 3f450128-3b81-4589-8287-b437685a933f
+		sourceLineageTag: 09e75291-82f0-444c-a9f3-462003cd2daa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoCode
+
+		annotation SummarizationSetBy = User
+
+	column Name
+		dataType: string
+		lineageTag: d6f00294-d25c-460c-9862-15545bc8c842
+		sourceLineageTag: 7527832c-0e98-44d3-97a5-900c8236cb97
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = User
+
+	column Email
+		dataType: string
+		lineageTag: b85f4e9e-2b38-4b35-85da-8de15dc98abe
+		sourceLineageTag: a38f653a-f2a5-46ae-a264-8bd2d2b42c8c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = User
+
+	column JobTitle
+		dataType: string
+		lineageTag: 4fdf0815-7cb5-451e-baec-60ca0f6d0624
+		sourceLineageTag: c88a46fb-bd52-43ae-8aab-21cbb9650ad9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: JobTitle
+
+		annotation SummarizationSetBy = User
+
+	column SupervisorCode
+		dataType: string
+		lineageTag: 8d22b8b8-a980-4ff8-a479-c0cce89e86bb
+		sourceLineageTag: d578832a-625e-4b23-9058-9cb23ac35645
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SupervisorCode
+
+		annotation SummarizationSetBy = User
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 7bed12df-e608-49c7-a28a-8b06fbafdef7
+		sourceLineageTag: 2c6c38d5-9c84-4796-a6c1-849f1c06811e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = User
+
+	column Company
+		dataType: string
+		lineageTag: d92fa83b-ee57-4d89-8eb8-f6144058816f
+		sourceLineageTag: 22d9f69e-d700-4b62-b5c7-45b7a3b25a84
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = User
+
+	partition 'gold v_bc_salesperson' = entity
+		mode: directQuery
+		source
+			entityName: gold v_bc_salesperson
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

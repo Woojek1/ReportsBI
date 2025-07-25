@@ -1,0 +1,477 @@
+table 'gold v_bc_items'
+	lineageTag: 02cf2b27-1c98-4f88-a4d9-7776b3b54140
+	sourceLineageTag: 1d70ad16-52d1-4b70-8c0c-22fd8590c2a0
+
+	column NoItem
+		dataType: string
+		lineageTag: 3080fedc-cd73-4ae1-8ce2-5d08ad47aa97
+		sourceLineageTag: 4ee1c46a-d155-4361-85b7-4459a6ceced5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoItem
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoItem
+		dataType: string
+		isNullable: false
+		lineageTag: 22e6c6ee-a01a-4755-884f-f17deef61466
+		sourceLineageTag: e26d0d8b-9266-40de-a146-31ae7f930368
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoItem
+
+		annotation SummarizationSetBy = User
+
+	column 'Indeks PIM'
+		dataType: string
+		lineageTag: 34f7a797-3dad-4f9b-acf4-074e163b5424
+		sourceLineageTag: 82d84be6-81e9-483c-afe7-f0991cde8e98
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Indeks PIM
+
+		annotation SummarizationSetBy = User
+
+	column StockQuantity
+		dataType: double
+		lineageTag: 0ef5945a-bc0d-4a30-9bb3-e15d2640f99b
+		sourceLineageTag: 60bbd338-20c4-4839-a1ce-3b016612078e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: StockQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitCost
+		dataType: double
+		lineageTag: 71ab07c2-7dbb-4e39-b390-754e70867ca8
+		sourceLineageTag: f2260fab-c20f-4cff-ba7f-8e24146f4348
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitOfMeasure
+		dataType: string
+		lineageTag: c27b4b2c-1d6c-49af-bedc-21302ce5b808
+		sourceLineageTag: 9c666765-0934-46c4-90a4-640fb0dc3e72
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitOfMeasure
+
+		annotation SummarizationSetBy = User
+
+	column InventoryGroup
+		dataType: string
+		lineageTag: e213c59a-940c-4638-ac91-32712786f20a
+		sourceLineageTag: 2be15ca0-e11f-427d-a56f-c8f66594850c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: InventoryGroup
+
+		annotation SummarizationSetBy = User
+
+	column ItemTypeA
+		dataType: string
+		lineageTag: 30e2d93b-18bb-4473-b79c-4bd6df135f5b
+		sourceLineageTag: af077d8c-ffec-451c-a47d-65ac00981900
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ItemTypeA
+
+		annotation SummarizationSetBy = User
+
+	column ItemTypeB
+		dataType: string
+		lineageTag: 9fe0939d-eaaa-4007-8e99-7ad395c071d6
+		sourceLineageTag: 179c6414-b16e-4e04-ae07-dcfe81712825
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ItemTypeB
+
+		annotation SummarizationSetBy = User
+
+	column ValuationMethod
+		dataType: string
+		lineageTag: 1a24674f-d018-40bf-8b92-44a5f1c20481
+		sourceLineageTag: c4a1822d-8092-4927-b07d-e816587e7155
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ValuationMethod
+
+		annotation SummarizationSetBy = User
+
+	column Description2
+		dataType: string
+		lineageTag: 34324f90-3e59-45d0-932d-6d064025418f
+		sourceLineageTag: b6a01ca5-193f-46ec-a5f6-0e1900137069
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description2
+
+		annotation SummarizationSetBy = User
+
+	column CoolingCapacity
+		dataType: double
+		lineageTag: a3baa0a3-6cfa-41aa-b570-426df5442a4e
+		sourceLineageTag: 47bd227b-6f94-410a-9f4e-17bacf108072
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CoolingCapacity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HeatingCapacity
+		dataType: double
+		lineageTag: a3e9d667-12d6-46c2-85d0-4e0dfb7acf5a
+		sourceLineageTag: c6be7921-bf37-491b-9cbc-b23a432fc756
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: HeatingCapacity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PerformanceIndex
+		dataType: double
+		lineageTag: c6f567c4-a045-45c9-8317-f65245bbac74
+		sourceLineageTag: d9c4a736-0867-40d0-b922-62aebc8fe9f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PerformanceIndex
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Refrigerant
+		dataType: string
+		lineageTag: a7ca997f-865e-4aca-8dcd-9192a12ec28b
+		sourceLineageTag: aaf3baf2-bb9d-4320-9aa3-38586faf0cd7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Refrigerant
+
+		annotation SummarizationSetBy = User
+
+	column RefrigerantQuantity
+		dataType: double
+		lineageTag: f5af72e2-099a-4395-88d2-fcbc16d58c7e
+		sourceLineageTag: a70add58-291b-455b-b3de-b50352ea2acf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: RefrigerantQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MainInventoryAccountingGroup
+		dataType: string
+		lineageTag: 4de418a8-8184-4e29-a7fc-0ee05ddf5b5e
+		sourceLineageTag: 786d9669-7125-436e-b8a8-2df56cbdd84f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MainInventoryAccountingGroup
+
+		annotation SummarizationSetBy = User
+
+	column InventoryPostingGroup
+		dataType: string
+		lineageTag: 9754f3a4-ab98-4322-8027-06f5d4eb9a61
+		sourceLineageTag: 8b0f5cd5-71be-48d3-90b8-75c851e9b7a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: InventoryPostingGroup
+
+		annotation SummarizationSetBy = User
+
+	column ManufacturerCode
+		dataType: string
+		lineageTag: cd7d13e9-3019-483c-b289-72f130227237
+		sourceLineageTag: 0c953b2a-a402-43ff-9c8a-45c57652bd44
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ManufacturerCode
+
+		annotation SummarizationSetBy = User
+
+	column PurchaseOrderQuantity
+		dataType: double
+		lineageTag: d0b5b18c-a48d-4cea-9645-c7fa87952825
+		sourceLineageTag: 2551de76-63a3-406e-89ff-f367e7678ccd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PurchaseOrderQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SalesOrderQuantity
+		dataType: double
+		lineageTag: 0b483890-4566-453b-a1d9-0264b9b8b90e
+		sourceLineageTag: 516f9099-6eca-4483-b63e-9181ae1e1433
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SalesOrderQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ServiceOrderQuantity
+		dataType: double
+		lineageTag: 3253753b-740e-4639-89b5-a7387d93175b
+		sourceLineageTag: 372ac6eb-903f-4d58-a971-bd6bca731f03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ServiceOrderQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedInventoryQuantity
+		dataType: double
+		lineageTag: 9e33ad50-d4e1-41b1-8c0b-30e85906f5bd
+		sourceLineageTag: 53be54ef-0d6d-4c05-b4c6-5432de7aeec6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReservedInventoryQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedPurchaseOrderQuantity
+		dataType: double
+		lineageTag: 533493bb-00b8-405e-a249-832cac4dee55
+		sourceLineageTag: fff46061-0c2d-4db7-9429-d1bb63d6b268
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReservedPurchaseOrderQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedSalesOrderQuantity
+		dataType: double
+		lineageTag: b23b6a5d-d15d-4022-9fb6-d493fef4e76f
+		sourceLineageTag: a56f64ad-7a1e-4bae-a3d6-f1218176d64b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReservedSalesOrderQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Blocked
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dff2ab28-260e-474c-82b5-aa7cf7b5b18e
+		sourceLineageTag: dcc8ea14-efc1-4f13-b5ba-afd4e155891c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Blocked
+
+		annotation SummarizationSetBy = User
+
+	column SystemID
+		dataType: string
+		lineageTag: 37d5e861-24c8-4590-a612-435756562794
+		sourceLineageTag: 88287b54-b850-4a9a-9a9c-ba74f158c4e1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SystemID
+
+		annotation SummarizationSetBy = User
+
+	column SystemModifiedAt
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: a69c837b-ce33-4966-bfbe-bf364ce8dcfd
+		sourceLineageTag: 59de8cb4-b540-4e61-bca8-941ab3bff2b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SystemModifiedAt
+
+		annotation SummarizationSetBy = User
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 28798ab6-5831-4b19-8e5c-2f5696def551
+		sourceLineageTag: 4a24384a-61fd-4c9d-a49d-2992327ffc2c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		lineageTag: cd128f02-ec21-405d-b861-226faf3f89fd
+		sourceLineageTag: 792efe28-b7e4-4558-8386-0d23b67586e9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column MKGLStockQuantity
+		dataType: double
+		lineageTag: 270eb8b2-81dc-4232-9864-de8eed3c59f4
+		sourceLineageTag: 0b61b41e-e90e-4b38-8e7f-437a58b0fb8a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MKGLStockQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPricePLN
+		dataType: double
+		lineageTag: f5ccd86b-9d3d-4bd0-90d7-41e61f094c25
+		sourceLineageTag: 1fdf9066-41fa-48e6-86a5-ac232206ea79
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitPricePLN
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceCZK
+		dataType: double
+		lineageTag: 60a336e2-3461-48a4-b19d-b02807131914
+		sourceLineageTag: c032d2f4-b505-4741-896e-d0fdc484a008
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitPriceCZK
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceUSD
+		dataType: double
+		lineageTag: 89c3df52-d8e4-4297-89de-98b1d26b31b2
+		sourceLineageTag: a8789216-f6f5-4c26-a5c1-8cbd05d16b53
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitPriceUSD
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceEUR
+		dataType: double
+		lineageTag: 15ff287a-ccf8-42c6-a883-0791fdb923d4
+		sourceLineageTag: 3dc5991d-8c10-483e-bba6-ff102dadd27b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitPriceEUR
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceGBP
+		dataType: double
+		lineageTag: 8d8af84f-d5e5-41dd-a41b-bb4e6ba117e4
+		sourceLineageTag: bfbc1594-a454-4755-bfe4-0c60d824d591
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UnitPriceGBP
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NetWeight
+		dataType: double
+		lineageTag: e87b9580-5318-4404-9921-7865a86c94b9
+		sourceLineageTag: 39fcf6c3-b43d-4d9f-a101-727245073257
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NetWeight
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EdnBatteryCode
+		dataType: string
+		lineageTag: 7e042dbf-51b0-4a57-9d3c-344b2f195e6b
+		sourceLineageTag: 79008266-96a7-422a-91b3-17cf808703ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EdnBatteryCode
+
+		annotation SummarizationSetBy = User
+
+	column EdnBatteryQuantity
+		dataType: double
+		lineageTag: 3b66f35c-f4c2-47e2-8ecd-48b29f8cc83c
+		sourceLineageTag: 2bb54b05-4a3c-45b1-8c72-18f023d0d3ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EdnBatteryQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VendorNo
+		dataType: string
+		lineageTag: ea14e024-b93d-40f1-9889-8bb291e363b1
+		sourceLineageTag: 20a52f82-87a7-4ebd-adbe-1067c0512f5c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: VendorNo
+
+		annotation SummarizationSetBy = User
+
+	column Company
+		dataType: string
+		lineageTag: 588d5bea-6dfb-4a27-8a11-d574081724a1
+		sourceLineageTag: a920a5db-65d5-4909-ac24-d1a9be38400b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = User
+
+	column EdnBatteryItem
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d536e4ed-997d-4a92-9c96-15faa7bfc44b
+		sourceLineageTag: ddf7eeb8-a53e-4ca1-b16e-960f91742dca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EdnBatteryItem
+
+		annotation SummarizationSetBy = User
+
+	partition 'gold v_bc_items' = entity
+		mode: directQuery
+		source
+			entityName: gold v_bc_items
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

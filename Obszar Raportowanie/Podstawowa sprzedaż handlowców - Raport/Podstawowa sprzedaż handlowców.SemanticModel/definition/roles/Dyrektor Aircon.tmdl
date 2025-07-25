@@ -1,0 +1,5 @@
+role 'Dyrektor Aircon'
+	modelPermission: read
+
+	annotation PBI_Id = a735fed4bde04b96b3657d120d616ff5
+

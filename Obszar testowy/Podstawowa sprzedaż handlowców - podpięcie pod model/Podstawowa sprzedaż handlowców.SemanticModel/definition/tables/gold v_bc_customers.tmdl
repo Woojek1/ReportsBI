@@ -1,0 +1,372 @@
+table 'gold v_bc_customers'
+	lineageTag: 5f0b21b2-f56c-4225-be32-a21e998e023d
+	sourceLineageTag: 42ac4518-5dd2-4ee6-a060-dc62dff4fc75
+
+	column NoCustomer
+		dataType: string
+		lineageTag: 1c2a167b-f2a0-4b49-9d23-0e5866d74106
+		sourceLineageTag: 610eb0ed-004d-4420-af38-5a9686f85397
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoCustomer
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoCustomer
+		dataType: string
+		isNullable: false
+		lineageTag: 3f666a55-0d26-4d66-a2dd-24f9c31b7c5c
+		sourceLineageTag: cadf0cf8-c48b-4382-b14e-10acdc4b7202
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoCustomer
+
+		annotation SummarizationSetBy = User
+
+	column ContactType
+		dataType: string
+		lineageTag: 1371b3e8-0b6e-4f03-a81d-983a5698da7f
+		sourceLineageTag: 1de98066-364d-429c-b666-ea254747de7c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ContactType
+
+		annotation SummarizationSetBy = User
+
+	column Name
+		dataType: string
+		lineageTag: 88b4f25a-739a-463e-be5a-c694825359fd
+		sourceLineageTag: 0efd1ee7-734b-4473-b2fd-804bd3ece4c7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = User
+
+	column Name2
+		dataType: string
+		lineageTag: ea4daa32-e589-4a56-8432-3fbe9ab5e4d3
+		sourceLineageTag: cb2a52eb-68d2-4928-a49b-d0c835e476f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Name2
+
+		annotation SummarizationSetBy = User
+
+	column PartnerCode
+		dataType: string
+		lineageTag: 855f3660-0c13-4b1e-b492-e9e0dd871c88
+		sourceLineageTag: 42dd95c5-e90a-4fa2-985a-033febfd2ef0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PartnerCode
+
+		annotation SummarizationSetBy = User
+
+	column BalanceLCY
+		dataType: double
+		lineageTag: d48fffc7-afe7-4516-90ac-bead5e64da2d
+		sourceLineageTag: 2f09871d-ab22-4562-882f-368076b3b853
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BalanceLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BalanceDueLCY
+		dataType: double
+		lineageTag: d6101418-bab5-49a6-ae3a-84fbe8bb8eed
+		sourceLineageTag: 5cf18c7f-b5f3-4412-b978-1a1e0441a65c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BalanceDueLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CreditLimitLCY
+		dataType: double
+		lineageTag: 9838c3d2-35b6-49bd-ac7f-48497200e0cc
+		sourceLineageTag: 3fa8226c-da6d-48ed-98af-b10b85994caa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CreditLimitLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Salesperson_Code
+		dataType: string
+		lineageTag: 730e6ed6-8ca6-40f0-9134-88b578f5a56d
+		sourceLineageTag: 0f82f37d-15d8-49bb-b7ba-5aa59d98adaf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Salesperson_Code
+
+		annotation SummarizationSetBy = User
+
+	column TotalSales
+		dataType: double
+		lineageTag: 12cf650f-01e5-4717-9514-0202ff3c01e6
+		sourceLineageTag: 0b8c3c7e-58e2-4882-8a08-df4671657eb2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TotalSales
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VIP
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2d79e246-2f4a-436e-8d8b-b4fd8e993071
+		sourceLineageTag: e04bff19-502b-44fb-8120-ae12217df059
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: VIP
+
+		annotation SummarizationSetBy = User
+
+	column CompanyProfile
+		dataType: string
+		lineageTag: 8d09f9f3-dfb4-41ca-8bb6-8f880fdf686f
+		sourceLineageTag: 98ff81cf-e401-49cd-9161-3de18c078303
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CompanyProfile
+
+		annotation SummarizationSetBy = User
+
+	column CompanySegmentA
+		dataType: string
+		lineageTag: 6abdb8cc-097d-467f-a98b-f543d4c855dc
+		sourceLineageTag: 90b80c4e-41a0-4c05-87eb-a9904d53907f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CompanySegmentA
+
+		annotation SummarizationSetBy = User
+
+	column MagentoID
+		dataType: int64
+		formatString: 0
+		lineageTag: d21ae6be-a688-4e00-beb2-62b039fd81b4
+		sourceLineageTag: 4ba26391-4ba9-4680-9355-d755d7ca018f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MagentoID
+
+		annotation SummarizationSetBy = User
+
+	column ReckoningLimitLCY
+		dataType: double
+		lineageTag: 4052176d-17d8-4a4d-886e-a1263656a53c
+		sourceLineageTag: 14ad8787-7c96-420b-829d-386140dc04c5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReckoningLimitLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UsedLimitLCY
+		dataType: double
+		lineageTag: 9e809336-0001-42a5-8577-e8e66d674b17
+		sourceLineageTag: 241571a5-5640-402d-a1bd-9e662c54fe83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UsedLimitLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FactoringReckoning
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f4b0f1e8-d279-46a7-b97d-b0465481d331
+		sourceLineageTag: f1c614b5-86aa-464d-8e90-69b334f3e529
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: FactoringReckoning
+
+		annotation SummarizationSetBy = User
+
+	column InsuranceCustomer
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 12f51b8d-d8b1-406f-ae7b-620987b871f8
+		sourceLineageTag: adf66a6b-c770-42b6-a97c-8082ba0657b6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: InsuranceCustomer
+
+		annotation SummarizationSetBy = User
+
+	column LimitAmountInsurLCY
+		dataType: double
+		lineageTag: 6b2286e0-df67-4830-b84e-bdd80bd48b92
+		sourceLineageTag: d2440000-6693-4552-87d6-d55edd54e1e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LimitAmountInsurLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CountryRegionCode
+		dataType: string
+		lineageTag: b29bb1ff-1412-4de8-a55a-29d906ad88ae
+		sourceLineageTag: 04fd2ab1-31e8-42a8-a1a9-dc2ad86425b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CountryRegionCode
+
+		annotation SummarizationSetBy = User
+
+	column Address
+		dataType: string
+		lineageTag: f5ae9a94-d92e-4598-9049-e5222a2bbfb1
+		sourceLineageTag: 82db162e-0015-48fd-a0aa-1ab240d10d99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Address
+
+		annotation SummarizationSetBy = User
+
+	column City
+		dataType: string
+		lineageTag: 69b5add9-9aba-492c-a519-0442d5a87788
+		sourceLineageTag: 25ca5502-31cc-4d20-ac39-5c1c76a9f4c2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = User
+
+	column County
+		dataType: string
+		lineageTag: d4b25fec-1eef-45cc-8333-01569d6b7393
+		sourceLineageTag: 45b91541-0e03-4cd2-9ae7-d518f526a47e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: County
+
+		annotation SummarizationSetBy = User
+
+	column PostCode
+		dataType: string
+		lineageTag: e060a30e-cd1e-499d-bd12-2eb169f90fbb
+		sourceLineageTag: 5fd93713-c8ad-4ba0-a2d7-95e1aa372355
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PostCode
+
+		annotation SummarizationSetBy = User
+
+	column VATRegistrationNo
+		dataType: string
+		lineageTag: 9c865c9f-f359-467b-808f-e044f8e46751
+		sourceLineageTag: 577c3dfc-7bad-437f-9300-9512e1036d6c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: VATRegistrationNo
+
+		annotation SummarizationSetBy = User
+
+	column GenBusPostingGroup
+		dataType: string
+		lineageTag: 578efb7c-2589-40a4-bf58-3b413e634759
+		sourceLineageTag: 3abca69c-c36f-4f6d-9858-5bb225b50948
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: GenBusPostingGroup
+
+		annotation SummarizationSetBy = User
+
+	column PaymentTermsCode
+		dataType: string
+		lineageTag: 86b59edc-dd09-4931-b5e6-e8f6d4c615f1
+		sourceLineageTag: 1925c54a-61ea-49bb-97ae-5f12a5bdd2f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PaymentTermsCode
+
+		annotation SummarizationSetBy = User
+
+	column PaymentMethodCode
+		dataType: string
+		lineageTag: d046ac5e-93b2-4d6e-994c-4f308b642b0f
+		sourceLineageTag: e4420776-b808-46b6-a830-9bc0bb652015
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PaymentMethodCode
+
+		annotation SummarizationSetBy = User
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: c913f037-c21a-4ebc-9334-7fc36c6c9801
+		sourceLineageTag: 14d1b13e-13ff-4334-aaa0-e3eedd607b63
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = User
+
+	column Company
+		dataType: string
+		lineageTag: d594c344-ea71-476b-bc98-6560d859838e
+		sourceLineageTag: 8de0bf69-e00a-464e-b424-8d4ba1afc218
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = User
+
+	column E_Mail
+		dataType: string
+		lineageTag: 91e478f6-6bc6-4de5-ab30-456debe64066
+		sourceLineageTag: b390aade-7924-47d4-927f-f4b9da6ff328
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: E_Mail
+
+		annotation SummarizationSetBy = User
+
+	column Phone_No
+		dataType: string
+		lineageTag: e73af24b-8b3e-49ec-a7a1-49b9791224dd
+		sourceLineageTag: e5434660-5ad7-4fe2-81d7-33014cba01f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Phone_No
+
+		annotation SummarizationSetBy = User
+
+	column RelatedCompany
+		dataType: string
+		lineageTag: 3dbd2d1e-af25-40fe-9f9f-1d50e13ac635
+		sourceLineageTag: 2e334559-6513-444f-bf95-38cda6ed8697
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: RelatedCompany
+
+		annotation SummarizationSetBy = User
+
+	partition 'gold v_bc_customers' = entity
+		mode: directQuery
+		source
+			entityName: gold v_bc_customers
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

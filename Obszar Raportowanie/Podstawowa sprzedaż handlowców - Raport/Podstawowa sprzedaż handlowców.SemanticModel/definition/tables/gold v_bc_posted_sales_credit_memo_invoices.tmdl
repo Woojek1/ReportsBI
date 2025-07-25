@@ -1,0 +1,571 @@
+table 'gold v_bc_posted_sales_credit_memo_invoices'
+	isHidden
+	lineageTag: e8da7c73-d4a8-4625-85c6-421ff3e45636
+	sourceLineageTag: 80fc3bc8-07a3-40f8-964f-6e97f09d710e
+
+	column NoInvoice
+		dataType: string
+		isHidden
+		lineageTag: 91b5a547-43f4-4501-8fcf-257d633b0b5c
+		sourceLineageTag: eeda01d7-a3df-4831-aead-e48786131d11
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoInvoice
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoInvoice
+		dataType: string
+		isHidden
+		lineageTag: 6d63705d-ee9b-4067-b38d-c18ec9f3532a
+		sourceLineageTag: f9c9cd29-61d6-4504-a511-fb0afda4b760
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoInvoice
+
+		annotation SummarizationSetBy = User
+
+	column InvoiceLine
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 260da466-48ee-435b-9e97-1745c007b7a2
+		sourceLineageTag: b50f6762-3005-4e1f-8fcd-9931f9ad7968
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: InvoiceLine
+
+		annotation SummarizationSetBy = User
+
+	column NoQuote
+		dataType: string
+		isHidden
+		lineageTag: 2f41295c-423c-41ec-9eb7-910578778e9a
+		sourceLineageTag: 663e9eae-c53b-44bd-9298-15e921c2b1b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoQuote
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoQuote
+		dataType: string
+		isHidden
+		lineageTag: 3ea305fb-46b3-4da0-a380-1b97d940e963
+		sourceLineageTag: fedf64d9-afa2-4dcb-af1c-698b604b880a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoQuote
+
+		annotation SummarizationSetBy = User
+
+	column NoProject
+		dataType: string
+		isHidden
+		lineageTag: 0365bf3f-eeef-4eba-bcb4-0a5ad7296a16
+		sourceLineageTag: 500410cb-b4ba-4558-a95f-dce70d6069cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoProject
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoProject
+		dataType: string
+		isHidden
+		lineageTag: ff1999cc-1644-4440-8d36-7cc980bf20da
+		sourceLineageTag: 334d4b0d-1dc1-47e1-9188-91150e7fed08
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoProject
+
+		annotation SummarizationSetBy = User
+
+	column NoOrder
+		dataType: string
+		isHidden
+		lineageTag: ef290152-1601-4113-9154-4e45b3f4f49a
+		sourceLineageTag: fed52c6d-f00a-4151-bf22-157c12d05cc4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoOrder
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoOrder
+		dataType: string
+		isHidden
+		lineageTag: a41d6231-c7cd-4950-9161-30cae3787fa5
+		sourceLineageTag: 145d9c52-51a5-49f0-8a5b-b71df0cc3f0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoOrder
+
+		annotation SummarizationSetBy = User
+
+	column PostingDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: aa26eb92-9238-4f85-a02a-e5aad97d034c
+		sourceLineageTag: 682228c4-f56a-4369-a59c-67a6a9b48fee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PostingDate
+
+		annotation SummarizationSetBy = User
+
+	column DueDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 12148739-59e6-4332-b200-48345e7e8f06
+		sourceLineageTag: cb0d7733-6706-447a-ad39-10c4842a6ce0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DueDate
+
+		annotation SummarizationSetBy = User
+
+	column DaysAfterDueDate
+		dataType: string
+		isHidden
+		lineageTag: 16ba6742-55a4-4cd2-b55d-ac61a8df15aa
+		sourceLineageTag: 6cedf156-03af-437d-ab3a-b3e6d3d36830
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DaysAfterDueDate
+
+		annotation SummarizationSetBy = User
+
+	column NoCustomer
+		dataType: string
+		isHidden
+		lineageTag: a75b34f2-93b7-4484-b28c-55a1383b5769
+		sourceLineageTag: fac4342c-2001-4f8c-9f0c-de4906a4328d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoCustomer
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoCustomer
+		dataType: string
+		isHidden
+		lineageTag: 75cfe41c-bedf-4092-9624-e7de6ea03c5e
+		sourceLineageTag: 39dc274f-264e-41cf-8b7f-a6f263b951ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoCustomer
+
+		annotation SummarizationSetBy = User
+
+	column CustomerName
+		dataType: string
+		isHidden
+		lineageTag: f569ccc6-0acc-481d-8143-fc45d7de63bf
+		sourceLineageTag: 1805305b-3441-41df-b758-e8421faadc3d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = User
+
+	column NIP
+		dataType: string
+		isHidden
+		lineageTag: 1a9e1cda-013d-444c-b06c-e318cc2197d0
+		sourceLineageTag: d5e25a2a-d00e-473d-8e36-e3484548e13c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NIP
+
+		annotation SummarizationSetBy = User
+
+	column CurrencyCode
+		dataType: string
+		isHidden
+		lineageTag: cee44d47-69cb-480d-b04c-d3246b3ef7c5
+		sourceLineageTag: e2e9076d-a898-4e66-b5b7-e4a385d76df4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CurrencyCode
+
+		annotation SummarizationSetBy = User
+
+	column CurrencyFactor
+		dataType: double
+		isHidden
+		lineageTag: 7a863062-5189-4da5-93c5-ff1f35dcf9a2
+		sourceLineageTag: 5c57d257-6ab5-4b14-959c-c820a9a355ee
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: CurrencyFactor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Type
+		dataType: string
+		isHidden
+		lineageTag: 79b777c4-40ff-41d8-ade6-431a5d5e6bda
+		sourceLineageTag: ab13f2fa-66e8-4890-8913-d2a72e18dadb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = User
+
+	column NoItem
+		dataType: string
+		isHidden
+		lineageTag: baf8a857-3878-4bbc-9fe5-b2930673f1e6
+		sourceLineageTag: 6bd5e5be-781c-4c1b-b2c7-e6e9a63cd14a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NoItem
+
+		annotation SummarizationSetBy = User
+
+	column KeyNoItem
+		dataType: string
+		isHidden
+		lineageTag: 2c261878-6d80-479a-9411-0da5befc4b61
+		sourceLineageTag: 8e395bf1-b128-40cb-bc4f-a5c5a05859a3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: KeyNoItem
+
+		annotation SummarizationSetBy = User
+
+	column ItemDescription
+		dataType: string
+		isHidden
+		lineageTag: dbbfea6c-186c-413e-a430-4c27ba9d962f
+		sourceLineageTag: 84c62d97-19d7-45b9-ac08-c7bc6b7c0352
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ItemDescription
+
+		annotation SummarizationSetBy = User
+
+	column Quantity
+		dataType: double
+		isHidden
+		lineageTag: ea69824a-c8a6-4fb7-bf45-39c6bb6872ec
+		sourceLineageTag: ad61a726-d08a-4d7e-b68e-1f45e0341383
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPrice
+		dataType: double
+		isHidden
+		lineageTag: 93b28b63-9f0e-4d92-bda3-a1848adea293
+		sourceLineageTag: 4855933d-8046-4e3b-ba63-43ce9a131437
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LinePriceLCY
+		dataType: double
+		isHidden
+		lineageTag: 75fca432-d870-46c4-a1f6-2c27d42059cd
+		sourceLineageTag: 2d9cd0fd-7b9a-4275-8642-692abf2a01b9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LinePriceLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Amount
+		dataType: double
+		isHidden
+		lineageTag: 8c8eb0ac-c09d-42ff-9d9e-147fc0c639b0
+		sourceLineageTag: b1888b88-0b60-4ebb-8e09-48b6acf6d875
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountLCY
+		dataType: double
+		isHidden
+		lineageTag: 3f3c4570-8f30-4c0e-96c5-6d3b3a695220
+		sourceLineageTag: cfedfec8-ce69-4c72-b042-43db4a7cd7ff
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: AmountLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineCostsLCY
+		dataType: double
+		isHidden
+		lineageTag: 60e45642-482c-45b7-a240-e1884888f31e
+		sourceLineageTag: 6418522f-19d7-49c2-8a92-fc9990822b4c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LineCostsLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineDiscount
+		dataType: double
+		isHidden
+		lineageTag: 919a85b9-10fd-444b-ad7e-1d713b255a05
+		sourceLineageTag: d9cef0be-cd66-42c0-9af2-d2ae92d8b6de
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LineDiscount
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LineDiscountAmount
+		dataType: double
+		isHidden
+		lineageTag: e91c1300-f999-4db5-8cf6-ede3d2c4f256
+		sourceLineageTag: 42db1ddb-c8e9-4f4f-ad5e-ffd5e8db9cf7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: LineDiscountAmount
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MarginBC
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e1de51cd-9f1e-4102-8e99-7790c724dd9d
+		sourceLineageTag: 3e3eff4c-ac1b-4296-8092-f8381a43d4d6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: MarginBC
+
+		annotation SummarizationSetBy = User
+
+	column Profitability
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a72f2eed-a2ce-47bc-893d-dff994dca92f
+		sourceLineageTag: afde7278-fee3-4182-a895-a60e2ca0c8da
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Profitability
+
+		annotation SummarizationSetBy = User
+
+	column AmountIncludingVAT
+		dataType: double
+		isHidden
+		lineageTag: b1daa50b-f7bd-4a51-97df-2d5fc23ca1dd
+		sourceLineageTag: 9f687e74-6c64-4db5-a184-6cb69d9180c2
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: AmountIncludingVAT
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountIncludingVatLCY
+		dataType: double
+		isHidden
+		lineageTag: d90876ba-80c8-433a-8924-2534e023efe7
+		sourceLineageTag: 1bed91f3-4047-4c96-843c-c2eec179f4cb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: AmountIncludingVatLCY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RemainingAmount
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6320b9dd-d6e7-4f4f-bac5-919f74865c97
+		sourceLineageTag: 7cb85dab-9cae-4b0d-b507-54a3ce64b994
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: RemainingAmount
+
+		annotation SummarizationSetBy = User
+
+	column RemainingAmountLCY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7ea4e69b-88f4-44d1-986a-963394b6061f
+		sourceLineageTag: 98240e27-1871-4b95-9366-df397a0c6fc6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: RemainingAmountLCY
+
+		annotation SummarizationSetBy = User
+
+	column PaymentMethodCode
+		dataType: string
+		isHidden
+		lineageTag: 85d29f2c-a6ef-444d-b80a-7754fdcc2ce5
+		sourceLineageTag: ac626f77-b6bf-499b-9e49-9fa1c2c400b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PaymentMethodCode
+
+		annotation SummarizationSetBy = User
+
+	column SalespersonCode
+		dataType: string
+		isHidden
+		lineageTag: 78825dc4-1e44-480c-88f5-3ab24b5992dd
+		sourceLineageTag: ce21d9c1-8d0e-4acc-bd87-99e81d9267ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SalespersonCode
+
+		annotation SummarizationSetBy = User
+
+	column SalespersonName
+		dataType: string
+		isHidden
+		lineageTag: 5a5dcf26-600f-417f-b318-8e76d89487ae
+		sourceLineageTag: e78d36ea-13e2-4f47-b1c1-06f5d723f0e4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SalespersonName
+
+		annotation SummarizationSetBy = User
+
+	column Region
+		dataType: string
+		isHidden
+		lineageTag: 1b622905-8810-4edf-9fd8-7f171063185d
+		sourceLineageTag: e8385b5b-6f4e-4240-b229-4ad90042af4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = User
+
+	column MPK
+		dataType: string
+		isHidden
+		lineageTag: d511733e-9360-402e-9137-60e075ee73e6
+		sourceLineageTag: cff6253d-6141-437a-b80d-1d2e3d405ca5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MPK
+
+		annotation SummarizationSetBy = User
+
+	column LoadDate
+		dataType: dateTime
+		isHidden
+		formatString: General Number
+		lineageTag: 154b453e-1be6-4769-ac6a-587ec5273152
+		sourceLineageTag: 9c4002c7-af39-47a2-84c5-dd0a1e42395a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = User
+
+	column Company
+		dataType: string
+		isHidden
+		lineageTag: 57901307-28cb-4084-a927-2f24f6e9c203
+		sourceLineageTag: a882c29e-2df9-42d6-9e23-9f679a2e251d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = User
+
+	column ECOM
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 451cc2e5-d307-4396-81e1-b5765876228b
+		sourceLineageTag: 1d0045c4-733b-43bb-9c99-fa63535e6e03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ECOM
+
+		annotation SummarizationSetBy = User
+
+	column CorrectionReason
+		dataType: string
+		lineageTag: df971798-56d7-4809-ac77-fbf5d5bfcc67
+		sourceLineageTag: 74637856-e8e9-4d5f-9b44-a52a4fe1d587
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CorrectionReason
+
+		annotation SummarizationSetBy = User
+
+	column Invoice_Type
+		dataType: string
+		lineageTag: 6c8cfff7-f76e-4283-b311-712b58d5f036
+		sourceLineageTag: c0521e8d-ae5d-4c41-9438-fba452aa19e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Invoice_Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Koszt skorygowany'
+		dataType: double
+		lineageTag: 2a45c131-4588-4cbb-a39f-491a84b86fb1
+		sourceLineageTag: d97a69fd-9969-4ad5-bb51-2f0f1123a927
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Koszt skorygowany
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ProfitLCY (based on direct cost)'
+		dataType: double
+		lineageTag: 88d461bc-9a2f-4de0-a623-1925cc5dd57f
+		sourceLineageTag: fb358e39-e918-455b-bf27-b48ec0b75243
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ProfitLCY (based on direct cost)
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold v_bc_posted_sales_credit_memo_invoices' = entity
+		mode: directQuery
+		source
+			entityName: gold v_bc_posted_sales_credit_memo_invoices
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+

@@ -1,0 +1,5 @@
+role 'Dyrektor Technab'
+	modelPermission: read
+
+	annotation PBI_Id = 78f6dc073d4c485683c67cd4f28bf461
+

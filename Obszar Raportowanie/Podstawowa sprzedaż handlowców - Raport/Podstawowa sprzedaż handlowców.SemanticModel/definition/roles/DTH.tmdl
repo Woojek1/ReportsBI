@@ -1,0 +1,5 @@
+role DTH
+	modelPermission: read
+
+	annotation PBI_Id = 80d3e2b12e0e42c9b3b25e3e5344c705
+

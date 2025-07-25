@@ -1,0 +1,23 @@
+relationship 69db2fea-96e1-4966-848c-51eaa0ef4d1d
+	toCardinality: many
+	fromColumn: 'gold v_bc_salesperson'.Name
+	toColumn: 'gold v_hr_enova_rls'.Pracownik
+
+relationship f10da8fd-76ec-47c6-9bff-0f8ee1d73db5
+	fromColumn: Invoices.KeyNoCustomer
+	toColumn: 'gold v_bc_customers'.KeyNoCustomer
+
+relationship ba898b5d-e44d-46cb-8ac6-7c968a44b19d
+	fromColumn: Invoices.PostingDate
+	toColumn: Calendar.Date
+
+relationship ac9f82c0-fd32-4b54-b168-131e38a11fa1
+	fromColumn: Invoices.KeyNoItem
+	toColumn: 'gold v_bc_items'.KeyNoItem
+
+relationship 1c983713-99c8-4cab-9ec5-8b7cb01453cf
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Invoices.SalespersonCode
+	toColumn: 'gold v_bc_salesperson'.Code
+

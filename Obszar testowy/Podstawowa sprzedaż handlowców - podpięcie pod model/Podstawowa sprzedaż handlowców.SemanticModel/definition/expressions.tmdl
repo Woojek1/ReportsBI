@@ -1,0 +1,11 @@
+expression 'Połączenie DirectQuery z elementem AS — Sprzedaż - model' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Testy", "Sprzedaż - model"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 0346bad1-fe24-41de-a3ee-b781b2817135
+
+	annotation PBI_IncludeFutureArtifacts = True
+

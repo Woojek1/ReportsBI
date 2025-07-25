@@ -1,0 +1,34 @@
+table 'Grupa obliczania'
+	lineageTag: 558aab90-8786-41b7-944d-8d7034936c2e
+	sourceLineageTag: 5ef29f12-7f98-4392-92b2-0dedbcf1a7e0
+
+	column 'Nazwa grupy obliczania'
+		dataType: string
+		lineageTag: fb1df0ab-48db-4647-a02e-5746666fcd7e
+		sourceLineageTag: 3b740e2b-25f7-4c2b-9e80-6e67ad8d4557
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Nazwa grupy obliczania
+		sortByColumn: 'Liczba porządkowa'
+
+		annotation SummarizationSetBy = User
+
+	column 'Liczba porządkowa'
+		dataType: int64
+		formatString: 0
+		lineageTag: c45eef3a-d66e-4208-9d66-eefc69acf70a
+		sourceLineageTag: 28546f6d-c76a-4b09-9289-56f17eaf86a5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Liczba porządkowa
+
+		annotation SummarizationSetBy = User
+
+	partition 'Grupa obliczania' = entity
+		mode: directQuery
+		source
+			entityName: Grupa obliczania
+			expressionSource: 'Połączenie DirectQuery z elementem AS — Sprzedaż - model'
+
+	changedProperty = Name
+
