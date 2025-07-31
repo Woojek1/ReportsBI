@@ -452,46 +452,6 @@
               "objects": {}
             }
           },
-          "e286fa30f6c4fb89e21c": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "5e72a56666400476d715",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "OverdueAmountLCY"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "card",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "OverdueAmountLCY"
-                    }
-                  }
-                }
-              ]
-            }
-          },
           "e8b5662a1c109a3c2b73": {
             "filters": {
               "byExpr": [

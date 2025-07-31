@@ -1,0 +1,16 @@
+role 'Kierownik regionu'
+	modelPermission: read
+
+	tablePermission 'gold v_hr_enova_rls' =
+			'gold v_hr_enova_rls'[EmailAD (N-3)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailAD (N-2)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailAD (N-1)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailAD (N)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailAD] = USERPRINCIPALNAME()
+
+	annotation PBI_Id = c4bebf9194d2452fa8d2b7bbfdb0ae7b
+

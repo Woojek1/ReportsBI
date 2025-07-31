@@ -6,7 +6,8 @@
     "y": 400,
     "z": 2000,
     "height": 72,
-    "width": 1184
+    "width": 1184,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "multiRowCard",

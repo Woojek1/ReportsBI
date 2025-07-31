@@ -6,7 +6,8 @@
     "y": 400,
     "z": 14000,
     "height": 304,
-    "width": 424
+    "width": 424,
+    "tabOrder": 34000
   },
   "visual": {
     "visualType": "tableEx",
@@ -917,7 +918,7 @@
             "showVisualInformationButton": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -994,7 +995,7 @@
             "showOptionsMenu": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
