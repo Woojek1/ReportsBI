@@ -49,11 +49,6 @@
       "type": "DataFilter"
     },
     {
-      "source": "f2ced7b595ef44fb9e4e",
-      "target": "2f4e1f15bcbdacfae548",
-      "type": "DataFilter"
-    },
-    {
       "source": "862a27b0100c850a4b2b",
       "target": "39d0a8449e80dab50930",
       "type": "NoFilter"

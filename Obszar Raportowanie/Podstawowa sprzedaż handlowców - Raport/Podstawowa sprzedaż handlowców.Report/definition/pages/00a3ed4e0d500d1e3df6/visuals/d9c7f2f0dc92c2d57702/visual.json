@@ -12,5 +12,6 @@
   "visualGroup": {
     "displayName": "Slicer",
     "groupMode": "ScaleMode"
-  }
+  },
+  "isHidden": true
 }
