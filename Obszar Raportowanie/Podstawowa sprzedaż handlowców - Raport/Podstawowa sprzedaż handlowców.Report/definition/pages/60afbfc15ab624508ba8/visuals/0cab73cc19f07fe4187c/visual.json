@@ -778,6 +778,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "c3f7c3f99e301e4e791f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItemTotalLCY"
+          }
+        },
+        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

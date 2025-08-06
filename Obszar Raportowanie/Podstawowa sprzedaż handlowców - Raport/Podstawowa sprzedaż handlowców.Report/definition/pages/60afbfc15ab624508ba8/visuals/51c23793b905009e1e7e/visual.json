@@ -319,6 +319,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "69dbda5b831c687f7df8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItem_MTD_PreviousYear"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f858ed498f3e2a3918f9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItem_MTD_Today"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a7d005361bb6868f399e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "YearMonth"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

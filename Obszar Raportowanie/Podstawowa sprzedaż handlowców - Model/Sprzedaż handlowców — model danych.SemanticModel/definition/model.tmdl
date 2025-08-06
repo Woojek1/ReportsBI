@@ -9,11 +9,11 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.145.1457.0 (25.07)+6e87ffa743c5aa106a85a0b5e383d76d522045ba
+annotation PBIDesktopVersion = 2.145.1602.0 (25.07)+10647c9fa319b5e39936cdb21328038c371d1fe4
 
 annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers","gold v_hr_enova_rls","gold v_bc_posted_sales_credit_memo_invoices","Invoices"]
 
-annotation PBI_ProTooling = ["CalcGroup","DevMode"]
+annotation PBI_ProTooling = ["CalcGroup","DevMode","TMDLView_Desktop"]
 
 ref table 'gold v_bc_posted_sales_invoices'
 ref table 'gold v_bc_salesperson'

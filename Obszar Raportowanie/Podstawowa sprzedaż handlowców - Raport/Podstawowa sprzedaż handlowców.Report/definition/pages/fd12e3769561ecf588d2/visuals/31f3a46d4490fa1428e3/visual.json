@@ -1154,53 +1154,49 @@
           }
         },
         "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "i",
-              "Entity": "Invoices",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "i"
-                          }
-                        },
-                        "Property": "Type"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Item'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Charge (Item)'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
+      },
+      {
+        "name": "a208ace98c44e50ce25a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ManufacturerCode"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c4e0843d7f7992a4c2f1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItemTotalLCY"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "008205f09408a27081f3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscount"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

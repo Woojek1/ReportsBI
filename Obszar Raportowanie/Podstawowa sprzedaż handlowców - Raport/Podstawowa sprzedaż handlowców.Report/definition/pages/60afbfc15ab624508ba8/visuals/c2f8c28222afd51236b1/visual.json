@@ -1276,6 +1276,76 @@
         },
         "type": "Categorical",
         "howCreated": "User"
+      },
+      {
+        "name": "c4bb769881f1b2c311e1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_items"
+              }
+            },
+            "Property": "ItemTypeA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c47bafeb9830c7bbdbf1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "SalesAmountItem_MTD_Today"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cee143e4228d84917f6e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "AverageDiscountCurrentMonth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a05a37b44b5cfc2ef5bd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "ItemQuantityCurrentMonth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a6a80000dcd60a8496e7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "_MarginItems_MTD_Today"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

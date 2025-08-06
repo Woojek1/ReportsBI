@@ -687,8 +687,8 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[Quantity]),
-			    'Invoices'[Type] = "Item"
-			    || 'Invoices'[Type] = "Charge (Item)"
+			    'Invoices'[Type] = "Towar"
+			    || 'invoices'[Type] = "Towar (Korekta)"
 			    )
 		formatString: 0
 		displayFolder: Sales
@@ -849,7 +849,7 @@ table _Measures
 			            'Calendar'[Date]
 			        ),
 			        'Calendar'[Date] = TODAY(),
-			        'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			        'Invoices'[Type] = "Towar" || 'invoices'[Type] = "Towar (Korekta)"
 			    )
 			    // 0
 			// )
@@ -867,7 +867,7 @@ table _Measures
 			        'Calendar'[Date]
 			    ),
 			    SAMEPERIODLASTYEAR('Calendar'[Date]),
-			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			    'Invoices'[Type] = "Towar" || 'invoices'[Type] = "Towar (Korekta)"
 			)
 			
 			```
@@ -880,7 +880,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('invoices'[AmountLCY]),
-			    'invoices'[Type] in {"Item", "Charge (Item)"}
+			    'invoices'[Type] in {"Towar", "Towar (Korekta)"}
 			)
 			
 			
@@ -950,7 +950,7 @@ table _Measures
 			        'Calendar'[Date]
 			    ),
 			    'Calendar'[Date] = TODAY(),
-			    'invoices'[Type] = "Item"
+			    'Invoices'[Type] = "Towar"
 			)
 			
 			```
@@ -968,7 +968,7 @@ table _Measures
 			        'Calendar'[Date]
 			    ),
 			    SAMEPERIODLASTYEAR('Calendar'[Date]),
-			    'invoices'[Type] = "Item"  
+			    'Invoices'[Type] = "Towar"  
 			)
 			
 			```
@@ -981,7 +981,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM('Invoices'[ProfitLCY (based on direct cost)]),
-			    'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			    'Invoices'[Type] = "Towar" || 'invoices'[Type] = "Towar (Korekta)"
 			)
 			
 			
@@ -997,8 +997,8 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item" ||
-			                        Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" ||
+			                        Invoices[Type] = "Towar (Korekta)"
 			                        )
 			                    
 			                
@@ -1006,8 +1006,8 @@ table _Measures
 			VAR _ProfitLCY = 
 			            CALCULATE(
 			                SUM(Invoices[ProfitLCY]),
-			                        Invoices[Type] = "Item" ||
-			                        Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" ||
+			                        Invoices[Type] = "Towar (Korekta)"
 			            )            
 			
 			VAR Margin = 
@@ -1030,7 +1030,7 @@ table _Measures
 			                            'Calendar'[Date]
 			                        ),
 			                        'Calendar'[Date] = TODAY(),
-			                        'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || 'invoices'[Type] = "Towar (Korekta)"
 			    )
 			
 			VAR _Costs = 
@@ -1040,7 +1040,7 @@ table _Measures
 			                    'Calendar'[Date]
 			                ),
 			                'Calendar'[Date] = TODAY(),
-			                'invoices'[Type] = "Item" || 'invoices'[Type] = "Charge (Item)"
+			                'Invoices'[Type] = "Towar" || 'invoices'[Type] = "Towar (Korekta)"
 			            )
 			
 			
@@ -1069,7 +1069,7 @@ table _Measures
 			                        'Calendar'[Date]
 			                    ),
 			                    SAMEPERIODLASTYEAR('Calendar'[Date]),
-			                    'invoices'[Type] = "Item"
+			                    'Invoices'[Type] = "Towar"
 			                    )
 			VAR _Profit = 
 			            CALCULATE(
@@ -1078,7 +1078,7 @@ table _Measures
 			                'Calendar'[Date]
 			            ),
 			            SAMEPERIODLASTYEAR('Calendar'[Date]),
-			            'invoices'[Type] = "Item"
+			            'Invoices'[Type] = "Towar"
 			            )           
 			
 			RETURN
@@ -1097,7 +1097,7 @@ table _Measures
 			
 			CALCULATE(
 			    SUM(Invoices[ProfitLCY]),
-			    Invoices[Type] = "Item")
+			    'Invoices'[Type] = "Towar")
 		formatString: #,0
 		displayFolder: Sales
 		lineageTag: a89291f6-f1e4-4d5b-b289-98ed44b10928
@@ -1108,8 +1108,8 @@ table _Measures
 			
 			CALCULATE(
 			    SUM(Invoices[LineCostsLCY]),
-			    'Invoices'[Type] = "Item"
-			    || 'Invoices'[Type] = "Charge (Item)"
+			    'Invoices'[Type] = "Towar"
+			    || 'invoices'[Type] = "Towar (Korekta)"
 			    )
 		displayFolder: Sales
 		lineageTag: 9473014a-3c7f-4c99-b1e2-03c1e69ee89e
@@ -1133,7 +1133,7 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                        )
 			                    
 			                
@@ -1141,7 +1141,7 @@ table _Measures
 			VAR _ProfitLCY = 
 			            CALCULATE(
 			                SUM(Invoices[ProfitLCY]),
-			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )            
 			
 			VAR Margin = 
@@ -1165,13 +1165,13 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                        )
 			                    
 			VAR _Costs = 
 			            CALCULATE(
 			            SUM(Invoices[Koszt skorygowany]),
-			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )
 			
 			VAR _ProfitLCY = 
@@ -1198,13 +1198,13 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                        )
 			                    
 			VAR _Costs = 
 			            CALCULATE(
 			            SUM(Invoices[Koszt skorygowany]),
-			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )
 			
 			VAR _ProfitLCY = 
@@ -1229,13 +1229,13 @@ table _Measures
 			VAR _SalesAmountLCY = 
 			                    CALCULATE(
 			                        SUM(Invoices[AmountLCY]),
-			                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                        )
 			                    
 			VAR _Costs = 
 			            CALCULATE(
 			            SUM(Invoices[Koszt skorygowany]),
-			            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			            'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )
 			
 			VAR _ProfitLCY = 
@@ -1262,7 +1262,7 @@ table _Measures
 			                            'Calendar'[Date]
 			                        ),
 			                        'Calendar'[Date] = TODAY(),
-			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                    )
 			                    
 			VAR _Costs = 
@@ -1272,7 +1272,7 @@ table _Measures
 			                    'Calendar'[Date]
 			                ),
 			                'Calendar'[Date] = TODAY(),
-			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )
 			
 			VAR _ProfitLCY = 
@@ -1297,7 +1297,7 @@ table _Measures
 			VAR _SalesAmountLCY =
 			                    CALCULATE(
 			                        SUM('invoices'[AmountLCY]),
-			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)",
 			                        FILTER(
 			                            ALL('Calendar'),
 			                            AND(Calendar[Year] = _PreviousYear,
@@ -1309,7 +1309,7 @@ table _Measures
 			VAR _Costs =
 			            CALCULATE(
 			                SUM('Invoices'[Koszt skorygowany]),
-			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)",
 			                FILTER(
 			                    ALL('Calendar'),
 			                    AND(Calendar[Year] = _PreviousYear,
@@ -1343,7 +1343,7 @@ table _Measures
 			                            'Calendar'[Date]
 			                        ),
 			                        'Calendar'[Date] = TODAY(),
-			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			                    )
 			                    
 			VAR _Costs = 
@@ -1353,7 +1353,7 @@ table _Measures
 			                    'Calendar'[Date]
 			                ),
 			                'Calendar'[Date] = TODAY(),
-			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+			                'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)"
 			            )
 			
 			VAR _ProfitLCY = 
@@ -1379,7 +1379,7 @@ table _Measures
 			VAR _SalesAmountLCY =
 			                    CALCULATE(
 			                        SUM('invoices'[AmountLCY]),
-			                        'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                        'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)",
 			                        FILTER(
 			                            ALL('Calendar'),
 			                            AND(Calendar[Year] = _PreviousYear,
@@ -1391,7 +1391,7 @@ table _Measures
 			VAR _Costs =
 			            CALCULATE(
 			                SUM('Invoices'[Koszt skorygowany]),
-			                'invoices'[Type] = "Item" || Invoices[Type] = "Charge (Item)",
+			                'Invoices'[Type] = "Towar" || Invoices[Type] = "Towar (Korekta)",
 			                FILTER(
 			                    ALL('Calendar'),
 			                    AND(Calendar[Year] = _PreviousYear,
@@ -1421,8 +1421,8 @@ table _Measures
 			
 			CALCULATE(
 			    SUM(Invoices[Koszt skorygowany]),
-			    'Invoices'[Type] = "Item"
-			    || 'Invoices'[Type] = "Charge (Item)"
+			    'Invoices'[Type] = "Towar"
+			    || 'invoices'[Type] = "Towar (Korekta)"
 			    )
 		formatString: #,0
 		displayFolder: Sales
