@@ -7,7 +7,7 @@
     "z": 17000,
     "height": 304,
     "width": 480,
-    "tabOrder": 15000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1234,76 +1234,6 @@
         },
         "type": "Categorical",
         "howCreated": "User"
-      },
-      {
-        "name": "970dbb321fb12c2c1123",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_items"
-              }
-            },
-            "Property": "ItemTypeA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "b8a52fdc1b5b0e7a65ff",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2d07b2d65fab313b98ae",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "24b6db323f2611a21ee2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "ItemQuantity"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7cbbf021f6fb4db2159e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "_MarginItems"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

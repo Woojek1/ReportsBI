@@ -7,7 +7,7 @@
     "z": 14000,
     "height": 304,
     "width": 424,
-    "tabOrder": 34000
+    "tabOrder": 32000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1178,7 +1178,7 @@
         "howCreated": "User"
       },
       {
-        "name": "43998841dfd782cb54e8",
+        "name": "25f1e0b91746464dddce",
         "field": {
           "Column": {
             "Expression": {
@@ -1192,7 +1192,7 @@
         "type": "Categorical"
       },
       {
-        "name": "8298c9cb191b954814ac",
+        "name": "d547c8e057e0a4018088",
         "field": {
           "Measure": {
             "Expression": {
@@ -1206,7 +1206,7 @@
         "type": "Advanced"
       },
       {
-        "name": "f64e2626c1c233840a27",
+        "name": "3b32c0e3567ec09448a5",
         "field": {
           "Measure": {
             "Expression": {

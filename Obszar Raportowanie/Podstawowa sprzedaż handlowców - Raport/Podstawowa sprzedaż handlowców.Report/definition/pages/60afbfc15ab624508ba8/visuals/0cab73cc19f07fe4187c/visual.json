@@ -7,7 +7,7 @@
     "z": 17000,
     "height": 272,
     "width": 984,
-    "tabOrder": 19000
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "waterfallChart",
@@ -778,20 +778,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "c3f7c3f99e301e4e791f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"
