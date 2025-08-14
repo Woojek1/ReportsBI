@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "21f8a085970c431d9c2a",
+  "position": {
+    "x": 1120,
+    "y": 256,
+    "z": 0,
+    "height": 784,
+    "width": 736,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Base_GroupB"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
+              "nativeQueryRef": "Base_GroupB",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "No"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.No",
+              "nativeQueryRef": "No",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Item_No_Serviced"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
+              "nativeQueryRef": "Item_No_Serviced",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Failure_Quantity"
+                }
+              },
+              "queryRef": "_Measures.Failure_Quantity",
+              "nativeQueryRef": "Failure_Quantity"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Failure_Ratio"
+                }
+              },
+              "queryRef": "_Measures.Failure_Ratio",
+              "nativeQueryRef": "Failure_Ratio"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Failure_Ratio"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "gold Fact_Items_Failure.Base_GroupB"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Base_GroupB"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "gold Fact_Items_Failure.No"
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "gold Fact_Items_Failure.Item_No_Serviced"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Item_No_Serviced"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "236.78658208151296D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold Fact_Items_Failure.Item_No_Serviced"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "65.0909090909091D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+                          }
+                        },
+                        "Property": "Quantity"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "35L"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "74.0909090909091D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+                          }
+                        },
+                        "Property": "Quantity"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "35L"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "256.3333414861784D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold Fact_Items_Failure.Base_GroupB"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "b5bc91006a6724294e52",
+  "position": {
+    "x": 1599.9999999999998,
+    "y": 51.66666666666665,
+    "z": 4000,
+    "height": 128,
+    "width": 272,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Item_No_Serviced"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
+              "nativeQueryRef": "Item_No_Serviced",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

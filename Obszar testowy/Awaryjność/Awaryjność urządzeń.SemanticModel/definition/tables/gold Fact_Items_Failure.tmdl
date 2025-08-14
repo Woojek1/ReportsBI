@@ -1,0 +1,136 @@
+table 'gold Fact_Items_Failure'
+	lineageTag: 78798ab9-819c-42e9-b777-4268112a4b95
+
+	column Failure_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8561e13d-452f-435a-add3-d9df2c70e423
+		summarizeBy: none
+		sourceColumn: Failure_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Sale_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9f4e1555-3225-43ef-8950-5fdfb92889bb
+		summarizeBy: none
+		sourceColumn: Sale_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Time_To_Failure (month)'
+		dataType: double
+		lineageTag: 12e94718-f3cb-4b30-a3d9-8c7c494ad036
+		summarizeBy: sum
+		sourceColumn: Time_To_Failure (month)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Service_Order_No
+		dataType: string
+		lineageTag: be7ae229-6bb7-4e18-b4ee-fe3ef0587fa0
+		summarizeBy: none
+		sourceColumn: Service_Order_No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bill_to_Customer_No
+		dataType: string
+		lineageTag: 23c66cc5-b3c1-4e00-a279-5f0aff2f7163
+		summarizeBy: none
+		sourceColumn: Bill_to_Customer_No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Service_Item_No_Serviced
+		dataType: string
+		lineageTag: cc881893-cf13-4cfb-a350-969fb0d0db44
+		summarizeBy: none
+		sourceColumn: Service_Item_No_Serviced
+
+		annotation SummarizationSetBy = Automatic
+
+	column Item_No_Serviced
+		dataType: string
+		lineageTag: ad8bef70-d1db-4117-b250-10e4e98d7df1
+		summarizeBy: none
+		sourceColumn: Item_No_Serviced
+
+		annotation SummarizationSetBy = Automatic
+
+	column Serial_No_Serviced
+		dataType: string
+		lineageTag: aecc218f-6519-4e75-888a-663c1e0b1850
+		summarizeBy: none
+		sourceColumn: Serial_No_Serviced
+
+		annotation SummarizationSetBy = Automatic
+
+	column Base_Group_A_Serviced
+		dataType: string
+		lineageTag: 3037f863-df6b-4eef-99e1-b1225c63db76
+		summarizeBy: none
+		sourceColumn: Base_Group_A_Serviced
+
+		annotation SummarizationSetBy = Automatic
+
+	column Base_Group_B_Serviced
+		dataType: string
+		lineageTag: bf053fb8-aa2b-4dee-8d8c-047a8a06388b
+		summarizeBy: none
+		sourceColumn: Base_Group_B_Serviced
+
+		annotation SummarizationSetBy = Automatic
+
+	column No
+		dataType: string
+		lineageTag: ed715ccd-4599-478b-a693-c1cf288d0d15
+		summarizeBy: none
+		sourceColumn: No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Base_GroupA
+		dataType: string
+		lineageTag: 3754d678-9a21-436f-a5d6-9be2ea46ef21
+		summarizeBy: none
+		sourceColumn: Base_GroupA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Base_GroupB
+		dataType: string
+		lineageTag: e095106b-bdb1-4a9b-b07f-9dd3e2908295
+		summarizeBy: none
+		sourceColumn: Base_GroupB
+
+		annotation SummarizationSetBy = Automatic
+
+	column Firma
+		dataType: string
+		lineageTag: 22859ad8-4d4c-4007-a10b-e47032dbd8a4
+		summarizeBy: none
+		sourceColumn: Firma
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold Fact_Items_Failure' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_Fact_Items_Failure = Źródło{[Schema="gold",Item="Fact_Items_Failure"]}[Data]
+				in
+				    gold_Fact_Items_Failure
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "18fae101ce5deb88aec9",
+  "position": {
+    "x": 1040,
+    "y": 176,
+    "z": 1000,
+    "height": 784,
+    "width": 832,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Time_To_Failure (month)"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Time_To_Failure (month)",
+              "nativeQueryRef": "Suma elementów Time_To_Failure (month)",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Failure_Quantity"
+                }
+              },
+              "queryRef": "_Measures.Failure_Quantity",
+              "nativeQueryRef": "Failure_Quantity"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Failure_Quantity"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

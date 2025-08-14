@@ -1,0 +1,31 @@
+table 'gold Dim_BC_NAV_Sold_Items_Aggregation'
+	lineageTag: aa3e0756-14c5-4b76-be4c-6e410dcf03ae
+
+	column Item_No
+		dataType: string
+		lineageTag: 63593831-b461-4e6f-8239-1d0d8ae7bdea
+		summarizeBy: none
+		sourceColumn: Item_No
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 98a92fa6-e9d2-4207-8672-d05d6b4d2b8a
+		summarizeBy: none
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold Dim_BC_NAV_Sold_Items_Aggregation' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_Dim_BC_NAV_Sold_Items_Aggregation = Źródło{[Schema="gold",Item="Dim_BC_NAV_Sold_Items_Aggregation"]}[Data]
+				in
+				    gold_Dim_BC_NAV_Sold_Items_Aggregation
+
+	annotation PBI_ResultType = Table
+

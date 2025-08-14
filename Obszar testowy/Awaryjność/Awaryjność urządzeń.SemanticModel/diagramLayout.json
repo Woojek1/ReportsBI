@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 209,
+            "y": 322
+          },
+          "nodeIndex": "gold Fact_Items_Failure",
+          "nodeLineageTag": "78798ab9-819c-42e9-b777-4268112a4b95",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 505,
+            "y": 63
+          },
+          "nodeIndex": "gold Dim_BC_NAV_Sold_Items_Aggregation",
+          "nodeLineageTag": "aa3e0756-14c5-4b76-be4c-6e410dcf03ae",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 980,
+            "y": 442
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "f3e0bbd7-45b6-4400-b608-03c1f42e80d8",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 905,
+            "y": 27
+          },
+          "nodeIndex": "TabelaAwarii",
+          "nodeLineageTag": "a81d8448-c1cc-4dee-beae-fcb69c3dc2f5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 684,
+            "y": 392.5
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "43b699fa-953f-4eb0-8d36-ef3b4ffa6ac2",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

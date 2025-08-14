@@ -1,0 +1,26 @@
+table 'Ilosc miesiecy'
+	lineageTag: 9aa7d54a-9b4e-40a3-9433-3f7838734a1e
+
+	measure 'Ilosc miesiecy — wartość' = SELECTEDVALUE('Ilosc miesiecy'[Ilosc miesiecy], 3)
+		formatString: 0
+		lineageTag: 811457b9-0ee0-4b75-befa-26c8eea6442f
+
+	column 'Ilosc miesiecy'
+		formatString: 0
+		lineageTag: 7dcd88c5-da36-4e0e-b065-e00bf23fef31
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Ilosc miesiecy' = calculated
+		mode: import
+		source = GENERATESERIES(1, 12, 1)
+
+	annotation PBI_Id = dd5f9a38f9074db58303f75005af7312
+

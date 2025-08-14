@@ -1,0 +1,8 @@
+relationship 6815adc4-67ba-67ce-abec-b2cb9fcfc7ab
+	fromColumn: 'gold Fact_Items_Failure'.Item_No_Serviced
+	toColumn: 'gold Dim_BC_NAV_Sold_Items_Aggregation'.Item_No
+
+relationship 6201dcc1-b750-4ee7-23ee-4af30c561274
+	fromColumn: 'gold Fact_Items_Failure'.Sale_Date
+	toColumn: Calendar.Date
+

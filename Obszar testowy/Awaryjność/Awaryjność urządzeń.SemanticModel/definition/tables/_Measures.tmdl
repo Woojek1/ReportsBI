@@ -1,0 +1,42 @@
+table _Measures
+	lineageTag: f3e0bbd7-45b6-4400-b608-03c1f42e80d8
+
+	measure Failure_Ratio = ```
+			
+			DIVIDE(
+			    COUNTROWS ( RELATEDTABLE ( 'gold Fact_Items_Failure' ) ),
+			    SUM ( 'gold Dim_BC_NAV_Sold_Items_Aggregation'[Quantity] )
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b944987a-1323-4dfb-81b2-2548d0dcf1d6
+
+	measure Failure_Quantity = ```
+			
+			    COUNTROWS( 'gold Fact_Items_Failure' )
+			```
+		formatString: 0
+		lineageTag: 02881747-e6d8-4491-87aa-ddedaf6075fc
+
+	measure 'Na ile miesiecy wystarczy' =
+			
+			'Ilosc miesiecy'[Ilosc miesiecy — wartość] * 2
+		formatString: 0
+		lineageTag: 130d8811-376d-449b-9979-64fefead6bbc
+
+	column Value
+		formatString: 0
+		lineageTag: 8ac1f37a-a714-4d99-ae79-e7fe81f16447
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = 5a8a7a59f2984533a1319b14df140156
+

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "181432b73c88a6710727",
+  "displayName": "Zapotrzebowanie",
+  "displayOption": "ActualSize",
+  "height": 1080,
+  "width": 1920
+}

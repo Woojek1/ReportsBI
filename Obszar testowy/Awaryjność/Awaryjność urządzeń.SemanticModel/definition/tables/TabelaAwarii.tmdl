@@ -1,0 +1,85 @@
+table TabelaAwarii
+	lineageTag: a81d8448-c1cc-4dee-beae-fcb69c3dc2f5
+
+	column Item_No_Serviced
+		lineageTag: 4eb879e7-9ef3-4b90-9a0f-66ef3ae8440b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Item_No_Serviced]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Failure_Date
+		formatString: General Date
+		lineageTag: 5ac79058-92a9-4bec-8491-25561bfb4967
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Failure_Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sale_Date
+		formatString: General Date
+		lineageTag: f56f6fe8-dd40-46e9-a3a7-f300e311e5de
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Sale_Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time_To_Failure (month)'
+		lineageTag: d01848f5-fa82-4961-9308-3d81b59b7465
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Time_To_Failure (month)]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Serial_No_Serviced
+		lineageTag: 023110ff-f86b-4076-8907-f042f78acc2e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Serial_No_Serviced]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Failure_Rank
+		formatString: 0
+		lineageTag: 702ad587-8af1-4f47-a0db-c51d30dbd288
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Failure_Rank]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TabelaAwarii = calculated
+		mode: import
+		source = ```
+				
+				SELECTCOLUMNS(
+				    ADDCOLUMNS(
+				        'gold Fact_Items_Failure',
+				        "Failure_Rank",
+				            ROWNUMBER(
+				                PARTITIONBY('gold Fact_Items_Failure'[Item_No_Serviced]),
+				                ORDERBY(
+				                    'gold Fact_Items_Failure'[Failure_Date], ASC,
+				                    'gold Fact_Items_Failure'[Serial_No_Serviced], ASC   -- tie-breaker
+				                ),
+				                SKIP
+				            )
+				    ),
+				    "Item_No_Serviced", [Item_No_Serviced],
+				    "Failure_Date", [Failure_Date],
+				    "Sale_Date", [Sale_Date],
+				    "Time_To_Failure (month)", [Time_To_Failure (month)],
+				    "Serial_No_Serviced", [Serial_No_Serviced],
+				    "Failure_Rank", [Failure_Rank]
+				)
+				
+				```
+
+	annotation PBI_Id = c6b1c9fcb84b4310a0d81f4f531f5861
+

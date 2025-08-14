@@ -1,0 +1,133 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "0be686c8d0c02288894a",
+  "position": {
+    "x": 48.000000000000007,
+    "y": 144,
+    "z": 0,
+    "height": 800,
+    "width": 880
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Item_No_Serviced"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
+              "nativeQueryRef": "Item_No_Serviced"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Failure_Date"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Failure_Date",
+              "nativeQueryRef": "Failure_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Sale_Date"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Sale_Date",
+              "nativeQueryRef": "Sale_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Time_To_Failure (month)"
+                }
+              },
+              "queryRef": "Sum(gold Fact_Items_Failure.Time_To_Failure (month))",
+              "nativeQueryRef": "Time_To_Failure (month)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold Fact_Items_Failure"
+                    }
+                  },
+                  "Property": "Serial_No_Serviced"
+                }
+              },
+              "queryRef": "gold Fact_Items_Failure.Serial_No_Serviced",
+              "nativeQueryRef": "Serial_No_Serviced"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "gold Fact_Items_Failure"
+                      }
+                    },
+                    "Property": "Time_To_Failure (month)"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "197.8360884781658D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(gold Fact_Items_Failure.Time_To_Failure (month))"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
