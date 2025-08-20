@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "433d7b5f2564803d2da4",
+  "name": "f2c8ccfb4026a1c23a87",
   "position": {
-    "x": 345.86255726780507,
+    "x": 1024,
     "y": 32,
-    "z": 2000,
-    "height": 95.999999999999986,
+    "z": 5000,
+    "height": 112,
     "width": 256,
-    "tabOrder": 1000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "gold Fact_Items_Failure"
                     }
                   },
-                  "Property": "Base_Group_B_Serviced"
+                  "Property": "Base_GroupB"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_Group_B_Serviced",
-              "nativeQueryRef": "Base_Group_B_Serviced",
+              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
+              "nativeQueryRef": "Base_GroupB",
               "active": true
             }
           ]
@@ -48,19 +48,6 @@
           }
         }
       ],
-      "header": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "selection": [
         {
           "properties": {
@@ -75,6 +62,33 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
                 }
               }
             }
@@ -132,6 +146,19 @@
             }
           }
         }
+      ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -141,7 +168,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Serwisowane urządzenie (Grupa B)'"
+                  "Value": "'Część zamienna (Grupa B)'"
                 }
               }
             },
@@ -186,6 +213,19 @@
           }
         }
       ],
+      "spacing": [
+        {
+          "properties": {
+            "verticalSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
       "background": [
         {
           "properties": {
@@ -211,6 +251,26 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
                 }
               }
             }
@@ -298,6 +358,20 @@
       "visualHeader": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
             "foreground": {
               "solid": {
                 "color": {
@@ -306,6 +380,20 @@
                       "Value": "'#0D5272'"
                     }
                   }
+                }
+              }
+            },
+            "showTooltipButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showSmartNarrativeButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -328,43 +416,10 @@
             }
           }
         }
-      ],
-      "spacing": [
-        {
-          "properties": {
-            "verticalSpacing": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "padding": [
-        {
-          "properties": {
-            "top": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "bottom": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "syncGroup": {
-      "groupName": "Base_Group_B_Serviced",
+      "groupName": "Base_GroupB",
       "fieldChanges": true,
       "filterChanges": true
     },

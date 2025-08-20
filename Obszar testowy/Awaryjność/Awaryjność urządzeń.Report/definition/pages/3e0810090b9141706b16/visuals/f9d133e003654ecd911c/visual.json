@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "9643801524ad99d6e8b4",
+  "name": "f9d133e003654ecd911c",
   "position": {
-    "x": 1024,
-    "y": 160,
-    "z": 4000,
-    "height": 96,
+    "x": 1328,
+    "y": 32,
+    "z": 6000,
+    "height": 112,
     "width": 256,
-    "tabOrder": 1000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "gold Fact_Items_Failure"
                     }
                   },
-                  "Property": "Base_GroupB"
+                  "Property": "No"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
-              "nativeQueryRef": "Base_GroupB",
+              "queryRef": "gold Fact_Items_Failure.No",
+              "nativeQueryRef": "No",
               "active": true
             }
           ]
@@ -168,7 +168,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Część zamienna (Grupa B)'"
+                  "Value": "'Część zamienna (Symbol)'"
                 }
               }
             },
@@ -419,7 +419,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "Base_GroupB",
+      "groupName": "No",
       "fieldChanges": true,
       "filterChanges": true
     },

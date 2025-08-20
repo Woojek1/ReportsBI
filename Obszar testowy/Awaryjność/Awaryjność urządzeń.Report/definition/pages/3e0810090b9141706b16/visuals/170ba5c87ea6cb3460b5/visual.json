@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "53abec9f8e804666c0b0",
+  "name": "170ba5c87ea6cb3460b5",
   "position": {
-    "x": 57.862557267805094,
+    "x": 352,
     "y": 32,
-    "z": 1000,
-    "height": 96,
-    "width": 256
+    "z": 2000,
+    "height": 112,
+    "width": 256,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -22,11 +23,11 @@
                       "Entity": "gold Fact_Items_Failure"
                     }
                   },
-                  "Property": "Base_Group_A_Serviced"
+                  "Property": "Base_Group_B_Serviced"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_Group_A_Serviced",
-              "nativeQueryRef": "Base_Group_A_Serviced",
+              "queryRef": "gold Fact_Items_Failure.Base_Group_B_Serviced",
+              "nativeQueryRef": "Base_Group_B_Serviced",
               "active": true
             }
           ]
@@ -47,64 +48,27 @@
           }
         }
       ],
-      "general": [
+      "header": [
         {
           "properties": {
-            "selfFilterEnabled": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "selfFilter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "g",
-                    "Entity": "gold Fact_Items_Failure",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Contains": {
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "g"
-                              }
-                            },
-                            "Property": "Base_Group_A_Serviced"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "'b2'"
-                          }
-                        }
-                      }
-                    },
-                    "Annotations": {
-                      "PowerBI.MParameterBehavior": 1
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ],
-      "header": [
-        {
-          "properties": {
-            "show": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "10D"
                 }
               }
             }
@@ -153,17 +117,43 @@
                 }
               }
             },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
             "padding": {
               "expr": {
                 "Literal": {
                   "Value": "3D"
                 }
               }
-            },
-            "outlineStyle": {
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -175,6 +165,13 @@
       "title": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Serwisowane urządzenie (Grupa B)'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -182,10 +179,10 @@
                 }
               }
             },
-            "text": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "'Serwisowane urządzenie (Grupa A)'"
+                  "Value": "true"
                 }
               }
             },
@@ -216,7 +213,7 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {
@@ -226,10 +223,34 @@
                 }
               }
             },
-            "radius": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -244,17 +265,132 @@
                   }
                 }
               }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
             }
           }
         }
       ],
-      "background": [
+      "visualTooltip": [
+        {
+          "properties": {
+            "actionFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0D5272'"
+                    }
+                  }
+                }
+              }
+            },
+            "themedTitleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            },
+            "themedValueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "foreground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0D5272'"
+                    }
+                  }
+                }
+              }
+            },
+            "showTooltipButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showSmartNarrativeButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeaderTooltip": [
+        {
+          "properties": {
+            "themedTitleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "verticalSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
                 }
               }
             }
@@ -280,23 +416,10 @@
             }
           }
         }
-      ],
-      "spacing": [
-        {
-          "properties": {
-            "verticalSpacing": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "syncGroup": {
-      "groupName": "Base_Group_A_Serviced",
+      "groupName": "Base_Group_B_Serviced",
       "fieldChanges": true,
       "filterChanges": true
     },

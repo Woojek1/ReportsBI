@@ -19,12 +19,6 @@ table _Measures
 		formatString: #,0
 		lineageTag: 02881747-e6d8-4491-87aa-ddedaf6075fc
 
-	measure 'Na ile miesiecy wystarczy' =
-			
-			'Ilosc miesiecy'[Ilosc miesiecy — wartość] * 2
-		formatString: 0
-		lineageTag: 130d8811-376d-449b-9979-64fefead6bbc
-
 	column Value
 		formatString: 0
 		lineageTag: 8ac1f37a-a714-4d99-ae79-e7fe81f16447

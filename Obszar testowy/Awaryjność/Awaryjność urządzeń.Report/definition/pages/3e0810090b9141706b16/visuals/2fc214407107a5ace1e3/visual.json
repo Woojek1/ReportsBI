@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "9643801524ad99d6e8b4",
+  "name": "2fc214407107a5ace1e3",
   "position": {
-    "x": 1024,
-    "y": 160,
-    "z": 4000,
-    "height": 96,
+    "x": 656,
+    "y": 32,
+    "z": 3000,
+    "height": 112,
     "width": 256,
-    "tabOrder": 1000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "gold Fact_Items_Failure"
                     }
                   },
-                  "Property": "Base_GroupB"
+                  "Property": "Item_No_Serviced"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
-              "nativeQueryRef": "Base_GroupB",
+              "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
+              "nativeQueryRef": "Item_No_Serviced",
               "active": true
             }
           ]
@@ -42,6 +42,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -71,6 +84,13 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -85,10 +105,10 @@
                 }
               }
             },
-            "text": {
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "''"
+                  "Value": "1D"
                 }
               }
             }
@@ -134,19 +154,6 @@
           }
         }
       ],
-      "general": [
-        {
-          "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
       "pendingChangesIcon": [
         {
           "properties": {
@@ -168,7 +175,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Część zamienna (Grupa B)'"
+                  "Value": "'Serwisowane urządzenie (Symbol)'"
                 }
               }
             },
@@ -419,7 +426,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "Base_GroupB",
+      "groupName": "Item_No_Serviced",
       "fieldChanges": true,
       "filterChanges": true
     },

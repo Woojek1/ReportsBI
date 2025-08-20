@@ -33,6 +33,8 @@ table 'gold Fact_Items_Failure'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"gold Fact_Items_Failure","TableItemName":"Time_To_Failure (month) grupowanie","ObjectType":4},"LinkType":"UsedInGroup"}]
+
 	column Service_Order_No
 		dataType: string
 		lineageTag: be7ae229-6bb7-4e18-b4ee-fe3ef0587fa0
@@ -120,6 +122,49 @@ table 'gold Fact_Items_Failure'
 		sourceColumn: Firma
 
 		annotation SummarizationSetBy = Automatic
+
+	column 'Time_To_Failure (month) grupowanie' =
+			IF(
+				ISBLANK('gold Fact_Items_Failure'[Time_To_Failure (month)]),
+				BLANK(),
+				IF(
+					'gold Fact_Items_Failure'[Time_To_Failure (month)] >= 0,
+					ROUNDDOWN('gold Fact_Items_Failure'[Time_To_Failure (month)], 0),
+					ROUNDUP('gold Fact_Items_Failure'[Time_To_Failure (month)], 0)
+				)
+			)
+		formatString: 0
+		lineageTag: 924f13c2-5337-42d4-817b-5b960d92a20e
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "gold Fact_Items_Failure"
+				          }
+				        },
+				        "Property": "Time_To_Failure (month)"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 1.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"g","Entity":"gold Fact_Items_Failure"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}},"Size":1.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	partition 'gold Fact_Items_Failure' = m
 		mode: import

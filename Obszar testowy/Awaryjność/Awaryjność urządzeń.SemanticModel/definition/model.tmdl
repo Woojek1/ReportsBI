@@ -18,7 +18,7 @@ ref table 'gold Fact_Items_Failure'
 ref table 'gold Dim_BC_NAV_Sold_Items_Aggregation'
 ref table _Measures
 ref table Calendar
-ref table 'Ilosc miesiecy'
+ref table Months
 ref table 'gold zapotrzebowanie_na_czesci'
 
 ref cultureInfo pl-PL

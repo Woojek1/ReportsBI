@@ -12,6 +12,9 @@
     "visualType": "pivotTable",
     "query": {
       "queryState": {
+        "Columns": {
+          "projections": []
+        },
         "Rows": {
           "projections": [
             {
@@ -98,23 +101,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "gold Fact_Items_Failure"
-                  }
-                },
-                "Property": "Base_GroupB"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "expansionStates": [
@@ -1136,6 +1122,766 @@
             ],
             "metadata": "_Measures.Failure_Ratio"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-10-31T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-10-31T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-09T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-09T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-28T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-28T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-30T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2012-11-30T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-01-17T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-01-17T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-01-24T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-01-24T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-05T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-05T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-20T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-20T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-26T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-03-26T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-04-09T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Quantity"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "104D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "gold Fact_Items_Failure"
+                          }
+                        },
+                        "Property": "Failure_Date"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "datetime'2013-04-09T00:00:00'"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "metadata": "_Measures.Failure_Ratio"
+          }
         }
       ],
       "general": [
@@ -1500,6 +2246,20 @@
                       "Value": "'#000000'"
                     }
                   }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'3e0810090b9141706b16'"
                 }
               }
             }

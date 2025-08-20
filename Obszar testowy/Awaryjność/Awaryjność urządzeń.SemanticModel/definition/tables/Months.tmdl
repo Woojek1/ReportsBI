@@ -1,7 +1,7 @@
-table 'Ilosc miesiecy'
+table Months
 	lineageTag: 9aa7d54a-9b4e-40a3-9433-3f7838734a1e
 
-	measure 'Ilosc miesiecy — wartość' = SELECTEDVALUE('Ilosc miesiecy'[Ilosc miesiecy], 3)
+	measure 'Ilosc miesiecy — wartość' = SELECTEDVALUE('Months'[Ilosc miesiecy], 3)
 		formatString: 0
 		lineageTag: 811457b9-0ee0-4b75-befa-26c8eea6442f
 
@@ -18,9 +18,9 @@ table 'Ilosc miesiecy'
 
 		annotation SummarizationSetBy = User
 
-	partition 'Ilosc miesiecy' = calculated
+	partition Months = calculated
 		mode: import
-		source = GENERATESERIES(1, 12, 1)
+		source = GENERATESERIES(1, 12, 3)
 
 	annotation PBI_Id = dd5f9a38f9074db58303f75005af7312
 

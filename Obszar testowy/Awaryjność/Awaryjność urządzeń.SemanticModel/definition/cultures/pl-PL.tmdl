@@ -1884,22 +1884,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "entity__measure.na_ile_miesiecy_wystarczy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Na ile miesiecy wystarczy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "na ile miesiecy wystarczy": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "calendar": {
 			      "Definition": {
 			        "Binding": {
@@ -2025,7 +2009,7 @@ cultureInfo pl-PL
 			    "ilosc_miesiecy": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Ilosc miesiecy"
+			          "ConceptualEntity": "Months"
 			        }
 			      },
 			      "State": "Generated",
@@ -2041,7 +2025,7 @@ cultureInfo pl-PL
 			    "ilosc_miesiecy.ilosc_miesiecy": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Ilosc miesiecy",
+			          "ConceptualEntity": "Months",
 			          "ConceptualProperty": "Ilosc miesiecy"
 			        }
 			      },
@@ -2057,7 +2041,7 @@ cultureInfo pl-PL
 			    "ilosc_miesiecy.ilosc_miesiecy__wartość": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Ilosc miesiecy",
+			          "ConceptualEntity": "Months",
 			          "ConceptualProperty": "Ilosc miesiecy — wartość"
 			        }
 			      },
@@ -2508,6 +2492,42 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
+			    },
+			    "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Time_To_Failure (month) grupowanie"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Time_To_Failure (month) grupowanie": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time_to_failure ( mth ) grupowanie": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "Czas do awarii": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -2554,6 +2574,39 @@ cultureInfo pl-PL
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_gold_Fact_Items_Failures"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_Time_To_Failure_month_grupowanie": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_Time_To_Failure_month_grupowanies"
 			        }
 			      ]
 			    },
@@ -2790,7 +2843,7 @@ cultureInfo pl-PL
 			    },
 			    "ilosc_miesiecy_has_ilosc_miesiecy__wartość": {
 			      "Binding": {
-			        "ConceptualEntity": "Ilosc miesiecy"
+			        "ConceptualEntity": "Months"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2823,7 +2876,7 @@ cultureInfo pl-PL
 			    },
 			    "ilosc_miesiecy_has_ilosc_miesiecy": {
 			      "Binding": {
-			        "ConceptualEntity": "Ilosc miesiecy"
+			        "ConceptualEntity": "Months"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -2889,7 +2942,7 @@ cultureInfo pl-PL
 			    },
 			    "ilosc_miesiecy_has_entity__measure_na_ile_miesiecy_wystarczy": {
 			      "Binding": {
-			        "ConceptualEntity": "Ilosc miesiecy"
+			        "ConceptualEntity": "Months"
 			      },
 			      "State": "Generated",
 			      "Roles": {
