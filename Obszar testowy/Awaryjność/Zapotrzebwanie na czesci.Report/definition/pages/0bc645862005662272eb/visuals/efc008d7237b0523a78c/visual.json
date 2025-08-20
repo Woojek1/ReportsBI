@@ -1,0 +1,248 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "efc008d7237b0523a78c",
+  "position": {
+    "x": 96,
+    "y": 168,
+    "z": 0,
+    "height": 376,
+    "width": 1128,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold zapotrzebowanie_na_czesci"
+                    }
+                  },
+                  "Property": "Base_GroupB"
+                }
+              },
+              "queryRef": "gold zapotrzebowanie_na_czesci.Base_GroupB",
+              "nativeQueryRef": "Base_GroupB"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold zapotrzebowanie_na_czesci"
+                        }
+                      },
+                      "Property": "Ilosc_awarii"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(gold zapotrzebowanie_na_czesci.Ilosc_awarii)",
+              "nativeQueryRef": "Suma elementów Ilosc_awarii"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold zapotrzebowanie_na_czesci"
+                        }
+                      },
+                      "Property": "Sold_quantity"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(gold zapotrzebowanie_na_czesci.Sold_quantity)",
+              "nativeQueryRef": "Suma elementów Sold_quantity"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold zapotrzebowanie_na_czesci"
+                    }
+                  },
+                  "Property": "Awaryjność"
+                }
+              },
+              "queryRef": "gold zapotrzebowanie_na_czesci.Awaryjność",
+              "nativeQueryRef": "Awaryjność"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold zapotrzebowanie_na_czesci"
+                    }
+                  },
+                  "Property": "Zapotrzebowanie na częsci"
+                }
+              },
+              "queryRef": "gold zapotrzebowanie_na_czesci.Zapotrzebowanie na częsci",
+              "nativeQueryRef": "Zapotrzebowanie na częsci"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold zapotrzebowanie_na_czesci"
+                    }
+                  },
+                  "Property": "Prawdopodobieństwo awarii"
+                }
+              },
+              "queryRef": "gold zapotrzebowanie_na_czesci.Prawdopodobieństwo awarii",
+              "nativeQueryRef": "Prawdopodobieństwo awarii"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold zapotrzebowanie_na_czesci"
+                  }
+                },
+                "Property": "Base_GroupB"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Wybierz urządzenie\n'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9487b68d20c54e01602b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold zapotrzebowanie_na_czesci"
+              }
+            },
+            "Property": "Base_GroupB"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "33c6ee6371e607ac4687",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold zapotrzebowanie_na_czesci"
+                  }
+                },
+                "Property": "Ilosc_awarii"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "52609a3590e80d7077e0",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold zapotrzebowanie_na_czesci"
+                  }
+                },
+                "Property": "Sold_quantity"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f7edc00076b94032822a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold zapotrzebowanie_na_czesci"
+              }
+            },
+            "Property": "Awaryjność"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7556c2467a9430007743",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold zapotrzebowanie_na_czesci"
+              }
+            },
+            "Property": "Zapotrzebowanie na częsci"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3df9945aac624071d02c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold zapotrzebowanie_na_czesci"
+              }
+            },
+            "Property": "Prawdopodobieństwo awarii"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

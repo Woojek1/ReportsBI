@@ -11,20 +11,20 @@
         {
           "location": {
             "x": 209,
-            "y": 322
+            "y": 400.75
           },
           "nodeIndex": "gold Fact_Items_Failure",
           "nodeLineageTag": "78798ab9-819c-42e9-b777-4268112a4b95",
           "size": {
-            "height": 300,
-            "width": 234
+            "height": 478.98530969933972,
+            "width": 336.88131974843941
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
             "x": 505,
-            "y": 63
+            "y": 141.75
           },
           "nodeIndex": "gold Dim_BC_NAV_Sold_Items_Aggregation",
           "nodeLineageTag": "aa3e0756-14c5-4b76-be4c-6e410dcf03ae",
@@ -32,12 +32,12 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
             "x": 980,
-            "y": 442
+            "y": 520.75
           },
           "nodeIndex": "_Measures",
           "nodeLineageTag": "f3e0bbd7-45b6-4400-b608-03c1f42e80d8",
@@ -45,25 +45,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 905,
-            "y": 27
-          },
-          "nodeIndex": "TabelaAwarii",
-          "nodeLineageTag": "a81d8448-c1cc-4dee-beae-fcb69c3dc2f5",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
             "x": 684,
-            "y": 392.5
+            "y": 471.25
           },
           "nodeIndex": "Calendar",
           "nodeLineageTag": "43b699fa-953f-4eb0-8d36-ef3b4ffa6ac2",
@@ -71,11 +58,37 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1429.8826171655462,
+            "y": 126.59135045402158
+          },
+          "nodeIndex": "Ilosc miesiecy",
+          "nodeLineageTag": "9aa7d54a-9b4e-40a3-9433-3f7838734a1e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 9.5801479450781244,
+            "y": 80.272684159543843
+          },
+          "nodeIndex": "gold zapotrzebowanie_na_czesci",
+          "nodeLineageTag": "fa45bbee-859e-439a-ba6c-204d97691817",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 4
         }
       ],
       "name": "Wszystkie tabele",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

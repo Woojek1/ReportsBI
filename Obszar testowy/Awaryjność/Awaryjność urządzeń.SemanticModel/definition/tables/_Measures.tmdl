@@ -16,7 +16,7 @@ table _Measures
 			
 			    COUNTROWS( 'gold Fact_Items_Failure' )
 			```
-		formatString: 0
+		formatString: #,0
 		lineageTag: 02881747-e6d8-4491-87aa-ddedaf6075fc
 
 	measure 'Na ile miesiecy wystarczy' =

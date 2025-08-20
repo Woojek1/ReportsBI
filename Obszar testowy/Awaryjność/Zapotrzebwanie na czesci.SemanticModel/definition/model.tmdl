@@ -1,0 +1,21 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.146.705.0 (25.08)+b71502aff0a01340c88f384884ef42771068f115
+
+annotation PBI_QueryOrder = ["gold zapotrzebowanie_na_czesci"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'gold zapotrzebowanie_na_czesci'
+ref table Miesiace
+
+ref cultureInfo pl-PL
+

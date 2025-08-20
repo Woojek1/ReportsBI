@@ -1,0 +1,26 @@
+table Miesiace
+	lineageTag: 6b5f924a-9489-45e2-8c90-747697143752
+
+	measure 'Miesiace — wartość' = SELECTEDVALUE('Miesiace'[Miesiace], 3)
+		formatString: 0
+		lineageTag: dd9edd71-2e03-4a6e-b983-eaf1312cdb34
+
+	column Miesiace
+		formatString: 0
+		lineageTag: 23610335-352f-437d-97ec-4cf23c60fda4
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition Miesiace = calculated
+		mode: import
+		source = GENERATESERIES(1, 12, 1)
+
+	annotation PBI_Id = 6fa20452476749028cb8d64ed8169f4f
+

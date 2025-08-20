@@ -2,8 +2,3698 @@ cultureInfo pl-PL
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "gold_Fact_Items_Failure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold Fact_Items_Failure": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.failure_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Failure_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "failure moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "failure period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "gold_Fact_Items_Failure.sale_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Sale_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sale date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sale_Date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "sale moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sale period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "gold_Fact_Items_Failure.time_to_failure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Time_To_Failure (month)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time to failure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time to failure (month)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Time_To_Failure (month)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duration to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "interval to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "moment to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "period to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "timetable to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "time_to_failure ( mth )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "month"
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.service_order_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Service_Order_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service order no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Service_Order_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "order no": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "service order number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "order number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "maintenance order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "examination order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "svc order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "package order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "repair order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "benefit order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "servicing order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.bill_to_customer_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Bill_to_Customer_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bill to customer no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Bill_to_Customer_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bill to client no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to consumer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to user no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to buyer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to patron no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to purchaser no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to shopper no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to customer number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "beak to customer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "mandible to customer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.service_item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Service_Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Service_Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "service item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "maintenance item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "examination item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "svc item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "package item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "repair item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "benefit item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "article no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "object no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "piece no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "token no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Serwisowane urządzenie (Symbol)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.serial_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Serial_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serial no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Serial_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "serial number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.base_group_A_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Base_Group_A_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group A serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_Group_A_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "base category a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base organization a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base bracket a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base class a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base crew a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base team a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Serwisowane urządzenie (Grupa A)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.base_group_B_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Base_Group_B_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_Group_B_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "base category b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "base organization b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "base bracket b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base class b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base crew b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base team b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Serwisowane urządzenie (Grupa B)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Część zamienna (Symbol)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.base_group_A": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Base_GroupA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group A": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "group A": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "base organization a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "category a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "organization a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "base bracket a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base class a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base crew a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base team a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "bracket a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.base_group_B": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Base_GroupB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "group B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "base organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "base bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base crew b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base team b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Część zamienna (Grupa B)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure.firma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualProperty": "Firma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "firma": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold Dim_BC_NAV_Sold_Items_Aggregation": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation",
+			          "ConceptualProperty": "Item_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "item no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "product no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "element no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "entry no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "article no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "object no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "piece no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "token no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation",
+			          "ConceptualProperty": "Quantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.failure_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Failure_Ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure ratio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Ratio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "failure relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "failure proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure fraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Awaryjność%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.failure_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Failure_Quantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Quantity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "failure extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Ilość awarii": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.na_ile_miesiecy_wystarczy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Na ile miesiecy wystarczy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "na ile miesiecy wystarczy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "schedule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "ilosc_miesiecy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ilosc miesiecy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilosc miesiecy": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "ilosc_miesiecy.ilosc_miesiecy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ilosc miesiecy",
+			          "ConceptualProperty": "Ilosc miesiecy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilosc miesiecy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ilosc_miesiecy.ilosc_miesiecy__wartość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Ilosc miesiecy",
+			          "ConceptualProperty": "Ilosc miesiecy — wartość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilosc miesiecy — wartość": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold zapotrzebowanie_na_czesci": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "article no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "object no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "piece no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "token no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.base_group_B": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "Base_GroupB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "group B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "base organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "base bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base crew b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base team b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.a_wsp__kierunkowy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "a (wsp. kierunkowy)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "a (wsp. kierunkowy)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "a": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.b_wyraz_wolny": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "b (wyraz wolny)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "b (wyraz wolny)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "b": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.eta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "eta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "eta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.sold_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "Sold_quantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sold quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sold_quantity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sold extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sold magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sold amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sold number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sold measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sold size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sold capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sold mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci.ilosc_awarii": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold zapotrzebowanie_na_czesci",
+			          "ConceptualProperty": "Ilosc_awarii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilosc awarii": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ilosc_awarii": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "gold_Fact_Items_Failure_has_gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_gold_Dim_BC_NAV_Sold_Items_Aggregations"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_gold_Fact_Items_Failures"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_ilosc_awarii": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.ilosc_awarii": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.ilosc_awarii"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.ilosc_awarii"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_ilosc_awariis"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_sold_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.sold_quantity": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.sold_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.sold_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_sold_quantities"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_eta": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.eta": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.eta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.eta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_etas"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_b_wyraz_wolny": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.b_wyraz_wolny": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.b_wyraz_wolny"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.b_wyraz_wolny"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_b_wyraz_wolny"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_a_wsp__kierunkowy": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.a_wsp__kierunkowy": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.a_wsp__kierunkowy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.a_wsp__kierunkowy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_a_wsp__kierunkowy"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_base_group_B": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.base_group_B": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.base_group_B"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.base_group_B"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_base_group_B"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_item_no_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci.item_no_serviced": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci.item_no_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci.item_no_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_item_no_serviced"
+			        }
+			      ]
+			    },
+			    "ilosc_miesiecy_has_ilosc_miesiecy__wartość": {
+			      "Binding": {
+			        "ConceptualEntity": "Ilosc miesiecy"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ilosc_miesiecy": {
+			          "Target": {
+			            "Entity": "ilosc_miesiecy"
+			          }
+			        },
+			        "ilosc_miesiecy.ilosc_miesiecy__wartość": {
+			          "Target": {
+			            "Entity": "ilosc_miesiecy.ilosc_miesiecy__wartość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ilosc_miesiecy"
+			            },
+			            "Object": {
+			              "Role": "ilosc_miesiecy.ilosc_miesiecy__wartość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ilosc_miesiecies_have_ilosc_miesiecy__wartość"
+			        }
+			      ]
+			    },
+			    "ilosc_miesiecy_has_ilosc_miesiecy": {
+			      "Binding": {
+			        "ConceptualEntity": "Ilosc miesiecy"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ilosc_miesiecy": {
+			          "Target": {
+			            "Entity": "ilosc_miesiecy"
+			          }
+			        },
+			        "ilosc_miesiecy.ilosc_miesiecy": {
+			          "Target": {
+			            "Entity": "ilosc_miesiecy.ilosc_miesiecy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ilosc_miesiecy"
+			            },
+			            "Object": {
+			              "Role": "ilosc_miesiecy.ilosc_miesiecy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ilosc_miesiecies_have_ilosc_miesiecies"
+			        }
+			      ]
+			    },
+			    "calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "ilosc_miesiecy_has_entity__measure_na_ile_miesiecy_wystarczy": {
+			      "Binding": {
+			        "ConceptualEntity": "Ilosc miesiecy"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ilosc_miesiecy": {
+			          "Target": {
+			            "Entity": "ilosc_miesiecy"
+			          }
+			        },
+			        "entity__measure.na_ile_miesiecy_wystarczy": {
+			          "Target": {
+			            "Entity": "entity__measure.na_ile_miesiecy_wystarczy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ilosc_miesiecy"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.na_ile_miesiecy_wystarczy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ilosc_miesiecies_have_na_ile_miesiecy_wystarczy"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_entity__measure_failure_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "entity__measure.failure_quantity": {
+			          "Target": {
+			            "Entity": "entity__measure.failure_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.failure_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_failure_quantity"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_entity__measure_failure_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "entity__measure.failure_ratio": {
+			          "Target": {
+			            "Entity": "entity__measure.failure_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.failure_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_failure_ratio"
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_entity__measure_failure_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			          }
+			        },
+			        "entity__measure.failure_ratio": {
+			          "Target": {
+			            "Entity": "entity__measure.failure_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.failure_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_failure_ratio"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.value": {
+			          "Target": {
+			            "Entity": "entity__measure.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_values"
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			          }
+			        },
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            },
+			            "Object": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_quantities"
+			        }
+			      ]
+			    },
+			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_item_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			          }
+			        },
+			        "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no": {
+			          "Target": {
+			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            },
+			            "Object": {
+			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_item_noes"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_firma": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.firma": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.firma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.firma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_firma"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_base_group_B": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.base_group_B": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.base_group_B"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.base_group_B"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_base_group_B"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_base_group_A": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.base_group_A": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.base_group_A"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.base_group_A"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_base_group_A"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Verbs": [
+			              {
+			                "group": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "A": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "gold_Fact_Items_Failure.base_group_A"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "gold_Fact_Items_Failures_group_A_base_group_A"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.no": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_noes"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_base_group_B_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.base_group_B_serviced": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.base_group_B_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.base_group_B_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_base_group_B_serviced"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_base_group_A_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.base_group_A_serviced": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.base_group_A_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.base_group_A_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_base_group_A_serviced"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_serial_no_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.serial_no_serviced": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.serial_no_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.serial_no_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_serial_no_serviced"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_service_item_no_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.service_item_no_serviced": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.service_item_no_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.service_item_no_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_service_item_no_serviced"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_bill_to_customer_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.bill_to_customer_no": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.bill_to_customer_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.bill_to_customer_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_bill_to_customer_no"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Verbs": [
+			              {
+			                "bill": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "to": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "gold_Fact_Items_Failure.bill_to_customer_no"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "gold_Fact_Items_Failures_bill_to_bill_to_customer_no"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_service_order_no": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.service_order_no": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.service_order_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.service_order_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_service_order_noes"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_time_to_failure": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.time_to_failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.time_to_failure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.time_to_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_time_to_failure"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_sale_date": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.sale_date": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.sale_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.sale_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_sale_dates"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_failure_date": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_Fact_Items_Failure.failure_date": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure.failure_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure.failure_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_failure_dates"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "gold_Fact_Items_Failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_gold_Fact_Items_Failures"
+			        }
+			      ]
+			    },
+			    "gold_Fact_Items_Failure_has_gold_zapotrzebowanie_na_czesci": {
+			      "Binding": {
+			        "ConceptualEntity": "gold Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_Fact_Items_Failure": {
+			          "Target": {
+			            "Entity": "gold_Fact_Items_Failure"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_Fact_Items_Failure"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_Fact_Items_Failures_have_gold_zapotrzebowanie_na_czescis"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 
