@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Ecom Aktywność klientów"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5d09b2c9-19ac-449d-bdb0-90fa56f8e866"
+  }
+}

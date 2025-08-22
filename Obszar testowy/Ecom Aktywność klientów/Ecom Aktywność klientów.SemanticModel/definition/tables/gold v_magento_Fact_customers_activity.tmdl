@@ -1,0 +1,78 @@
+table 'gold v_magento_Fact_customers_activity'
+	lineageTag: 9830caaa-9095-4011-a793-67332962c467
+
+	column sku
+		dataType: string
+		lineageTag: 15ee813f-8b7b-4e59-91b5-af2548c815ba
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column zdarzenie
+		dataType: string
+		lineageTag: bd07cc49-e6e6-4f35-9af3-8b0a2a4a7ca2
+		summarizeBy: none
+		sourceColumn: zdarzenie
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: string
+		lineageTag: a6245987-ed27-422c-b5cd-27c7bb5e0309
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+	column nip
+		dataType: string
+		lineageTag: 053f3183-d1ac-49cb-95f3-5d09a7e07097
+		summarizeBy: none
+		sourceColumn: nip
+
+		annotation SummarizationSetBy = Automatic
+
+	column nazwa
+		dataType: string
+		lineageTag: fbf6525b-f2b8-4ad4-b463-a926d5f61d97
+		summarizeBy: none
+		sourceColumn: nazwa
+
+		annotation SummarizationSetBy = Automatic
+
+	column telefon
+		dataType: string
+		lineageTag: b844160f-6307-4477-bfe2-a1cee7050afa
+		summarizeBy: none
+		sourceColumn: telefon
+
+		annotation SummarizationSetBy = Automatic
+
+	column miasto
+		dataType: string
+		lineageTag: d261d9cb-6bba-44d5-bc15-46ea72ec574b
+		summarizeBy: none
+		sourceColumn: miasto
+
+		annotation SummarizationSetBy = Automatic
+
+	column wojewodztwo
+		dataType: string
+		lineageTag: 60ba5bca-67c5-4f0f-94a0-246b304ee7ca
+		summarizeBy: none
+		sourceColumn: wojewodztwo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_magento_Fact_customers_activity' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_magento_Fact_customers_activity = Źródło{[Schema="gold",Item="v_magento_Fact_customers_activity"]}[Data]
+				in
+				    gold_v_magento_Fact_customers_activity
+
+	annotation PBI_ResultType = Table
+

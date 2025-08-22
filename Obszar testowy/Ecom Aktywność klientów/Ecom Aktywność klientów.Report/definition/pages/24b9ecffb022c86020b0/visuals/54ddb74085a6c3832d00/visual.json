@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "54ddb74085a6c3832d00",
+  "position": {
+    "x": 640,
+    "y": 16,
+    "z": 3,
+    "height": 72,
+    "width": 304,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "wojewodztwo"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.wojewodztwo",
+              "nativeQueryRef": "wojewodztwo",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8aa2aad7e683279c800d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "wojewodztwo"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

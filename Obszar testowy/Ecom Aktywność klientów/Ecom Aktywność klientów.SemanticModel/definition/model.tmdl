@@ -1,0 +1,20 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_QueryOrder = ["gold v_magento_Fact_customers_activity"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'gold v_magento_Fact_customers_activity'
+
+ref cultureInfo pl-PL
+

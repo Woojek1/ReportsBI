@@ -1,0 +1,251 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "40c8bb60de18e0060d5b",
+  "position": {
+    "x": 8,
+    "y": 88,
+    "z": 0,
+    "height": 616,
+    "width": 1256
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "sku"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.sku",
+              "nativeQueryRef": "sku"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "zdarzenie"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.zdarzenie",
+              "nativeQueryRef": "zdarzenie"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "data"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.data",
+              "nativeQueryRef": "data"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "nip"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.nip",
+              "nativeQueryRef": "nip"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "nazwa"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.nazwa",
+              "nativeQueryRef": "nazwa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "telefon"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.telefon",
+              "nativeQueryRef": "telefon"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "miasto"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.miasto",
+              "nativeQueryRef": "miasto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold v_magento_Fact_customers_activity"
+                    }
+                  },
+                  "Property": "wojewodztwo"
+                }
+              },
+              "queryRef": "gold v_magento_Fact_customers_activity.wojewodztwo",
+              "nativeQueryRef": "wojewodztwo"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2cc83371b1d86b9a0665",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "sku"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b651e29e7303e2761972",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "zdarzenie"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d86536aadb549e1406a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "data"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5f9ca0625c6bc5ec0cdd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "nip"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3a2682f02bb32e6b0699",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "nazwa"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "91f6fd9f08471d7b6690",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "telefon"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cc9dd8acddcadad001a4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "miasto"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c6d98a203a7d2d4ce735",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_magento_Fact_customers_activity"
+              }
+            },
+            "Property": "wojewodztwo"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
