@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 112,
     "width": 256,
-    "tabOrder": 9000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_B_Serviced"
@@ -404,6 +404,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "Base_Group_B_Serviced1",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

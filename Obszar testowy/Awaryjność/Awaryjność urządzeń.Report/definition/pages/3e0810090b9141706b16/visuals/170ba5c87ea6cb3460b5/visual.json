@@ -6,8 +6,7 @@
     "y": 32,
     "z": 2000,
     "height": 112,
-    "width": 256,
-    "tabOrder": 2000
+    "width": 256
   },
   "visual": {
     "visualType": "slicer",
@@ -20,7 +19,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_B_Serviced"

@@ -4,8 +4,15 @@ table _Measures
 	measure Failure_Ratio = ```
 			
 			DIVIDE(
-			    COUNTROWS ( RELATEDTABLE ( 'gold Fact_Items_Failure' ) ),
-			    SUM ( 'gold Dim_BC_NAV_Sold_Items_Aggregation'[Quantity] )
+			    COUNTROWS('Fact_Items_Failure'),
+			    SUMX(
+			    SUMMARIZE(
+			        'Fact_Items_Failure',
+			        'Fact_Items_Failure'[Item_No_Serviced],
+			        "SoldPerItem", MAX('Fact_Items_Failure'[Total_Sold])
+			    ),
+			    [SoldPerItem]
+			)
 			)
 			
 			```
@@ -14,12 +21,205 @@ table _Measures
 
 	measure Failure_Quantity = ```
 			
-			    COUNTROWS( 'gold Fact_Items_Failure' )
+			    COUNTROWS('Fact_Items_Failure')
 			```
 		formatString: #,0
 		lineageTag: 02881747-e6d8-4491-87aa-ddedaf6075fc
 
+	measure 'Sold_Quantity (Item_No_Serviced)' =
+			
+			SUMX(
+			    SUMMARIZE(
+			        'Fact_Items_Failure',
+			        'Fact_Items_Failure'[Item_No_Serviced],
+			        "SoldPerItem", MAX('Fact_Items_Failure'[Total_Sold])
+			    ),
+			    [SoldPerItem]
+			)
+		formatString: #,0
+		lineageTag: adbfa84f-02a9-44e4-8947-d494d53ae35b
+
+	measure 'Sold_Quantity (Base_GroupB)' =
+			
+			MAXX(
+			    SUMMARIZE(
+			        'Fact_Items_Failure',
+			        'Fact_Items_Failure'[Base_GroupB],
+			        "SoldPerItem", MAX('Fact_Items_Failure'[Total_Sold])
+			    ),
+			    [SoldPerItem]
+			)
+		formatString: #,0
+		lineageTag: 0d007313-9702-41b1-8827-6888c7b450d1
+
+	measure 'Prawdopodobieństwo awarii' = ```
+			
+			VAR beta = max('gold zapotrzebowanie_na_czesci'[a (wsp. kierunkowy)])
+			VAR eta =
+			    MAXX(
+			        'gold zapotrzebowanie_na_czesci',
+			        EXP( - 'gold zapotrzebowanie_na_czesci'[b (wyraz wolny)] /max('gold zapotrzebowanie_na_czesci'[a (wsp. kierunkowy)])
+			    ))
+			    
+			
+			RETURN
+			
+			1 - EXP(
+			    - POWER(
+			        SELECTEDVALUE(Months[Months]) / eta,
+			        beta
+			    )
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 412b3085-6d9d-42eb-b535-3c2feb8a7ea7
+
+	measure 'Weibull Punkty (#)' = ```
+			
+			COUNTROWS ( WeibullData )
+			
+			```
+		formatString: 0
+		displayFolder: Testy
+		lineageTag: beee76f2-098b-4903-a189-918893fa2251
+
+	measure 'Beta (shape) (manual)' =
+			
+			VAR n    = [Weibull Punkty (#)]
+			VAR avgX = AVERAGEX ( WeibullData, WeibullData[X] )
+			VAR avgY = AVERAGEX ( WeibullData, WeibullData[Y] )
+			VAR num  = SUMX ( WeibullData, (WeibullData[X]-avgX) * (WeibullData[Y]-avgY) )
+			VAR den  = SUMX ( WeibullData, (WeibullData[X]-avgX) * (WeibullData[X]-avgX) )
+			RETURN IF ( n >= 3 && den <> 0, num / den )
+		displayFolder: Testy
+		lineageTag: ecdf8f08-c5f3-49c5-9cf7-3a7c86f7e8fc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Intercept (b) (manual)' =
+			
+			VAR beta = [Beta (shape) (manual)]
+			VAR avgX = AVERAGEX ( WeibullData, WeibullData[X] )
+			VAR avgY = AVERAGEX ( WeibullData, WeibullData[Y] )
+			RETURN IF ( NOT ISBLANK(beta), avgY - beta * avgX )
+		displayFolder: Testy
+		lineageTag: 17de3b3a-a509-496c-a3b7-6e30e230fb72
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Eta (scale) (manual)' = ```
+			
+			VAR beta = [Beta (shape) (manual)]
+			VAR b    = [Intercept (b) (manual)]
+			RETURN IF ( NOT ISBLANK(beta) && NOT ISBLANK(b) && beta <> 0, EXP ( - b / beta ) )
+			
+			```
+		displayFolder: Testy
+		lineageTag: cba1fbe1-950d-4eef-9552-13682d460209
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'F(T) dystrybuanta Weibulla' = ```
+			
+			VAR T    = SELECTEDVALUE ( Months[Months], 3)
+			VAR beta = [Beta (shape) (manual)]
+			VAR eta  = [Eta (scale) (manual)]
+			RETURN
+			IF (
+			    NOT ISBLANK ( beta ) && NOT ISBLANK ( eta )
+			        && beta > 0 && eta > 0 && T >= 0,
+			    1 - EXP ( - POWER ( DIVIDE ( T, eta ), beta ) )
+			)
+			
+			```
+		displayFolder: Testy
+		lineageTag: 57a819d6-a724-47b4-81b3-12a8fe5b59ad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Prawdopodobieństwo_awarii =
+			
+			VAR T    = SELECTEDVALUE ('Months'[Months], 3 )
+			VAR T0   = MAX ( T - 1, 0 )
+			VAR beta = [Beta (shape) (manual)]
+			VAR eta  = [Eta (scale) (manual)]
+			VAR F_T  = IF ( beta>0 && eta>0,
+			                1 - EXP ( - POWER ( DIVIDE ( T,  eta ), beta ) ) )
+			VAR F_T0 = IF ( beta>0 && eta>0,
+			                1 - EXP ( - POWER ( DIVIDE ( T0, eta ), beta ) ) )
+			RETURN IF ( NOT ISBLANK ( F_T ) && NOT ISBLANK ( F_T0 ), F_T - F_T0 )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Testy
+		lineageTag: bd6c3fda-e9d3-4081-9bca-8f9c52a3ac44
+
+	measure 'Awaryjnosc A' = ```
+			
+			DIVIDE ( [Liczba awarii (wybrana grupa)], [Liczba urządzeń w rynku (wybrana grupa)] )
+			
+			```
+		displayFolder: Testy
+		lineageTag: 775a800b-f3c6-4d42-8dc2-95ff7d6d0cb2
+
+	measure 'Prognoza Z (szt.)' = ```
+			
+			VAR NM = [Sold_Quantity (Item_No_Serviced)]--[Liczba urządzeń w rynku (wybrana grupa)]
+			VAR A  = [Failure_Ratio]--[Awaryjnosc A]
+			VAR FT = [F(T) dystrybuanta Weibulla]
+			RETURN NM * A * FT
+			
+			```
+		displayFolder: Testy
+		lineageTag: e3d879bb-c9d7-44f1-8674-181e65569738
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure R2_corr =
+			
+			VAR n    = [Weibull Punkty (#)]
+			VAR avgX = AVERAGEX ( WeibullData, WeibullData[X] )
+			VAR avgY = AVERAGEX ( WeibullData, WeibullData[Y] )
+			VAR Sxx  = SUMX ( WeibullData, (WeibullData[X]-avgX) * (WeibullData[X]-avgX) )
+			VAR Syy  = SUMX ( WeibullData, (WeibullData[Y]-avgY) * (WeibullData[Y]-avgY) )
+			VAR Sxy  = SUMX ( WeibullData, (WeibullData[X]-avgX) * (WeibullData[Y]-avgY) )
+			VAR r    = IF ( Sxx > 0 && Syy > 0, DIVIDE ( Sxy, SQRT ( Sxx * Syy ) ) )
+			RETURN IF ( n >= 3, r * r )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Testy
+		lineageTag: fc29e34c-ca6f-41cd-9be8-6bc18fb1b904
+
+	measure 'Failure_Ratio (dla czesci zamiennej)' = ```
+			
+			DIVIDE(
+			    COUNTROWS('Fact_Items_Failure'),
+			    SUMX(
+			    SUMMARIZE(
+			        'Fact_Items_Failure',
+			        'Fact_Items_Failure'[Base_GroupB],
+			        "SoldPerItem", MAX('Fact_Items_Failure'[Total_Sold])
+			    ),
+			    [SoldPerItem]
+			)
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f2bff3f2-17f0-42c9-a940-a9fe98e62109
+
+	measure 'Prognoza Z (szt.) (dla czesci zamiennej)' = ```
+			
+			VAR NM = [Sold_Quantity (Item_No_Serviced)]--[Liczba urządzeń w rynku (wybrana grupa)]
+			VAR A  = [Failure_Ratio (dla czesci zamiennej)]--[Awaryjnosc A]
+			VAR FT = [F(T) dystrybuanta Weibulla]
+			RETURN NM * A * FT
+			
+			```
+		displayFolder: Testy
+		lineageTag: 0d6323aa-f587-4199-9d17-44ed3cf09e0d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
+		isHidden
 		formatString: 0
 		lineageTag: 8ac1f37a-a714-4d99-ae79-e7fe81f16447
 		summarizeBy: sum

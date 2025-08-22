@@ -4,10 +4,10 @@
   "position": {
     "x": 656,
     "y": 32,
-    "z": 9000,
+    "z": 8000,
     "height": 112,
     "width": 256,
-    "tabOrder": 6000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Item_No_Serviced"

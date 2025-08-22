@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "9643801524ad99d6e8b4",
+  "name": "38d39e661a780202b520",
   "position": {
-    "x": 1024,
-    "y": 160,
-    "z": 4000,
-    "height": 96,
-    "width": 256,
-    "tabOrder": 1000
+    "x": 927.99999999999989,
+    "y": 32,
+    "z": 5000,
+    "height": 112,
+    "width": 224,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "WeibullData"
                     }
                   },
                   "Property": "Base_GroupB"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
-              "nativeQueryRef": "Base_GroupB",
+              "queryRef": "WeibullData.Base_GroupB",
+              "nativeQueryRef": "Base_GroupB1",
               "active": true
             }
           ]
@@ -42,6 +42,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -95,6 +108,19 @@
           }
         }
       ],
+      "pendingChangesIcon": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
       "items": [
         {
           "properties": {
@@ -133,45 +159,12 @@
             }
           }
         }
-      ],
-      "general": [
-        {
-          "properties": {
-            "selfFilterEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "pendingChangesIcon": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "visualContainerObjects": {
       "title": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Część zamienna (Grupa B)'"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -207,6 +200,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Część zamienna (Grupa B)                    '"
                 }
               }
             }
@@ -417,11 +417,6 @@
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "Base_GroupB",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

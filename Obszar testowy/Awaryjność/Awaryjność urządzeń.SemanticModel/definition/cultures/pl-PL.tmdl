@@ -5,25 +5,158 @@ cultureInfo pl-PL
 			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "gold_Fact_Items_Failure": {
+			    "fact_items_failure": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure"
+			          "ConceptualEntity": "Fact_Items_Failure"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "gold Fact_Items_Failure": {
+			          "fact items failure": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact item failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Fact_Items_Failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "failure": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "items failure": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "fact item disappointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item letdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item catastrophe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item fiasco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item disaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item miscarriage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "item disappointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item letdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item catastrophe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item fiasco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
 			          }
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.failure_date": {
+			    "fact_items_failure.failure_date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Failure_Date"
 			        }
 			      },
@@ -70,10 +203,10 @@ cultureInfo pl-PL
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "gold_Fact_Items_Failure.sale_date": {
+			    "fact_items_failure.sale_date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Sale_Date"
 			        }
 			      },
@@ -120,10 +253,10 @@ cultureInfo pl-PL
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "gold_Fact_Items_Failure.time_to_failure": {
+			    "fact_items_failure.time_to_failure": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Time_To_Failure (month)"
 			        }
 			      },
@@ -211,10 +344,10 @@ cultureInfo pl-PL
 			        "month"
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.service_order_no": {
+			    "fact_items_failure.service_order_no": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Service_Order_No"
 			        }
 			      },
@@ -330,10 +463,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.bill_to_customer_no": {
+			    "fact_items_failure.bill_to_customer_no": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Bill_to_Customer_No"
 			        }
 			      },
@@ -453,10 +586,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.service_item_no_serviced": {
+			    "fact_items_failure.service_item_no_serviced": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Service_Item_No_Serviced"
 			        }
 			      },
@@ -576,10 +709,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.item_no_serviced": {
+			    "fact_items_failure.item_no_serviced": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Item_No_Serviced"
 			        }
 			      },
@@ -692,10 +825,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.serial_no_serviced": {
+			    "fact_items_failure.serial_no_serviced": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Serial_No_Serviced"
 			        }
 			      },
@@ -725,10 +858,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.base_group_A_serviced": {
+			    "fact_items_failure.base_group_A_serviced": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Base_Group_A_Serviced"
 			        }
 			      },
@@ -818,10 +951,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.base_group_B_serviced": {
+			    "fact_items_failure.base_group_B_serviced": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Base_Group_B_Serviced"
 			        }
 			      },
@@ -911,10 +1044,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.no": {
+			    "fact_items_failure.no": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "No"
 			        }
 			      },
@@ -937,10 +1070,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.base_group_A": {
+			    "fact_items_failure.base_group_A": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Base_GroupA"
 			        }
 			      },
@@ -1066,10 +1199,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.base_group_B": {
+			    "fact_items_failure.base_group_B": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Base_GroupB"
 			        }
 			      },
@@ -1211,10 +1344,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.firma": {
+			    "fact_items_failure.firma": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Firma"
 			        }
 			      },
@@ -1223,200 +1356,6 @@ cultureInfo pl-PL
 			        {
 			          "firma": {
 			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "gold Dim_BC_NAV_Sold_Items_Aggregation": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation",
-			          "ConceptualProperty": "Item_No"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "item no": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Item_No": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "item number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "product no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "element no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "entry no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "article no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "object no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "piece no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "token no": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation",
-			          "ConceptualProperty": "Quantity"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "quantity": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "magnitude": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "measure": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "size": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "capacity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "mass": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
 			          }
 			        }
 			      ]
@@ -1524,6 +1463,9 @@ cultureInfo pl-PL
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "value": {
@@ -2006,7 +1948,7 @@ cultureInfo pl-PL
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "ilosc_miesiecy": {
+			    "month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Months"
@@ -2015,30 +1957,50 @@ cultureInfo pl-PL
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "ilosc miesiecy": {
+			          "month": {
 			            "State": "Generated",
 			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
 			          }
 			        }
 			      ]
 			    },
-			    "ilosc_miesiecy.ilosc_miesiecy": {
+			    "month.month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Months",
-			          "ConceptualProperty": "Ilosc miesiecy"
+			          "ConceptualProperty": "Months"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "ilosc miesiecy": {
+			          "month": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
 			          }
 			        }
 			      ]
 			    },
-			    "ilosc_miesiecy.ilosc_miesiecy__wartość": {
+			    "month.ilosc_miesiecy__wartość": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Months",
@@ -2493,10 +2455,10 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie": {
+			    "fact_items_failure.Time_To_Failure_month_grupowanie": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "gold Fact_Items_Failure",
+			          "ConceptualEntity": "Fact_Items_Failure",
 			          "ConceptualProperty": "Time_To_Failure (month) grupowanie"
 			        }
 			      },
@@ -2528,69 +2490,839 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "gold_Fact_Items_Failure_has_gold_Dim_BC_NAV_Sold_Items_Aggregation": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
-			          }
-			        },
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
-			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
-			          }
+			    },
+			    "fact_items_failure.total_sold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Total_Sold"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
-			            },
-			            "Object": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_gold_Dim_BC_NAV_Sold_Items_Aggregations"
+			          "total sold": {
+			            "State": "Generated"
+			          }
 			        },
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			          "Total_Sold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
 			            },
-			            "Object": {
-			              "Role": "gold_Fact_Items_Failure"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_gold_Fact_Items_Failures"
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "overall sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_Time_To_Failure_month_grupowanie": {
+			    "entity__measure.Sold_Quantity_Item_No_Serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sold_Quantity (Item_No_Serviced)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sold_Quantity (Item_No_Serviced)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sold_Quantity": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Sprzedana ilość urządzeń": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.Sold_Quantity_Base_GroupB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sold_Quantity (Base_GroupB)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sold_Quantity (Base_GroupB)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sold_Quantity": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prawdopodobieństwo_awarii": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prawdopodobieństwo awarii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prawdopodobieństwo awarii": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.weibull_punkty_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Weibull Punkty (#)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weibull punkty (#)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "weibull punkty": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull punkty ( no )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "weibull punkty ( num )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "weibull punkty ( number )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.beta_shape_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Beta (shape) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beta (shape) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "beta (shape)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.intercept_b_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Intercept (b) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "intercept (b) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "intercept (b)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.eta_scale_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Eta (scale) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "eta (scale) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "eta (scale)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.ft_dystrybuanta_weibulla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "F(T) dystrybuanta Weibulla"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f(t) dystrybuanta weibulla": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prawdopodobieństwo_awarii1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prawdopodobieństwo_awarii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prawdopodobieństwo awarii": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prawdopodobieństwo_awarii": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.awaryjnosc_a": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Awaryjnosc A"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "awaryjnosc a": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prognoza_z_szt_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prognoza Z (szt.)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prognoza z (szt.)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prognoza z": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Zapotrzebowanie": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.R2_corr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "R2_corr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "R2 corr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "R2_corr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Korelacja": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weibull data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "WeibullData": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weibull information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weibull figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weibull record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "article no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "object no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "piece no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "token no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Serwisowane urządzenie (Symbol)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.firma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Firma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "firma": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.t": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "T"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "t": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "n"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.r": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "r"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "r": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.f": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "F"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.x": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "X"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "x": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Y"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "y": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.base_group_B": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Base_GroupB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "group B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "base organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "base bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base crew b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base team b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Część zamienna (Grupa B)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fact_items_failure_has_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie"
+			            "Entity": "calendar"
 			          }
 			        }
 			      },
@@ -2598,15 +3330,919 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.Time_To_Failure_month_grupowanie"
+			              "Role": "calendar"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_Time_To_Failure_month_grupowanies"
+			          "ID": "fact_items_failures_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_fact_items_failures"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_base_group_B": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.base_group_B": {
+			          "Target": {
+			            "Entity": "weibull_data.base_group_B"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.base_group_B"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_base_group_B"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_y": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.y": {
+			          "Target": {
+			            "Entity": "weibull_data.y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_y"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_x": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.x": {
+			          "Target": {
+			            "Entity": "weibull_data.x"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.x"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_x"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_f": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.f": {
+			          "Target": {
+			            "Entity": "weibull_data.f"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.f"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_f"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_r": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.r": {
+			          "Target": {
+			            "Entity": "weibull_data.r"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.r"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_r"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_n": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.n": {
+			          "Target": {
+			            "Entity": "weibull_data.n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_Ns"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_t": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.t": {
+			          "Target": {
+			            "Entity": "weibull_data.t"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.t"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_t"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_firma": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.firma": {
+			          "Target": {
+			            "Entity": "weibull_data.firma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.firma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_firma"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_R2_corr": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.R2_corr": {
+			          "Target": {
+			            "Entity": "entity__measure.R2_corr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.R2_corr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_R2_corr"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_awaryjnosc_a": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.awaryjnosc_a": {
+			          "Target": {
+			            "Entity": "entity__measure.awaryjnosc_a"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.awaryjnosc_a"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_awaryjnosc_a"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_prawdopodobieństwo_awarii1": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii1": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_prawdopodobieństwo_awarii"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prawdopodobieństwo_awarii1": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii1": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prawdopodobieństwo_awarii"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_ft_dystrybuanta_weibulla": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.ft_dystrybuanta_weibulla": {
+			          "Target": {
+			            "Entity": "entity__measure.ft_dystrybuanta_weibulla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ft_dystrybuanta_weibulla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_ft_dystrybuanta_weibulla"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_ft_dystrybuanta_weibulla": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.ft_dystrybuanta_weibulla": {
+			          "Target": {
+			            "Entity": "entity__measure.ft_dystrybuanta_weibulla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ft_dystrybuanta_weibulla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_ft_dystrybuanta_weibulla"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_eta_scale_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.eta_scale_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.eta_scale_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.eta_scale_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_eta_scale_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_intercept_b_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.intercept_b_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.intercept_b_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.intercept_b_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_intercept_b_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_beta_shape_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.beta_shape_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.beta_shape_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.beta_shape_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_beta_shape_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_weibull_punkty_": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.weibull_punkty_": {
+			          "Target": {
+			            "Entity": "entity__measure.weibull_punkty_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.weibull_punkty_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_weibull_punkty_"
+			        }
+			      ]
+			    },
+			    "gold_zapotrzebowanie_na_czesci_has_entity__measure_prawdopodobieństwo_awarii": {
+			      "Binding": {
+			        "ConceptualEntity": "gold zapotrzebowanie_na_czesci"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_zapotrzebowanie_na_czescis_have_prawdopodobieństwo_awarii"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prawdopodobieństwo_awarii": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prawdopodobieństwo_awarii1"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_Sold_Quantity_Base_GroupB": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.Sold_Quantity_Base_GroupB": {
+			          "Target": {
+			            "Entity": "entity__measure.Sold_Quantity_Base_GroupB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.Sold_Quantity_Base_GroupB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Sold_Quantity_Base_GroupB"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_Sold_Quantity_Item_No_Serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.Sold_Quantity_Item_No_Serviced": {
+			          "Target": {
+			            "Entity": "entity__measure.Sold_Quantity_Item_No_Serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.Sold_Quantity_Item_No_Serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Sold_Quantity_Item_No_Serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_total_sold": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.total_sold": {
+			          "Target": {
+			            "Entity": "fact_items_failure.total_sold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.total_sold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_total_sold"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_Time_To_Failure_month_grupowanie": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.Time_To_Failure_month_grupowanie": {
+			          "Target": {
+			            "Entity": "fact_items_failure.Time_To_Failure_month_grupowanie"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.Time_To_Failure_month_grupowanie"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Time_To_Failure_month_grupowanies"
 			        }
 			      ]
 			    },
@@ -2841,20 +4477,20 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "ilosc_miesiecy_has_ilosc_miesiecy__wartość": {
+			    "month_has_ilosc_miesiecy__wartość": {
 			      "Binding": {
 			        "ConceptualEntity": "Months"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "ilosc_miesiecy": {
+			        "month": {
 			          "Target": {
-			            "Entity": "ilosc_miesiecy"
+			            "Entity": "month"
 			          }
 			        },
-			        "ilosc_miesiecy.ilosc_miesiecy__wartość": {
+			        "month.ilosc_miesiecy__wartość": {
 			          "Target": {
-			            "Entity": "ilosc_miesiecy.ilosc_miesiecy__wartość"
+			            "Entity": "month.ilosc_miesiecy__wartość"
 			          }
 			        }
 			      },
@@ -2862,32 +4498,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "ilosc_miesiecy"
+			              "Role": "month"
 			            },
 			            "Object": {
-			              "Role": "ilosc_miesiecy.ilosc_miesiecy__wartość"
+			              "Role": "month.ilosc_miesiecy__wartość"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "ilosc_miesiecies_have_ilosc_miesiecy__wartość"
+			          "ID": "months_have_ilosc_miesiecy__wartość"
 			        }
 			      ]
 			    },
-			    "ilosc_miesiecy_has_ilosc_miesiecy": {
+			    "month_has_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Months"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "ilosc_miesiecy": {
+			        "month": {
 			          "Target": {
-			            "Entity": "ilosc_miesiecy"
+			            "Entity": "month"
 			          }
 			        },
-			        "ilosc_miesiecy.ilosc_miesiecy": {
+			        "month.month": {
 			          "Target": {
-			            "Entity": "ilosc_miesiecy.ilosc_miesiecy"
+			            "Entity": "month.month"
 			          }
 			        }
 			      },
@@ -2895,15 +4531,15 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "ilosc_miesiecy"
+			              "Role": "month"
 			            },
 			            "Object": {
-			              "Role": "ilosc_miesiecy.ilosc_miesiecy"
+			              "Role": "month.month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "ilosc_miesiecies_have_ilosc_miesiecies"
+			          "ID": "months_have_months"
 			        }
 			      ]
 			    },
@@ -2940,48 +4576,15 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "ilosc_miesiecy_has_entity__measure_na_ile_miesiecy_wystarczy": {
+			    "fact_items_failure_has_entity__measure_failure_quantity": {
 			      "Binding": {
-			        "ConceptualEntity": "Months"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "ilosc_miesiecy": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "ilosc_miesiecy"
-			          }
-			        },
-			        "entity__measure.na_ile_miesiecy_wystarczy": {
-			          "Target": {
-			            "Entity": "entity__measure.na_ile_miesiecy_wystarczy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "ilosc_miesiecy"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.na_ile_miesiecy_wystarczy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ilosc_miesiecies_have_na_ile_miesiecy_wystarczy"
-			        }
-			      ]
-			    },
-			    "gold_Fact_Items_Failure_has_entity__measure_failure_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
 			        "entity__measure.failure_quantity": {
@@ -2994,7 +4597,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.failure_quantity"
@@ -3002,19 +4605,19 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_failure_quantity"
+			          "ID": "fact_items_failures_have_failure_quantity"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_entity__measure_failure_ratio": {
+			    "fact_items_failure_has_entity__measure_failure_ratio": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
 			        "entity__measure.failure_ratio": {
@@ -3027,7 +4630,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.failure_ratio"
@@ -3035,24 +4638,24 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_failure_ratio"
+			          "ID": "fact_items_failures_have_failure_ratio"
 			        }
 			      ]
 			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_entity__measure_failure_ratio": {
+			    "fact_items_failure_has_firma": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "entity__measure.failure_ratio": {
+			        "fact_items_failure.firma": {
 			          "Target": {
-			            "Entity": "entity__measure.failure_ratio"
+			            "Entity": "fact_items_failure.firma"
 			          }
 			        }
 			      },
@@ -3060,32 +4663,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.failure_ratio"
+			              "Role": "fact_items_failure.firma"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_failure_ratio"
+			          "ID": "fact_items_failures_have_firma"
 			        }
 			      ]
 			    },
-			    "entity__measure_has_value": {
+			    "fact_items_failure_has_base_group_B": {
 			      "Binding": {
-			        "ConceptualEntity": "_Measures"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "entity__measure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "entity__measure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "entity__measure.value": {
+			        "fact_items_failure.base_group_B": {
 			          "Target": {
-			            "Entity": "entity__measure.value"
+			            "Entity": "fact_items_failure.base_group_B"
 			          }
 			        }
 			      },
@@ -3093,32 +4696,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "entity__measure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.value"
+			              "Role": "fact_items_failure.base_group_B"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_values"
+			          "ID": "fact_items_failures_have_base_group_B"
 			        }
 			      ]
 			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_quantity": {
+			    "fact_items_failure_has_base_group_A": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity": {
+			        "fact_items_failure.base_group_A": {
 			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity"
+			            "Entity": "fact_items_failure.base_group_A"
 			          }
 			        }
 			      },
@@ -3126,152 +4729,20 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation.quantity"
+			              "Role": "fact_items_failure.base_group_A"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_quantities"
-			        }
-			      ]
-			    },
-			    "gold_Dim_BC_NAV_Sold_Items_Aggregation_has_item_no": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation": {
-			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
-			          }
-			        },
-			        "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no": {
-			          "Target": {
-			            "Entity": "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation"
-			            },
-			            "Object": {
-			              "Role": "gold_Dim_BC_NAV_Sold_Items_Aggregation.item_no"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Dim_BC_NAV_Sold_Items_Aggregations_have_item_noes"
-			        }
-			      ]
-			    },
-			    "gold_Fact_Items_Failure_has_firma": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
-			          }
-			        },
-			        "gold_Fact_Items_Failure.firma": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.firma"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
-			            },
-			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.firma"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_firma"
-			        }
-			      ]
-			    },
-			    "gold_Fact_Items_Failure_has_base_group_B": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
-			          }
-			        },
-			        "gold_Fact_Items_Failure.base_group_B": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.base_group_B"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
-			            },
-			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.base_group_B"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_base_group_B"
-			        }
-			      ]
-			    },
-			    "gold_Fact_Items_Failure_has_base_group_A": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
-			          }
-			        },
-			        "gold_Fact_Items_Failure.base_group_A": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.base_group_A"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
-			            },
-			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.base_group_A"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_base_group_A"
+			          "ID": "fact_items_failures_have_base_group_A"
 			        },
 			        {
 			          "Verb": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Verbs": [
 			              {
@@ -3290,31 +4761,31 @@ cultureInfo pl-PL
 			                  }
 			                ],
 			                "Object": {
-			                  "Role": "gold_Fact_Items_Failure.base_group_A"
+			                  "Role": "fact_items_failure.base_group_A"
 			                }
 			              }
 			            ]
 			          },
 			          "State": "Generated",
 			          "Weight": 0.95,
-			          "ID": "gold_Fact_Items_Failures_group_A_base_group_A"
+			          "ID": "fact_items_failures_group_A_base_group_A"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_no": {
+			    "fact_items_failure_has_no": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.no": {
+			        "fact_items_failure.no": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.no"
+			            "Entity": "fact_items_failure.no"
 			          }
 			        }
 			      },
@@ -3322,32 +4793,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.no"
+			              "Role": "fact_items_failure.no"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_noes"
+			          "ID": "fact_items_failures_have_noes"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_base_group_B_serviced": {
+			    "fact_items_failure_has_base_group_B_serviced": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.base_group_B_serviced": {
+			        "fact_items_failure.base_group_B_serviced": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.base_group_B_serviced"
+			            "Entity": "fact_items_failure.base_group_B_serviced"
 			          }
 			        }
 			      },
@@ -3355,32 +4826,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.base_group_B_serviced"
+			              "Role": "fact_items_failure.base_group_B_serviced"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_base_group_B_serviced"
+			          "ID": "fact_items_failures_have_base_group_B_serviced"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_base_group_A_serviced": {
+			    "fact_items_failure_has_base_group_A_serviced": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.base_group_A_serviced": {
+			        "fact_items_failure.base_group_A_serviced": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.base_group_A_serviced"
+			            "Entity": "fact_items_failure.base_group_A_serviced"
 			          }
 			        }
 			      },
@@ -3388,32 +4859,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.base_group_A_serviced"
+			              "Role": "fact_items_failure.base_group_A_serviced"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_base_group_A_serviced"
+			          "ID": "fact_items_failures_have_base_group_A_serviced"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_serial_no_serviced": {
+			    "fact_items_failure_has_serial_no_serviced": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.serial_no_serviced": {
+			        "fact_items_failure.serial_no_serviced": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.serial_no_serviced"
+			            "Entity": "fact_items_failure.serial_no_serviced"
 			          }
 			        }
 			      },
@@ -3421,32 +4892,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.serial_no_serviced"
+			              "Role": "fact_items_failure.serial_no_serviced"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_serial_no_serviced"
+			          "ID": "fact_items_failures_have_serial_no_serviced"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_service_item_no_serviced": {
+			    "fact_items_failure_has_service_item_no_serviced": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.service_item_no_serviced": {
+			        "fact_items_failure.service_item_no_serviced": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.service_item_no_serviced"
+			            "Entity": "fact_items_failure.service_item_no_serviced"
 			          }
 			        }
 			      },
@@ -3454,32 +4925,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.service_item_no_serviced"
+			              "Role": "fact_items_failure.service_item_no_serviced"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_service_item_no_serviced"
+			          "ID": "fact_items_failures_have_service_item_no_serviced"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_bill_to_customer_no": {
+			    "fact_items_failure_has_bill_to_customer_no": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.bill_to_customer_no": {
+			        "fact_items_failure.bill_to_customer_no": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.bill_to_customer_no"
+			            "Entity": "fact_items_failure.bill_to_customer_no"
 			          }
 			        }
 			      },
@@ -3487,20 +4958,20 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.bill_to_customer_no"
+			              "Role": "fact_items_failure.bill_to_customer_no"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_bill_to_customer_no"
+			          "ID": "fact_items_failures_have_bill_to_customer_no"
 			        },
 			        {
 			          "Verb": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Verbs": [
 			              {
@@ -3519,31 +4990,31 @@ cultureInfo pl-PL
 			                  }
 			                ],
 			                "Object": {
-			                  "Role": "gold_Fact_Items_Failure.bill_to_customer_no"
+			                  "Role": "fact_items_failure.bill_to_customer_no"
 			                }
 			              }
 			            ]
 			          },
 			          "State": "Generated",
 			          "Weight": 0.95,
-			          "ID": "gold_Fact_Items_Failures_bill_to_bill_to_customer_no"
+			          "ID": "fact_items_failures_bill_to_bill_to_customer_no"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_service_order_no": {
+			    "fact_items_failure_has_service_order_no": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.service_order_no": {
+			        "fact_items_failure.service_order_no": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.service_order_no"
+			            "Entity": "fact_items_failure.service_order_no"
 			          }
 			        }
 			      },
@@ -3551,32 +5022,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.service_order_no"
+			              "Role": "fact_items_failure.service_order_no"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_service_order_noes"
+			          "ID": "fact_items_failures_have_service_order_noes"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_time_to_failure": {
+			    "fact_items_failure_has_time_to_failure": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.time_to_failure": {
+			        "fact_items_failure.time_to_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.time_to_failure"
+			            "Entity": "fact_items_failure.time_to_failure"
 			          }
 			        }
 			      },
@@ -3584,32 +5055,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.time_to_failure"
+			              "Role": "fact_items_failure.time_to_failure"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_time_to_failure"
+			          "ID": "fact_items_failures_have_time_to_failure"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_sale_date": {
+			    "fact_items_failure_has_sale_date": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.sale_date": {
+			        "fact_items_failure.sale_date": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.sale_date"
+			            "Entity": "fact_items_failure.sale_date"
 			          }
 			        }
 			      },
@@ -3617,32 +5088,32 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.sale_date"
+			              "Role": "fact_items_failure.sale_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_sale_dates"
+			          "ID": "fact_items_failures_have_sale_dates"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_failure_date": {
+			    "fact_items_failure_has_failure_date": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
-			        "gold_Fact_Items_Failure.failure_date": {
+			        "fact_items_failure.failure_date": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure.failure_date"
+			            "Entity": "fact_items_failure.failure_date"
 			          }
 			        }
 			      },
@@ -3650,73 +5121,27 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
-			              "Role": "gold_Fact_Items_Failure.failure_date"
+			              "Role": "fact_items_failure.failure_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_failure_dates"
+			          "ID": "fact_items_failures_have_failure_dates"
 			        }
 			      ]
 			    },
-			    "gold_Fact_Items_Failure_has_calendar": {
+			    "fact_items_failure_has_gold_zapotrzebowanie_na_czesci": {
 			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
+			        "ConceptualEntity": "Fact_Items_Failure"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "gold_Fact_Items_Failure": {
+			        "fact_items_failure": {
 			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
-			          }
-			        },
-			        "calendar": {
-			          "Target": {
-			            "Entity": "calendar"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
-			            },
-			            "Object": {
-			              "Role": "calendar"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_calendars"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar"
-			            },
-			            "Object": {
-			              "Role": "gold_Fact_Items_Failure"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "calendars_have_gold_Fact_Items_Failures"
-			        }
-			      ]
-			    },
-			    "gold_Fact_Items_Failure_has_gold_zapotrzebowanie_na_czesci": {
-			      "Binding": {
-			        "ConceptualEntity": "gold Fact_Items_Failure"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "gold_Fact_Items_Failure": {
-			          "Target": {
-			            "Entity": "gold_Fact_Items_Failure"
+			            "Entity": "fact_items_failure"
 			          }
 			        },
 			        "gold_zapotrzebowanie_na_czesci": {
@@ -3729,7 +5154,7 @@ cultureInfo pl-PL
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "gold_Fact_Items_Failure"
+			              "Role": "fact_items_failure"
 			            },
 			            "Object": {
 			              "Role": "gold_zapotrzebowanie_na_czesci"
@@ -3737,7 +5162,40 @@ cultureInfo pl-PL
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "gold_Fact_Items_Failures_have_gold_zapotrzebowanie_na_czescis"
+			          "ID": "fact_items_failures_have_gold_zapotrzebowanie_na_czescis"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_fact_items_failure": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_fact_items_failures"
 			        }
 			      ]
 			    }

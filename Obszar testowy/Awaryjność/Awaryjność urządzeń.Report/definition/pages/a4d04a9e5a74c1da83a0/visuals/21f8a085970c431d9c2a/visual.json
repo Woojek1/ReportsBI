@@ -6,15 +6,13 @@
     "y": 272,
     "z": 0,
     "height": 768,
-    "width": 864
+    "width": 864,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "pivotTable",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": []
-        },
         "Rows": {
           "projections": [
             {
@@ -22,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_GroupB"
@@ -38,7 +36,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "No"
@@ -54,7 +52,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Item_No_Serviced"
@@ -62,7 +60,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Symbol)",
-              "active": false,
+              "active": true,
               "displayName": "Serwisowane urządzenie (Symbol)"
             }
           ]
@@ -118,7 +116,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_GroupB"
@@ -131,13 +129,12 @@
             "queryRefs": [
               "gold Fact_Items_Failure.No"
             ],
-            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "No"
@@ -156,7 +153,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Item_No_Serviced"
@@ -1143,7 +1140,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1181,7 +1178,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1219,7 +1216,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1257,7 +1254,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1295,7 +1292,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1333,7 +1330,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1371,7 +1368,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1409,7 +1406,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1447,7 +1444,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1485,7 +1482,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1523,7 +1520,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1561,7 +1558,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1599,7 +1596,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1637,7 +1634,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1675,7 +1672,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1713,7 +1710,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1751,7 +1748,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1789,7 +1786,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1827,7 +1824,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1865,7 +1862,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2338,7 +2335,7 @@
             "showOptionsMenu": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

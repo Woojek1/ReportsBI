@@ -6,7 +6,8 @@
     "y": 272,
     "z": 0,
     "height": 767.99999999999989,
-    "width": 1792
+    "width": 1792,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -19,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Time_To_Failure (month) grupowanie"

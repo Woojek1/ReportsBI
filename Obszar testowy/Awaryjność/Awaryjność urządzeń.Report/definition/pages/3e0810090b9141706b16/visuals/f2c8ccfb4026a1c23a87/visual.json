@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 112,
     "width": 256,
-    "tabOrder": 5000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_GroupB"
                 }
               },
-              "queryRef": "gold Fact_Items_Failure.Base_GroupB",
+              "queryRef": "Fact_Items_Failure.Base_GroupB",
               "nativeQueryRef": "Base_GroupB",
               "active": true
             }

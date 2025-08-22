@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "bfb9e7505aa9d02db01b",
+  "displayName": "Strona 1",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0e069e8610bbc4ba0506",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_Items_Failure"
+              }
+            },
+            "Property": "Item_No_Serviced"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "d9d45a5adde84c18bc8e",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "e7eda2db26b4e72e81d5",
+        "boundFilter": "0e069e8610bbc4ba0506",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_Items_Failure"
+              }
+            },
+            "Property": "Item_No_Serviced"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode"
+}

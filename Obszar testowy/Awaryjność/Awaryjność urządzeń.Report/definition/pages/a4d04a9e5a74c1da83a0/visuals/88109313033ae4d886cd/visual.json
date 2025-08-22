@@ -4,18 +4,14 @@
   "position": {
     "x": 64,
     "y": 272,
-    "z": 6000,
-    "height": 768,
-    "width": 848,
-    "tabOrder": 3000
+    "z": 5000,
+    "height": 767.99999999999989,
+    "width": 864
   },
   "visual": {
     "visualType": "pivotTable",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": []
-        },
         "Rows": {
           "projections": [
             {
@@ -23,7 +19,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_A_Serviced"
@@ -39,7 +35,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_B_Serviced"
@@ -47,7 +43,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Base_Group_B_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Grupa B)",
-              "active": false,
+              "active": true,
               "displayName": "Serwisowane urządzenie (Grupa B)"
             },
             {
@@ -55,7 +51,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Item_No_Serviced"
@@ -63,7 +59,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Symbol)",
-              "active": false,
+              "active": true,
               "displayName": "Serwisowane urządzenie (Symbol)"
             }
           ]
@@ -87,26 +83,6 @@
             },
             {
               "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "gold Dim_BC_NAV_Sold_Items_Aggregation"
-                        }
-                      },
-                      "Property": "Quantity"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)",
-              "nativeQueryRef": "Sprzedana ilość",
-              "displayName": "Sprzedana ilość"
-            },
-            {
-              "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
@@ -119,6 +95,21 @@
               "queryRef": "_Measures.Failure_Ratio",
               "nativeQueryRef": "Awaryjność%",
               "displayName": "Awaryjność%"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Sold_Quantity (Item_No_Serviced)"
+                }
+              },
+              "queryRef": "_Measures.OneItemSold",
+              "nativeQueryRef": "Sprzedana ilość urządzeń",
+              "displayName": "Sprzedana ilość urządzeń"
             }
           ]
         }
@@ -134,13 +125,12 @@
             "queryRefs": [
               "gold Fact_Items_Failure.Base_Group_A_Serviced"
             ],
-            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_A_Serviced"
@@ -153,13 +143,12 @@
             "queryRefs": [
               "gold Fact_Items_Failure.Base_Group_B_Serviced"
             ],
-            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Base_Group_B_Serviced"
@@ -178,7 +167,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "gold Fact_Items_Failure"
+                      "Entity": "Fact_Items_Failure"
                     }
                   },
                   "Property": "Item_No_Serviced"
@@ -288,7 +277,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "125D"
+                  "Value": "103.57142857142857D"
                 }
               }
             }
@@ -302,7 +291,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "137.14285714285714D"
+                  "Value": "120.01757405585136D"
                 }
               }
             }
@@ -1076,20 +1065,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "202D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "88D"
                 }
               }
@@ -1105,7 +1080,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1128,44 +1103,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2012-10-31T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1181,7 +1118,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1219,7 +1156,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1242,44 +1179,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2012-11-09T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1295,7 +1194,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1333,7 +1232,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1356,44 +1255,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2012-11-28T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1409,7 +1270,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1447,7 +1308,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1470,44 +1331,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2012-11-30T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1523,7 +1346,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1561,7 +1384,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1584,44 +1407,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-01-17T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1637,7 +1422,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1675,7 +1460,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1698,44 +1483,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-01-24T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1751,7 +1498,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1789,7 +1536,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1812,44 +1559,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-03-05T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1865,7 +1574,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1903,7 +1612,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -1926,44 +1635,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-03-20T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -1979,7 +1650,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2017,7 +1688,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2040,44 +1711,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-03-26T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -2093,7 +1726,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2131,7 +1764,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2154,44 +1787,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
-                          }
-                        },
-                        "Property": "Failure_Date"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "datetime'2013-04-09T00:00:00'"
-                      }
-                    }
-                  }
-                }
-              }
-            ],
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "104D"
                 }
               }
@@ -2207,7 +1802,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "gold Fact_Items_Failure"
+                            "Entity": "Fact_Items_Failure"
                           }
                         },
                         "Property": "Failure_Date"
@@ -2223,6 +1818,20 @@
               }
             ],
             "metadata": "_Measures.Failure_Ratio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "156.1603518300296D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.OneItemSold"
           }
         }
       ],
@@ -2381,19 +1990,12 @@
             }
           },
           "selector": {
-            "metadata": "CountNonNull(gold Dim_BC_NAV_Sold_Items_Aggregation.Quantity)"
+            "metadata": "_Measures.Failure_Ratio"
           }
         },
         {
           "properties": {
             "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -2409,7 +2011,7 @@
             }
           },
           "selector": {
-            "metadata": "_Measures.Failure_Ratio"
+            "metadata": "_Measures.OneItemSold"
           }
         }
       ]
@@ -2688,7 +2290,7 @@
             "showOptionsMenu": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },

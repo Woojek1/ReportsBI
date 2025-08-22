@@ -1,14 +1,15 @@
-relationship 6815adc4-67ba-67ce-abec-b2cb9fcfc7ab
-	crossFilteringBehavior: bothDirections
-	fromColumn: 'gold Fact_Items_Failure'.Item_No_Serviced
-	toColumn: 'gold Dim_BC_NAV_Sold_Items_Aggregation'.Item_No
-
 relationship 6201dcc1-b750-4ee7-23ee-4af30c561274
-	fromColumn: 'gold Fact_Items_Failure'.Sale_Date
+	fromColumn: Fact_Items_Failure.Sale_Date
 	toColumn: Calendar.Date
 
-relationship 41c42e5f-c6c5-c2fe-79d7-c8e93ca0d3df
+relationship ba6a4e3e-d989-4e2f-a591-f1721b9000c4
 	toCardinality: many
-	fromColumn: 'gold Fact_Items_Failure'.Item_No_Serviced
+	fromColumn: Fact_Items_Failure.Item_No_Serviced
 	toColumn: 'gold zapotrzebowanie_na_czesci'.Item_No_Serviced
+
+relationship c685c6cd-b58d-c8ec-e349-17d198616daf
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: WeibullData.Item_No_Serviced
+	toColumn: Fact_Items_Failure.Item_No_Serviced
 

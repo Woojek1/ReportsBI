@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "efc008d7237b0523a78c",
   "position": {
-    "x": 96,
-    "y": 168,
+    "x": 64,
+    "y": 192,
     "z": 0,
-    "height": 376,
-    "width": 1128,
+    "height": 384,
+    "width": 1136,
     "tabOrder": 3000
   },
   "visual": {
@@ -89,11 +89,11 @@
                       "Entity": "gold zapotrzebowanie_na_czesci"
                     }
                   },
-                  "Property": "Zapotrzebowanie na częsci"
+                  "Property": "Prawdopodobieństwo awarii"
                 }
               },
-              "queryRef": "gold zapotrzebowanie_na_czesci.Zapotrzebowanie na częsci",
-              "nativeQueryRef": "Zapotrzebowanie na częsci"
+              "queryRef": "gold zapotrzebowanie_na_czesci.Prawdopodobieństwo awarii",
+              "nativeQueryRef": "Prawdopodobieństwo awarii"
             },
             {
               "field": {
@@ -103,11 +103,11 @@
                       "Entity": "gold zapotrzebowanie_na_czesci"
                     }
                   },
-                  "Property": "Prawdopodobieństwo awarii"
+                  "Property": "Zapotrzebowanie na częsci"
                 }
               },
-              "queryRef": "gold zapotrzebowanie_na_czesci.Prawdopodobieństwo awarii",
-              "nativeQueryRef": "Prawdopodobieństwo awarii"
+              "queryRef": "gold zapotrzebowanie_na_czesci.Zapotrzebowanie na częsci",
+              "nativeQueryRef": "Zapotrzebowanie na częsci"
             }
           ]
         }
@@ -129,6 +129,52 @@
           }
         ]
       }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "202.19354838709677D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(gold zapotrzebowanie_na_czesci.Sold_quantity)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "203.14285714285714D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold zapotrzebowanie_na_czesci.Prawdopodobieństwo awarii"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "188.42857142857142D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold zapotrzebowanie_na_czesci.Zapotrzebowanie na częsci"
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "general": [
@@ -216,21 +262,7 @@
         "type": "Advanced"
       },
       {
-        "name": "7556c2467a9430007743",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold zapotrzebowanie_na_czesci"
-              }
-            },
-            "Property": "Zapotrzebowanie na częsci"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3df9945aac624071d02c",
+        "name": "b2c8cd2ebc41a920ecda",
         "field": {
           "Measure": {
             "Expression": {
@@ -239,6 +271,20 @@
               }
             },
             "Property": "Prawdopodobieństwo awarii"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ccd0a12272e32979b43e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold zapotrzebowanie_na_czesci"
+              }
+            },
+            "Property": "Zapotrzebowanie na częsci"
           }
         },
         "type": "Advanced"

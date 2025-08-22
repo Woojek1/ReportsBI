@@ -1,4 +1,4 @@
-table 'gold Fact_Items_Failure'
+table Fact_Items_Failure
 	lineageTag: 78798ab9-819c-42e9-b777-4268112a4b95
 
 	column Failure_Date
@@ -33,7 +33,7 @@ table 'gold Fact_Items_Failure'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"gold Fact_Items_Failure","TableItemName":"Time_To_Failure (month) grupowanie","ObjectType":4},"LinkType":"UsedInGroup"}]
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Fact_Items_Failure","TableItemName":"Time_To_Failure (month) grupowanie","ObjectType":4},"LinkType":"UsedInGroup"}]
 
 	column Service_Order_No
 		dataType: string
@@ -125,12 +125,12 @@ table 'gold Fact_Items_Failure'
 
 	column 'Time_To_Failure (month) grupowanie' =
 			IF(
-				ISBLANK('gold Fact_Items_Failure'[Time_To_Failure (month)]),
+				ISBLANK('Fact_Items_Failure'[Time_To_Failure (month)]),
 				BLANK(),
 				IF(
-					'gold Fact_Items_Failure'[Time_To_Failure (month)] >= 0,
-					ROUNDDOWN('gold Fact_Items_Failure'[Time_To_Failure (month)], 0),
-					ROUNDUP('gold Fact_Items_Failure'[Time_To_Failure (month)], 0)
+					'Fact_Items_Failure'[Time_To_Failure (month)] >= 0,
+					ROUNDDOWN('Fact_Items_Failure'[Time_To_Failure (month)], 0),
+					ROUNDUP('Fact_Items_Failure'[Time_To_Failure (month)], 0)
 				)
 			)
 		formatString: 0
@@ -145,7 +145,7 @@ table 'gold Fact_Items_Failure'
 				      "Column": {
 				        "Expression": {
 				          "SourceRef": {
-				            "Entity": "gold Fact_Items_Failure"
+				            "Entity": "Fact_Items_Failure"
 				          }
 				        },
 				        "Property": "Time_To_Failure (month)"
@@ -160,13 +160,22 @@ table 'gold Fact_Items_Failure'
 				  }
 				}
 
-		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"g","Entity":"gold Fact_Items_Failure"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}},"Size":1.0}}}}
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"g","Entity":"Fact_Items_Failure"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"g"}},"Property":"Time_To_Failure (month)"}},"Size":1.0}}}}
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isDecimal":true}
 
-	partition 'gold Fact_Items_Failure' = m
+	column Total_Sold
+		dataType: int64
+		formatString: #,0
+		lineageTag: 1147f4fd-6ef1-4d17-a644-e97e9816f19d
+		summarizeBy: sum
+		sourceColumn: Total_Sold
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_Items_Failure = m
 		mode: import
 		source =
 				let
@@ -174,6 +183,8 @@ table 'gold Fact_Items_Failure'
 				    gold_Fact_Items_Failure = Źródło{[Schema="gold",Item="Fact_Items_Failure"]}[Data]
 				in
 				    gold_Fact_Items_Failure
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Nawigacja
 

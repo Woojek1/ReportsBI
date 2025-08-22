@@ -8,18 +8,18 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.146.705.0 (25.08)+b71502aff0a01340c88f384884ef42771068f115
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
 
-annotation PBI_QueryOrder = ["gold Fact_Items_Failure","gold Dim_BC_NAV_Sold_Items_Aggregation","gold zapotrzebowanie_na_czesci"]
+annotation PBI_QueryOrder = ["Fact_Items_Failure","gold zapotrzebowanie_na_czesci"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table 'gold Fact_Items_Failure'
-ref table 'gold Dim_BC_NAV_Sold_Items_Aggregation'
+ref table Fact_Items_Failure
 ref table _Measures
 ref table Calendar
 ref table Months
 ref table 'gold zapotrzebowanie_na_czesci'
+ref table WeibullData
 
 ref cultureInfo pl-PL
 
