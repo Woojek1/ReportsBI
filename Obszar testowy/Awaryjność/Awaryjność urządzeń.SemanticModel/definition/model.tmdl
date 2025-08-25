@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
 
-annotation PBI_QueryOrder = ["Fact_Items_Failure","gold zapotrzebowanie_na_czesci"]
+annotation PBI_QueryOrder = ["Fact_Items_Failure"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -18,7 +18,6 @@ ref table Fact_Items_Failure
 ref table _Measures
 ref table Calendar
 ref table Months
-ref table 'gold zapotrzebowanie_na_czesci'
 ref table WeibullData
 
 ref cultureInfo pl-PL

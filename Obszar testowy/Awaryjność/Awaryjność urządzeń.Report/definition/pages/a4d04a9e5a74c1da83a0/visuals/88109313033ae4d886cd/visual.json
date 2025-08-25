@@ -43,7 +43,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Base_Group_B_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Grupa B)",
-              "active": true,
+              "active": false,
               "displayName": "Serwisowane urządzenie (Grupa B)"
             },
             {
@@ -59,7 +59,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Symbol)",
-              "active": true,
+              "active": false,
               "displayName": "Serwisowane urządzenie (Symbol)"
             }
           ]
@@ -125,6 +125,7 @@
             "queryRefs": [
               "gold Fact_Items_Failure.Base_Group_A_Serviced"
             ],
+            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
@@ -143,6 +144,7 @@
             "queryRefs": [
               "gold Fact_Items_Failure.Base_Group_B_Serviced"
             ],
+            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {

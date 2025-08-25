@@ -2,11 +2,6 @@ relationship 6201dcc1-b750-4ee7-23ee-4af30c561274
 	fromColumn: Fact_Items_Failure.Sale_Date
 	toColumn: Calendar.Date
 
-relationship ba6a4e3e-d989-4e2f-a591-f1721b9000c4
-	toCardinality: many
-	fromColumn: Fact_Items_Failure.Item_No_Serviced
-	toColumn: 'gold zapotrzebowanie_na_czesci'.Item_No_Serviced
-
 relationship c685c6cd-b58d-c8ec-e349-17d198616daf
 	crossFilteringBehavior: bothDirections
 	toCardinality: many

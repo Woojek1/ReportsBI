@@ -44,7 +44,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.No",
               "nativeQueryRef": "Część zamienna (Symbol)",
-              "active": true,
+              "active": false,
               "displayName": "Część zamienna (Symbol)"
             },
             {
@@ -60,7 +60,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Symbol)",
-              "active": true,
+              "active": false,
               "displayName": "Serwisowane urządzenie (Symbol)"
             }
           ]
@@ -111,6 +111,7 @@
             "queryRefs": [
               "gold Fact_Items_Failure.Base_GroupB"
             ],
+            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
@@ -129,6 +130,7 @@
             "queryRefs": [
               "gold Fact_Items_Failure.No"
             ],
+            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {
