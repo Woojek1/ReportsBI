@@ -1,0 +1,20 @@
+table Calendar
+	lineageTag: 43b699fa-953f-4eb0-8d36-ef3b4ffa6ac2
+
+	column Date
+		formatString: General Date
+		lineageTag: 49aabaf8-e4e7-48fb-a334-e90017e1c98a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source =
+				
+				CALENDARAUTO()
+
+	annotation PBI_Id = 5b2fc7855ff04db18fac994c95e50c5d
+

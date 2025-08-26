@@ -1,0 +1,4377 @@
+cultureInfo pl-PL
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fact_items_failure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact items failure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact item failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Fact_Items_Failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "failure": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "items failure": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "item failure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "fact item disappointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item letdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item catastrophe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item fiasco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item disaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fact item miscarriage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "item disappointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item letdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item catastrophe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "item fiasco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.failure_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Failure_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "failure moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "failure period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_items_failure.sale_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Sale_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sale date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sale_Date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "sale moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sale period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_items_failure.time_to_failure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Time_To_Failure (month)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time to failure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time to failure (month)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Time_To_Failure (month)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duration to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "interval to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "moment to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "period to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "timetable to failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "time_to_failure ( mth )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "month"
+			      ]
+			    },
+			    "fact_items_failure.service_order_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Service_Order_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service order no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Service_Order_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "order no": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "service order number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "order number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "maintenance order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "examination order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "svc order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "package order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "repair order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "benefit order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "servicing order no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.bill_to_customer_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Bill_to_Customer_No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bill to customer no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Bill_to_Customer_No": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bill to client no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to consumer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to user no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to buyer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to patron no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to purchaser no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to shopper no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "bill to customer number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "beak to customer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "mandible to customer no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.service_item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Service_Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Service_Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "service item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "maintenance item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "examination item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "svc item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "package item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "repair item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "benefit item no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "article no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "object no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "piece no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "token no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.serial_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Serial_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serial no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Serial_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "serial number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.base_group_A_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Base_Group_A_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group A serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_Group_A_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "base category a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base organization a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base bracket a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base class a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base crew a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base team a serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.base_group_B_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Base_Group_B_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_Group_B_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "base category b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "base organization b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "base bracket b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base class b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base crew b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "base team b serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.base_group_A": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Base_GroupA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group A": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "group A": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "base organization a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "category a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "organization a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "base bracket a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base class a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base crew a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "base team a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "bracket a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class a": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.base_group_B": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Base_GroupB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "group B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "base organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "base bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base crew b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base team b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.firma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Firma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "firma": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.failure_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Failure_Ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure ratio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Ratio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "failure relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "failure proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure fraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.failure_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Failure_Quantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "failure quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Failure_Quantity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "failure extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "failure amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "failure mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "schedule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Months"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "month.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Months",
+			          "ConceptualProperty": "Months"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "month.ilosc_miesiecy__wartość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Months",
+			          "ConceptualProperty": "Ilosc miesiecy — wartość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilosc miesiecy — wartość": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.Time_To_Failure_month_grupowanie": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Time_To_Failure (month) grupowanie"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Time_To_Failure (month) grupowanie": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time_to_failure ( mth ) grupowanie": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        }
+			      ]
+			    },
+			    "fact_items_failure.total_sold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Items_Failure",
+			          "ConceptualProperty": "Total_Sold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Sold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "overall sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.Sold_Quantity_Item_No_Serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sold_Quantity (Item_No_Serviced)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sold_Quantity (Item_No_Serviced)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sold_Quantity": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.Sold_Quantity_Base_GroupB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sold_Quantity (Base_GroupB)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Sold_Quantity (Base_GroupB)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sold_Quantity": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prawdopodobieństwo_awarii": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prawdopodobieństwo awarii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prawdopodobieństwo awarii": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.weibull_punkty_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Weibull Punkty (#)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weibull punkty (#)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "weibull punkty": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull punkty ( no )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "weibull punkty ( num )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "weibull punkty ( number )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.beta_shape_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Beta (shape) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beta (shape) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "beta (shape)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.intercept_b_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Intercept (b) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "intercept (b) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "intercept (b)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.eta_scale_manual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Eta (scale) (manual)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "eta (scale) (manual)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "eta (scale)": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.ft_dystrybuanta_weibulla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "F(T) dystrybuanta Weibulla"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f(t) dystrybuanta weibulla": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prawdopodobieństwo_awarii1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prawdopodobieństwo_awarii"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prawdopodobieństwo awarii": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prawdopodobieństwo_awarii": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.awaryjnosc_a": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Awaryjnosc A"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "awaryjnosc a": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.prognoza_z_szt_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Prognoza Z (szt.)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prognoza z (szt.)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prognoza z": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.R2_corr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "R2_corr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "R2 corr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "R2_corr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weibull data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "WeibullData": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weibull information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "weibull document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weibull figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "weibull record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.item_no_serviced": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Item_No_Serviced"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "item no serviced": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Item_No_Serviced": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "item number serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "product no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "element no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "article no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "object no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "piece no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "token no serviced": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.firma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Firma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "firma": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.t": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "T"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "t": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "n"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.r": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "r"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "r": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.f": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "F"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.x": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "X"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "x": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Y"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "y": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "weibull_data.base_group_B": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WeibullData",
+			          "ConceptualProperty": "Base_GroupB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base group B": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base_GroupB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "group B": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "base organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "category b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "organization b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "base bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base crew b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "base team b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "bracket b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class b": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fact_items_failure_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_fact_items_failures"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_base_group_B": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.base_group_B": {
+			          "Target": {
+			            "Entity": "weibull_data.base_group_B"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.base_group_B"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_base_group_B"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_y": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.y": {
+			          "Target": {
+			            "Entity": "weibull_data.y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_y"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_x": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.x": {
+			          "Target": {
+			            "Entity": "weibull_data.x"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.x"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_x"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_f": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.f": {
+			          "Target": {
+			            "Entity": "weibull_data.f"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.f"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_f"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_r": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.r": {
+			          "Target": {
+			            "Entity": "weibull_data.r"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.r"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_r"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_n": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.n": {
+			          "Target": {
+			            "Entity": "weibull_data.n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_Ns"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_t": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.t": {
+			          "Target": {
+			            "Entity": "weibull_data.t"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.t"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_t"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_firma": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "weibull_data.firma": {
+			          "Target": {
+			            "Entity": "weibull_data.firma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "weibull_data.firma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_firma"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_R2_corr": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.R2_corr": {
+			          "Target": {
+			            "Entity": "entity__measure.R2_corr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.R2_corr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_R2_corr"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_prognoza_z_szt_": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.prognoza_z_szt_": {
+			          "Target": {
+			            "Entity": "entity__measure.prognoza_z_szt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prognoza_z_szt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_prognoza_z_szt_"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_awaryjnosc_a": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.awaryjnosc_a": {
+			          "Target": {
+			            "Entity": "entity__measure.awaryjnosc_a"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.awaryjnosc_a"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_awaryjnosc_a"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_prawdopodobieństwo_awarii1": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii1": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_prawdopodobieństwo_awarii"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prawdopodobieństwo_awarii1": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii1": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prawdopodobieństwo_awarii"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_ft_dystrybuanta_weibulla": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.ft_dystrybuanta_weibulla": {
+			          "Target": {
+			            "Entity": "entity__measure.ft_dystrybuanta_weibulla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ft_dystrybuanta_weibulla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_ft_dystrybuanta_weibulla"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_ft_dystrybuanta_weibulla": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.ft_dystrybuanta_weibulla": {
+			          "Target": {
+			            "Entity": "entity__measure.ft_dystrybuanta_weibulla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ft_dystrybuanta_weibulla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_ft_dystrybuanta_weibulla"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_eta_scale_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.eta_scale_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.eta_scale_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.eta_scale_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_eta_scale_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_intercept_b_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.intercept_b_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.intercept_b_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.intercept_b_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_intercept_b_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_beta_shape_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.beta_shape_manual": {
+			          "Target": {
+			            "Entity": "entity__measure.beta_shape_manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.beta_shape_manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_beta_shape_manual"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_entity__measure_weibull_punkty_": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "entity__measure.weibull_punkty_": {
+			          "Target": {
+			            "Entity": "entity__measure.weibull_punkty_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.weibull_punkty_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_weibull_punkty_"
+			        }
+			      ]
+			    },
+			    "month_has_entity__measure_prawdopodobieństwo_awarii": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "entity__measure.prawdopodobieństwo_awarii": {
+			          "Target": {
+			            "Entity": "entity__measure.prawdopodobieństwo_awarii"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.prawdopodobieństwo_awarii"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_prawdopodobieństwo_awarii1"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_Sold_Quantity_Base_GroupB": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.Sold_Quantity_Base_GroupB": {
+			          "Target": {
+			            "Entity": "entity__measure.Sold_Quantity_Base_GroupB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.Sold_Quantity_Base_GroupB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Sold_Quantity_Base_GroupB"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_Sold_Quantity_Item_No_Serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.Sold_Quantity_Item_No_Serviced": {
+			          "Target": {
+			            "Entity": "entity__measure.Sold_Quantity_Item_No_Serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.Sold_Quantity_Item_No_Serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Sold_Quantity_Item_No_Serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_total_sold": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.total_sold": {
+			          "Target": {
+			            "Entity": "fact_items_failure.total_sold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.total_sold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_total_sold"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_Time_To_Failure_month_grupowanie": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.Time_To_Failure_month_grupowanie": {
+			          "Target": {
+			            "Entity": "fact_items_failure.Time_To_Failure_month_grupowanie"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.Time_To_Failure_month_grupowanie"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_Time_To_Failure_month_grupowanies"
+			        }
+			      ]
+			    },
+			    "month_has_ilosc_miesiecy__wartość": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "month.ilosc_miesiecy__wartość": {
+			          "Target": {
+			            "Entity": "month.ilosc_miesiecy__wartość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "month.ilosc_miesiecy__wartość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_ilosc_miesiecy__wartość"
+			        }
+			      ]
+			    },
+			    "month_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Months"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "month": {
+			          "Target": {
+			            "Entity": "month"
+			          }
+			        },
+			        "month.month": {
+			          "Target": {
+			            "Entity": "month.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "month"
+			            },
+			            "Object": {
+			              "Role": "month.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "months_have_months"
+			        }
+			      ]
+			    },
+			    "calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_failure_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.failure_quantity": {
+			          "Target": {
+			            "Entity": "entity__measure.failure_quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.failure_quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_failure_quantity"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_entity__measure_failure_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "entity__measure.failure_ratio": {
+			          "Target": {
+			            "Entity": "entity__measure.failure_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.failure_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_failure_ratio"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_firma": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.firma": {
+			          "Target": {
+			            "Entity": "fact_items_failure.firma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.firma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_firma"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_base_group_B": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.base_group_B": {
+			          "Target": {
+			            "Entity": "fact_items_failure.base_group_B"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.base_group_B"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_base_group_B"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_base_group_A": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.base_group_A": {
+			          "Target": {
+			            "Entity": "fact_items_failure.base_group_A"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.base_group_A"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_base_group_A"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Verbs": [
+			              {
+			                "group": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "A": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "fact_items_failure.base_group_A"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "fact_items_failures_group_A_base_group_A"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.no": {
+			          "Target": {
+			            "Entity": "fact_items_failure.no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_noes"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_base_group_B_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.base_group_B_serviced": {
+			          "Target": {
+			            "Entity": "fact_items_failure.base_group_B_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.base_group_B_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_base_group_B_serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_base_group_A_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.base_group_A_serviced": {
+			          "Target": {
+			            "Entity": "fact_items_failure.base_group_A_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.base_group_A_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_base_group_A_serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_serial_no_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.serial_no_serviced": {
+			          "Target": {
+			            "Entity": "fact_items_failure.serial_no_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.serial_no_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_serial_no_serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_service_item_no_serviced": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.service_item_no_serviced": {
+			          "Target": {
+			            "Entity": "fact_items_failure.service_item_no_serviced"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.service_item_no_serviced"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_service_item_no_serviced"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_bill_to_customer_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.bill_to_customer_no": {
+			          "Target": {
+			            "Entity": "fact_items_failure.bill_to_customer_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.bill_to_customer_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_bill_to_customer_no"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Verbs": [
+			              {
+			                "bill": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "to": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "fact_items_failure.bill_to_customer_no"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "fact_items_failures_bill_to_bill_to_customer_no"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_service_order_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.service_order_no": {
+			          "Target": {
+			            "Entity": "fact_items_failure.service_order_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.service_order_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_service_order_noes"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_time_to_failure": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.time_to_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure.time_to_failure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.time_to_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_time_to_failure"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_sale_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.sale_date": {
+			          "Target": {
+			            "Entity": "fact_items_failure.sale_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.sale_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_sale_dates"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_failure_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "fact_items_failure.failure_date": {
+			          "Target": {
+			            "Entity": "fact_items_failure.failure_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure.failure_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_failure_dates"
+			        }
+			      ]
+			    },
+			    "fact_items_failure_has_gold_zapotrzebowanie_na_czesci": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Items_Failure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        },
+			        "gold_zapotrzebowanie_na_czesci": {
+			          "Target": {
+			            "Entity": "gold_zapotrzebowanie_na_czesci"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_items_failure"
+			            },
+			            "Object": {
+			              "Role": "gold_zapotrzebowanie_na_czesci"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_items_failures_have_gold_zapotrzebowanie_na_czescis"
+			        }
+			      ]
+			    },
+			    "weibull_data_has_fact_items_failure": {
+			      "Binding": {
+			        "ConceptualEntity": "WeibullData"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weibull_data": {
+			          "Target": {
+			            "Entity": "weibull_data"
+			          }
+			        },
+			        "fact_items_failure": {
+			          "Target": {
+			            "Entity": "fact_items_failure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weibull_data"
+			            },
+			            "Object": {
+			              "Role": "fact_items_failure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weibull_data_have_fact_items_failures"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

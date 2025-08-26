@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1402.7999441716688,
+            "y": 475.65133928835536
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "f3e0bbd7-45b6-4400-b608-03c1f42e80d8",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 896.80930523307325,
+            "y": 390.91801060738288
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "43b699fa-953f-4eb0-8d36-ef3b4ffa6ac2",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 9.5801479450781244,
+            "y": 0
+          },
+          "nodeIndex": "gold zapotrzebowanie_na_czesci",
+          "nodeLineageTag": "fa45bbee-859e-439a-ba6c-204d97691817",
+          "size": {
+            "height": 328.27268415954381,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1429.8826171655462,
+            "y": 126.59135045402158
+          },
+          "nodeIndex": "Months",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 318.92798548463384,
+            "y": 390.88466796932772
+          },
+          "nodeIndex": "Fact_Items_Failure",
+          "size": {
+            "height": 478.98530969933972,
+            "width": 336.88131974843941
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 729.04393133115252,
+            "y": 16.425697558343359
+          },
+          "nodeIndex": "WeibullData",
+          "nodeLineageTag": "f33478af-f207-42eb-9413-11d56eb11dfc",
+          "size": {
+            "height": 336.70531528217288,
+            "width": 434.12530690792323
+          },
+          "zIndex": 6
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 63.287087723234038,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Awaryjność urządzeń"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1deef0ee-b33e-486f-9a14-435c5321878a"
+  }
+}
