@@ -1,0 +1,104 @@
+table _Miary
+	lineageTag: 42bcf88b-c31d-4748-8161-39456f97632e
+
+	measure Wartość_Oferty =
+			
+			SUM('gold v_bc_quotes'[LineAmountPLN])
+		lineageTag: 47ee8dab-db00-4623-8ba0-5fff51ad5b77
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Koszt_Urzadzen_Oferty =
+			
+			SUM('gold v_bc_quotes'[LineCostsPLN])
+		lineageTag: 4e11af73-efd9-4915-be49-473b445ea645
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Zysk_Oferty = ```
+			
+			VAR _Koszt = 
+			    SUM('gold v_bc_quotes'[LineCostsPLN])
+			VAR _WartoscOferty = 
+			    SUM('gold v_bc_quotes'[LineAmountPLN])
+			VAR _ZyskOferty =
+			   _WartoscOferty - _Koszt
+			
+			RETURN _ZyskOferty 
+			```
+		lineageTag: 47955511-d952-47c2-b3cd-a5f9258bd145
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Marza_Oferty% = ```
+			
+			VAR _Koszt = 
+			    SUM('gold v_bc_quotes'[LineCostsPLN])
+			VAR _WartoscOferty = 
+			    SUM('gold v_bc_quotes'[LineAmountPLN])
+			VAR _ZyskOferty =
+			SUMX(
+			    'gold v_bc_quotes',
+			    IF(
+			        ISBLANK('gold v_bc_quotes'[LineCostsPLN]) || 'gold v_bc_quotes'[LineCostsPLN] = 0,
+			        0,
+			        'gold v_bc_quotes'[ProfitPLN]
+			    )
+			)
+			VAR MarzaOferty =
+			    DIVIDE(_ZyskOferty,
+			            _WartoscOferty
+			    )
+			
+			
+			
+			RETURN MarzaOferty
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 9fac2d5e-129c-4da7-9fb5-a6cef66f2481
+
+	measure Nr_oferty =
+			
+			MAX(
+			    'gold v_bc_quotes'[NoQuote]
+			)
+		lineageTag: 8b7bf45a-8245-4746-a9b0-2da79e776a10
+
+	measure Nazwa_klienta =
+			
+			MAX(
+			    'gold v_bc_quotes'[CustomerName]
+			)
+		lineageTag: 5112f31d-6994-45c4-bcdf-3ef0efc72ee1
+
+	measure Data_oferty =
+			
+			MAX(
+			    'gold v_bc_quotes'[QuoteDate]
+			)
+		formatString: dd.mm.yyyy
+		lineageTag: d2f8791d-8336-40f1-9d2b-6dd6fbf217f1
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	measure LoggedSalesperson =
+			
+			USERPRINCIPALNAME()
+		lineageTag: cdaa2d63-5b39-4e7f-adbb-514ed723b701
+
+	column Value
+		isHidden
+		formatString: 0
+		lineageTag: a3d794bd-ab7c-465e-b3d0-f1dfe7d34076
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Miary = calculated
+		mode: import
+		source = {0}
+
+	annotation PBI_Id = d199dc979ed04b3db01a9a7396a5894f
+

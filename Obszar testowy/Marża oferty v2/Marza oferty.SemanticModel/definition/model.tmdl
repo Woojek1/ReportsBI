@@ -1,0 +1,34 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.146.1133.0 (25.08)+c8010d55d1db76eda03c968b03481610e96a1ef7
+
+annotation PBI_QueryOrder = ["gold v_projects","gold v_bc_quotes","gold v_bc_salesperson","gold v_bc_items","gold v_hr_enova_rls"]
+
+annotation PBI_ProTooling = ["DevMode","CalcGroup"]
+
+ref table _Miary
+ref table Kalendarz
+ref table 'gold v_projects'
+ref table 'gold v_bc_quotes'
+ref table 'gold v_bc_salesperson'
+ref table 'Grupa obliczania'
+ref table 'gold v_bc_items'
+ref table 'gold v_hr_enova_rls'
+
+ref role DTH
+ref role Aircon
+ref role Zarząd
+ref role Technab
+ref role Zymetric
+
+ref cultureInfo pl-PL
+

@@ -1,0 +1,73 @@
+table Kalendarz
+	lineageTag: 52dbaba1-6dc1-4115-94e9-832327eecd49
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: edb1be2d-1c2d-439b-8407-7e7d7d987550
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rok
+		formatString: 0
+		lineageTag: cb20b603-dde1-492f-aac3-cc23bf5c1b8d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Rok]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kwartał
+		lineageTag: 0bf68b84-6ecc-4b6e-aff0-66d6594422fa
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Kwartał]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Miesiąc
+		lineageTag: c0621f70-e017-43ef-a91c-8532514ee4e0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Miesiąc]
+		sortByColumn: 'Numer Miesiąca'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numer Miesiąca'
+		formatString: 0
+		lineageTag: 931c93b3-a060-47f8-9246-3b5be60fdbc1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Numer Miesiąca]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dzień
+		formatString: 0
+		lineageTag: be29f3b1-ce92-4965-a4ff-82b43d6a81e0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Dzień]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Kalendarz = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDARAUTO(),
+				    "Rok", YEAR([Date]),
+				    "Kwartał", "Q" & FORMAT([Date], "Q"),
+				    "Miesiąc", FORMAT([Date], "MMMM"),
+				    "Numer Miesiąca", MONTH([Date]),
+				    "Dzień", DAY([Date])
+				)
+
+	annotation PBI_Id = 910e898757dc494db81db7a195e7efb9
+

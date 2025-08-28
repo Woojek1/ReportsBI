@@ -1,0 +1,396 @@
+table 'gold v_bc_items'
+	lineageTag: 73fe6c9f-2c80-4c85-a370-235e1fe06789
+
+	column NoItem
+		dataType: string
+		lineageTag: 543e41da-8ac4-47d0-9bf0-16a68fa78fe0
+		summarizeBy: none
+		sourceColumn: NoItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoItem
+		dataType: string
+		lineageTag: bb4f4712-57ee-4d7b-b5d2-a754a4463edc
+		summarizeBy: none
+		sourceColumn: KeyNoItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Indeks PIM'
+		dataType: string
+		lineageTag: cd07f746-0c47-408e-8f02-1ba89395cefd
+		summarizeBy: none
+		sourceColumn: Indeks PIM
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockQuantity
+		dataType: double
+		lineageTag: 0f3755b5-f970-4351-be76-7652684dfa45
+		summarizeBy: sum
+		sourceColumn: StockQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MKGLStockQuantity
+		dataType: double
+		lineageTag: 15efd086-275d-47ec-b270-dc1af1378bb3
+		summarizeBy: sum
+		sourceColumn: MKGLStockQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitCost
+		dataType: double
+		lineageTag: 3fdabc2f-2e74-4665-a8a9-b6272e66219e
+		summarizeBy: sum
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitOfMeasure
+		dataType: string
+		lineageTag: 8b63c42e-e816-4bfb-83fe-c5ad0dffa45d
+		summarizeBy: none
+		sourceColumn: UnitOfMeasure
+
+		annotation SummarizationSetBy = Automatic
+
+	column InventoryGroup
+		dataType: string
+		lineageTag: f0fac52a-eef3-41b2-b4b9-659b9c05b4db
+		summarizeBy: none
+		sourceColumn: InventoryGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemTypeA
+		dataType: string
+		lineageTag: 7fac439b-3d68-468e-b1cf-12d508d20c11
+		summarizeBy: none
+		sourceColumn: ItemTypeA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemTypeB
+		dataType: string
+		lineageTag: 90bb6fd8-edf5-463c-a8d0-ce7861a45bb0
+		summarizeBy: none
+		sourceColumn: ItemTypeB
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValuationMethod
+		dataType: string
+		lineageTag: 6d0f4b81-70a9-4d2a-9849-f6f2ebae7715
+		summarizeBy: none
+		sourceColumn: ValuationMethod
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 70fc8d6d-c1f2-41c5-b332-31129ec3ae9d
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description2
+		dataType: string
+		lineageTag: 4ac043fc-be19-4991-ac1a-94a1e3c6e309
+		summarizeBy: none
+		sourceColumn: Description2
+
+		annotation SummarizationSetBy = Automatic
+
+	column CoolingCapacity
+		dataType: double
+		lineageTag: bfe7db08-2b71-449f-9901-ce7fdc1dfa78
+		summarizeBy: sum
+		sourceColumn: CoolingCapacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HeatingCapacity
+		dataType: double
+		lineageTag: 7d5bba4b-82b8-4162-8e2a-4330f38f6ede
+		summarizeBy: sum
+		sourceColumn: HeatingCapacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PerformanceIndex
+		dataType: double
+		lineageTag: 7b55d182-49ae-4ffb-afc6-181e886e73ff
+		summarizeBy: sum
+		sourceColumn: PerformanceIndex
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Refrigerant
+		dataType: string
+		lineageTag: 755b93c4-6307-4e7a-9eba-01ab0c346a1b
+		summarizeBy: none
+		sourceColumn: Refrigerant
+
+		annotation SummarizationSetBy = Automatic
+
+	column RefrigerantQuantity
+		dataType: double
+		lineageTag: 195e708a-09dd-4272-af49-c27555c46d70
+		summarizeBy: sum
+		sourceColumn: RefrigerantQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MainInventoryAccountingGroup
+		dataType: string
+		lineageTag: 328c467e-7746-4ae1-bacd-f3549bc79f88
+		summarizeBy: none
+		sourceColumn: MainInventoryAccountingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column InventoryPostingGroup
+		dataType: string
+		lineageTag: 030803de-ee97-46b2-bd45-958959e89e97
+		summarizeBy: none
+		sourceColumn: InventoryPostingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column ManufacturerCode
+		dataType: string
+		lineageTag: e5a06ce3-4ebc-448e-b318-5195681795d0
+		summarizeBy: none
+		sourceColumn: ManufacturerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column PurchaseOrderQuantity
+		dataType: double
+		lineageTag: aacc8daf-ea4a-4265-8170-8f706cb27f4b
+		summarizeBy: sum
+		sourceColumn: PurchaseOrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SalesOrderQuantity
+		dataType: double
+		lineageTag: 96805f16-08a9-4b3c-b6ff-24bf685ac108
+		summarizeBy: sum
+		sourceColumn: SalesOrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ServiceOrderQuantity
+		dataType: double
+		lineageTag: 2d09223a-dee0-46e3-9b83-2082fd17bf92
+		summarizeBy: sum
+		sourceColumn: ServiceOrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedInventoryQuantity
+		dataType: double
+		lineageTag: c14da932-3e7c-428d-9b63-ac1a43ee13f8
+		summarizeBy: sum
+		sourceColumn: ReservedInventoryQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedPurchaseOrderQuantity
+		dataType: double
+		lineageTag: c97e907b-27c4-43bc-bee3-ee1481809d97
+		summarizeBy: sum
+		sourceColumn: ReservedPurchaseOrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReservedSalesOrderQuantity
+		dataType: double
+		lineageTag: b6680ae4-15c6-41f7-8401-11e6bb3283e7
+		summarizeBy: sum
+		sourceColumn: ReservedSalesOrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Blocked
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b4e8b27a-ebbb-48b8-bf4b-98700df9217e
+		summarizeBy: none
+		sourceColumn: Blocked
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemID
+		dataType: string
+		lineageTag: 41b08512-0b9c-478b-8467-97496cf43f84
+		summarizeBy: none
+		sourceColumn: SystemID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6bd6e6a6-9ef6-4818-845f-7b7cd5c076da
+		summarizeBy: none
+		sourceColumn: SystemModifiedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 78c958c2-d7ac-44e7-ac4b-917b07b0aa79
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		lineageTag: 9c67caf0-c1ce-4f7a-8ad5-7396c5988c46
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPricePLN
+		dataType: double
+		lineageTag: 8343c08a-df0d-48a5-839d-1fef9173548a
+		summarizeBy: sum
+		sourceColumn: UnitPricePLN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceCZK
+		dataType: double
+		lineageTag: ef370472-6700-4649-a9e7-4a275867ff1e
+		summarizeBy: sum
+		sourceColumn: UnitPriceCZK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceUSD
+		dataType: double
+		lineageTag: 32128aea-874a-4a2f-8467-3c549b7e865e
+		summarizeBy: sum
+		sourceColumn: UnitPriceUSD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceEUR
+		dataType: double
+		lineageTag: 242300ad-9644-4c30-9fed-47c2e2eb09b4
+		summarizeBy: sum
+		sourceColumn: UnitPriceEUR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPriceGBP
+		dataType: double
+		lineageTag: 7bbb9f56-1048-4270-b85c-d68b36b1cf54
+		summarizeBy: sum
+		sourceColumn: UnitPriceGBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NetWeight
+		dataType: double
+		lineageTag: 0cc3c4e5-8862-45ac-aa46-595b027939b3
+		summarizeBy: sum
+		sourceColumn: NetWeight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EdnBatteryCode
+		dataType: string
+		lineageTag: 0171c6f0-0e86-4ac3-8ae6-9a53380e43e3
+		summarizeBy: none
+		sourceColumn: EdnBatteryCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdnBatteryQuantity
+		dataType: double
+		lineageTag: e379e2cb-2db7-4453-8144-db8d03480c95
+		summarizeBy: sum
+		sourceColumn: EdnBatteryQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VendorNo
+		dataType: string
+		lineageTag: 1e6b65a7-d048-40ba-be37-6181b3016656
+		summarizeBy: none
+		sourceColumn: VendorNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdnBatteryItem
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 569d392c-efa0-4dc0-8b1a-3b88388feaaa
+		summarizeBy: none
+		sourceColumn: EdnBatteryItem
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_bc_items' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_bc_items = Źródło{[Schema="gold",Item="v_bc_items"]}[Data]
+				in
+				    gold_v_bc_items
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

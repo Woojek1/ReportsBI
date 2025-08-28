@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "3b33af24e647c1411c37",
+  "displayName": "Szczegóły oferty",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "703f55188bac25d830a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_quotes"
+              }
+            },
+            "Property": "NoQuote"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "gold v_bc_quotes",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "g"
+                          }
+                        },
+                        "Property": "NoQuote"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'OF/25/08/0368'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "4b0f33cbbddc37229a0e",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "22999b5ad6d914c08e51",
+        "boundFilter": "703f55188bac25d830a8",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold v_bc_quotes"
+              }
+            },
+            "Property": "NoQuote"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "ebfc4a2b00a21e22bbd5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "714a38adda207e8d77d0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "0e23b47dcac02cc88536",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "524d0c64cde62042528b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e9497cb20909497a5ce1",
+      "target": "e3c7a53a92069ed55d8e",
+      "type": "NoFilter"
+    }
+  ]
+}

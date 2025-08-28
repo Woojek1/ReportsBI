@@ -1,0 +1,79 @@
+table 'gold v_bc_salesperson'
+	lineageTag: 609cf54c-ea0a-4154-af24-592d3d41fa9f
+
+	column Code
+		dataType: string
+		lineageTag: bc204e44-154e-4bd8-816e-022f7b08de07
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyNoCode
+		dataType: string
+		lineageTag: 746aacba-b509-42f2-8685-7ddbb497fe93
+		summarizeBy: none
+		sourceColumn: KeyNoCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: f64a86db-787c-4de4-bb7d-8ee3722e7fff
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 080d694d-d466-4230-a12a-1a33134c5016
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobTitle
+		dataType: string
+		lineageTag: 77bf7dda-c49c-4891-b922-5c1e38dc4448
+		summarizeBy: none
+		sourceColumn: JobTitle
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupervisorCode
+		dataType: string
+		lineageTag: b59a81bd-8ab4-49f6-98c9-3f3a53247b1d
+		summarizeBy: none
+		sourceColumn: SupervisorCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: db81dd13-a8c7-46fe-a883-a4aeef84a1a4
+		summarizeBy: none
+		sourceColumn: LoadDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Company
+		dataType: string
+		lineageTag: b2755796-a08f-4232-b3f8-14e90d1c4443
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold v_bc_salesperson' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_v_bc_salesperson = Źródło{[Schema="gold",Item="v_bc_salesperson"]}[Data]
+				in
+				    gold_v_bc_salesperson
+
+	annotation PBI_ResultType = Table
+

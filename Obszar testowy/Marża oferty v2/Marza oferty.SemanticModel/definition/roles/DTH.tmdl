@@ -1,0 +1,16 @@
+role DTH
+	modelPermission: read
+
+	tablePermission 'gold v_hr_enova_rls' =
+			'gold v_hr_enova_rls'[EmailPrzelozonego (N-3)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailPrzelozonego (N-2)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailPrzelozonego (N-1)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailPrzelozonego (N)] = USERPRINCIPALNAME()
+			||
+			'gold v_hr_enova_rls'[EmailPracownika] = USERPRINCIPALNAME()
+
+	annotation PBI_Id = 65edd27e25f342e2848bca4762d0975e
+

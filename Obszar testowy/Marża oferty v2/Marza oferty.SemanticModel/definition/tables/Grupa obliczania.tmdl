@@ -1,0 +1,25 @@
+table 'Grupa obliczania'
+	lineageTag: f22d8802-66ca-4011-b9d4-2dc84bc7c123
+
+	calculationGroup
+
+		calculationItem 'Element obliczeniowy' = SELECTEDMEASURE()
+
+	column 'Nazwa grupy obliczania'
+		dataType: string
+		lineageTag: ce9eae7e-f648-4443-89f7-5e23b8206b29
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: 'Liczba porządkowa'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Liczba porządkowa'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e390013-64d3-44cd-a142-c62071655430
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

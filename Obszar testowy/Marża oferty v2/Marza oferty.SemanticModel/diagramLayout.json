@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 11.313186687786983
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 636.98106906101521,
+            "y": 116.21489628456277
+          },
+          "nodeIndex": "gold v_bc_quotes",
+          "nodeLineageTag": "0ce3d45d-984a-4c73-98d3-e26ed19476c5",
+          "size": {
+            "height": 648,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1277.33943468891,
+            "y": 52.363859130190676
+          },
+          "nodeIndex": "_Miary",
+          "nodeLineageTag": "42bcf88b-c31d-4748-8161-39456f97632e",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 921.0024390207127,
+            "y": 63.279610213141353
+          },
+          "nodeIndex": "gold v_projects",
+          "nodeLineageTag": "8349f38b-1288-4ec0-9f86-73be665efea6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 936.661169360576,
+            "y": 642.28510371543723
+          },
+          "nodeIndex": "Kalendarz",
+          "nodeLineageTag": "52dbaba1-6dc1-4115-94e9-832327eecd49",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 300.42795759789874,
+            "y": 128.9398677937962
+          },
+          "nodeIndex": "gold v_bc_salesperson",
+          "nodeLineageTag": "609cf54c-ea0a-4154-af24-592d3d41fa9f",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1232,
+            "y": 378.75
+          },
+          "nodeIndex": "Grupa obliczania",
+          "nodeLineageTag": "f22d8802-66ca-4011-b9d4-2dc84bc7c123",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 293.21000683175293,
+            "y": 533.78570776492325
+          },
+          "nodeIndex": "gold v_bc_items",
+          "nodeLineageTag": "73fe6c9f-2c80-4c85-a370-235e1fe06789",
+          "size": {
+            "height": 409.36080464860743,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "gold v_hr_enova_rls",
+          "nodeLineageTag": "0c4a39f3-965f-4558-82ff-c2b7e798e33d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 79.553182037699813,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}
