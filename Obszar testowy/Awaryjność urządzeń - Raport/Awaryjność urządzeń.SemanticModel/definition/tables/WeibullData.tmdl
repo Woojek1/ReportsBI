@@ -1,0 +1,148 @@
+table WeibullData
+	lineageTag: f33478af-f207-42eb-9413-11d56eb11dfc
+
+	column Item_No_Serviced
+		lineageTag: 91b006d1-2e3f-4541-b977-73726b2b246d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Item_No_Serviced]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Firma
+		lineageTag: 2b19689f-5a5c-4427-94d8-533989616320
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Firma]
+
+		annotation SummarizationSetBy = Automatic
+
+	column T
+		lineageTag: 7f2af6b3-538d-464b-9ebb-a170823d5da7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [T]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column n
+		formatString: 0
+		lineageTag: de815a50-e8b9-409b-8f23-415fa2d30722
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [n]
+
+		annotation SummarizationSetBy = Automatic
+
+	column r
+		formatString: 0
+		lineageTag: 85fa4668-62f6-4d10-976a-4bb58f19a5ea
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [r]
+
+		annotation SummarizationSetBy = Automatic
+
+	column F
+		lineageTag: 0e02ced0-55fd-41d3-9d9a-1a9e07c0f133
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [F]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column X
+		lineageTag: f4365eac-5cb1-42b0-b9e5-a74c50447008
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [X]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Y
+		lineageTag: bc8636dd-4d09-41a8-84d1-9836e65ed18a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Y]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Base_GroupB
+		lineageTag: 08da7d4a-f35b-478f-a91b-775bb3d67851
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Base_GroupB]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition WeibullData = calculated
+		mode: import
+		source = ```
+				
+				VAR Base =
+				    FILTER (
+				        SELECTCOLUMNS (
+				            'Fact_Items_Failure',
+				            "Base_GroupB", 'Fact_Items_Failure'[Base_GroupB],
+				            "Item_No_Serviced", 'Fact_Items_Failure'[Item_No_Serviced],
+				            "Firma", 'Fact_Items_Failure'[Firma],
+				            "T", 'Fact_Items_Failure'[Time_To_Failure (month)]
+				        ),
+				        NOT ISBLANK ( [T] ) && [T] > 0
+				    )
+				VAR WithRanks =
+				    ADDCOLUMNS (
+				        Base,
+				        "n",
+				            VAR gNo = [Base_GroupB]
+				            VAR gItem = [Item_No_Serviced]
+				            RETURN COUNTROWS ( FILTER ( Base, [Base_GroupB] = gNo && [Item_No_Serviced] = gItem ) ),
+				        "r",
+				            VAR gNo2 = [Base_GroupB]
+				            VAR gItem2 = [Item_No_Serviced]
+				            RETURN
+				                RANKX (
+				                    FILTER ( Base, [Base_GroupB] = gNo2 && [Item_No_Serviced] = gItem2 ),
+				                    [T],
+				                    ,
+				                    ASC,
+				                    Dense
+				                )
+				    )
+				VAR Step1 =
+				    ADDCOLUMNS (
+				        WithRanks,
+				        "F", DIVIDE ( [r], [n] + 1 ),
+				        "X", LN ( [T] )
+				    )
+				VAR Step2 =
+				    ADDCOLUMNS (
+				        Step1,
+				        "Y", LN ( - LN ( 1 - [F] ) )
+				    )
+				RETURN
+				    SELECTCOLUMNS (
+				        Step2,
+				        "Base_GroupB", [Base_GroupB],
+				        "Item_No_Serviced", [Item_No_Serviced],
+				        "Firma", [Firma],
+				        "T", [T],
+				        "n", [n],
+				        "r", [r],
+				        "F", [F],
+				        "X", [X],
+				        "Y", [Y]
+				    )
+				
+				```
+
+	annotation PBI_Id = ebfec181637a49dca219921120d303f8
+

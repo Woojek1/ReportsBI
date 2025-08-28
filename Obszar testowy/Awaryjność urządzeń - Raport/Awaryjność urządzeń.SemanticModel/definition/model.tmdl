@@ -1,0 +1,24 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_QueryOrder = ["Fact_Items_Failure"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Fact_Items_Failure
+ref table _Measures
+ref table Calendar
+ref table Months
+ref table WeibullData
+
+ref cultureInfo pl-PL
+

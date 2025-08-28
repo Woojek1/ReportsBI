@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "1.8.95",
+        "report": "2.0.95",
+        "page": "1.3.95"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Zymetric04087939679692909.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.101",
+        "report": "2.0.101",
+        "page": "1.3.101"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Zymetric04087939679692909.json",
+          "path": "Zymetric04087939679692909.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "miotla20397904377218645.png",
+          "path": "miotla20397904377218645.png",
+          "type": "Image"
+        },
+        {
+          "name": "Rectangle_1_(8)138349025446597.png",
+          "path": "Rectangle_1_(8)138349025446597.png",
+          "type": "Image"
+        },
+        {
+          "name": "kalendarz_-_niebieski68941202957571.png",
+          "path": "kalendarz_-_niebieski68941202957571.png",
+          "type": "Image"
+        },
+        {
+          "name": "wykres_-_niebieski2927281679736792.png",
+          "path": "wykres_-_niebieski2927281679736792.png",
+          "type": "Image"
+        },
+        {
+          "name": "miotla6250567115655092.png",
+          "path": "miotla6250567115655092.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}
