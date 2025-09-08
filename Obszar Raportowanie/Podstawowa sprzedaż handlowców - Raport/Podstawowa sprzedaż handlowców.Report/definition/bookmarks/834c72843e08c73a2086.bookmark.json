@@ -727,31 +727,6 @@
               ]
             }
           },
-          "e6dcd605c088d950bc8a": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "26ad91c55a094aec09cb",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "CategorySalesAmountLCYLast12MonthsToday"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "card",
-              "objects": {}
-            }
-          },
           "e82882f724c5af76b1f8": {
             "singleVisual": {
               "visualType": "image",

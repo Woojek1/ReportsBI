@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "88d6b32586aa4556d378",
+  "name": "5247e907f4b97ca3f890",
   "position": {
     "x": 64,
-    "y": 80,
-    "z": 29000,
-    "height": 55,
+    "y": 208,
+    "z": 32002,
+    "height": 56.000000000000007,
     "width": 320,
-    "tabOrder": 25000
+    "tabOrder": 32002
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "gold v_bc_customers"
                     }
                   },
-                  "Property": "RelatedCompany"
+                  "Property": "Customer_Category"
                 }
               },
-              "queryRef": "gold v_bc_customers.RelatedCompany",
-              "nativeQueryRef": "RelatedCompany",
+              "queryRef": "gold v_bc_customers.Customer_Category",
+              "nativeQueryRef": "Customer_Category",
               "active": true
             }
           ]
@@ -48,13 +48,26 @@
           }
         }
       ],
+      "general": [
+        {
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "header": [
         {
           "properties": {
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Firmy powiązane'"
+                  "Value": "'Kategoria klienta'"
                 }
               }
             },
@@ -76,26 +89,6 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "pendingChangesIcon": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "size": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
                 }
               }
             }
@@ -134,9 +127,24 @@
           }
         }
       ],
-      "general": [
+      "pendingChangesIcon": [
         {
-          "properties": {}
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "size": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
         }
       ],
       "selection": [
@@ -164,6 +172,13 @@
       "title": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nazwa klienta'"
+                }
+              }
+            },
             "titleWrap": {
               "expr": {
                 "Literal": {
@@ -333,11 +348,6 @@
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "RelatedCompany",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

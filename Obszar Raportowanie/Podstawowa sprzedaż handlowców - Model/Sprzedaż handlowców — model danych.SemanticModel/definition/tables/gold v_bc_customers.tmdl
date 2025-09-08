@@ -292,15 +292,40 @@ table 'gold v_bc_customers'
 
 		annotation SummarizationSetBy = Automatic
 
+	column KUKE_Symbol
+		dataType: string
+		lineageTag: 03e5ab00-e030-43c1-a69e-cd78163bdf93
+		summarizeBy: none
+		sourceColumn: KUKE_Symbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_Category
+		dataType: string
+		lineageTag: a3673ae5-b212-4d91-b1fe-1fb96011f5bf
+		summarizeBy: none
+		sourceColumn: Customer_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_Activity
+		dataType: string
+		lineageTag: d48341f5-04e4-4a48-add1-4b2a988c1631
+		summarizeBy: none
+		sourceColumn: Customer_Activity
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_customers' = m
 		mode: import
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
 				    gold_v_bc_customers = Źródło{[Schema="gold",Item="v_bc_customers"]}[Data],
-				    #"Zamieniono wartość" = Table.ReplaceValue(gold_v_bc_customers,"HURTOWNIA_WLASNA","HURTOWNIA WŁASNA",Replacer.ReplaceText,{"CompanyProfile"})
+				    #"Zamieniono wartość" = Table.ReplaceValue(gold_v_bc_customers,"HURTOWNIA_WLASNA","HURTOWNIA WŁASNA",Replacer.ReplaceText,{"CompanyProfile"}),
+				    #"Przefiltrowano wiersze" = Table.SelectRows(#"Zamieniono wartość", each true)
 				in
-				    #"Zamieniono wartość"
+				    #"Przefiltrowano wiersze"
 
 	annotation PBI_NavigationStepName = Nawigacja
 

@@ -34,6 +34,19 @@
           }
         }
       }
+    ],
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
     ]
   },
   "visibility": "HiddenInViewMode",
@@ -45,11 +58,6 @@
     },
     {
       "source": "9cfe324101b025318d74",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "NoFilter"
-    },
-    {
-      "source": "9cfe324101b025318d74",
       "target": "f8fd4d13e34c7051c72d",
       "type": "NoFilter"
     },
@@ -66,11 +74,6 @@
     {
       "source": "f7257bbf58dad7241191",
       "target": "9cfe324101b025318d74",
-      "type": "NoFilter"
-    },
-    {
-      "source": "f7257bbf58dad7241191",
-      "target": "e6dcd605c088d950bc8a",
       "type": "NoFilter"
     },
     {
@@ -126,11 +129,6 @@
     {
       "source": "8c8936100635088067c1",
       "target": "9cfe324101b025318d74",
-      "type": "NoFilter"
-    },
-    {
-      "source": "8c8936100635088067c1",
-      "target": "e6dcd605c088d950bc8a",
       "type": "NoFilter"
     },
     {
@@ -197,11 +195,6 @@
       "source": "f095ad9212c3852cd487",
       "target": "93e48da0975e36a7ec22",
       "type": "DataFilter"
-    },
-    {
-      "source": "f095ad9212c3852cd487",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "NoFilter"
     },
     {
       "source": "f095ad9212c3852cd487",
@@ -395,11 +388,6 @@
     },
     {
       "source": "4003755baa6ea8614b04",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "NoFilter"
-    },
-    {
-      "source": "4003755baa6ea8614b04",
       "target": "55f9e9cdcc0b978cbede",
       "type": "NoFilter"
     },
@@ -407,21 +395,6 @@
       "source": "4003755baa6ea8614b04",
       "target": "8b558aed95730a78d9db",
       "type": "NoFilter"
-    },
-    {
-      "source": "55f9e9cdcc0b978cbede",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "DataFilter"
-    },
-    {
-      "source": "8b558aed95730a78d9db",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "DataFilter"
-    },
-    {
-      "source": "1954171180702942d88e",
-      "target": "e6dcd605c088d950bc8a",
-      "type": "DataFilter"
     },
     {
       "source": "1954171180702942d88e",
