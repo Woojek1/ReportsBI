@@ -77,15 +77,6 @@ cultureInfo pl-PL
 			        }
 			      ]
 			    },
-			    "gold_v_projects.noproject": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_projects",
-			          "ConceptualProperty": "NoProject"
-			        }
-			      },
-			      "State": "Generated"
-			    },
 			    "gold_v_bc_quotes.quotedate": {
 			      "Definition": {
 			        "Binding": {
@@ -106,15 +97,6 @@ cultureInfo pl-PL
 			          }
 			        }
 			      ]
-			    },
-			    "gold_v_projects.projectname": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "gold v_projects",
-			          "ConceptualProperty": "ProjectName"
-			        }
-			      },
-			      "State": "Generated"
 			    },
 			    "table_miary.koszturzadzenoferty": {
 			      "Definition": {
@@ -463,19 +445,7 @@ cultureInfo pl-PL
 			          "ConceptualProperty": "current_available_quantity"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Bieżąca liczba dostępnych sztuk": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "fact_current_inventory.current_cost": {
 			      "Definition": {
