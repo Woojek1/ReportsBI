@@ -15,7 +15,7 @@ table Calendar
 	column Year
 		formatString: 0
 		lineageTag: cc131114-6fc9-4c2e-a0d8-6e0f6854af98
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Year]
 
@@ -24,7 +24,7 @@ table Calendar
 	column 'Month Number'
 		formatString: 0
 		lineageTag: 07ccaee3-3c47-444d-84fd-c0bd9c4c21cf
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Month Number]
 
@@ -74,7 +74,7 @@ table Calendar
 	column 'Weekday Number'
 		formatString: 0
 		lineageTag: c8eb5152-fd88-4e80-9215-e98b9f70ae8e
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Weekday Number]
 

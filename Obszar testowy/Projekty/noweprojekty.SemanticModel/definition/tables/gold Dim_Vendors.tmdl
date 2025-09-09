@@ -1,0 +1,89 @@
+table 'gold Dim_Vendors'
+	lineageTag: 59dc4e98-566f-49ff-ac1f-5cc47ad36a7a
+
+	column vendor_no
+		dataType: string
+		lineageTag: e877ecf2-f717-4842-b7e0-6854d6348f05
+		summarizeBy: none
+		sourceColumn: vendor_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_key_no
+		dataType: string
+		lineageTag: 8308de05-a46a-4f1b-b44f-4f32235ffdc3
+		summarizeBy: none
+		sourceColumn: vendor_key_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_name
+		dataType: string
+		lineageTag: 09b32f5d-cc2e-4c60-90f3-e2559561b7ea
+		summarizeBy: none
+		sourceColumn: vendor_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_address
+		dataType: string
+		lineageTag: da4dbcee-6110-42af-b12d-48a08c3d9038
+		summarizeBy: none
+		sourceColumn: vendor_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_city
+		dataType: string
+		lineageTag: 1562b585-49e1-40a6-a09f-02f11abed1ec
+		summarizeBy: none
+		sourceColumn: vendor_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_post_code
+		dataType: string
+		lineageTag: d9c6ff4f-7e4e-413a-86db-59331e747af9
+		summarizeBy: none
+		sourceColumn: vendor_post_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_country
+		dataType: string
+		lineageTag: 56c6b193-ffcf-470b-8e7c-6ab679a7a9a0
+		summarizeBy: none
+		sourceColumn: vendor_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 51f4a4e8-fe0e-4738-86ba-eb1ea91994ac
+		summarizeBy: none
+		sourceColumn: load_ts
+
+		annotation SummarizationSetBy = Automatic
+
+	column company
+		dataType: string
+		lineageTag: 4811d3e4-8c7e-4cb1-962f-566d271d130b
+		summarizeBy: none
+		sourceColumn: company
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold Dim_Vendors' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_Dim_Vendors = Źródło{[Schema="gold",Item="Dim_Vendors"]}[Data]
+				in
+				    gold_Dim_Vendors
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

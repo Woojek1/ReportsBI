@@ -1,0 +1,15 @@
+expression 'gold v_projects' =
+		let
+		    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+		    gold_v_projects = Źródło{[Schema="gold",Item="v_projects"]}[Data],
+		    #"Posortowano wiersze" = Table.Sort(gold_v_projects,{{"LoadDate", Order.Descending}}),
+		    #"Przefiltrowano wiersze" = Table.SelectRows(#"Posortowano wiersze", each true),
+		    #"Posortowano wiersze1" = Table.Sort(#"Przefiltrowano wiersze",{{"LoadDate", Order.Descending}})
+		in
+		    #"Posortowano wiersze1"
+	lineageTag: d3a5fd5c-c7db-4c2b-a9fc-bb25dd07c3dc
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Exception
+

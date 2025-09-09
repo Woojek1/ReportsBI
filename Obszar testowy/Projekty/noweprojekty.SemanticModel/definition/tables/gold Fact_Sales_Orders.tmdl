@@ -1,0 +1,113 @@
+table 'gold Fact_Sales_Orders'
+	lineageTag: 77393715-af1c-49e5-aec8-63fe2b112e56
+
+	column order_no
+		dataType: string
+		lineageTag: 17670b12-d9c6-46e9-88ed-c1d047973042
+		summarizeBy: none
+		sourceColumn: order_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_status
+		dataType: string
+		lineageTag: 536adc59-87a5-44b3-bbef-245fd609bbab
+		summarizeBy: none
+		sourceColumn: order_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0055f1e3-4eb8-4635-aa04-fcb6c09854d7
+		summarizeBy: none
+		sourceColumn: order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column due_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ba2b6c72-eee7-4f73-8e66-d74ca8cc35f9
+		summarizeBy: none
+		sourceColumn: due_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column location_code
+		dataType: string
+		lineageTag: e00e4c30-29ff-4261-9022-9f8492e99fd0
+		summarizeBy: none
+		sourceColumn: location_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column salesperson_code
+		dataType: string
+		lineageTag: cfe96753-a2e4-45a6-9461-a45a22a60661
+		summarizeBy: none
+		sourceColumn: salesperson_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_key_no
+		dataType: string
+		lineageTag: d261bd18-a582-430a-98ee-c234b45e2ec5
+		summarizeBy: none
+		sourceColumn: item_key_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity_ordered
+		dataType: double
+		lineageTag: 6b9f88f7-f8b5-4715-b262-a23641960421
+		summarizeBy: sum
+		sourceColumn: quantity_ordered
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column customer_no
+		dataType: string
+		lineageTag: 0ef5e6ad-9039-45ee-8b08-69ecd80780e4
+		summarizeBy: none
+		sourceColumn: customer_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column company
+		dataType: string
+		lineageTag: a7c11a77-0521-4e45-8849-8a108886f207
+		summarizeBy: none
+		sourceColumn: company
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d7401ab0-74b9-48ba-91ab-940645a93861
+		summarizeBy: none
+		sourceColumn: load_ts
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold Fact_Sales_Orders' = m
+		mode: import
+		source =
+				let
+				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
+				    gold_Fact_Sales_Orders = Źródło{[Schema="gold",Item="Fact_Sales_Orders"]}[Data]
+				in
+				    gold_Fact_Sales_Orders
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+
