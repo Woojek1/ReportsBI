@@ -37,57 +37,12 @@
     "objects": {
       "data": [
         {
-          "properties": {
-            "numericStart": {
-              "expr": {
-                "Literal": {
-                  "Value": "3D"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "m",
-                    "Entity": "Months",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Comparison": {
-                        "ComparisonKind": 0,
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "m"
-                              }
-                            },
-                            "Property": "Months"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "3D"
-                          }
-                        }
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "header": [

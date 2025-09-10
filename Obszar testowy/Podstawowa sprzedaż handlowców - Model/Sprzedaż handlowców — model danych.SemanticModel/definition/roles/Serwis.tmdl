@@ -1,0 +1,7 @@
+role Serwis
+	modelPermission: read
+
+	tablePermission Invoices = [MPK] == "1010"
+
+	annotation PBI_Id = 5654fb5042524bbda1263834e4b6e90c
+

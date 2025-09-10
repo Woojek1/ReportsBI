@@ -1,0 +1,33 @@
+createOrReplace
+
+	ref table _Measures
+
+		measure _MarginItems = ```
+				
+				VAR _SalesAmountLCY = 
+				                    CALCULATE(
+				                        SUM(Invoices[AmountLCY]),
+				                        Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+				                        )
+				                    
+				VAR _Costs = 
+				            CALCULATE(
+				            SUM(Invoices[Koszt skorygowany]),
+				            Invoices[Type] = "Item" || Invoices[Type] = "Charge (Item)"
+				            )
+				
+				VAR _ProfitLCY = 
+				            _SalesAmountLCY - _Costs           
+				
+				VAR _Margin = 
+				        DIVIDE(_ProfitLCY, _SalesAmountLCY)
+				
+				
+				RETURN
+				    _Margin
+				
+				```
+			formatString: 0.00%;-0.00%;0.00%
+			displayFolder: Sales
+			lineageTag: 3f071a53-6e7f-40b1-9bae-70ed130f4cb5
+

@@ -1,0 +1,302 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "860bffe4f22e59488b93",
+  "displayName": "Szczegóły faktury",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0dbd00709b411b7245b4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "6701a2f4b22f73d6d300",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "KeyNoInvoice"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "Invoices",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "i"
+                          }
+                        },
+                        "Property": "KeyNoInvoice"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Z_FVS/25/03/0397'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "6ce65f80e856703872b1",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "43f9c4b05129c052c496",
+        "boundFilter": "0dbd00709b411b7245b4",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "NoInvoice"
+          }
+        }
+      },
+      {
+        "name": "c7db9ca4e3be8ec837f2",
+        "boundFilter": "6701a2f4b22f73d6d300",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Invoices"
+              }
+            },
+            "Property": "KeyNoInvoice"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E6E6E6'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "38ae045cd6a66c5d144b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "15f05722a2ddb5c7f51e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "3b19bc6fc30ce1d10943",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "0dccebd1e698c273a4c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "0dccebd1e698c273a4c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "ef24d97d40a641d031a3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "d1ad5b06075a52342310",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "72ce3f5f5a5cb13ad29c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "34ed27c03a6424282d14",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "34ed27c03a6424282d14",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "38ae045cd6a66c5d144b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "15f05722a2ddb5c7f51e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "72ce3f5f5a5cb13ad29c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "3b19bc6fc30ce1d10943",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "d1ad5b06075a52342310",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "ef24d97d40a641d031a3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7592e386b457509bc03e",
+      "target": "1ac1bb2a557112dec408",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "7592e386b457509bc03e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "34ed27c03a6424282d14",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "38ae045cd6a66c5d144b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "15f05722a2ddb5c7f51e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "72ce3f5f5a5cb13ad29c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "3b19bc6fc30ce1d10943",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "d1ad5b06075a52342310",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac1bb2a557112dec408",
+      "target": "ef24d97d40a641d031a3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2bdedde8fef27531dd11",
+      "target": "7592e386b457509bc03e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2bdedde8fef27531dd11",
+      "target": "1ac1bb2a557112dec408",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "7592e386b457509bc03e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0dccebd1e698c273a4c8",
+      "target": "1ac1bb2a557112dec408",
+      "type": "NoFilter"
+    }
+  ]
+}
