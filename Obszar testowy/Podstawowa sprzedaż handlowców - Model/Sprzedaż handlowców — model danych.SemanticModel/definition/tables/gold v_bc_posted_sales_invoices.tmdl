@@ -555,12 +555,40 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Payment_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 21295c76-ef3d-4e6b-80e6-8404b513b454
+		summarizeBy: none
+		sourceColumn: Payment_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CampaignNo
+		dataType: string
+		lineageTag: 0dc30ede-cef0-4079-9779-deb69ef68586
+		summarizeBy: none
+		sourceColumn: CampaignNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Is_Open
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7997d08d-706a-494c-a3ef-b19adfeccd75
+		summarizeBy: none
+		sourceColumn: Is_Open
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_bc_posted_sales_invoices = Źródło{[Schema="gold",Item="v_bc_posted_sales_invoices"]}[Data]
+				    gold_v_bc_posted_sales_invoices = Źródło{[Schema="gold",Item="v_bc_posted_sales_invoices_1"]}[Data]
 				in
 				    gold_v_bc_posted_sales_invoices
 

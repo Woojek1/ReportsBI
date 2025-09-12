@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "60afbfc15ab624508ba8",
   "displayName": "Overview-month",
-  "displayOption": "FitToWidth",
+  "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
   "pageBinding": {
@@ -19,8 +19,9 @@
             "solid": {
               "color": {
                 "expr": {
-                  "Literal": {
-                    "Value": "'#E6E6E6'"
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": -0.1
                   }
                 }
               }

@@ -431,6 +431,34 @@ table Invoices
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Payment_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6dc3eb27-f08c-4b27-ab7a-98d4eab17fb5
+		summarizeBy: none
+		sourceColumn: Payment_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CampaignNo
+		dataType: string
+		lineageTag: d26b2a85-424f-47e7-95b8-6c90bc4980aa
+		summarizeBy: none
+		sourceColumn: CampaignNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Is_Open
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9a13e7d8-76d4-4287-a510-0aaea2a99f9a
+		summarizeBy: none
+		sourceColumn: Is_Open
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Invoices = m
 		mode: import
 		source =

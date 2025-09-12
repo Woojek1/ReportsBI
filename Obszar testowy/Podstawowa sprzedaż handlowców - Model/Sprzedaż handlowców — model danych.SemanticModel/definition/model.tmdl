@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+annotation PBIDesktopVersion = 2.146.1454.0 (25.08)+901d6c338d1dea81ac3e53073ffb10469f0f37b8
 
 annotation PBI_QueryOrder = ["gold v_bc_posted_sales_invoices","gold v_bc_salesperson","gold v_bc_items","gold v_bc_customers","gold v_hr_enova_rls","gold v_bc_posted_sales_credit_memo_invoices","Invoices"]
 
@@ -25,6 +25,7 @@ ref table 'gold v_bc_customers'
 ref table 'gold v_hr_enova_rls'
 ref table 'gold v_bc_posted_sales_credit_memo_invoices'
 ref table Invoices
+ref table Calendar_Payment
 
 ref role DTH
 ref role Wszystko

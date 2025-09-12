@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/Raportowanie;initial catalog=\"Sprzedaż handlowców — model danych\";access mode=readonly;integrated security=ClaimsToken;semanticmodelid=eb8d119a-2d48-4af9-9dc3-0b66cb1f1b0a"
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/Testy;initial catalog=\"Sprzedaż handlowców — model danych\";access mode=readonly;integrated security=ClaimsToken;semanticmodelid=cdd9007c-e88f-436c-a60a-6a9544e3ac6c"
     }
   }
 }
