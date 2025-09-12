@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Sprzedaż hurtowni"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "dfd6f921-fd38-4364-83f3-ecb4be59f34b"
+  }
+}
