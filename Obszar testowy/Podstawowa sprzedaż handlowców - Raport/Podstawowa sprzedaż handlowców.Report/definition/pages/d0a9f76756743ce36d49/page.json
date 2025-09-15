@@ -57,5 +57,12 @@
         }
       }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "5c0948adcbec16d12ebd",
+      "target": "3b24956e3674a01343b3",
+      "type": "NoFilter"
+    }
+  ]
 }

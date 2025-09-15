@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "37005e684928f0fbdb9b",
   "position": {
-    "x": 48,
-    "y": 176,
+    "x": 56,
+    "y": 168,
     "z": 13000,
     "height": 512,
-    "width": 1216,
-    "tabOrder": 13000
+    "width": 1200,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "tableEx",
@@ -177,7 +177,23 @@
                 }
               },
               "queryRef": "Invoices.Payment_Date",
-              "nativeQueryRef": "Payment_Date"
+              "nativeQueryRef": "Data opłacenia",
+              "displayName": "Data opłacenia",
+              "format": "dd.MM.yyyy"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Invoices"
+                    }
+                  },
+                  "Property": "Is_Open"
+                }
+              },
+              "queryRef": "Invoices.Is_Open",
+              "nativeQueryRef": "Is_Open"
             }
           ]
         }
@@ -192,7 +208,7 @@
                     "Entity": "Invoices"
                   }
                 },
-                "Property": "Payment_Date"
+                "Property": "PostingDate"
               }
             },
             "direction": "Descending"
@@ -1573,7 +1589,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "192.89391511439527D"
+                  "Value": "215.5482629903209D"
                 }
               }
             }
@@ -2126,6 +2142,20 @@
           },
           "selector": {
             "metadata": "Invoices.Payment_Date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Invoices.Is_Open"
           }
         }
       ]
