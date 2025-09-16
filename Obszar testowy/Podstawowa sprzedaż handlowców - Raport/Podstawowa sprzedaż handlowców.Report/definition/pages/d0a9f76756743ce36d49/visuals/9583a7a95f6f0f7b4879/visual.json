@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "9583a7a95f6f0f7b4879",
   "position": {
-    "x": 400,
-    "y": 16,
+    "x": 537.962264150944,
+    "y": 19.0188679245283,
     "z": 9000,
     "height": 64,
     "width": 144,
-    "tabOrder": 8000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "Invoices"
                     }
                   },
-                  "Property": "Is_Open"
+                  "Property": "Invoice_Type"
                 }
               },
-              "queryRef": "Invoices.Is_Open",
-              "nativeQueryRef": "Is_Open",
+              "queryRef": "Invoices.Invoice_Type",
+              "nativeQueryRef": "Invoice_Type",
               "active": true
             }
           ]
@@ -67,7 +67,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Otwarta płatność?'"
+                  "Value": "'Rodzaj faktury'"
                 }
               }
             },

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "3215917e64405a84263c",
+  "name": "59d7d35c6f6f070303b4",
   "position": {
-    "x": 64,
+    "x": 376,
     "y": 16,
-    "z": 28000,
+    "z": 16001,
     "height": 64,
-    "width": 136,
-    "tabOrder": 18000
+    "width": 144,
+    "tabOrder": 16001
   },
   "visual": {
     "visualType": "slicer",
@@ -23,11 +23,11 @@
                       "Entity": "Invoices"
                     }
                   },
-                  "Property": "Company"
+                  "Property": "Is_Open"
                 }
               },
-              "queryRef": "Invoices.Company",
-              "nativeQueryRef": "Company",
+              "queryRef": "Invoices.Is_Open",
+              "nativeQueryRef": "Is_Open",
               "active": true
             }
           ]
@@ -57,6 +57,54 @@
                   "Value": "true"
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "i",
+                    "Entity": "Invoices",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "i"
+                                }
+                              },
+                              "Property": "Is_Open"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "false"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "true"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -67,7 +115,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Spółka'"
+                  "Value": "'Otwarta płatność?'"
                 }
               }
             },
@@ -348,11 +396,6 @@
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "Company",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

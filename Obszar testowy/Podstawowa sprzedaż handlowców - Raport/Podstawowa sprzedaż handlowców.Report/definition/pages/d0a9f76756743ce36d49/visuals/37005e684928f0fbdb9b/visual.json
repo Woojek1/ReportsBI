@@ -4,10 +4,10 @@
   "position": {
     "x": 56,
     "y": 168,
-    "z": 13000,
+    "z": 12000,
     "height": 512,
-    "width": 1200,
-    "tabOrder": 12000
+    "width": 1216,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1589,7 +1589,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "215.5482629903209D"
+                  "Value": "241.8676244694457D"
                 }
               }
             }
@@ -2065,7 +2065,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "73.95116415263644D"
+                  "Value": "81.20257528529561D"
                 }
               }
             }
@@ -2079,7 +2079,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "73.33228501228501D"
+                  "Value": "85.95478116020489D"
                 }
               }
             }
