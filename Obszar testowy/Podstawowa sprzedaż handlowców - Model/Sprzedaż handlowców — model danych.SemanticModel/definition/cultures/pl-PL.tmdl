@@ -28449,16 +28449,6 @@ cultureInfo pl-PL
 			            },
 			            "Weight": 0.714
 			          }
-			        },
-			        {
-			          "Payment": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ],
 			      "SemanticType": "Time"

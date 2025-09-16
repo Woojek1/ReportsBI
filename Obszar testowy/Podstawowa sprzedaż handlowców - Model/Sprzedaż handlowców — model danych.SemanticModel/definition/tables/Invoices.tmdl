@@ -459,6 +459,14 @@ table Invoices
 
 		annotation SummarizationSetBy = Automatic
 
+	column PaymentTermsCode
+		dataType: string
+		lineageTag: 44a91a6d-7ec2-4bd3-8ad1-bfb374beedce
+		summarizeBy: none
+		sourceColumn: PaymentTermsCode
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Invoices = m
 		mode: import
 		source =

@@ -583,14 +583,23 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation SummarizationSetBy = Automatic
 
+	column PaymentTermsCode
+		dataType: string
+		lineageTag: 9695135a-d3be-4e4c-9a64-fd010fa9d269
+		summarizeBy: none
+		sourceColumn: PaymentTermsCode
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_bc_posted_sales_invoices = Źródło{[Schema="gold",Item="v_bc_posted_sales_invoices_1"]}[Data]
+				    gold_v_bc_posted_sales_invoices = Źródło{[Schema="gold",Item="v_bc_posted_sales_invoices_1"]}[Data],
+				    #"Posortowano wiersze" = Table.Sort(gold_v_bc_posted_sales_invoices,{{"KeyNoInvoice", Order.Descending}})
 				in
-				    gold_v_bc_posted_sales_invoices
+				    #"Posortowano wiersze"
 
 	changedProperty = IsHidden
 
