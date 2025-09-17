@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "31f3a46d4490fa1428e3",
   "position": {
     "x": 496,
@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 304,
     "width": 304,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1155,48 +1155,6 @@
         },
         "type": "Categorical",
         "howCreated": "User"
-      },
-      {
-        "name": "ef4fd4933109a60c83d3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_items"
-              }
-            },
-            "Property": "ManufacturerCode"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "dd642191b07310d85064",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "bb3914af7dad8ab95543",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

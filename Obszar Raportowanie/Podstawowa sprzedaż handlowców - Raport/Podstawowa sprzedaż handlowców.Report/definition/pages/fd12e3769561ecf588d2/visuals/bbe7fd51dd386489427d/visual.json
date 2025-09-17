@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "bbe7fd51dd386489427d",
   "position": {
     "x": 64,
@@ -7,7 +7,7 @@
     "z": 14000,
     "height": 304,
     "width": 424,
-    "tabOrder": 32000
+    "tabOrder": 31000
   },
   "visual": {
     "visualType": "tableEx",
@@ -1176,48 +1176,6 @@
         },
         "type": "Categorical",
         "howCreated": "User"
-      },
-      {
-        "name": "25f1e0b91746464dddce",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "gold v_bc_customers"
-              }
-            },
-            "Property": "Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d547c8e057e0a4018088",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "SalesAmountItemTotalLCY"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3b32c0e3567ec09448a5",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AverageDiscount"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
