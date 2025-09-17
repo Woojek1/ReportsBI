@@ -1,0 +1,96 @@
+table weee
+	lineageTag: d1b34625-86f4-4bd1-9033-1ec1a120d93d
+
+	column company
+		dataType: string
+		sourceProviderType: nvarchar(-1)
+		lineageTag: b3898abe-5ac3-40d5-975c-96fd364e4788
+		summarizeBy: none
+		sourceColumn: company
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: fb78fb11-c08f-4456-be3f-9be859d07bfc
+		summarizeBy: none
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_code
+		dataType: string
+		sourceProviderType: nvarchar(-1)
+		lineageTag: f95d9707-f3bd-4f5d-b1e3-2b6516b559f4
+		summarizeBy: none
+		sourceColumn: category_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column fee_mode
+		dataType: string
+		sourceProviderType: nvarchar(-1)
+		lineageTag: fcd4d873-af08-486b-82bf-15ab90eed945
+		summarizeBy: none
+		sourceColumn: fee_mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column units
+		dataType: double
+		sourceProviderType: decimal(0, 0)
+		lineageTag: 3796d733-749b-4221-b301-ee72449697e1
+		summarizeBy: sum
+		sourceColumn: units
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column kg
+		dataType: double
+		sourceProviderType: decimal(0, 0)
+		lineageTag: 8df97061-2f62-4475-9aec-14e39a220755
+		summarizeBy: sum
+		sourceColumn: kg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column amount_lcy
+		dataType: double
+		sourceProviderType: decimal(0, 0)
+		lineageTag: eb97853b-8a58-46d1-b85b-6433ab5aeab0
+		summarizeBy: sum
+		sourceColumn: amount_lcy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Quarter Label' = ```
+			
+			  YEAR(weee[quarter]) & " Q" &
+			  INT( (MONTH(weee[quarter]) - 1) / 3 ) + 1
+			
+			```
+		lineageTag: a7a7a827-9953-484a-88e7-cad02a140407
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition weee = m
+		mode: directQuery
+		source =
+				let
+				    Source = Value.NativeQuery(PostgreSQL.Database("10.0.13.24", "dwh"), "SELECT#(lf)  company,#(lf)  date_trunc('quarter', posting_date)::date AS quarter,#(lf)  category_code,#(lf)  fee_mode,#(lf)  SUM(qty_base) AS units,#(lf)  ROUND(SUM(kg), 3) AS kg,#(lf)  ROUND(SUM(amount), 2) AS amount_lcy#(lf)FROM gold.v_weee_domestic_with_amount#(lf)GROUP BY company, date_trunc('quarter', posting_date), category_code, fee_mode#(lf)ORDER BY company, quarter, category_code#(lf)", null, [EnableFolding=true])
+				in
+				    Source
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

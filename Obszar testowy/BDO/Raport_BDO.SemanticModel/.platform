@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Raport_BDO"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "05bbb328-f5a8-4177-b82a-c1a1f2a4ead5"
+  }
+}
