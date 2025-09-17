@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "21f8a085970c431d9c2a",
   "position": {
     "x": 1024,
@@ -60,7 +60,7 @@
               },
               "queryRef": "gold Fact_Items_Failure.Item_No_Serviced",
               "nativeQueryRef": "Serwisowane urządzenie (Symbol)",
-              "active": false,
+              "active": true,
               "displayName": "Serwisowane urządzenie (Symbol)"
             }
           ]
@@ -129,7 +129,6 @@
             "queryRefs": [
               "gold Fact_Items_Failure.No"
             ],
-            "isCollapsed": true,
             "identityKeys": [
               {
                 "Column": {

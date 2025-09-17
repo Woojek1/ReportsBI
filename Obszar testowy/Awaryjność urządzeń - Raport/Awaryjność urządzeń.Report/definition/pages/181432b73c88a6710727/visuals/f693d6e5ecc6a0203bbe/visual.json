@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "f693d6e5ecc6a0203bbe",
   "position": {
     "x": 624,
@@ -170,7 +170,7 @@
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "'MI/AG'"
+                            "Value": "'MI/MV6-R335WV2RN1'"
                           }
                         }
                       }
@@ -212,7 +212,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'MI/AG-18NXD0-I'"
+                                "Value": "'MI/MV6-R335WV2RN1'"
                               }
                             }
                           ]
