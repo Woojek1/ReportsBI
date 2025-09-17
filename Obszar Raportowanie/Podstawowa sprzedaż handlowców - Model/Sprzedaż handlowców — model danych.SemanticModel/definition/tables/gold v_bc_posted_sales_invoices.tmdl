@@ -555,6 +555,34 @@ table 'gold v_bc_posted_sales_invoices'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Is_Open
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 08e769e6-813f-4ac2-9757-317288f99dab
+		summarizeBy: none
+		sourceColumn: Is_Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column Payment_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f321d55a-7497-4956-b168-f21f160bdb08
+		summarizeBy: none
+		sourceColumn: Payment_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CampaignNo
+		dataType: string
+		lineageTag: b5f9d285-cbfb-465e-8be4-4f17059e60d0
+		summarizeBy: none
+		sourceColumn: CampaignNo
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_posted_sales_invoices' = m
 		mode: import
 		source =

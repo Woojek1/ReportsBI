@@ -316,6 +316,23 @@ table 'gold v_bc_customers'
 
 		annotation SummarizationSetBy = Automatic
 
+	column Fgas_UDT_Verify
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ed22e61a-de4e-4916-93f9-89996c7816db
+		summarizeBy: none
+		sourceColumn: Fgas_UDT_Verify
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDN_FGAS_Declaration
+		dataType: string
+		lineageTag: e9f7a950-1309-461a-993d-be486225824a
+		summarizeBy: none
+		sourceColumn: EDN_FGAS_Declaration
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'gold v_bc_customers' = m
 		mode: import
 		source =
