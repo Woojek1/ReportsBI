@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "5e0d831c16dd561c02bc",
   "position": {
-    "x": 336,
-    "y": 16,
+    "x": 320,
+    "y": 8,
     "z": 2,
     "height": 72,
     "width": 304,
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.nazwa",
-              "nativeQueryRef": "nazwa",
-              "active": true
+              "nativeQueryRef": "Nazwa klienta",
+              "active": true,
+              "displayName": "Nazwa klienta"
             }
           ]
         }
@@ -52,6 +53,19 @@
         {
           "properties": {
             "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
               "expr": {
                 "Literal": {
                   "Value": "true"

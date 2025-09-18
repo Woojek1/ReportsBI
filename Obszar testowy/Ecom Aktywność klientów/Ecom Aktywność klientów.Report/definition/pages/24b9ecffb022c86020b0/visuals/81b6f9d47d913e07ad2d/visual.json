@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "81b6f9d47d913e07ad2d",
   "position": {
-    "x": 960,
-    "y": 16,
+    "x": 928,
+    "y": 8,
     "z": 4,
     "height": 72,
     "width": 304,
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.miasto",
-              "nativeQueryRef": "miasto",
-              "active": true
+              "nativeQueryRef": "Miasto",
+              "active": true,
+              "displayName": "Miasto"
             }
           ]
         }
@@ -55,6 +56,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

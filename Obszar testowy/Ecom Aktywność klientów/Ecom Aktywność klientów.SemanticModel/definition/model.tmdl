@@ -8,8 +8,6 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
-
 annotation PBI_QueryOrder = ["gold v_magento_Fact_customers_activity"]
 
 annotation PBI_ProTooling = ["DevMode"]

@@ -2,8 +2,514 @@ cultureInfo pl-PL
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "gold_v_magento_Fact_customers_activity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold v_magento_Fact_customers_activity": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.sku": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "sku"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sku": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.zdarzenie": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "zdarzenie"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "zdarzenie": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.nip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "nip"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nip": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.nazwa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "nazwa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nazwa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nazwa klienta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.telefon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "telefon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefon": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.miasto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "miasto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miasto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity.wojewodztwo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold v_magento_Fact_customers_activity",
+			          "ConceptualProperty": "wojewodztwo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wojewodztwo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Województwo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "gold_v_magento_Fact_customers_activity_has_wojewodztwo": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.wojewodztwo": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.wojewodztwo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.wojewodztwo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_wojewodztwos"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_miasto": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.miasto": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.miasto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.miasto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_miastos"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_telefon": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.telefon": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.telefon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.telefon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_telefons"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_nazwa": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.nazwa": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.nazwa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.nazwa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_nazwas"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_nip": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.nip": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.nip"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.nip"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_nips"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.data": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_data"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_zdarzenie": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.zdarzenie": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.zdarzenie"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.zdarzenie"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_zdarzenies"
+			        }
+			      ]
+			    },
+			    "gold_v_magento_Fact_customers_activity_has_sku": {
+			      "Binding": {
+			        "ConceptualEntity": "gold v_magento_Fact_customers_activity"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_v_magento_Fact_customers_activity": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity"
+			          }
+			        },
+			        "gold_v_magento_Fact_customers_activity.sku": {
+			          "Target": {
+			            "Entity": "gold_v_magento_Fact_customers_activity.sku"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_v_magento_Fact_customers_activity"
+			            },
+			            "Object": {
+			              "Role": "gold_v_magento_Fact_customers_activity.sku"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_v_magento_Fact_customers_activities_have_skus"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

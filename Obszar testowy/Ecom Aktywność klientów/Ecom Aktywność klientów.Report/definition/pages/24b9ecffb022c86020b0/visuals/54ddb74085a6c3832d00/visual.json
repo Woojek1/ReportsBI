@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "54ddb74085a6c3832d00",
   "position": {
-    "x": 640,
-    "y": 16,
+    "x": 624,
+    "y": 8,
     "z": 3,
     "height": 72,
     "width": 304,
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.wojewodztwo",
-              "nativeQueryRef": "wojewodztwo",
-              "active": true
+              "nativeQueryRef": "Województwo",
+              "active": true,
+              "displayName": "Województwo"
             }
           ]
         }
@@ -55,6 +56,26 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

@@ -1,11 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "40c8bb60de18e0060d5b",
   "position": {
     "x": 8,
-    "y": 88,
+    "y": 104,
     "z": 0,
-    "height": 616,
+    "height": 600,
     "width": 1256
   },
   "visual": {
@@ -26,7 +26,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.sku",
-              "nativeQueryRef": "sku"
+              "nativeQueryRef": "SKU",
+              "displayName": "SKU"
             },
             {
               "field": {
@@ -40,7 +41,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.zdarzenie",
-              "nativeQueryRef": "zdarzenie"
+              "nativeQueryRef": "Zdarzenie",
+              "displayName": "Zdarzenie"
             },
             {
               "field": {
@@ -54,7 +56,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.data",
-              "nativeQueryRef": "data"
+              "nativeQueryRef": "Data",
+              "displayName": "Data"
             },
             {
               "field": {
@@ -68,7 +71,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.nip",
-              "nativeQueryRef": "nip"
+              "nativeQueryRef": "NIP",
+              "displayName": "NIP"
             },
             {
               "field": {
@@ -82,7 +86,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.nazwa",
-              "nativeQueryRef": "nazwa"
+              "nativeQueryRef": "Nazwa",
+              "displayName": "Nazwa"
             },
             {
               "field": {
@@ -96,7 +101,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.telefon",
-              "nativeQueryRef": "telefon"
+              "nativeQueryRef": "Telefon",
+              "displayName": "Telefon"
             },
             {
               "field": {
@@ -110,7 +116,8 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.miasto",
-              "nativeQueryRef": "miasto"
+              "nativeQueryRef": "Miasto",
+              "displayName": "Miasto"
             },
             {
               "field": {
@@ -124,11 +131,158 @@
                 }
               },
               "queryRef": "gold v_magento_Fact_customers_activity.wojewodztwo",
-              "nativeQueryRef": "wojewodztwo"
+              "nativeQueryRef": "Województwo",
+              "displayName": "Województwo"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold v_magento_Fact_customers_activity"
+                  }
+                },
+                "Property": "data"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "168D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.sku"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "165D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.zdarzenie"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.data"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "83D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.nip"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "451D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.nazwa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.telefon"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "77D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.miasto"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "135D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold v_magento_Fact_customers_activity.wojewodztwo"
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },

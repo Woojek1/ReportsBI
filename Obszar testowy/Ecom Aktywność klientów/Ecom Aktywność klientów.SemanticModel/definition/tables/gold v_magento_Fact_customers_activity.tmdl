@@ -18,12 +18,17 @@ table 'gold v_magento_Fact_customers_activity'
 		annotation SummarizationSetBy = Automatic
 
 	column data
-		dataType: string
+		dataType: dateTime
+		formatString: dd.mm.yyyy
 		lineageTag: a6245987-ed27-422c-b5cd-27c7bb5e0309
 		summarizeBy: none
 		sourceColumn: data
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column nip
 		dataType: string
@@ -70,9 +75,12 @@ table 'gold v_magento_Fact_customers_activity'
 		source =
 				let
 				    Źródło = PostgreSQL.Database("10.0.13.24", "dwh"),
-				    gold_v_magento_Fact_customers_activity = Źródło{[Schema="gold",Item="v_magento_Fact_customers_activity"]}[Data]
+				    gold_v_magento_Fact_customers_activity = Źródło{[Schema="gold",Item="v_magento_Fact_customers_activity"]}[Data],
+				    #"Zmieniono typ" = Table.TransformColumnTypes(gold_v_magento_Fact_customers_activity,{{"data", type date}})
 				in
-				    gold_v_magento_Fact_customers_activity
+				    #"Zmieniono typ"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Nawigacja
 
