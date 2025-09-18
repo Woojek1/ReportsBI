@@ -4,9 +4,10 @@
   "position": {
     "x": 56,
     "y": 168,
-    "z": 0,
-    "height": 503.99999999999994,
-    "width": 1208
+    "z": 1000,
+    "height": 520,
+    "width": 1208,
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "tableEx",
@@ -947,6 +948,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

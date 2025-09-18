@@ -7,7 +7,7 @@
     "z": 12000,
     "height": 224,
     "width": 968,
-    "tabOrder": 27000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -44,7 +44,7 @@
               },
               "queryRef": "Calendar.MonthName",
               "nativeQueryRef": "Miesiąc",
-              "active": true,
+              "active": false,
               "displayName": "Miesiąc"
             }
           ]
@@ -169,6 +169,20 @@
                   "Value": "8D"
                 }
               }
+            },
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "20L"
+                }
+              }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
             }
           }
         }
@@ -222,6 +236,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

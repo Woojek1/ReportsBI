@@ -72,11 +72,6 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Rectangle_1_(8)138349025446597.png",
-          "path": "Rectangle_1_(8)138349025446597.png",
-          "type": "Image"
-        },
-        {
           "name": "Zymetric9727100098817167.json",
           "path": "Zymetric9727100098817167.json",
           "type": "CustomTheme"
@@ -110,6 +105,16 @@
           "name": "miotla9741422437985459.png",
           "path": "miotla9741422437985459.png",
           "type": "Image"
+        },
+        {
+          "name": "Rectangle_18135401181061089.png",
+          "path": "Rectangle_18135401181061089.png",
+          "type": "Image"
+        },
+        {
+          "name": "pngegg5768432496755533.png",
+          "path": "pngegg5768432496755533.png",
+          "type": "Image"
         }
       ]
     }
@@ -119,7 +124,6 @@
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": true,
-    "filterPaneHiddenInEditMode": true,
     "useDefaultAggregateDisplayName": true,
     "queryLimitOption": "None",
     "customMemoryLimit": "1048576",

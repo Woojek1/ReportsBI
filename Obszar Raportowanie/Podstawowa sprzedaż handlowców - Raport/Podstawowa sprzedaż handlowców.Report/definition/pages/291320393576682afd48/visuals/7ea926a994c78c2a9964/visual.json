@@ -4,9 +4,10 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 19000,
+    "z": 15000,
     "height": 184,
-    "width": 240
+    "width": 240,
+    "tabOrder": 16000
   },
   "visualGroup": {
     "displayName": "Slicer",

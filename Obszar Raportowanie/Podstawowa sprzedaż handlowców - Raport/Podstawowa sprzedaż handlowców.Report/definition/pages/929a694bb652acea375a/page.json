@@ -116,16 +116,6 @@
       "type": "DataFilter"
     },
     {
-      "source": "f1635cc2006ad5b44348",
-      "target": "1bd793904a68d5d9a4b0",
-      "type": "NoFilter"
-    },
-    {
-      "source": "1bd793904a68d5d9a4b0",
-      "target": "f1635cc2006ad5b44348",
-      "type": "NoFilter"
-    },
-    {
       "source": "598b2a2d14780d303001",
       "target": "5c13eeb8181a125c4023",
       "type": "NoFilter"
