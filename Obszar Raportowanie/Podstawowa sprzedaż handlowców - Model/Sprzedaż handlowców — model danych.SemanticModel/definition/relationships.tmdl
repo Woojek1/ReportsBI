@@ -21,3 +21,7 @@ relationship f2b27d32-d850-a4b7-40c3-01d122848d11
 	fromColumn: Invoices.SalespersonCode
 	toColumn: 'gold v_bc_salesperson'.Code
 
+relationship 54751051-d29b-2f45-be9c-ac2b745cc285
+	fromColumn: Invoices.Payment_Date
+	toColumn: Calendar_Payment.Date
+

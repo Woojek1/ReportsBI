@@ -23,6 +23,7 @@ ref table 'gold v_bc_customers'
 ref table 'gold v_hr_enova_rls'
 ref table 'gold v_bc_posted_sales_credit_memo_invoices'
 ref table Invoices
+ref table Calendar_Payment
 
 ref role DTH
 ref role Wszystko
